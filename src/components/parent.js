@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import Dropdown from './dropdown';
-//import Try from './firstTry';
+import Try from './firstTry';
 import Monday from './reactSelect';
 import Color from './multiSelector';
 //import Custom from './custom';
@@ -21,6 +21,7 @@ class Parent extends Component {
             <Color />
             <Access />
             <Fixed />
+            <Try />
             </div>
          );
     }
