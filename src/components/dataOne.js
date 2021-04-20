@@ -116,4 +116,76 @@ export const colourOptions = [
       options: flavourOptions,
     },
   ];
+
+  export const iconOptions = [
+    {
+        value: "NG",
+        label: "Nigeria",
+        flag: "https://www.countryflags.io/NG/shiny/32.png"
+      },
+      {
+        value: "US",
+        label: "United States",
+        flag: "https://www.countryflags.io/US/shiny/32.png"
+      },
+      {
+        value: "IL",
+        label: "Isreal",
+        flag: "https://www.countryflags.io/IL/shiny/32.png"
+      },
+      {
+        value: "RO",
+        label: "Romania",
+        flag: "https://www.countryflags.io/RO/shiny/32.png"
+      },
+      {
+        value: "DE",
+        label: "Germany",
+        flag: "https://www.countryflags.io/DE/shiny/32.png"
+      },
+      {
+        value: "BS",
+        label: "Bahamas",
+        flag: "https://www.countryflags.io/BS/shiny/32.png"
+      },
+      {
+        value: "CN",
+        label: "China",
+        flag: "https://www.countryflags.io/CN/shiny/32.png"
+      },
+      {
+        value: "SO",
+        label: "Somalia",
+        flag: "https://www.countryflags.io/SO/shiny/32.png"
+      }
+  ];
+
+
+  export const iconDroper = [
+    { 
+        id: 1, 
+        label: 'https://www.freeiconspng.com/uploads/black-envelope-icon-10.png' 
+    },
+
+    {
+         id: 2, 
+         label: 'https://icon-library.com/images/graph-icon-png/graph-icon-png-1.jpg' 
+    },
+
+    {
+         id: 3, 
+         label: 'https://pics.freeicons.io/uploads/icons/png/8938216821547546487-512.png' 
+    },
+
+    {
+         id: 5, 
+         label: 'https://img.icons8.com/windows/452/opened-gift.png' 
+    },
+    
+    {
+        id: 6, 
+        label: 'https://image.flaticon.com/icons/png/512/61/61457.png' 
+    },
+  ];
+
   

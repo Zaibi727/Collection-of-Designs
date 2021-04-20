@@ -151,3 +151,30 @@ fieldset{
 .btn{
     border: none;
 }
+
+/*--flag---tuesday work--*/
+
+.flag-label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.countries{
+    width: 350px;
+    margin: 20px auto;
+    text-align: left;
+    font-weight: 700;
+}
+
+
+/*--below-icon-droper--*/
+
+
+.icon-resize{
+    width: 30px;
+}
+.icoSelector{
+    width: 130px;
+    margin: 20px auto;
+}
