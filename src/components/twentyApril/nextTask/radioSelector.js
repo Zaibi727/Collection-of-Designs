@@ -1,40 +1,48 @@
 import React from 'react';
-import RadioSelect from 'react-radio-select';
+import Select from "react-select";
 import './button.css';
 
+const options = [
+  { value: "Abe", label: "Agency (comming soon)", customAbbreviation: "Adv, connunication, event, media, pr, etc.." },
+  { value: "John", label: "Brand", customAbbreviation: "Apparel, accessories, eyewear, etc.." },
+  { value: "Dustin", label: "Dustin", customAbbreviation: "Restaurant, hotel, club, gym, beauty salon, etc.." },
+  { value: "Dustin", label: "Talent agency/Agent (coming soon..)", customAbbreviation: "Management, modellng, scouting," },
+];
 
-
-const Option = ({title, price}) => (
-    <div className="coffee-option">
-      <div>{title}</div>
-      <div>{price}</div>
+const formatOptionLabel = ({ value, label, customAbbreviation }) => (
+  <div style={{ display: "flex" }}>
+    <div className="content">
+       <h4>{label}</h4>
+       <p>{customAbbreviation}</p>
+    </div> 
+    <div>
+      <input type="radio" />
     </div>
-  )
+  </div>
+);
 
-  const coffees = [
-    {id: "1001", title: "Espresso", price: "1.50 €"},
-    {id: "1002", title: "Cappuccino", price: "2.00 €"},
-    {id: "1003", title: "Flat white", price: "2.20 €"},
-    {id: "1004", title: "Americano", price: "1.80 €"},
-  ];
-
-  const options = coffees.map(item => ({
-    value: item.id,
-    component: <Option title={item.title} price={item.price}/>,
-    ariaLabel: item.title + " " + item.price
-}));
 
 class Radio extends React.Component {
-    state = {  }
+    state = { 
+      selectedOption: null,
+     };
+
+     handleChange = selectedOption => {
+      this.setState({ selectedOption });
+      console.log(`Option selected:`, selectedOption);
+    };
+
     render() { 
+      const { selectedOption } = this.state;
         return ( 
-            <div>
-                <form>
-                      <fieldset>
-                         <legend>Choose coffee</legend>
-                         <RadioSelect id="coffee-selection" name="coffee" options={options} />
-                      </fieldset>
-                </form>
+            <div className="radio">
+                <h3>Signing Up as</h3>
+                <Select className="radio-select"
+                  formatOptionLabel={formatOptionLabel}
+                  options={options}
+                  value={selectedOption}
+                  onChange={this.handleChange}
+                 />
             </div>
          );
     }

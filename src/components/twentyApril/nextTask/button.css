@@ -6,5 +6,23 @@
 .muu{
     font-weight: 500;
 }
+.radio{
+    width: 600px;
+    margin: 50px auto;
+    text-align: left;
+}
+.content h4{
+   margin: 0px;
+   padding: 0px;
+}
+.content p{
+    margin: 0px;
+    padding: 0px 0px 7px 0px;
+ }
+ .content{
+     border-bottom: 1px solid rgb(214, 211, 211);
+     width: 100%;
+ }
+ 
     
   
