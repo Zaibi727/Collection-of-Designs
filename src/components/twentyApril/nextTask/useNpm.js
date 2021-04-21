@@ -3,7 +3,7 @@ import Select from "react-select";
 import './button.css';
 
 const options = [
-    { label: "Punjabi ", value: "pu" },
+    { label: "Punjabi ", value: "pu"},
     { label: "Urdu ", value: "ur" },
     { label: "Sindhi ", value: "sind",},
     { label: "Pashtu ", value: "pa" },
@@ -30,7 +30,17 @@ const options = [
 
   
   function Check () { 
-    
+    const options = [
+        { label: "Punjabi ", value: "pu", isdisabled: true},
+        { label: "Urdu ", value: "ur" },
+        { label: "Sindhi ", value: "sind",},
+        { label: "Pashtu ", value: "pa" },
+        { label: "Balochi ", value: "balo" },
+        { label: "Sarieki ", value: "spr" },
+        { label: "English ", value: "eng" },
+        { label: "Spanish", value: "span" },
+        { label: "Arabic ", value: "arrabic" },
+      ];
           return ( 
               <div className="npm">
                   <Select 
@@ -38,7 +48,7 @@ const options = [
                       components={{Option: MyOption}}
                       options={options}   
                       isMulti  
-                      focused= {true}           
+                      isOptionDisabled={(option) => option.isdisabled}          
                   />
               </div>
            );

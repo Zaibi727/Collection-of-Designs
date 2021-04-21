@@ -11,6 +11,7 @@ import Two from './twentyApril/secondRender';
 //import Next from './twentyApril/nextTask/checkSelector' ;
 import Radio from './twentyApril/nextTask/radioSelector';
 import Check from './twentyApril/nextTask/useNpm';
+import Last from './twentyApril/nextTask/lastSelector';
 
 class Parent extends Component {
 
@@ -21,6 +22,7 @@ class Parent extends Component {
             <div>           
                <Radio />
                <Check />
+               <Last />
             </div>
          );
     }

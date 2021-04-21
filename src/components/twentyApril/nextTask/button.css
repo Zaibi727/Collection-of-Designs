@@ -84,4 +84,11 @@
 
 }
 
+.last{
+    width: 400px;
+    margin: 30px auto;
+}
+.last-select{
+    font-weight: 500;
+}
   

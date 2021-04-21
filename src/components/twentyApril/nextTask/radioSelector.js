@@ -1,13 +1,14 @@
-import React from 'react';
-import Select, { components } from 'react-select';
+
+import React,{useState} from 'react';
+import Select from 'react-select';
 import './button.css';
 
 
 const options = [
-  {  value: "Agency", label: "Agency (comming soon)", customAbbreviation: "Adv, connunication, event, media, pr, etc.." },
+  {  value: "Agency", label: "Agency (comming soon)", customAbbreviation: "Adv, connunication, event, media, pr, etc.." ,isdisabled: true },
   {  value: "Brand", label: "Brand", customAbbreviation: "Apparel, accessories, eyewear, etc.." },
   {  value: "local business", label: "Local Business", customAbbreviation: "Restaurant, hotel, club, gym, beauty salon, etc.." },
-  {  value: "Talent Agent", label: "Talent agency/Agent (coming soon..)", customAbbreviation: "Management, modellng, scouting," },
+  {  value: "Talent Agent", label: "Talent agency/Agent (coming soon..)", customAbbreviation: "Management, modellng, scouting,", isdisabled: true },
 ];
 
 
@@ -20,7 +21,7 @@ const MyOption = props => {
   return (
     <article className="content" ref={innerRef} {...innerProps} >
         <div className="one">
-            <h4>{props.data.label}</h4>
+            <h4 >{props.data.label}</h4>
             <p>{props.data.customAbbreviation}</p>
         </div>
         <div className="two">
@@ -48,6 +49,7 @@ class Radio extends React.Component {
                   components={{Option: MyOption}}
                   options={options}
                   isClearable
+                  isOptionDisabled={(option) => option.isdisabled}
                  />
             </div>
          );
