@@ -2,17 +2,21 @@ import React from 'react';
 import Select, { components } from 'react-select';
 import './button.css';
 
+
 const options = [
-  { id: 1, value: "Agency", label: "Agency (comming soon)", customAbbreviation: "Adv, connunication, event, media, pr, etc.." },
-  { id: 2, value: "Brand", label: "Brand", customAbbreviation: "Apparel, accessories, eyewear, etc.." },
-  { id: 2, value: "local business", label: "Local Business", customAbbreviation: "Restaurant, hotel, club, gym, beauty salon, etc.." },
-  { id: 4, value: "Talent Agent", label: "Talent agency/Agent (coming soon..)", customAbbreviation: "Management, modellng, scouting," },
+  {  value: "Agency", label: "Agency (comming soon)", customAbbreviation: "Adv, connunication, event, media, pr, etc.." },
+  {  value: "Brand", label: "Brand", customAbbreviation: "Apparel, accessories, eyewear, etc.." },
+  {  value: "local business", label: "Local Business", customAbbreviation: "Restaurant, hotel, club, gym, beauty salon, etc.." },
+  {  value: "Talent Agent", label: "Talent agency/Agent (coming soon..)", customAbbreviation: "Management, modellng, scouting," },
 ];
 
 
 
 const MyOption = props => {
   const { innerProps, innerRef } = props;
+  console.log(innerProps);
+  console.log(props);
+  console.log(props.focused);
   return (
     <article className="content" ref={innerRef} {...innerProps} >
         <div className="one">
@@ -20,15 +24,17 @@ const MyOption = props => {
             <p>{props.data.customAbbreviation}</p>
         </div>
         <div className="two">
-          <input 
-          className="circle"
-          type="radio"
-          name='option'          
-           />
+        <input  
+            className="circle" 
+            type="radio" 
+            checked={props.isFocused ? true : false} 
+        />
+          
         </div>
      </article>
   );
 };
+
 
 
 

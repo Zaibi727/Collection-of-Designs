@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Select from "react-select";
 import './button.css';
 
@@ -16,10 +16,13 @@ const options = [
 
 
   const MyOption = props => {
-    const { innerProps, innerRef } = props;
+    const { innerProps, innerRef, } = props;
+    console.log(innerProps);
+    console.log(props);
+    console.log(props.focused);
     return (
       <article ref={innerRef} {...innerProps} className="custom-option">          
-           <input type="checkbox" />
+           <input type="checkbox" checked={props.isFocused?true:false} />
            <h4>{props.data.label}</h4>
       </article>
     );
@@ -33,9 +36,9 @@ const options = [
                   <Select 
                       className="npm-select"
                       components={{Option: MyOption}}
-                      options={options}
-                      isMulti
-                      closeMenuOnSelect={false}
+                      options={options}   
+                      isMulti  
+                      focused= {true}           
                   />
               </div>
            );
