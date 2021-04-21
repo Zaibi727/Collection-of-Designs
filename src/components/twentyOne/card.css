@@ -73,7 +73,7 @@
     color: gray;
 }
 .middle-sub button{
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 12px;
     font-size: 16px;
     max-width: 200px;
@@ -123,13 +123,14 @@
 }
 #border-remove{
     border-bottom: none;
+    padding-bottom: 0px !important;
 }
 .gray{
     color: gray;
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     .wrapper{
         display: grid;
         background-color: lavender;
@@ -138,18 +139,58 @@
         padding: 50px;
     }
     .left{
-        height: 350px;
+        height: 310px;
     }
     .middle{
-        height: 350px;
+        height: 310px;
     }
     .right{
-        height: 350px;
+        height: 310px;
     }
     #border-remove{
         border-bottom: none;
     }
+    .middle-sub button{
+        margin-top: 30px;
+        padding: 9px;
+        width: 170px;
+    }
 }
+
+
+@media only screen and (max-width: 800px){
+    .wrapper{
+        width: 100%;
+        display: grid;
+        background-color: lavender;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 9px;
+        padding: 10px;
+    }
+    .left{
+        height: 310px;
+    }
+    .middle{
+        height: 310px;
+    }
+    .right{
+        height: 310px;
+    }
+    #border-remove{
+        border-bottom: none;
+    }
+    .middle-sub button{
+        margin-top: 40px;
+        padding: 9px;
+        font-size: 16px;
+        width: 170px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        background-color: black;
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     .wrapper{
@@ -159,8 +200,26 @@
     }
     .left{
         margin-bottom: 20px;
+        height: 270px;
     }
     .middle{
+        height: 270px;
         margin-bottom: 20px;
+    }
+    .right{
+        height: 270px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .left{
+        margin-bottom: 20px;
+        height: 310px;
+    }
+    .middle{
+        height: 310px;
+        margin-bottom: 20px;
+    }
+    .right{
+        height: 310px;
     }
 }
