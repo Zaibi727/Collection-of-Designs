@@ -9,9 +9,11 @@ import React, { Component } from 'react';
 import Test from './twentyApril/firstRender';
 import Two from './twentyApril/secondRender';
 //import Next from './twentyApril/nextTask/checkSelector' ;
-import Radio from './twentyApril/nextTask/radioSelector';
-import Check from './twentyApril/nextTask/useNpm';
-import Last from './twentyApril/nextTask/lastSelector';
+//import Radio from './twentyApril/nextTask/radioSelector';
+//import Check from './twentyApril/nextTask/useNpm';
+//import Last from './twentyApril/nextTask/lastSelector';
+import Card from './twentyOne/card';
+
 
 class Parent extends Component {
 
@@ -20,9 +22,7 @@ class Parent extends Component {
 
         return ( 
             <div>           
-               <Radio />
-               <Check />
-               <Last />
+                <Card />
             </div>
          );
     }
