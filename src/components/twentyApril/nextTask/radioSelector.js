@@ -27,7 +27,7 @@ const MyOption = props => {
         <input  
             className="circle" 
             type="radio" 
-            checked={props.isFocused ? true : false} 
+            checked={props.isSelected ? true : false} 
         />
           
         </div>
