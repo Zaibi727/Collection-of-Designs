@@ -155,6 +155,7 @@
     .wrapper{
         grid-template-columns: 100%;
         padding: 50px;
+        height: 1200px;
     }
     .left{
         margin-bottom: 20px;
