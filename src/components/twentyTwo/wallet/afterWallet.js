@@ -16,12 +16,16 @@ function Afterw (props) {
             
            <section className="middle">
               <div className="mid-after-one-div">
-                  <h3>Wallet</h3>
-                  <Menu className="af-btn" menuButton={
+                  <div>
+                     <h3>Wallet</h3>
+                  </div>
+                  <div>
+                     <Menu className="af-btn" menuButton={
                        <button className="dp-btn"><span><i class="fa fa-cog fa-lg"></i> <span></span> <i class="fa fa-sort-down fa-lg"></i></span></button>}>
                        <MenuItem>Manage limits</MenuItem>
                        <MenuItem>Edit info</MenuItem>
-                  </Menu>
+                    </Menu>
+                  </div>
               </div>
               <div className="middle-after-sub">
                   <div className="one-af">

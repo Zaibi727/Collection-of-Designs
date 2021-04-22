@@ -51,7 +51,6 @@
     justify-content: space-between;
 }
 .dp-btn{
-    margin-right: -250px;
     border: none;
     background-color: transparent;
     display: flex;
@@ -105,11 +104,9 @@
 /*--below about responsive---*/
 
 
-@media only screen and (min-width: 800px) and (max-width:1200px){
+@media only screen and (max-width:1200px){
    
-.dp-btn{
-    margin-right: -150px;
-}
+
 .fa-sort-down{
    margin-left: 5px;
 }
@@ -143,8 +140,3 @@
 }
 }
 
-@media only screen and (max-width: 400px){
-    .dp-btn{
-        margin-right: -130px;
-    }
-}
