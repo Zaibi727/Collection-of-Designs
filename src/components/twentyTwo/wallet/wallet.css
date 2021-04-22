@@ -1,0 +1,150 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+
+
+.middle{
+    width: 100%;   
+    background-color: hotpink ;
+    border-radius: 20px;
+    padding: 20px;
+}
+.middle h3{
+    text-align: left;
+}
+.middle-sub{
+   margin: 20px auto;
+}
+.middle-sub i{
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.middle-sub p{
+    font-weight: 500;
+    color: gray;
+}
+.middle-sub button{
+    margin-top: 60px;
+    padding: 12px;
+    font-size: 16px;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+
+/*--below-afterwallet--*/
+
+.mid-after-one-div{
+    display: flex;
+    justify-content: space-between;
+}
+.dp-btn{
+    margin-right: -250px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+.fa-sort-down{
+   margin-left: 5px;
+}
+.af-btn{
+   text-align: left;
+}
+/*--above is drop down--*/
+
+.middle-after-sub{
+    text-align: center;
+}
+.one-af{
+  text-align: center !important;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.one-af p{
+  color: gray;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px auto;
+}
+.two-af{
+    margin: 20px auto;
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+}
+.three-af button{
+     width: 140px;
+     padding: 8px;
+     border-radius: 30px;
+     margin: 5px;
+     border: 3px solid black;
+}
+.bbb{
+    background-color: black;
+    color: white;
+}
+.red{
+    color: red !important;
+}
+
+/*--below about responsive---*/
+
+
+@media only screen and (min-width: 800px) and (max-width:1200px){
+   
+.dp-btn{
+    margin-right: -150px;
+}
+.fa-sort-down{
+   margin-left: 5px;
+}
+
+/*--above is drop down--*/
+
+.one-af{
+  text-align: center !important;
+  margin: 20px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.one-af p{
+  color: gray;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px auto;
+}
+.two-af{
+    margin: 10px auto;
+    color: gray;
+    font-size: 16px;
+    font-weight: 400;
+}
+.three-af button{
+     width: 140px;
+     padding: 8px;
+     border-radius: 30px;
+     margin: 5px;
+     border: 3px solid black;
+}
+}
+
+@media only screen and (max-width: 400px){
+    .dp-btn{
+        margin-right: -130px;
+    }
+}

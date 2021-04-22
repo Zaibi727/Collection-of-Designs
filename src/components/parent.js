@@ -12,8 +12,10 @@ import Two from './twentyApril/secondRender';
 //import Radio from './twentyApril/nextTask/radioSelector';
 //import Check from './twentyApril/nextTask/useNpm';
 //import Last from './twentyApril/nextTask/lastSelector';
-import Card from './twentyOne/card';
-
+//import Card from './twentyOne/card';
+import Companyr from './twentyTwo/company/companyRender'
+import Walletr from './twentyTwo/wallet/walletRender';
+import Sources from './twentyTwo/source/sourceRender';
 
 class Parent extends Component {
 
@@ -21,8 +23,16 @@ class Parent extends Component {
  
 
         return ( 
-            <div>           
-                <Card />
+            <div className="aaj">
+            <div className="div">
+               <Companyr />
+            </div>
+            <div className="div">
+                <Walletr />
+            </div>
+            <div className="div">
+                <Sources />
+            </div>         
             </div>
          );
     }

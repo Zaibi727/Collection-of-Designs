@@ -178,3 +178,24 @@ fieldset{
     width: 130px;
     margin: 20px auto;
 }
+
+.aaj{
+    background-color: lavender;
+    padding: 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.div{
+    height: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+    .aaj{
+        grid-template-columns: 100%;
+    }
+     .div{
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.right{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(216, 49, 49);
+}
+.src-img-log{
+    width: 40px;
+    margin-right: 20px;
+}
+.left-div-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-div-1 button{
+    background-color: lightgray;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 30px;
+}
+.right-div-2-sub{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 27px;
+   margin-right: -20px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid lightgray;
+}
+.middle-sub:last-child{
+    border-bottom: none !important;
+}
+.right-div-2-sub button{
+   border: none;
+   background-color: transparent;
+   font-size: 20px;
+   padding-right: 20px;
+}
+.right-div-2-sub-1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+#border-remove{
+    border-bottom: none;
+    padding-bottom: 0px !important;
+}
+.gray{
+    color: gray;
+    font-weight: 500;
+}
+
+/*--below-is after--*/
+
+.after-div-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.after-div-1 button{
+    width: 70px;
+    padding: 9px;
+    border: none;
+    border-radius: 30px;
+
+}
+.add-new-btn{
+    background-color: lightgray;
+    margin-right: 15px;
+}
+.save-btn{
+  background-color: black;
+  color: white;
+}
+.right-div-2-sub input{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+}
