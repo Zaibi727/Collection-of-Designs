@@ -71,7 +71,7 @@
 .one-af{
   text-align: center !important;
   margin: 20px auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid lightgray;
 }
 .one-af p{
@@ -90,7 +90,7 @@
      width: 140px;
      padding: 8px;
      border-radius: 30px;
-     margin: 5px;
+     margin: 0px 5px;
      border: 3px solid black;
 }
 .bbb{
@@ -135,7 +135,7 @@
      width: 140px;
      padding: 8px;
      border-radius: 30px;
-     margin: 5px;
+     margin: 0px 5px;
      border: 3px solid black;
 }
 }

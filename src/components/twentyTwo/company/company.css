@@ -23,12 +23,12 @@
 }
 .left-div-2{
     text-align: left;
-    margin: 20px auto 0px auto;
+    margin: 25px auto 0px auto;
 }
 .left-div-2-sub{
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 .left-div-2-sub i{
     margin-right: 30px;
@@ -72,7 +72,7 @@
     color: white !important;
 } 
 #aftr-input{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 ::placeholder{
     color: black;
