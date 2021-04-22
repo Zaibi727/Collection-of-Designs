@@ -25,9 +25,9 @@ class Companyr extends Component {
         const isLoggedIn = this.state.isLoggedIn;
         let button;
         if (isLoggedIn) {
-          button = <Beforc onClick={this.handleLogoutClick} />;
+          button = <Afterc onClick={this.handleLogoutClick} />;
         } else {
-          button = <Afterc onClick={this.handleLoginClick} />;
+          button = <Beforc onClick={this.handleLoginClick} />;
         }
 
         return ( 

@@ -25,9 +25,9 @@ class Sources extends Component {
         const isLoggedIn = this.state.isLoggedIn;
         let button;
         if (isLoggedIn) {
-          button = <Befores onClick={this.handleLogoutClick} />;
+          button = <Afters onClick={this.handleLogoutClick} />;
         } else {
-          button = <Afters onClick={this.handleLoginClick} />;
+          button = <Befores onClick={this.handleLoginClick} />;
         }
 
         return (

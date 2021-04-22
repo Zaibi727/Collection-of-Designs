@@ -22,9 +22,9 @@ class Walletr extends React.Component {
         const isLoggedIn = this.state.isLoggedIn;
         let button;
         if (isLoggedIn) {
-          button = <Beforew onClick={this.handleLogoutClick} />;
+          button = <Afterw onClick={this.handleLogoutClick} />;
         } else {
-          button = <Afterw onClick={this.handleLoginClick} />;
+          button = <Beforew onClick={this.handleLoginClick} />;
         }
 
 
