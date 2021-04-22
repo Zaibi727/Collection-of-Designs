@@ -1,13 +1,17 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 .left{
-    
-    width: 100%;
     padding: 20px;
     border-radius: 20px;
     background-color: white;
+}
+.h3{
+    font-size: 20px;
+    font-weight: 700;
+    
 }
 .left-div-1{
     display: flex;
@@ -23,20 +27,31 @@
 }
 .left-div-2{
     text-align: left;
-    margin: 25px auto 0px auto;
+    margin: 20px auto 0px auto;
 }
 .left-div-2-sub{
     display: flex;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
 }
 .left-div-2-sub i{
-    margin-right: 30px;
+    margin-right: 20px;
     font-size: 30px;
-    color: rgb(209, 202, 202);
+    color: lightgray;
+}
+.h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.gray{
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 .fa-map-marker{
-    margin-right: 40px !important;
+    margin-right: 30px !important;
+}
+.befor-edit-c{
+   background-color: transparent;
 }
 
 /*--below-about after-click--*/

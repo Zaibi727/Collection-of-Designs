@@ -31,7 +31,6 @@ class Walletr extends React.Component {
         return ( 
             <div>
             <div>
-                <Main isLoggedIn={isLoggedIn} />
                 {button}
              </div>
             </div>
@@ -40,19 +39,3 @@ class Walletr extends React.Component {
 }
  
 export default Walletr;
-
-function UserGreeting(props) {
-    return <h1></h1>;
-  }
-  
-  function GuestGreeting(props) {
-    return <h1></h1>;
-  }
-
-  function Main(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-      return <UserGreeting />;
-    }
-    return <GuestGreeting />;
-  }

@@ -25,14 +25,13 @@ class Companyr extends Component {
         const isLoggedIn = this.state.isLoggedIn;
         let button;
         if (isLoggedIn) {
-          button = <Afterc onClick={this.handleLogoutClick} />;
-        } else {
+            button = <Afterc onClick={this.handleLogoutClick} />;
+        } else { 
           button = <Beforc onClick={this.handleLoginClick} />;
         }
 
         return ( 
              <div>
-                <Main isLoggedIn={isLoggedIn} />
                 {button}
              </div>
          );
@@ -41,19 +40,7 @@ class Companyr extends Component {
  
 export default Companyr;
 
-function UserGreeting(props) {
-    return <h1></h1>;
-  }
-  
-  function GuestGreeting(props) {
-    return <h1></h1>;
-  }
 
-  function Main(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-      return <UserGreeting />;
-    }
-    return <GuestGreeting />;
-  }
+
+ 
   

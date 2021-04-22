@@ -24,14 +24,14 @@ class Parent extends Component {
 
         return ( 
             <div className="aaj">
-            <div className="div">
-               <Companyr />
+            <div className="divvv">
+            <Companyr />
             </div>
-            <div className="div">
-                <Walletr />
+            <div className="divvv">
+               <Walletr />
             </div>
-            <div className="div">
-                <Sources />
+            <div className="divvv">
+              <Sources />
             </div>         
             </div>
          );

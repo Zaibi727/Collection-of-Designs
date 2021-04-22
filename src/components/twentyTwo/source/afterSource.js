@@ -9,8 +9,8 @@ function Afters (props) {
                    <div className="after-div-1">
                        <h2>Sources</h2>
                        <div>
-                          <button className="add-new-btn" onClick={props.onClick}>Add new</button>
-                          <button className="save-btn">Save</button>
+                          <button className="add-new-btn">Add new</button>
+                          <button className="save-btn" onClick={props.onClick}>Save</button>
                        </div>
                    </div>
 

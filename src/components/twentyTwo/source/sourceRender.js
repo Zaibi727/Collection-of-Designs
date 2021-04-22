@@ -33,7 +33,6 @@ class Sources extends Component {
         return (
             <div>
               <div>
-                <Main isLoggedIn={isLoggedIn} />
                 {button}
              </div>
             </div>
@@ -42,21 +41,3 @@ class Sources extends Component {
 }
 
 export default Sources;
-
-
-function UserGreeting(props) {
-    return <h1></h1>;
-  }
-  
-  function GuestGreeting(props) {
-    return <h1></h1>;
-  }
-
-
-  function Main(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-      return <UserGreeting />;
-    }
-    return <GuestGreeting />;
-  }

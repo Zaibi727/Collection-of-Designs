@@ -16,6 +16,7 @@ function Afterw (props) {
             
            <section className="middle">
               <div className="mid-after-one-div">
+                  
                   <div>
                      <h3>Wallet</h3>
                   </div>
@@ -26,6 +27,7 @@ function Afterw (props) {
                        <MenuItem>Edit info</MenuItem>
                     </Menu>
                   </div>
+                 
               </div>
               <div className="middle-after-sub">
                   <div className="one-af">

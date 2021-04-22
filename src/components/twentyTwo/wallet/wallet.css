@@ -4,8 +4,7 @@
 }
 
 
-.middle{
-    width: 100%;   
+.middle{  
     background-color: white ;
     border-radius: 20px;
     padding: 20px;
@@ -105,7 +104,6 @@
 
 
 @media only screen and (max-width:1200px){
-   
 
 .fa-sort-down{
    margin-left: 5px;
@@ -135,8 +133,7 @@
      width: 140px;
      padding: 8px;
      border-radius: 30px;
-     margin: 0px 5px;
+     margin: 5px;
      border: 3px solid black;
 }
 }
-
