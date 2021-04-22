@@ -42,6 +42,9 @@
     font-size: 30px;
     color: rgb(209, 202, 202);
 }
+.fa-map-marker{
+    margin-right: 40px !important;
+}
 
 /*--left--*/
 
