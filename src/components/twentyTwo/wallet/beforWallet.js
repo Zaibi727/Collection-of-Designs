@@ -1,5 +1,6 @@
 import React from 'react';
 import './wallet.css';
+import { IoWalletOutline } from "react-icons/io5"
 
 
 function Beforw (props) {
@@ -9,7 +10,7 @@ function Beforw (props) {
                <section className="middle">
                   <h3>Wallet</h3>
                   <div className="middle-sub">
-                  <i class="fa fa-dollar"></i>
+                  <IoWalletOutline className="iconw" />
                        <p>
                           It's mandatory for a business to open a wallet<br></br> here in the SQUARE ecosystem to start
                       </p>

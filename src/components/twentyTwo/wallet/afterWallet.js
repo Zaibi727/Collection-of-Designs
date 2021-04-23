@@ -1,5 +1,7 @@
 import React from 'react';
 import './wallet.css';
+import { AiOutlineSetting } from "react-icons/ai";
+import { BiCaretDown } from "react-icons/bi";
 import {
     Menu,
     MenuItem,
@@ -22,7 +24,10 @@ function Afterw (props) {
                   </div>
                   <div>
                      <Menu className="af-btn" menuButton={
-                       <button className="dp-btn"><span><i class="fa fa-cog fa-lg"></i> <span></span> <i class="fa fa-sort-down fa-lg"></i></span></button>}>
+                       <button className="dp-btn">
+                           <span> <AiOutlineSetting /></span>  
+                           <span> <BiCaretDown/></span>
+                       </button>}>
                        <MenuItem>Manage limits</MenuItem>
                        <MenuItem>Edit info</MenuItem>
                     </Menu>

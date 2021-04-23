@@ -1,30 +1,46 @@
 import React, { Component } from 'react';
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { RiFileList3Line } from "react-icons/ri";
+import { MdBusinessCenter } from "react-icons/md";
 import './company.css';
 
 
-function Afterc (props) { 
+class Afterc extends Component { 
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
+
+        this.handleChange = this.handleChange.bind(this);
+
+      }
+
+      handleChange(event) {
+        this.setState({value: event.target.value});
+      }
+
+    render() {
         return ( 
             <div>
                 <section className="left">
                    <div className="left-div-1">
                        <h3>Company info</h3>
-                       <button className="save" onClick={props.onClick}>Save</button>
+                       <button className="save" onClick={this.props.onClick}>Save</button>
                    </div>
                    <div className="left-div-2">
                        <div id="aftr-input" className="left-div-2-sub">
-                           <i class="fa fa-joomla"></i>
+                       <MdBusinessCenter className="iconc" />
                            <div>
-                               <input className="larg" type="text" placeholder="Beer pub srl" />
+                               <input className="larg"  value="Beer pub srl"  type="text"  onChange={this.handleChange} />
                            </div>
                        </div>
 
                        <div id="aftr-input" className="left-div-2-sub">
-                       <i class="fa fa-map-marker"></i>
+                       <HiOutlineLocationMarker className="iconc" />
                            <div>
-                           <input className="larg" placeholder="Via Americo Vespucci, 14" /><br></br>
-                           <input className="sm" placeholder="20214" /> <input className="sm" placeholder="Milano" /> 
+                           <input className="larg" value="Via Americo Vespucci, 14" onChange={this.handleChange} /><br></br>
+                           <input className="sm" value="20124"  onChange={this.handleChange}  /> <input className="sm" value="Milano"   onChange={this.handleChange} /> 
                            <select className="select">
-                               <option>ITA</option>
+                               <option value="IT">ITA</option>
                                <option>ITA</option>
                                <option>ITA</option>
                                <option>ITA</option>
@@ -35,9 +51,9 @@ function Afterc (props) {
                        </div>
 
                        <div id="aftr-input" className="left-div-2-sub">
-                       <i class="fa fa-file"></i>
+                       <RiFileList3Line className="iconc" />
                            <div>
-                               <input className="larg" type="text" placeholder="382340092" />
+                               <input className="larg" type="text" value="382340092"   onChange={this.handleChange} />
                            </div>
                        </div>
                    </div>
@@ -45,5 +61,6 @@ function Afterc (props) {
             </div>
          );
     }
+}
  
 export default Afterc;

@@ -19,34 +19,34 @@ function Afters (props) {
                          <div className="right-div-2-sub-1">
                                <img className="src-img-log" src="/images/mastercard.png" />
                                  <div>
-                                    <h4>*****394</h4>
+                                    <p className="h4">*****394</p>
                                     <p className="gray">Name Surname</p>
                                </div>
                          </div>
-                          <input type="radio" />
+                          <input type="radio" name="radio" />
                      </div>
 
                      <div className="right-div-2-sub">
                          <div className="right-div-2-sub-1">
                              <img className="src-img-log" src="/images/visa.png" />
                               <div>
-                                <h4>******1214</h4>
+                                <p className="h4">******1214</p>
                                 <p className="gray">Name Surname</p>
                              </div>
                          </div>
-                         <input type="radio" />
+                         <input type="radio" name="radio" />
                      </div>
 
                      <div id="border-remove" className="right-div-2-sub">
                          <div className="right-div-2-sub-1">
                              <img className="src-img-log" src="/images/paypal.webp" />
                              <div>
-                                 <h4>   
-                                Add PayPal account
-                                </h4>
+                                 <p className="h4">   
+                                email@gmail.com
+                                </p>
                              </div>
                          </div>
-                         <input type="radio" />
+                         <input type="radio" name="radio" />
                      </div>
 
                  </div>

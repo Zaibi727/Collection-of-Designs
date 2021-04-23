@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { RiFileList3Line } from "react-icons/ri";
+import { MdBusinessCenter } from "react-icons/md";
 import './company.css';
 
 
@@ -12,7 +15,7 @@ function Beforc (props) {
                    </div>
                    <div className="left-div-2">
                        <div className="left-div-2-sub">
-                           <i class="fa fa-joomla"></i>
+                       <MdBusinessCenter className="iconc" />
                            <div>
                                <p className="h4">Beer pub srl</p>
                                <p className="gray">Business name</p>
@@ -20,7 +23,7 @@ function Beforc (props) {
                        </div>
 
                        <div className="left-div-2-sub">
-                       <i class="fa fa-map-marker"></i>
+                       <HiOutlineLocationMarker className="iconc" />
                            <div>
                            <p className="h4">United States, Pasadena 2232<br></br> Avondale Ave undefined</p>
                                <p className="gray">Full address</p>
@@ -28,7 +31,7 @@ function Beforc (props) {
                        </div>
 
                        <div className="left-div-2-sub">
-                       <i class="fa fa-file"></i>
+                       <RiFileList3Line className="iconc" />
                            <div>
                                <p className="h4">3823340092</p>
                                <p className="gray">VAT number</p>

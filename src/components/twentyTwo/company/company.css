@@ -3,6 +3,12 @@
     margin: 0px;
     box-sizing: border-box;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 .left{
     padding: 20px;
     border-radius: 20px;
@@ -34,10 +40,15 @@
     align-items: center;
     margin-bottom: 5px;
 }
-.left-div-2-sub i{
+.iconc{
     margin-right: 20px;
     font-size: 30px;
-    color: lightgray;
+    color:#abacb4 !important;
+}
+.iconccc{
+    margin-right: 20px;
+    font-size: 30px;
+    color:#abacb4 !important;
 }
 .h4{
     font-size: 20px;
@@ -57,7 +68,8 @@
 /*--below-about after-click--*/
 
 .sm{
-    width: 97px;
+    max-width: 94px;
+    width: 100%;
     padding: 10px;
     margin: 5px auto;
     border: 1px solid lightgray;
@@ -67,9 +79,10 @@
 .larg{
     width: 300px;
     padding: 10px;
+    margin: 5px auto;
     border: 1px solid lightgray;
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 600;
     color: black !important;
 }
 .select{
@@ -81,23 +94,19 @@
 }
 .save{
     background-color: black !important;
-    padding: 10px 15px;
+    padding: 12px !important;
     border-radius: 20px;
     font-weight: 200 !important;
     color: white !important;
 } 
-#aftr-input{
-    margin-bottom: 15px;
-}
-::placeholder{
-    color: black;
-}
+
+
 
 @media only screen and (max-width: 600px){
     .sm{
         width: 80px;
         padding: 10px;
-        margin: 5px auto;
+        margin-top: 5px;
         border: none;
     }
     .larg{
@@ -111,7 +120,7 @@
         max-width: 63px;
         width: 100%;
         padding: 10px;
-        margin: 5px auto;
+        margin-top: 5px;
         border: none;
     }
     .larg{
