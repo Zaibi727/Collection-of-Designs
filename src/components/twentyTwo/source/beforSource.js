@@ -7,7 +7,7 @@ function Befores (props) {
         <div>
               <section className="right">
                    <div className="left-div-1">
-                       <h3>Source</h3>
+                       <p className="h3">Source</p>
                        <button onClick={props.onClick}>Edit</button>
                    </div>
 
