@@ -5,34 +5,14 @@ import './source.css';
 class Afters extends React.Component {
     constructor(props){
         super(props);
-
-
-        this.onChange = this.onChange.bind(this);
-        this.onClick = this.onClick.bind(this);
-
-        this.state= {checked: false};
     }
-
-
-    
-    onChange() {
-        this.setState({ checked: !this.state.checked });
-        console.log('onChange');
-      }
-    
-      onClick() {
-        this.onChange();
-        console.log('onClick');
-      }
-
-
     
     render(){
     return (
         <div>
               <section className="right">
                    <div className="after-div-1">
-                       <h2>Sources</h2>
+                       <p className="h3">Sources</p>
                        <div>
                           <button className="add-new-btn">Add new</button>
                           <button className="save-btn" onClick={this.props.onClick}>Save</button>
@@ -40,7 +20,7 @@ class Afters extends React.Component {
                    </div>
 
                  <div className="right-div-2">
-                     <div className="right-div-2-sub" onClick={this.onClick}>
+                     <label className="right-div-2-sub">
                          <div className="right-div-2-sub-1">
                                <img className="src-img-log" src="/images/mastercard.png" />
                                  <div>
@@ -51,10 +31,11 @@ class Afters extends React.Component {
                           <input 
                              type="radio"
                              name="radio"
-                            />
-                     </div>
 
-                     <div className="right-div-2-sub" onClick={this.onClick}>
+                            />
+                     </label>
+
+                     <label className="right-div-2-sub">
                          <div className="right-div-2-sub-1">
                              <img className="src-img-log" src="/images/visa.png" />
                               <div>
@@ -64,11 +45,12 @@ class Afters extends React.Component {
                          </div>
                          <input 
                              type="radio" 
-                             name="radio" 
+                             name="radio"
+                            
                             />
-                     </div>
+                     </label>
 
-                     <div id="border-remove" className="right-div-2-sub" onClick={this.onClick}>
+                     <label id="border-remove" className="right-div-2-sub">
                          <div className="right-div-2-sub-1">
                              <img className="src-img-log" src="/images/paypal.webp" />
                              <div>
@@ -80,8 +62,9 @@ class Afters extends React.Component {
                          <input 
                              type="radio" 
                              name="radio"
+                             
                             />
-                     </div>
+                     </label>
 
                  </div>
                </section>
