@@ -13,9 +13,10 @@ import Two from './twentyApril/secondRender';
 //import Check from './twentyApril/nextTask/useNpm';
 //import Last from './twentyApril/nextTask/lastSelector';
 //import Card from './twentyOne/card';
-import Companyr from './twentyTwo/company/companyRender'
-import Walletr from './twentyTwo/wallet/walletRender';
-import Sources from './twentyTwo/source/sourceRender';
+//import Companyr from './twentyTwo/company/companyRender'
+//import Walletr from './twentyTwo/wallet/walletRender';
+//import Sources from './twentyTwo/source/sourceRender';
+import Modalf from './twentyFour/modalOne';
 
 class Parent extends Component {
 
@@ -23,16 +24,8 @@ class Parent extends Component {
  
 
         return ( 
-            <div className="aaj">
-            <div className="divvv">
-            <Companyr />
-            </div>
-            <div className="divvv">
-               <Walletr />
-            </div>
-            <div className="divvv">
-              <Sources />
-            </div>         
+            <div>  
+            <Modalf />      
             </div>
          );
     }
