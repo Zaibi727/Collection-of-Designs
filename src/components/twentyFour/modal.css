@@ -15,10 +15,11 @@ button:focus {
 }
 .edit-btnnn{
     padding: 12px;
-    width: 200px;
+    width: 150px;
     background-color: teal;
     color: white;
     border: none;
+    margin: 0px 5px;
 }
 .modal-wrapper{
     width: 100%;
@@ -58,8 +59,8 @@ button:focus {
 }
 .div-1-p2{
     color: #cbcbcd;
-    font-weight: 400;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 15px;
     padding-bottom: 15px;
 }
 
@@ -144,4 +145,52 @@ button:focus {
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+
+/*--modal-2--*/
+
+.modal-2-label-1{
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.select{
+    padding: 10px 5px;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto;
+    border: 1px solid #cbcbcd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.modal-2-select{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.creditcard{
+    border: 1px solid black;
+    margin-top: 20px;
+    outline: rgb(53, 47, 48);
+}
+#carnm{
+    margin-bottom: 110px;
+}
+.modal-2-submit{
+    padding: 12px ;
+    width: 100%;
+    max-width: 350px;
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.form-2{
+    margin-top: 30px;
 }

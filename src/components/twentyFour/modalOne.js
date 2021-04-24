@@ -4,16 +4,25 @@ import { ImCross } from "react-icons/im";
 import { RiCoinLine } from "react-icons/ri";
 import { BiCoinStack } from "react-icons/bi";
 import Modal from 'react-modal';
+import Select from 'react-select';
+import CreditCardInput from 'react-credit-card-input';
 import './modal.css';
 
 
 function Modalf () {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalIsOpeen, setModalIsOpeen] = useState(false);
     return (
         <div className="wrapper">
                <button className="edit-btnnn" onClick={()=> setModalIsOpen(true)}>
                    Edit amount detial
                </button>
+               <button className="edit-btnnn" onClick={()=> setModalIsOpeen(true)}>
+                   Add new source
+               </button>
+
+               {/*--below first modal--*/}
+
               <Modal className="modal-wrapper" isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)}>
                     <div className="modal-first-div">
                         <IoWalletOutline className="iconw" />
@@ -82,8 +91,63 @@ function Modalf () {
                     <ImCross />
                    </button>
               </Modal>
+
+              {/*--below-second modal--*/}
+
+              <Modal className="modal-wrapper" isOpen={modalIsOpeen} onRequestClose={()=> setModalIsOpeen(false)}>
+                   <div className="modal-first-div">
+                        <IoWalletOutline className="iconw" />
+                        <p className="div-1-p1">Add new source</p>
+                        <p className="div-1-p2">
+                            Running out of juice to access the useful<br></br>
+                            perks around you? Here's the solution.
+                        </p>
+                    </div>
+                     
+                     <form className="form-2">
+                         
+                         <div>
+                         <label className="modal-2-label-1">Source type</label><br></br>
+                          <Select className="modal-2-select"
+                           options={stateOptions}
+                           placeholder=""
+                          />
+                         </div>
+                           
+                           <div>
+                           <label className="modal-2-label-1">Card holder</label><br></br>
+                               <input className="select" type="text" required />
+                           </div>
+
+                           <div>
+                           <label id="carnm" className="modal-2-label-1">Card number</label>
+                              <CreditCardInput
+                                  className="creditcard"
+                                  
+                              />
+                           </div>
+
+                           <button className="modal-2-submit" type="submit">
+                               Add new source
+                           </button>
+
+                     </form>
+
+
+                   <button className="modal-edit-adress-cancel-btn" onClick={()=> setModalIsOpeen(false)}>
+                      <ImCross />
+                   </button>
+              </Modal>
         </div>
     )
 }
 
 export default Modalf;
+
+
+const stateOptions = [
+    {label: 'debit card'},
+    {label: 'credit card'},
+    {label: 'debit card'},
+    {label: 'debitcard'},
+]
