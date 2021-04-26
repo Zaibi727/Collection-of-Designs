@@ -29,7 +29,7 @@ button:focus {
    background-color: rgb(189, 136, 127) !important;
 }
 .div-1-1{
-    padding: 10px ;
+    padding: 10px 16px;
     text-align: left;
 }
 .name{
