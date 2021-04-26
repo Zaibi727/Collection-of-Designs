@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.wwwraper{
+    padding: 50px;
+    background-color: rgb(189, 136, 127);
+}
+.wrapper-card-six{
+    border-radius: 30px;
+    width: 400px;
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255) !important;
+}
+.div-1{
+    width: 400px;
+}
+.div-1 img{ 
+   width: 400px;
+   height: 300px;
+   border-top-left-radius:30px ;
+   border-top-right-radius: 30px;
+   background-color: rgb(189, 136, 127) !important;
+}
+.div-1-1{
+    padding: 10px ;
+    text-align: left;
+}
+.name{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.location{
+    color: rgb(54, 53, 53);
+}
+.div-1-2 ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 16px;
+  padding: 0px 0px 20px 0px;
+
+  border-bottom: 1px solid rgb(211, 208, 208);
+}
+.social-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid rgb(236, 232, 232);
+    background-color: white;
+
+}
+.part-2{
+    width: 400px;
+    padding: 0px 10px;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.part-2-detial{
+   margin: 10px 0px;
+}
+.detial-p1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.detial-p2{
+  color: gray;
+}
+
+/*--part-two--*/
+
+.last-div-btn{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-light {
+    background-color: transparent;
+    padding: 10px 40px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+.button-dark {
+    background-color: #000;
+    color: white;
+    padding: 10px 40px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}

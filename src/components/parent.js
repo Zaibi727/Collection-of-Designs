@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './dropDown.css';
 //import Dropdown from './dropdown';
 //import Try from './firstTry';
 //import Monday from './reactSelect';
@@ -6,8 +7,8 @@ import React, { Component } from 'react';
 //import Custom from './custom';
 //import Access from './access';
 //import Fixed from './fixedOption';
-import Test from './twentyApril/firstRender';
-import Two from './twentyApril/secondRender';
+//import Test from './twentyApril/firstRender';
+//import Two from './twentyApril/secondRender';
 //import Next from './twentyApril/nextTask/checkSelector' ;
 //import Radio from './twentyApril/nextTask/radioSelector';
 //import Check from './twentyApril/nextTask/useNpm';
@@ -16,7 +17,12 @@ import Two from './twentyApril/secondRender';
 //import Companyr from './twentyTwo/company/companyRender'
 //import Walletr from './twentyTwo/wallet/walletRender';
 //import Sources from './twentyTwo/source/sourceRender';
-import Modalf from './twentyFour/modalOne';
+//import Modalf from './twentyFour/modalOne';
+import Pab from './twentySix/Pab';
+//import Button from './twentySix/btnBoot';
+//import Twob from './twentySix/twoBtn';
+//import AbstractButton from './AbstactComponents/AbstractButton/button';
+
 
 class Parent extends Component {
 
@@ -24,9 +30,10 @@ class Parent extends Component {
  
 
         return ( 
-            <div>  
-            <Modalf />      
-            </div>
+            <div>
+              
+              <Pab />
+           </div>
          );
     }
 }
