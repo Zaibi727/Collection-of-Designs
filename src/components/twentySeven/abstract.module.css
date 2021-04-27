@@ -13,7 +13,7 @@ button:focus {
 }
 
 .divOne{
-    margin: 0px auto;
+    margin: 0px auto 15px auto;
 }
 .divTwo{
     margin: 0px auto;
@@ -33,7 +33,7 @@ button:focus {
 }
 .inputPassword{
     border: none;
-    padding: 12px;
+    padding: 14px;
     max-width: 100%;
     width: 370px;
     border-radius: 5px;
