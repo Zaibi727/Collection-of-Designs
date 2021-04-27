@@ -24,7 +24,7 @@ button:focus {
 }
 .inputEmail{
     border: none;
-    padding: 12px;
+    padding: 12px 12px 12px 52px ;
     max-width: 100%;
     width: 370px;
     border-radius: 5px;
@@ -37,15 +37,22 @@ button:focus {
     max-width: 100%;
     width: 370px;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .labelPassword{
     font-weight: 600;
     margin: 20px auto 7px auto;
 }
 .icon{
-    position: absolute;
     margin-left: -50px;
-    margin-top: 3px;
+    margin-top: 0px;
+    font-size: 30px;
+    color: rgb(172, 170, 170);
+}
+.Lefticon{
+    margin-left: -350px;
+    margin-top: 0px;
     font-size: 30px;
     color: rgb(172, 170, 170);
 }

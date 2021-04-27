@@ -15,14 +15,14 @@ import styles from './abstract.module.css';
                    value={value1}
                    onChange={onChange}
                    />
+                   <span className={styles.Lefticon}>{ Icon ? <Icon/>: {Icon} }</span>
             </div>
         
             <div className={styles.divTwo}>
                 <label className={styles.labelPassword}>{label2}</label><br></br>
               <div className={styles.passwordInputContainer}>
                  <input 
-                  type={type2}  
-                  maxlength="8" 
+                  type={type2} 
                   className={styles.inputPassword}
                   value={value2}
                   onChange={onChange}
