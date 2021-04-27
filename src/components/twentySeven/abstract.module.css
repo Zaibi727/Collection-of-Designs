@@ -13,31 +13,39 @@ button:focus {
 }
 
 .divOne{
-    margin: 20px auto;
+    margin: 0px auto;
 }
 .divTwo{
-    margin: 20px auto;
+    margin: 0px auto;
 }
 .labelEmail{
     font-weight: 600;
+    margin: 3px auto;
 }
 .inputEmail{
     border: none;
-    padding: 7px;
+    padding: 12px;
     max-width: 100%;
     width: 370px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .inputPassword{
     border: none;
-    padding: 7px;
+    padding: 12px;
     max-width: 100%;
     width: 370px;
+    border-radius: 5px;
 }
 .labelPassword{
     font-weight: 600;
+    margin: 20px auto 3px auto;
 }
 .icon{
     position: absolute;
-    margin-left: -30px;
+    margin-left: -50px;
     margin-top: 10px;
+    font-size: 30px;
+    color: rgb(172, 170, 170);
 }
