@@ -26,7 +26,7 @@ import styles from './abstract.module.css';
                   value={value2}
                   onChange={onChange}
                 />
-                  Icon={ Icon ? <Icon/>: {Icon} }
+                  <span>{ Icon ? <Icon/>: {Icon} }</span>
               </div>
               
             </div>
