@@ -22,19 +22,15 @@ class AB extends Component {
         return ( 
             <div className={styles.wrapper}>
                  <AbstractInput 
-                    type="email" 
-                    label="Email"
-                    value={this.state.email}
+                    type1="email" 
+                    label1="Email"
+                    value1={this.state.email}
                     onChange={this.handleChange}
+                    type2="password"  
+                    label2="Password" 
+                    value2={this.state.password}
+                    Icon= { <AiOutlineEyeInvisible /> }
                     />
-
-                 <AbstractInput 
-                    type="password"  
-                    label="Password" 
-                    value={this.state.password}
-                    onChange={this.handleChange}
-                    Icon= {<AiOutlineEyeInvisible/>}
-                 />
             </div>
          );
     }
