@@ -19,6 +19,7 @@ class AB extends Component {
 
     render() { 
 
+
         return ( 
             <div className={styles.wrapper}>
                  <AbstractInput 
@@ -29,7 +30,7 @@ class AB extends Component {
                     type2="password"  
                     label2="Password" 
                     value2={this.state.password}
-                    Icon= { <AiOutlineEyeInvisible /> }
+                    Icon= {AiOutlineEyeInvisible}
                     />
             </div>
          );
