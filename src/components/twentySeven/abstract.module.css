@@ -45,12 +45,14 @@ button:focus {
     margin: 20px auto 7px auto;
 }
 .icon{
+    position: absolute;
     margin-left: -50px;
     margin-top: 10px;
     font-size: 30px;
     color: rgb(172, 170, 170);
 }
 .Lefticon{
+    position: absolute;
     margin-left: -350px;
     margin-top: 10px;
     font-size: 30px;
