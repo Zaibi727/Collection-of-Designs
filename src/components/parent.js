@@ -18,11 +18,11 @@ import './dropDown.css';
 //import Walletr from './twentyTwo/wallet/walletRender';
 //import Sources from './twentyTwo/source/sourceRender';
 //import Modalf from './twentyFour/modalOne';
-import Pab from './twentySix/Pab';
+//import Pab from './twentySix/Pab';
 //import Button from './twentySix/btnBoot';
 //import Twob from './twentySix/twoBtn';
 //import AbstractButton from './AbstactComponents/AbstractButton/button';
-
+import AB from './twentySeven/aB';
 
 class Parent extends Component {
 
@@ -32,7 +32,7 @@ class Parent extends Component {
         return ( 
             <div>
               
-              <Pab />
+              <AB />
            </div>
          );
     }

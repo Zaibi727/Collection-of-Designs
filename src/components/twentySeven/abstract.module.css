@@ -1,0 +1,43 @@
+.wrapper{
+    margin: 30px auto;
+    width: 500px;
+    text-align: left;
+    background-color: lavender;
+    padding: 50px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.divOne{
+    margin: 20px auto;
+}
+.divTwo{
+    margin: 20px auto;
+}
+.labelEmail{
+    font-weight: 600;
+}
+.inputEmail{
+    border: none;
+    padding: 7px;
+    max-width: 100%;
+    width: 370px;
+}
+.inputPassword{
+    border: none;
+    padding: 7px;
+    max-width: 100%;
+    width: 370px;
+}
+.labelPassword{
+    font-weight: 600;
+}
+.icon{
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 10px;
+}
