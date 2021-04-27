@@ -27,14 +27,14 @@ class AB extends Component {
                  <AbstractInput 
                     type="email" 
                     label="Email" 
-                    value={this.state.value}
+                    value={this.state.email}
                     onChange={this.handleChange}
                     />
 
                  <AbstractInput 
                     type="password"  
                     label="Password" 
-                    value={this.state.value}
+                    value={this.state.password}
                     onChange={this.handleChange}
                  />
             </div>
