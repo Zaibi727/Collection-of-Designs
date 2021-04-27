@@ -20,7 +20,7 @@ button:focus {
 }
 .labelEmail{
     font-weight: 600;
-    margin: 3px auto;
+    margin: 7px auto;
 }
 .inputEmail{
     border: none;
@@ -40,7 +40,7 @@ button:focus {
 }
 .labelPassword{
     font-weight: 600;
-    margin: 20px auto 3px auto;
+    margin: 20px auto 7px auto;
 }
 .icon{
     position: absolute;
