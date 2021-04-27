@@ -7,7 +7,7 @@ import { AiOutlineEyeInvisible } from 'react-icons/ai';
 
 class AB extends Component {
     state = {
-        value: ''
+   value: ''
                 
        }
      
@@ -19,14 +19,11 @@ class AB extends Component {
 
     render() { 
 
-    const iconRight =  <AiOutlineEyeInvisible/>;
-
-
         return ( 
             <div className={styles.wrapper}>
                  <AbstractInput 
                     type="email" 
-                    label="Email" 
+                    label="Email"
                     value={this.state.email}
                     onChange={this.handleChange}
                     />
@@ -36,6 +33,7 @@ class AB extends Component {
                     label="Password" 
                     value={this.state.password}
                     onChange={this.handleChange}
+                    Icon= {<AiOutlineEyeInvisible/>}
                  />
             </div>
          );

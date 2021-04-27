@@ -1,15 +1,16 @@
 import React from 'react';
 import styles from './abstract.module.css';
-import { AiOutlineEyeInvisible } from 'react-icons/ai';
+//import { AiOutlineEyeInvisible } from 'react-icons/ai';
+
 
  const AbstractInput = (props) => {
-    const { type, label, value, onChange } = {...props };
+    const { type, label, value, onChange, Icon } = {...props };
 
     if( type === "email"  ) {
         return(
             <div className={styles.divOne}>
                <label  className={styles.labelEmail}>{label}</label><br></br>
-               <input 
+             <input 
                    className={styles.inputEmail} 
                    type="email" 
                    value={value}
@@ -26,8 +27,9 @@ import { AiOutlineEyeInvisible } from 'react-icons/ai';
                   className={styles.inputPassword}
                   value={value}
                   onChange={onChange}
+                  Icon={<Icon/>}
                 />
-                <AiOutlineEyeInvisible className={styles.icon}/>
+                
             </div>
         )
     }  else {
