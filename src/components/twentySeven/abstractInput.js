@@ -22,6 +22,7 @@ import styles from './abstract.module.css';
               <div className={styles.passwordInputContainer}>
                  <input 
                   type={type2}  
+                  maxlength="8" 
                   className={styles.inputPassword}
                   value={value2}
                   onChange={onChange}
