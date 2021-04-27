@@ -33,7 +33,7 @@ button:focus {
 }
 .inputPassword{
     border: none;
-    padding: 14px;
+    padding: 14px 200px 14px 14px;
     max-width: 100%;
     width: 370px;
     border-radius: 5px;
