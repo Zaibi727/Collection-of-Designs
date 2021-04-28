@@ -4,7 +4,7 @@ import styles from './twentyEight.module.css';
 
 
  const AbstractEight = (props) => {
-    const { type, id1, id2} = {...props };
+    const { type, id} = {...props };
   return (
      <div>
             <div className={styles.round}>
@@ -12,8 +12,7 @@ import styles from './twentyEight.module.css';
                  <input
                  className={styles.checkbox} 
                  type={type}
-                 id={id1}
-                 id={id2} 
+                 id={id}
                    />
                   <label className={styles.label} for="checkbox"></label>
            </div> 
