@@ -17,8 +17,7 @@ class FlexParent extends Component {
                         <div className={styles.div11}>
                            <AbstractEight 
                            type="checkbox"
-                           for="checkbox"
-                           id="checkbox"
+                           id1="checkbox"
                             />
                         </div>
                         <div className={styles.div12}>
@@ -53,9 +52,7 @@ class FlexParent extends Component {
                         <div className={styles.div11}>
                            <AbstractEight 
                            type="checkbox"
-                           name="checkbox"
-                           id="checkbox"
-
+                           id2="checkbox"
                             />
                         </div>
                         <div className={styles.div12}>
