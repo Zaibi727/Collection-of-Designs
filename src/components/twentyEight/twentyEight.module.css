@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.circleRadio{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border: 1px solid #cdcdd3;
+}
+.circleRadio:checked:after{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 8px solid rgb(0, 0, 0);
+}
+.whole{
+    background-color: lightsalmon;
+    padding: 50px;
+}
+.wrapper{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 550px;
+    margin: 0px auto;
+}
+.label1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div11{
+    margin-right: 20px;
+}
+.div12{
+    margin-right: 20px;
+}
+.div12 button{
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #ececf0;
+}
+.div12 button:hover{
+    border: 2px solid black;
+}
+.div13{
+    text-align: left;
+}
+.p1{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.p2{
+
+    margin-top: -8px;
+    color:#c0bfc3;
+    font-size: 15px;
+}
+
+
+
+/*--div-1--*/
+
+
+
+.div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div21{
+    text-align: left;
+}
+.div22{
+    margin-left: 50px;
+}
+.div22 button{
+    border: none;
+    background-color: transparent;
+    color: #ababab;
+    font-size: 30px;
+}
+.hand{
+    font-size: 30px;
+}

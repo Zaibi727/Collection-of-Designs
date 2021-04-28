@@ -22,7 +22,8 @@ import './dropDown.css';
 //import Button from './twentySix/btnBoot';
 //import Twob from './twentySix/twoBtn';
 //import AbstractButton from './AbstactComponents/AbstractButton/button';
-import AB from './twentySeven/aB';
+//import AB from './twentySeven/aB';
+import FlexParent from './twentyEight/flexParent';
 
 class Parent extends Component {
 
@@ -32,7 +33,7 @@ class Parent extends Component {
         return ( 
             <div>
               
-              <AB />
+              <FlexParent/>
            </div>
          );
     }
