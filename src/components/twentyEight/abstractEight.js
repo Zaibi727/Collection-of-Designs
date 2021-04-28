@@ -4,15 +4,18 @@ import styles from './twentyEight.module.css';
 
 
  const AbstractEight = (props) => {
-    const { type, name } = {...props };
+    const { type, name, id} = {...props };
   return (
      <div>
-            <div className={styles.divOne}>
-                 <input 
+            <div className={styles.round}>
+               
+                 <input
+                 className={styles.checkbox} 
                  type={type}
-                 name={name}
-                   className={styles.circleRadio} 
+                 name={name} 
+                 id={id}
                    />
+                   <label className={styles.label} for={id}></label>
            </div> 
      </div>      
   )  
