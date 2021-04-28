@@ -15,8 +15,8 @@ button:focus {
     border: 1px solid #cdcdd3;
 }
 .circleRadio:checked:after{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     top: 0px;
     left: 0px;
