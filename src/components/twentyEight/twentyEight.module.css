@@ -60,9 +60,7 @@ button:focus {
     background-color: white;
     border: 1px solid #ececf0;
 }
-.div12 button:hover{
-    border: 2px solid black;
-}
+
 .div13{
     text-align: left;
 }
