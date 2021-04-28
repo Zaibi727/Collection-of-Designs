@@ -14,7 +14,7 @@ import styles from './twentyEight.module.css';
                  type={type}
                  id={id}
                    />
-                  <label className={styles.label} for="checkbox"></label>
+                  <label className={styles.label} for={id}></label>
            </div> 
      </div>      
   )  
