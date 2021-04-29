@@ -11,19 +11,20 @@ const Mrender = ({src}) => {
               <img
               className={styles.image} 
               src={src} 
-
+              alt="nature-landscape"
               />
-              <div className={styles.contentWrapper}>
-                  <div className={styles.div1}>
-                      <p><span  className={styles.span}>  <BsArrowsFullscreen/></span>Open in full view</p>
-                      <p><span  className={styles.span}><BsDownload /></span> Download content</p>
-                      <p><span  className={styles.span}><ImShare /></span>Send to Ads manager</p>
-                  </div>
-                  <div className={styles.div2}>
-                      <p> <span className={styles.span}><img className={styles.prof} src="./images/profile.jpg" /></span>Ronald Warren</p>
-                  </div>
-              </div>
-          </div>
+                  <div className={styles.contentWrapper}>
+                            <div className={styles.div1}>
+                              <p><span  className={styles.span}>  <BsArrowsFullscreen/></span>Open in full view</p>
+                              <p><span  className={styles.span}><BsDownload /></span> Download content</p>
+                              <p><span  className={styles.span}><ImShare /></span>Send to Ads manager</p>
+                             </div>
+                             <div className={styles.div2}>
+                               <p> <span className={styles.span}><img className={styles.prof} src="./images/profile.jpg" /></span>Ronald Warren</p>
+                            </div>
+                 </div>
+            
+     </div>
     );
   };
  
