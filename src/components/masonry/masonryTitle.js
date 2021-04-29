@@ -20,7 +20,7 @@ const Mrender = ({src}) => {
                               <p><span  className={styles.span}><ImShare /></span>Send to Ads manager</p>
                              </div>
                              <div className={styles.div2}>
-                               <p> <span className={styles.span}><img className={styles.prof} src="./images/profile.jpg" /></span>Ronald Warren</p>
+                               <p className={styles.alignment}> <span className={styles.span}><img className={styles.prof} src="./images/profile.jpg" /></span>Ronald Warren</p>
                             </div>
                  </div>
             
