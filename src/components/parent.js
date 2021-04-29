@@ -23,7 +23,9 @@ import './dropDown.css';
 //import Twob from './twentySix/twoBtn';
 //import AbstractButton from './AbstactComponents/AbstractButton/button';
 //import AB from './twentySeven/aB';
-import FlexParent from './twentyEight/flexParent';
+//import FlexParent from './twentyEight/flexParent';
+import Mmasonry from './masonry/masonryPractice';
+
 
 class Parent extends Component {
 
@@ -33,7 +35,7 @@ class Parent extends Component {
         return ( 
             <div>
               
-              <FlexParent/>
+              <Mmasonry/>
            </div>
          );
     }
