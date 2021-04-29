@@ -1,27 +1,26 @@
 import styles from './masonry.module.css';
 import React, { Component } from 'react';
 import Masonry from "react-responsive-masonry";
-import MRender from './masonryTitle';
+import Mrender from './masonryTitle';
 
 
 let images = [
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
-    "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
-    "https://picsum.photos/300/300?image=206",
+    "https://picsum.photos/200/300?image=1050",
+    "https://picsum.photos/200/300?image=1050",
+    "https://picsum.photos/200/300?image=1050",
+    "https://picsum.photos/200/300?image=1050",
+    "https://picsum.photos/200/300?image=1050",
+    "https://picsum.photos/200/300?image=1050",
+    "https://picsum.photos/200/300?image=1050",
+    "https://picsum.photos/200/300?image=1050",
 ]
 
 
@@ -37,17 +36,14 @@ class Mmasonry extends Component {
               className={styles.masonryGrid}
               columnClassName={styles.columnGrid}
               >
-                {images.map((image, i) => (
-                      <div className={styles.dddd}>
-                      <img
-                        className={styles.img}
-                            key={i}
-                            src={image}
-                            style={{width: "100%", display: "block"}}
-                            alt=""
-                        />
-                         </div>
-                    ))}
+                {images.map((image) => {
+                  return (
+                    <Mrender 
+                      src={image}
+                     />
+                  )
+                })}
+
             </Masonry>
                 
          </div>

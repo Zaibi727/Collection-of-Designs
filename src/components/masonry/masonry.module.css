@@ -1,18 +1,73 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+}
+.Mrender{
+    padding: 4px;
 }
 .image{
-    border-radius: 20px;
-    display: block;
     width: 100%;
-}
-.wrapper{
-   padding: 10px;
-}
-.masonryGrid{
-    padding: 10px;
-}
-.img{
+    display: block;
     border-radius: 20px;
+}
+.contentWrapper{
+    position: absolute;
+    margin-top: -250px;
+    opacity: -1;
+}
+.contentWrapper:hover{
+    opacity: 1;
+}
+.div1{
+    margin: -50px auto 0px 30px;
+}
+.div2{
+    margin-top: 130px;
+}
+.div1 p{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.div2 p{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.span{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.prof{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1024px){
+    
+    .contentWrapper{
+        position: absolute;
+        margin-top: -300px;
+        opacity: -1;
+    }.div1{
+        margin: -50px auto 0px -150px;
+    }
+    .div2{
+        margin-top: 0px;
+    }
+    .div1 p{
+        visibility: hidden;
+    }
+    .div2 p{
+        visibility: hidden;
+    }
+    .span{
+        visibility: visible !important;
+        margin-right: 12px;
+        font-size: 20px;
+    }
+    .prof{
+        visibility: hidden;
+    }
 }
