@@ -1,0 +1,17 @@
+.wrapper{
+   padding: 10px;
+}
+.player{
+    width: 200px;
+    max-width: 100%;
+    max-height: 200px;
+    height: 100%;
+
+}
+.oy{
+    width: 100%;
+    overflow: hidden;
+   display: grid;
+   grid-template-columns: 20% 20% 20% 20% 20%;
+   gap: calc(20px - 100%);
+}

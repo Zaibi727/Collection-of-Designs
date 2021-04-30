@@ -24,8 +24,9 @@ import './dropDown.css';
 //import AbstractButton from './AbstactComponents/AbstractButton/button';
 //import AB from './twentySeven/aB';
 //import FlexParent from './twentyEight/flexParent';
-import Mmasonry from './masonry/masonryPractice';
-
+//import Mmasonry from './masonry/masonryPractice';
+import  MainPlayer from './thirtyApril/mainPlayer';
+//import SocialPlayer from './thirtyApril/socialPlayer';
 
 class Parent extends Component {
 
@@ -35,7 +36,7 @@ class Parent extends Component {
         return ( 
             <div>
               
-              <Mmasonry/>
+              <MainPlayer/>
            </div>
          );
     }
