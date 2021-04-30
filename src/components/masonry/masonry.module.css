@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 
 }
 .now{
@@ -21,15 +22,16 @@
 }
 .MrenderVideo{
     position: relative;
-    max-width: 262px;
+    max-width: 100%;
     width: 100%;
-    border-radius: 200px;
+    border-radius: 20px;
   
 }
 .video{
-    max-width: 260px;
-    width: 100%;
+    max-width: 100%;
+    width: 260px;
     max-height: 50%;
+    border-radius: 20px;
 }
 .contentWrapperVideo{
     flex-direction: column;
@@ -97,6 +99,9 @@
 .alignment{
     display: flex;
     align-items: center;
+}
+.oy{
+    margin: 5px;
 }
 
 

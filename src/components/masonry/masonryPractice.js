@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import Mrender from './masonryTitle';
 import Video from './videoMasonry';
-
+import MasonryPlayer from './reactMasplayer';
 
 
 
@@ -47,15 +47,26 @@ class Mmasonry extends Component {
               className={styles.masonryGrid}
               columnClassName={styles.columnGrid}
               >
+              
                 {images.map((image) => {
                   return (
                     <Mrender 
                       src={image}
-                      href={image}
                      />
                   )
                 })}
-                <Video />
+                {images.map((image) => {
+                  return (
+                    <Mrender 
+                      src={image}
+                     />
+                  )
+                })}
+                <MasonryPlayer 
+                    />
+                    <Video
+                    />
+               
             </Masonry>
             </ResponsiveMasonry>
           

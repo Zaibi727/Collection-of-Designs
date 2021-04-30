@@ -3,11 +3,12 @@ import styles from './masonry.module.css';
 import { BsArrowsFullscreen} from "react-icons/bs";
 import { BsDownload} from "react-icons/bs";
 import { ImShare } from "react-icons/im";
-
-
+import Video from './videoMasonry';
+import MasonryPlayer from './reactMasplayer';
 
 const Mrender = ({src}) => {
     return (
+        <div>
       <div className={styles.Mrender}>
               <img
               className={styles.image} 
@@ -26,6 +27,7 @@ const Mrender = ({src}) => {
                  </div>
 
             
+     </div>
      </div>
     );
   };
