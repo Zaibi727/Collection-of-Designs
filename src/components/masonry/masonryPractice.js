@@ -2,6 +2,7 @@ import styles from './masonry.module.css';
 import React, { Component } from 'react';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import Mrender from './masonryTitle';
+import Video from './videoMasonry';
 
 
 
@@ -33,10 +34,12 @@ let images = [
 
 
 
+
 class Mmasonry extends Component {
     render() { 
         return ( 
-            <div>
+            <div className={styles.now}>
+           
             <ResponsiveMasonry
                 columnsCountBreakPoints={{350: 1, 750: 2, 900: 3, 1200: 5}}
             >
@@ -48,13 +51,14 @@ class Mmasonry extends Component {
                   return (
                     <Mrender 
                       src={image}
+                      href={image}
                      />
-  
                   )
                 })}
-
+                <Video />
             </Masonry>
             </ResponsiveMasonry>
+          
          </div>
          );
     }
