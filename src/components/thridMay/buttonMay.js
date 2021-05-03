@@ -8,6 +8,7 @@ class ButtonMay extends Component {
     state = {  }
     render() { 
         return ( 
+            <div className={styles.wholeWraper}>
             <div className={styles.buttonWrapper}>
                <div>
                     <ButtonMayAbstract
@@ -19,6 +20,8 @@ class ButtonMay extends Component {
                    <p className={styles.p2}>Talents</p>
                </div>
             </div>
+            </div>
+
          );
     }
 }
