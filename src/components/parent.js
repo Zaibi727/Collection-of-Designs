@@ -27,8 +27,8 @@ import './dropDown.css';
 //import Mmasonry from './masonry/masonryPractice';
 //import  MainPlayer from './thirtyApril/mainPlayer';
 //import SocialPlayer from './thirtyApril/socialPlayer';
-import MainGallery from './thirtyApril/mainGallery';
-
+//import MainGallery from './thirtyApril/mainGallery';
+import Range from './thridMay/range';
 
 class Parent extends Component {
 
@@ -37,7 +37,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-             <MainGallery />
+              <Range />
            </div>
          );
     }
