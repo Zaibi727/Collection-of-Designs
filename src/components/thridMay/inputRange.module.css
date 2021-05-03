@@ -1,5 +1,5 @@
 .wrapper{
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .wrapper section{
     margin: 100px auto;
@@ -21,7 +21,12 @@
       background: rgb(0, 0, 0) !important;
       border-color: rgb(0, 0, 0) !important;
   } 
-  
+  .label{
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+  }
   
   
 
