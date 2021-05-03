@@ -16,9 +16,11 @@
     width: 300px;
   }
 
-
-  
-
+  .input-range__track--active,
+  .input-range__slider {
+      background: rgb(0, 0, 0) !important;
+      border-color: rgb(0, 0, 0) !important;
+  } 
   
   
   

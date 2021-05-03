@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
 import styles from './inputRange.module.css';
-
+import styled from 'styled-components';
 
 class FirstRange extends Component {
  
@@ -20,6 +20,7 @@ class FirstRange extends Component {
             <div className={styles.wrapper}>
             
                <section>
+               <RangeSliderContainer color="black">
                     <InputRange 
                     classNames={styles.first}
                         maxValue={1000}
@@ -28,6 +29,7 @@ class FirstRange extends Component {
                         value={this.state.value}
                         onChange={value => this.setState({ value })}
                     />
+                     </RangeSliderContainer>
                </section>
             </div>
          );
@@ -35,3 +37,11 @@ class FirstRange extends Component {
 }
  
 export default FirstRange;
+
+const RangeSliderContainer = styled.div`
+  .input-range__track--active,
+  .input-range__slider {
+    background: ${props => props.color}; 
+    border-color: ${props => props.color};
+  }
+`;
