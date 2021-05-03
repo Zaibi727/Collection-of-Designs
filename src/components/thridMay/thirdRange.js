@@ -10,7 +10,7 @@ class ThirdRange extends Component {
         super(props);
      
         this.state = {
-          value: { min: 400, max: 1000 },
+          value: { min: 700, max: 1000 },
         };
       }
 

@@ -10,7 +10,7 @@ class FirstRange extends Component {
         super(props);
      
         this.state = {
-          value: { min: 400, max: 1000 },
+          value: { min: 0, max: 1000 },
         };
       }
 
