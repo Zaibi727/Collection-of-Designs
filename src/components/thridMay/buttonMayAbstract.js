@@ -6,7 +6,7 @@ const ButtonMayAbstract = (props) => {
     const {Icon } = {...props };
     return(
         <div>
-            <h4 className={styles.usersIcon}>{ Icon ? <Icon/>: {Icon} }</h4>
+            <button className={styles.usersIcon}>{ Icon ? <Icon/>: {Icon} }</button>
         </div>
     )
 }
