@@ -34,18 +34,18 @@
   
   .wholeWraper{
     padding: 50px;
-    background-color: lightslategray;
+    background-color: rgb(198, 199, 201);
 }
 .buttonWrapper{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 400px;
-    padding: 50px;
-    border-radius: 20px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 200px;
+      padding: 20px 10px;
+      border-radius: 20px;
+      margin: 0 auto;
+      background-color: rgb(255, 255, 255);
 }
 .usersIcon{
     background-color: #e9e9e9;
