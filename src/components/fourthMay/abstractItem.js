@@ -1,12 +1,18 @@
 import React from 'react';
+import styles from './fourtMay.module.css';
 
-
-const AbstarctTabItem = ({title}) => {
+const AbstarctTabItem = (props) => {
+    const {title} = {...props };
     return(
         <div>
             <nav>
                 <ul>
-                  <li>{title}</li>
+                  <li>
+                    <a className={styles.a}>
+                    {title}
+                    </a>
+   
+                  </li>
                 </ul>
             </nav>
         </div>
