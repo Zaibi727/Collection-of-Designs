@@ -3,7 +3,8 @@ import AbstarctTabItem from './abstractItem';
 import styles from './fourtMay.module.css';
 
 class AbstractTabContainer extends Component {
-    state = {  }
+  
+
     render() { 
         return ( 
             <div className={styles.wrapper}>
