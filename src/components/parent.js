@@ -29,8 +29,8 @@ import './dropDown.css';
 //import SocialPlayer from './thirtyApril/socialPlayer';
 //import MainGallery from './thirtyApril/mainGallery';
 //import Range from './thridMay/range';
-import ButtonMay from './thridMay/buttonMay';
-
+//import ButtonMay from './thridMay/buttonMay';
+import AbstractTabContainer from './fourthMay/abstractContainer';
 
 class Parent extends Component {
 
@@ -39,7 +39,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-               <ButtonMay />
+                <AbstractTabContainer />
            </div>
          );
     }
