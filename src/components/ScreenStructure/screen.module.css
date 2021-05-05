@@ -7,18 +7,18 @@
 background-color: rgb(187, 255, 0);
 width: 100%;
 max-width: 10%;
-height: auto;
+height: 100vh;
 }
 .sideNavBar{
    background-color: crimson;
    width: 100%;
    max-width: 20%;
-   height: auto;
+   height: 100vh;
 }
 .displayArea{
     background-color: rgb(20, 220, 87);
     width: 100%;
-    height: auto;
+    height: 100vh;
 } 
 .topHeader{
     width: 100%;
