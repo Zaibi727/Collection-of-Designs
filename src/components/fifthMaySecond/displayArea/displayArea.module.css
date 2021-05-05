@@ -1,0 +1,156 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.displayAreaWrapper{
+   background-color: rgb(221, 197, 188);
+   margin-left: -130px;
+}
+.firstHeaderWrapper{
+    background-color: darkcyan;
+}
+.firstFlex{
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settingHead{
+    font-weight: 500;
+    font-size: 20px;
+}
+.settingBtn1{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+.settingBtn2{
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.secondFlex{
+    display: flex;
+    list-style: none;
+    padding-left: 50px;
+}
+.secondFlex li{
+    margin-right: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.secondFlex li:active{
+    border-bottom: 2px solid black;
+}
+
+/*--fisrt header--*/
+
+.secondHeadeDiv1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.secondHeaderP1{
+    font-weight: 700;
+}
+.secondHeaderBtn{
+    border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+}
+/*--secondheaer--*/
+.tableRowWrapper{
+    padding: 20px;
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+}
+.name{
+    margin-bottom: -5px;
+    font-weight: 500;
+}
+.email{
+    margin-bottom: -5px;
+    font-size: 14px;
+    color: gray;
+}
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    padding: 0px 10px;
+}
+
+.dataRow td{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.personalDetial{
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    text-align: left;
+}
+.iconTable span{
+   margin-right: 15px;
+}
+.linkedin{
+    color: rgb(91, 91, 233);
+}
+#project {
+    background-color: lightgrey;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;    
+}
+.btn{
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: brown;
+}
+.menuBtn{
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    color: gray;
+}
+
+
+/*--table rows--*/
+
+
+.headRow{
+width: 90%;
+display: flex;
+justify-content: space-between;
+
+  }
+  .headrow th{
+      padding:  15px;
+    }
+ 
+    .contact{
+        margin-left: 270px;
+    }
+    .user{
+        margin-left: 30px;
+    }

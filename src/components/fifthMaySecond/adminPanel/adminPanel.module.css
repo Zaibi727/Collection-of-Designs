@@ -1,0 +1,46 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.matesImg{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.adminPanelWrapper{
+    text-align: left;
+    margin-left: -70px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ulNav{
+    list-style: none;
+    margin-top: -40px;
+}
+.ulNav li{
+    margin-bottom: 10px;
+    color:  gray;
+    cursor: pointer;
+}
+.ulNav li:hover{
+    color: black;
+}
+.ulNav li span{
+    margin-right: 20px;
+    font-size: 20px;  
+}
+.ulNav li a{
+    font-size: 14px;
+   font-weight: 500;
+}
+.sqHead{
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+.subP{
+    color: gray;
+    font-size: 14px;
+}

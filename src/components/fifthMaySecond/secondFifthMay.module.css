@@ -1,0 +1,4 @@
+.containerWrapper{
+    display: grid;
+    grid-template-columns: 10% 20% 70%;
+}
