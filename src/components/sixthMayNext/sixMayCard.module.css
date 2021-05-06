@@ -6,6 +6,8 @@
 .wholeWrapper{
     background-color: #b5c6f0;
     margin: 0 auto;
+    width: 100%;
+    height: 100vh;
     
 }
 .containerWrapper{ 
