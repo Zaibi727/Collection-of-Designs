@@ -46,7 +46,7 @@ class SingleCardMay extends Component {
 
                 <div className={styles.containDiv2}>
                    <AbstractSingleCard 
-                       src="./images/team2-7.jpg"
+                       src="./images/profile.jpg"
                        name="Maria Voronia"
                        address="Ukranine . Artist"
                        Icon1={ FiUsers }
@@ -58,7 +58,7 @@ class SingleCardMay extends Component {
 
                 <div className={styles.containDiv3} >
                    <AbstractSingleCard 
-                       src="./images/profile-4.jpg"
+                        src="./images/profile.jpg"
                        name="Jeremy Williams"
                        address="England . Photographer"
                        Icon1={ FiUsers }
