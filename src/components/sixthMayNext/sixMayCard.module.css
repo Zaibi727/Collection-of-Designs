@@ -19,12 +19,12 @@
 .abstractWrapper{
  text-align: left;
 width: 100%;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
 }
 .abstarctDiv1{
     max-width: 100%;
     width: 220px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .abstarctImg{
     width: 250px;
