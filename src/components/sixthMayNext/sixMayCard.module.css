@@ -25,6 +25,8 @@
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .abstarctImg{
     width: 100%;
