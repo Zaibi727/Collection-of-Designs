@@ -92,7 +92,6 @@
 
 .containDiv1{
     width: 100%; 
-    max-width: 350px;
     height: auto; 
     position: relative;
     margin: 0px 10px;
@@ -125,13 +124,11 @@
 
 .containDiv2{
     width: 100%;
-    max-width: 350px;
     height: auto; 
     margin: 0px 10px;
 }
 .containDiv3{
     width: 100%;
-    max-width: 350px;
     height: auto;
     margin: 0px 10px;
 }
