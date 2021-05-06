@@ -33,8 +33,8 @@ import './dropDown.css';
 //import AbstractTabContainer from './fourthMay/abstractContainer';
 //import TabContainer from './fifthMay/fifthContainer';
 //import Secondififth from './fifthMaySecond/containerSecondFitfthMay';
-import ScreenStructure from './ScreenStructure/screenStructure';
-
+//import ScreenStructure from './ScreenStructure/screenStructure';
+import SixthContainer from './sixthMay/sixthContainer';
 
 class Parent extends Component {
 
@@ -43,7 +43,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-               <ScreenStructure />
+                <SixthContainer />
            </div>
          );
     }
