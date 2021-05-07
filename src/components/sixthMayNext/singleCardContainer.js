@@ -20,14 +20,13 @@ class SingleCardMay extends Component {
     
       boxClick = (e) => {
         this.setState({
-          bgColor: "HoneyDew"
+          bgColor: "red"
         })
       }
 
 
     render() { 
         return ( 
-            <div className={styles.wholeWrapper}>
             <div className={styles.containerWrapper}>
                 <div className={styles.containDiv1}>
                     <AbstractSingleCard 
@@ -38,6 +37,8 @@ class SingleCardMay extends Component {
                        followers="24.5k"
                        Icon2={ AiOutlineInteraction }
                        actions='3.42%'
+                       style={{backgroundColor: this.state.bgColor}}
+                       onClick={this.boxClick}
                    />
                    <div className={styles.dpDiv}>
                      <button className={styles.dropDown}><BiDotsHorizontal /></button> 
@@ -53,7 +54,12 @@ class SingleCardMay extends Component {
                        followers="154k"
                        Icon2={ GiElectric }
                        actions='2.22%'
+                       style={{backgroundColor: this.state.bgColor}}
+                       onClick={this.boxClick}
                    />
+                    <div className={styles.dpDiv}>
+                     <button className={styles.dropDown}><BiDotsHorizontal /></button> 
+                   </div>
                 </div>
 
                 <div className={styles.containDiv3} >
@@ -69,8 +75,10 @@ class SingleCardMay extends Component {
                        onClick={this.boxClick}
                        
                    />
+                    <div className={styles.dpDiv}>
+                     <button className={styles.dropDown}><BiDotsHorizontal /></button> 
+                   </div>
                 </div>
-            </div>
             </div>
          );
     }
