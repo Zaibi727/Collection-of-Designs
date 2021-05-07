@@ -20,7 +20,7 @@ class SingleCardMay extends Component {
     
       boxClick = (e) => {
         this.setState({
-          bgColor: "red"
+          bgColor: "HoneyDew"
         })
       }
 
