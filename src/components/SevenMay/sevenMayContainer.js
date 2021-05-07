@@ -11,7 +11,7 @@ class SevenMayContainer extends Component {
     render() { 
         return ( 
             <div className={styles.sevenMayWrapper}>
-                <h5>System settings</h5>
+                <h3>System settings</h3>
                 <div className={styles.div1}><EnglishRender /></div>
                 <div className={styles.div2}><EuroRender /></div>
                 <div className={styles.div3}><KilometerRender /></div>
