@@ -12,7 +12,7 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
+    width: 54px;
     height: 30px;
     margin-top: 3px;
   }
@@ -42,7 +42,7 @@
     content: "";
     height: 23px;
     width: 23px;
-    left: 0px;
+    left: 1px;
     bottom: 4px;
     background-color: white;
     -webkit-transition: .4s;
