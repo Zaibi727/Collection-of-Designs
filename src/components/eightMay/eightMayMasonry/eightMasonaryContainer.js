@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Masonry from "react-responsive-masonry"
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import styles from './eightMasonry.module.css';
 //import EightImage from './eightMasonryAbstract';
 
@@ -8,16 +8,20 @@ class EightMasonaryContainer extends Component {
     render() { 
         return (
             <div className={styles.egihtMasonCon}>
-               <Masonry columnsCount={3} gutter="10px">
+             <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 2, 750: 2, 900: 3}}
+            >
+               <Masonry gutter="10px">
                {images.map((image, i) => (
                     <img
-                    className={styles.iimg}
+                        className={styles.iimg}
                         key={i}
                         src={image}
                         style={{width: "100%", display: "block"}}
                     />
                 ))}
             </Masonry>
+            </ResponsiveMasonry>
             </div>
          );
     }
