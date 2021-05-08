@@ -9,7 +9,7 @@ class EightMasonaryContainer extends Component {
         return (
             <div className={styles.egihtMasonCon}>
              <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 2, 750: 2, 900: 3}}
+                columnsCountBreakPoints={{350: 2, 750: 2, 900: 2}}
             >
                <Masonry gutter="10px">
                {images.map((image, i) => (
