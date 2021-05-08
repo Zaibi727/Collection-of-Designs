@@ -1,0 +1,12 @@
+.wrapper{
+   margin: 0 auto;
+   padding: 20px;
+   background-color: tomato;
+}
+.div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 400px;
+    margin: 0 auto;
+   border-bottom: 2px solid black;
+}
