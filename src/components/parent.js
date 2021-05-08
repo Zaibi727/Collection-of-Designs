@@ -36,7 +36,9 @@ import './dropDown.css';
 //import ScreenStructure from './ScreenStructure/screenStructure';
 //import SixthContainer from './sixthMay/sixthContainer';
 //import SingleCardMay from './sixthMayNext/singleCardContainer';
-import SevenMayContainer from './SevenMay/sevenMayContainer';
+//import SevenMayContainer from './SevenMay/sevenMayContainer';
+import EightMayContainer from './eightMay/eightContainer';
+
 
 class Parent extends Component {
 
@@ -45,7 +47,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-              <SevenMayContainer />
+              <EightMayContainer />
            </div>
          );
     }
