@@ -7,6 +7,7 @@ class EightMayContainer extends Component {
     state = {  }
     render() { 
         return ( 
+            <div className={styles.doubble}>
             <div className={styles.containerWrapper}>
                 <h5>Email notifications</h5>
                  <div className={styles.containerdiv1}>
@@ -29,6 +30,7 @@ class EightMayContainer extends Component {
                        label='New subscriptions'
                    />
                  </div>
+            </div>
             </div>
          );
     }

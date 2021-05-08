@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
 /* The switch - the box around the slider */
 .wholeLabel{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 320px;
     margin: 0 auto;
 }
 .wholeLabel p{
@@ -14,7 +18,7 @@
     display: inline-block;
     width: 54px;
     height: 30px;
-    margin-top: 3px;
+    margin-bottom: 10px;
   }
   
   /* Hide default HTML checkbox */
@@ -79,19 +83,25 @@
   }
 
   /*--below is container--*/
-
+.doubble{
+    background-color: honeydew;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
   .containerWrapper{
+      background-color: white;
       text-align: left;
-      width: 300px;
-      margin: 50px auto;
+      width: 370px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 20px;
   }
   .containerWrapper h5{
     margin-bottom: 20px;
-    font-size: 20px;
     font-weight: 500;
   }
   .containerdiv1{
     margin-bottom: 10px;
     border-bottom: 1px solid lightgray;
-    padding-bottom: 10px;
   }
