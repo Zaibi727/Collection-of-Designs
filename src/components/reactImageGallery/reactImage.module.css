@@ -1,7 +1,7 @@
 .wrapper{
    margin: 0 auto;
    padding: 20px;
-   background-color: rgb(226, 128, 111);
+   background-color: tomato;
 }
 .div{
     padding-top: 30px;
@@ -10,3 +10,33 @@
     margin: 0 auto;
    border-bottom: 2px solid black;
 }
+.www{
+    width: 100%;
+    margin: 0 auto;
+}
+.btn{
+   margin: -60px auto 0px auto;
+   padding-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.approved{
+    padding: 5px 12px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.reject{
+    padding: 5px 23px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*--below is header--*/
+

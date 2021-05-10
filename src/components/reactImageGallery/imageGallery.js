@@ -6,22 +6,13 @@ import styles from './reactImage.module.css';
 
 class ImagesGallery extends Component {
     state = {  }
+
     render() { 
         return ( 
              <div className={styles.wrapper}>
                 <div className={styles.div}>
                  <ImageGallery items={images} 
-                    infinite={true}
-                    lazyLoad={false}
-                    showNav={true}
-                    showThumbnails={true}
-                    thumbnailPosition='bottom'
-                    showFullscreenButton={true}
-                    useBrowserFullscreen={false}
-                    isRTL={false}
-                    disableThumbnailScroll={false}
-                    disableKeyDown={false}
-                    showBullets={true}
+                   
 
                 />
             </div>
