@@ -27,11 +27,7 @@ function GalleryModal () {
     return(
         <div className={styles.tenMay}>
         <Gallery photos={Images} onClick={openLightbox} />
-            <Modal className={styles.modal} isOpen={modalIsOpen} style={{
-              overlay: {
-                backgroundColor: 'transparent'
-              }
-            }}  >
+            <Modal className={styles.modal} isOpen={modalIsOpen}>
             <div className={styles.header}>
                 <div className={styles.headerDiv1}>
                     <img src="./images/profile.jpg" />

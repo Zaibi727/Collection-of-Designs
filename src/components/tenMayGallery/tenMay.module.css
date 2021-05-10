@@ -34,10 +34,13 @@
     height: 100vh;
 }
 .modal{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 30px 15px;
     width: 95%;
     outline: none;
-    margin: 40px  auto 0px auto;
+    margin: 0px  auto 0px auto;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
