@@ -23,7 +23,7 @@ function GalleryModal () {
                 
                 <div>
                     <p className={styles.p1}>May 10, 2020</p>
-                    <p className={styles.p2}>2:04 pm</p>
+                    <p id={styles.p2} className={styles.p2}>2:04 pm</p>
                 </div>
             </div>
 
