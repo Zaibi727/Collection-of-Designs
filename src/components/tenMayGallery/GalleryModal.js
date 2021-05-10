@@ -29,7 +29,7 @@ function GalleryModal () {
         <Gallery photos={Images} onClick={openLightbox} />
             <Modal className={styles.modal} isOpen={modalIsOpen}  style={{
               overlay: {
-                backgroundColor: 'grey'
+                backgroundColor: 'HoneyDew'
               }
             }}>
             <div className={styles.header}>
