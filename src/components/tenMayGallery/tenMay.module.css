@@ -32,7 +32,7 @@
     background-color: rgb(55, 65, 63);
 }
 .modal{
-    padding: 10px;
+    padding: 30px 15px;
     width: 90%;
     outline: none;
     margin: 20px auto;
@@ -47,7 +47,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    padding-bottom: 20px;
 }
 .btn2{
     padding: 4px 12px;
