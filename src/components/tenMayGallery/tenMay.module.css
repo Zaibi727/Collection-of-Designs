@@ -1,0 +1,63 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerDiv1{
+    display: flex;
+    align-items: center;
+}
+.headerDiv1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.p1{
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+.p2{
+    margin-bottom: -2px;
+    color: rgb(172, 171, 171);
+
+}
+
+.carsoalDiv{
+   margin: 0 auto;
+   width: 400px;
+}
+.modal{
+    padding: 10px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 7px rgb(233, 225, 225);
+}
+
+
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.btn2{
+    padding: 7px 12px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.btn1{
+    padding: 7px 23px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgb(218, 212, 212);
+}
