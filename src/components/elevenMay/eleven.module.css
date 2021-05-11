@@ -10,12 +10,14 @@ button:focus {
     margin: 0 auto;
     padding: 30px;
     
+    
 }
 .wrapper2{
     width: 300px;
     margin: 0 auto;
     padding: 100px 30px 30px 30px;
     background-color: #f39c12;
+    border-radius: 4px;
 }
 .logo{
     width: 110px;
