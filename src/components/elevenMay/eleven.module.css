@@ -42,6 +42,9 @@ button:focus {
     color: #007bff;
     cursor: pointer;
 }
+.a{
+    text-decoration: none;
+}
 
 /*--container--*/
 

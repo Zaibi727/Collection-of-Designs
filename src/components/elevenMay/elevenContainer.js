@@ -48,7 +48,7 @@ class ElevenContainer extends Component {
                 </div>
 
                 <div>
-                    <p>Don't have an account? <span className={styles.span}><a href="#">Sign Up <br /> Forgot your password?</a></span></p>
+                    <p>Don't have an account? <span className={styles.span}><a className={styles.a} href="#">Sign Up <br /> Forgot your password?</a></span></p>
                 </div>
                 </div>
             </form>
