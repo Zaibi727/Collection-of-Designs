@@ -32,7 +32,7 @@ class ElevenContainer extends Component {
         let nameError = "";
         let passwordError = "";
        
-        if(!this.state.password < 5) {
+        if(this.state.password < 5) {
             passwordError = "password must be included 8 characters";
         }   
 
