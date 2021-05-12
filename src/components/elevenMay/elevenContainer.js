@@ -9,19 +9,22 @@ import styles from './eleven.module.css';
 
 class ElevenContainer extends Component {
 
-
     constructor(props){
         super(props);
         this.state = {
-            username: '',
-            password: ''
+            name: "",
+            password: "",
         }
     }
-    handleUserInput = (event) => {
-         let name = event.target.name;
-         let value = event.target.value;
-         this.setState({[name]: value});
-    }
+   
+    handleChange = e =>{
+        const isCheckbox = e.target.type === "checkbox";
+        this.setState({
+            [e.target.name]: isCheckbox
+            ? e.target.checked
+            : e.target.value
+        });
+    };
 
 
     render() { 
@@ -36,19 +39,21 @@ class ElevenContainer extends Component {
                 <div className={styles.userNameDiv}>
                     <InputFieldAbstract 
                         type="text"
-                        name="username"
+                        name="name"
+                        value={this.state.name}
                         placeholder="Username"
                         Icon={FaUser}
-                        onChange={(event) => this.handleUserInput(event)}
+                        onChange={this.handleChange}
                     />
                 </div>
                 <div className={styles.passwordDiv}>
                     <InputFieldAbstract 
                         type="password"
                         name="password"
+                        value={this.state.password}
                         placeholder="password"
                         Icon={ImKey}
-                        onChange={(event) => this.handleUserInput(event)}
+                        onChange={this.handleChange}
                     />
                 </div>
                 <div className={styles.checkboxDiv}>

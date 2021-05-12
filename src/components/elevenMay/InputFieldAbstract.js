@@ -4,7 +4,7 @@ import styles from './eleven.module.css';
 
 
  const InputFieldAbstract = (props) => {
-    const { type, placeholder, Icon, onChange,} = {...props };
+    const { type, placeholder, Icon, onChange, name, value} = {...props };
   return (
      <div>
             <div className={styles.inputField}>
@@ -13,8 +13,9 @@ import styles from './eleven.module.css';
                  className={styles.topInputs} 
                  type={type}
                  placeholder={placeholder}
-                 value={value} 
                  onChange={onChange}
+                 name={name}
+                 value={value}
                  required           
                    />
                    
