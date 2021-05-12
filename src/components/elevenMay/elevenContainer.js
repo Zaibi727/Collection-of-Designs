@@ -9,6 +9,21 @@ import styles from './eleven.module.css';
 
 class ElevenContainer extends Component {
 
+
+    constructor(props){
+        super(props);
+        this.state = {
+            username: '',
+            password: ''
+        }
+    }
+    handleUserInput = (event) => {
+         let name = event.target.name;
+         let value = event.target.value;
+         this.setState({[name]: value});
+    }
+
+
     render() { 
 
         return ( 
@@ -24,6 +39,7 @@ class ElevenContainer extends Component {
                         name="username"
                         placeholder="Username"
                         Icon={FaUser}
+                        onChange={(event) => this.handleUserInput(event)}
                     />
                 </div>
                 <div className={styles.passwordDiv}>
@@ -32,6 +48,7 @@ class ElevenContainer extends Component {
                         name="password"
                         placeholder="password"
                         Icon={ImKey}
+                        onChange={(event) => this.handleUserInput(event)}
                     />
                 </div>
                 <div className={styles.checkboxDiv}>
