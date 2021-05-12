@@ -7,15 +7,16 @@ import ButtonAbstract from './buttonAbstarct';
 import styles from './eleven.module.css';
 
 
+const initialState = {
+    name: "",
+    password: "",
+    nameError: "",
+    passwordError: ""
+}
+
 class ElevenContainer extends Component {
 
-    constructor(props){
-        super(props);
-        this.state = {
-            name: "",
-            password: "",
-        }
-    }
+    state = initialState;
    
     handleChange = e =>{
         const isCheckbox = e.target.type === "checkbox";
@@ -27,10 +28,42 @@ class ElevenContainer extends Component {
     };
 
 
+    validate = () => {
+        let nameError = "";
+        let passwordError = "";
+       
+        if(!this.state.password < 5) {
+            passwordError = "password must be included 8 characters";
+        }   
+
+        if(!this.state.name) {
+            nameError = "name cannot be blank";
+        }
+
+
+        if ( nameError || passwordError) {
+            this.setState({ nameError, passwordError});
+            return false;
+        }
+        return true;
+     }
+
+     handleSubmit = e => {
+         e.preventDefault();
+         const isValid = this.validate();
+         if(isValid) {
+             console.log(this.state);
+             //clear form
+             this.setState(initialState);
+         }
+     };
+
+
+
     render() { 
 
         return ( 
-            <form className={styles.wrapper}>
+            <form className={styles.wrapper} onSubmit={this.handleSubmit}>
                   <div>
                      <img className={styles.logo} src="./images/pinterest.svg"/>
                  </div>
@@ -45,6 +78,9 @@ class ElevenContainer extends Component {
                         Icon={FaUser}
                         onChange={this.handleChange}
                     />
+                     <div style={{fontSize:12, color: "red"}}>
+                         {this.state.nameError}
+                    </div>
                 </div>
                 <div className={styles.passwordDiv}>
                     <InputFieldAbstract 
@@ -55,6 +91,9 @@ class ElevenContainer extends Component {
                         Icon={ImKey}
                         onChange={this.handleChange}
                     />
+                      <div style={{fontSize:12, color: "red"}}>
+                         {this.state.passwordError}
+                    </div>
                 </div>
                 <div className={styles.checkboxDiv}>
                     <CheckInputAbstarct 
@@ -65,6 +104,7 @@ class ElevenContainer extends Component {
                 </div>
                 <div className={styles.loginBtnDiv}>
                      <ButtonAbstract 
+                         type="submit"
                          title="Login"
                      />
                 </div>

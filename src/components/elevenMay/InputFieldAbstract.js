@@ -16,7 +16,7 @@ import styles from './eleven.module.css';
                  onChange={onChange}
                  name={name}
                  value={value}
-                 required           
+                            
                    />
                    
            </div> 
