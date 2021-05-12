@@ -49,12 +49,12 @@ button:focus {
     border: none;
     background-color: #c0392b;
     color: white;
-    padding: 5px 7px;
+    padding: 7px 7px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
 .topInputs{
-    padding: 5px 10px;
+    padding: 7px 10px;
     border: none;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -70,7 +70,7 @@ button:focus {
 /*--checbox--*/
 
 .loginbtn{
-    padding: 2px 60px;
+    padding: 4px 60px;
     margin-bottom: 20px;
     border-radius: 4px;
     border: none;
