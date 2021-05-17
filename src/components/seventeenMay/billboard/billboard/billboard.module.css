@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.wrapperDouble{
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.billWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+}
+#secondPortion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+}
+.sec1 img{
+    width: 165px;
+    height: 165px;
+}
+#Sec1OfSecond{
+   margin: 0 auto;
+}
+#Sec1OfSecond img{
+    width: 165px;
+    height: 165px;
+}
+.sec1{
+    margin-right: 40px;
+}
+#secondMargin{
+    margin-right: 40px;
+}
+.p1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+.p2{
+    font-weight: normal;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+
+@media only screen and (max-width: 800px){
+    .billWrapper{
+       display: block;
+    }
+    #secondPortion{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .sec1 {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .sec1 img{
+        width: 125px;
+        height: 125px;
+    }
+    #Sec1OfSecond img{
+        width: 125px;
+        height: 125px;
+        margin-bottom: 10px;
+    }
+  
+}
+@media only screen and (max-width: 480px){
+    .billWrapper{
+        display: block;
+      }
+    .sec1 {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    #Sec1OfSecond img{
+        width: 125px;
+        height: 125px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .billWrapper{
+        display: block;
+      }
+      .sec1 {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .p1{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .p2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #Sec1OfSecond img{
+        width: 125px;
+        height: 125px;
+        margin-bottom: 10px;
+    }
+}
