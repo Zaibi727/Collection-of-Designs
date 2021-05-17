@@ -7,11 +7,11 @@ class UiContainter extends Component {
     render() { 
         return ( 
             <div className={styles.wrapper}>
-                <h1>
+                <p className={styles.head}>
                     Let's Do Business
-                </h1>
-                <p>
-                        Our offering also includes Shopping malls and cinemas, as well as the Pakistan's<br/> 
+                </p>
+                <p className={styles.p}>
+                        Our offering also includes Shopping malls and cinemas, as well as the Pakistan's<br/>
                         largest network of buses in major towns and cities across the Pakistan
                 </p>
                 <div>
