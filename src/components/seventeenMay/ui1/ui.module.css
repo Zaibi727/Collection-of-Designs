@@ -20,6 +20,7 @@
 .wrapper p{
     font-weight: 500;
     font-style: normal;
+    font-size: 14px;
     line-height: 18px;
     text-align: center;
     color:#777600;
@@ -31,9 +32,9 @@ button:focus {
 .btn{
     background-color: #777600;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 5px;
-    padding: 6px;
+    padding: 8px;
     width: 270px;
     max-width: 100%;
     border: none;
