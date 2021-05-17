@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .wrapperDouble{
-    width: 100%;
+    width: 70%;
     max-width: 100%;
     margin: 0;
     position: absolute;
@@ -56,7 +56,6 @@
     line-height: 36px;
     text-align: center;
     color: #000000;
-    margin-bottom: 15px;
 }
 .p2{
     font-weight: normal;
@@ -68,6 +67,16 @@
 }
 
 @media only screen and (max-width: 800px){
+    .wrapperDouble{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        -ms-transform: translate(0%, 0%);
+         transform: translate(0%, 0%);
+    }
     .billWrapper{
        display: block;
     }
