@@ -10,8 +10,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
      transform: translate(-50%, -50%);
+     scroll-behavior: auto;
 }
 
 .billWrapper{
@@ -65,6 +65,16 @@
     text-align: center;
     color: #000000;
 }
+@media only screen and (max-width: 1000px){
+    .wrapperDouble{
+        width: 70%;
+        max-width: 100%;
+        margin: 0;
+        top: 0%;
+        left: 15%;
+         transform: translate(0%, 0%);
+    }
+}
 
 @media only screen and (max-width: 800px){
     .wrapperDouble{
@@ -72,9 +82,8 @@
         max-width: 100%;
         margin: 0;
         position: absolute;
-        top: 0%;
+        top:0%;
         left: 0%;
-        -ms-transform: translate(0%, 0%);
          transform: translate(0%, 0%);
     }
     .billWrapper{
