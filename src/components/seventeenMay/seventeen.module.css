@@ -37,7 +37,6 @@
 .heading{
     font-size: 19px;
     font-weight: 500;
-    margin-bottom: 15px;
 }
 .descrp{
     font-weight: 500;
@@ -49,15 +48,18 @@
       display: block;
       width: 50%;
     }
+    .wrapper{
+        padding: 20px;
+    }
     .sec1 {
         margin-right: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 480px){
     .SeventeenContainer{
         display: block;
-        max-width: 50%;
+        width: 70%;
       }
     .sec1 {
         margin-right: 0px;
@@ -67,7 +69,7 @@
 @media only screen and (max-width: 320px){
     .SeventeenContainer{
         display: block;
-        max-width: 70%;
+        width: 90%;
       }
       .sec1 {
         margin-right: 0px;
