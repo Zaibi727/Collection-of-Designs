@@ -44,7 +44,9 @@ import './dropDown.css';
 //import GalleryModal from './tenMayGallery/GalleryModal';
 //import ElevenContainer from './elevenMay/elevenContainer';
 //import SeventeenContainer from './seventeenMay/seventeenContainer';
-import BillBoard from './seventeenMay/billboard/billboardContainer';
+//import BillBoard from './seventeenMay/billboard/billboardContainer';
+import UiContainter from './seventeenMay/ui1/uiContainer';
+
 class Parent extends Component {
 
     render() { 
@@ -52,7 +54,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-              <BillBoard  />
+              <UiContainter   />
            </div>
          );
     }
