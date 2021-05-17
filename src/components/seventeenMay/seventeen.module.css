@@ -46,7 +46,7 @@
 @media only screen and (max-width: 800px){
     .SeventeenContainer{
       display: block;
-      width: 50%;
+      width: 90%;
     }
     .wrapper{
         padding: 20px;
@@ -59,7 +59,7 @@
 @media only screen and (max-width: 480px){
     .SeventeenContainer{
         display: block;
-        width: 70%;
+        width: 90%;
       }
     .sec1 {
         margin-right: 0px;
