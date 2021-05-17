@@ -33,7 +33,7 @@ button:focus {
 .btn{
     background-color: #838104;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 27px;
     border-radius: 18px;
     width: 460px;
@@ -42,7 +42,7 @@ button:focus {
     border: none;
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 480px){
     .head{
         font-size: 25px;
         font-weight: 500;
@@ -50,12 +50,13 @@ button:focus {
     
     }
     .btn{
-        background-color: #777600;
+        background-color: #838104;
         color: white;
-        font-weight: 700;
-        border-radius: 5px;
-        padding: 4px;
+        font-weight: 500;
+        font-size: 15px;
+        border-radius: 15px;
         width: 220px;
+        height: 60px;
         max-width: 100%;
         border: none;
     }
