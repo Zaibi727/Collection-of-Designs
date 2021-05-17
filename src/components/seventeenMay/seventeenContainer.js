@@ -13,8 +13,8 @@ class SeventeenContainer extends Component {
                     <p>Steve&nbsp;Robbon</p>
                 </section>
                 <section className={styles.sec2}>
-                    <h2>CEO'S Message</h2>
-                    <p>
+                    <p className={styles.heading}>CEO'S Message</p>
+                    <p className={styles.descrp}>
                        In addition to this, I have the ability to adapt to any type of team environment, I am team oriented and get along with others when working in a group setting. I also have the ability to work independently while staying on schedule and meeting those tight deadlines.
                     </p>
                 </section>
