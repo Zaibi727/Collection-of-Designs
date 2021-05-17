@@ -43,8 +43,8 @@ import './dropDown.css';
 //import Button from './reactImageGallery/button';
 //import GalleryModal from './tenMayGallery/GalleryModal';
 //import ElevenContainer from './elevenMay/elevenContainer';
-import SeventeenContainer from './seventeenMay/seventeenContainer';
-
+//import SeventeenContainer from './seventeenMay/seventeenContainer';
+import BillBoard from './seventeenMay/billboard/billboardContainer';
 class Parent extends Component {
 
     render() { 
@@ -52,7 +52,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-              <SeventeenContainer  />
+              <BillBoard  />
            </div>
          );
     }
