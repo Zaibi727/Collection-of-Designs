@@ -42,8 +42,8 @@ import './dropDown.css';
 //import  ModernGallery from './reactImageGallery/modernGallery';
 //import Button from './reactImageGallery/button';
 //import GalleryModal from './tenMayGallery/GalleryModal';
-import ElevenContainer from './elevenMay/elevenContainer';
-
+//import ElevenContainer from './elevenMay/elevenContainer';
+import SeventeenContainer from './seventeenMay/seventeenContainer';
 
 class Parent extends Component {
 
@@ -52,7 +52,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-               <ElevenContainer />
+              <SeventeenContainer  />
            </div>
          );
     }
