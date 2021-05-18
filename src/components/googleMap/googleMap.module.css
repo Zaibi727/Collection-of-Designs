@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.places{
+    text-align: left;
+    list-style: none;
+}
+.place{
+    padding: 0px 40px;
+}
+.place:hover{
+    background-color: rgb(233, 245, 179);
+    padding: 0px 40px;
+}
+.headDiv{
+   border: 1px solid rgb(240, 237, 237);
+   margin-bottom: 10px;
+}
+.head{
+    padding: 5px;
+}
+.name{
+  font-size: 18px;
+}
+.discrip{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.dimension{
+    margin-top: 5px;
+    font-size: 14px;
+}
