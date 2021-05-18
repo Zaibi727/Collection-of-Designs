@@ -43,7 +43,7 @@ ul{
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 .content{
     font-size: 13px;
@@ -61,11 +61,11 @@ ul{
     color: white;
 }
 .a{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .followContent{
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .socialIcon{
     margin-top: 15px;
