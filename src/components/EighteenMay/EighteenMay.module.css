@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.Wrapper{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 30px 50px;
+   background-color: #353535;
+   width: 100%;
+   max-width: 100%;
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+ul{
+    list-style: none;
+    color: white;
+    text-align: left;
+}
+.heading{
+    font-style: normal;
+    font-weight: 500;
+
+}
+.headingg{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+.content{
+    font-size: 13px;
+    color: lightgray;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+.contentList{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration: none;
+}
+.contentList:hover{
+    text-decoration: none;
+    color: white;
+}
+.a{
+    margin-bottom: 17px;
+}
+.followContent{
+    font-size: 14px;
+}
+.socialIcon{
+    margin-top: 15px;
+}
+.socialIcon a{
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+
+/*--abstarct input mail--*/
+
+.mailInput{
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
+::placeholder{
+    color: white;
+    font-size: 14px;
+}
+.mailSign{
+    margin-left: -20px;
+}
+
+
+@media only screen and (max-width: 800px){
+   .Wrapper{
+    margin: 0;
+    position: absolute;
+    top:0%;
+    left: 0%;
+     transform: translate(0%, 0%);
+       display: flex;
+       flex-wrap: wrap;
+   }
+}
