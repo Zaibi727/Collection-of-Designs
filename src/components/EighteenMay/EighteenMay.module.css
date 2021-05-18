@@ -61,7 +61,7 @@ ul{
     color: white;
 }
 .a{
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 .followContent{
     font-size: 14px;
@@ -118,5 +118,8 @@ ul{
       transform: translate(0%, 0%);
        display: grid;
        grid-template-columns: 100%;
+    }
+    ul{
+        margin-bottom: 20px;
     }
  }
