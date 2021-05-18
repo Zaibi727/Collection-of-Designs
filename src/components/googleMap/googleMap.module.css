@@ -25,6 +25,7 @@
 }
 .head{
     padding: 15px 10px;
+    font-size: 18px;
 }
 .name{
   font-size: 18px;
@@ -36,5 +37,5 @@
 }
 .dimension{
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 15px;
 }
