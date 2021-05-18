@@ -13,6 +13,7 @@
 }
 .place{
     padding: 0px 40px;
+    margin-bottom: 20px;
 }
 .place:hover{
     background-color: rgb(233, 245, 179);
@@ -23,7 +24,7 @@
    margin-bottom: 10px;
 }
 .head{
-    padding: 5px;
+    padding: 15px 10px;
 }
 .name{
   font-size: 18px;
