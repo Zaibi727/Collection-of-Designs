@@ -39,3 +39,18 @@
     margin-top: 5px;
     font-size: 15px;
 }
+
+@media only screen and (max-width: 800px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 100vh;
+
+    }
+}
+@media only screen and (max-width: 600px){
+    .wrapper{
+        grid-template-columns: 100%;
+    }
+  
+}
