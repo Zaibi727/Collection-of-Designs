@@ -34,12 +34,14 @@ ul{
 .heading{
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 15px;
 
 }
 .headingg{
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 .content{
     font-size: 13px;
@@ -57,10 +59,11 @@ ul{
     color: white;
 }
 .a{
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 .followContent{
     font-size: 14px;
+    margin-bottom: 8px;
 }
 .socialIcon{
     margin-top: 15px;
