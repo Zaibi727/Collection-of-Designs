@@ -22,6 +22,11 @@ button:focus {
     left: 50%;
      transform: translate(-50%, -50%);
 }
+.head{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
 .sec1{
     display: flex;
     justify-content: space-between;
@@ -35,6 +40,7 @@ button:focus {
 }
 .textarea{
     width: 400px;
+    height: 100px;
     max-width: 100%;
     padding: 10px 15px;
     border-radius: 7px;
@@ -45,7 +51,7 @@ button:focus {
     font-style: normal;
 }
 input{
-    padding: 8px 15px 8px 15px;
+    padding: 10px 15px 10px 15px;
     width: 190px;
     max-width: 100%;
     border-radius: 7px;

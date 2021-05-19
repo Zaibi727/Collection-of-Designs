@@ -10,7 +10,7 @@ class ContactUsContainer extends Component {
         return ( 
             <div className={styles.wrapper}>
                 <form className={styles.form}>
-                    <h4>Contact Us</h4>
+                    <p className={styles.head}>Contact Us</p>
                     <section className={styles.sec1}>
                         <div>
                            <AbstractContactInput 
