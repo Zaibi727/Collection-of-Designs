@@ -23,8 +23,8 @@ button:focus {
      transform: translate(-50%, -50%);
 }
 .head{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
     font-style: normal;
 }
 .sec1{
@@ -40,15 +40,15 @@ button:focus {
 }
 .textarea{
     width: 400px;
-    height: 100px;
+    height: 80px;
     max-width: 100%;
     padding: 10px 15px;
     border-radius: 7px;
     border: 1px solid #b1b1ab;
     margin-bottom: 20px;
     text-decoration: none;
-    font-size: 14px;
-    font-style: normal;
+    font-size: 16px;
+    font-style: normal !important;
 }
 input{
     padding: 10px 15px 10px 15px;
@@ -62,7 +62,7 @@ input{
     font-style: normal;
 }
 .btn{
-    padding: 6px 30px;
+    padding: 6px 35px;
     font-style: normal;
     border: none;
     font-size: 14px;
