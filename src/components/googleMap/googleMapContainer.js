@@ -103,7 +103,9 @@ return (
       </div>
     </div>
     <div>
-    <Map google={this.props.google} zoom={16}
+    <Map 
+     containerStyle={containerStyle}
+    google={this.props.google} zoom={16}
       initialCenter = {{lat:31.4064, lng:73.1069}}
       onClick={this.onMapClicked}>
       {AllPlaces.map((marker, i) =>
@@ -138,4 +140,10 @@ export default GoogleApiWrapper(
     (props) => ({
       apiKey: props.apiKey
     }
-  ))(MapContainer)
+  ))(MapContainer);
+
+  const containerStyle = {
+    position: 'relative',  
+    width: '100%',
+    height: '100vh'
+  }

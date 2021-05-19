@@ -5,7 +5,8 @@
 }
 .wrapper{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% auto;
+    overflow-x: hidden;
 }
 .places{
     text-align: left;
