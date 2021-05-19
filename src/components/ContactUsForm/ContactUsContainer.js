@@ -93,6 +93,7 @@ class ContactUsContainer extends Component {
                     <div>
                        <AbstractButton 
                         title="Send"
+                        type="submit"
                        />
                     </div>
                 </form>

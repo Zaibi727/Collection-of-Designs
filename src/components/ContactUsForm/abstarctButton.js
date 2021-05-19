@@ -5,11 +5,11 @@ import styles from './ContactUs.module.css';
 
 
  const AbstractButton = (props) => {
-    const {title} = {...props };
+    const {title, type} = {...props };
   return (
      <div>
             <div>
-                <button className={styles.btn}>
+                <button type={type} className={styles.btn}>
                     {title}
                 </button>
            </div> 

@@ -17,6 +17,7 @@ import styles from './ContactUs.module.css';
                  name={name}
                  value={value}
                  onChange={onChange}
+                 required
                    />
            </div> 
      </div>      
