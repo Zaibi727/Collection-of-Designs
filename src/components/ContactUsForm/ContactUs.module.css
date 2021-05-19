@@ -58,7 +58,8 @@ input{
     border: 1px solid #b1b1ab;
 }
 ::placeholder{
-    font-size: 14px;
+    font-size: 12px;
+    color: #b1b1ab;
     font-style: normal;
     font-family: sans-serif;
 }
