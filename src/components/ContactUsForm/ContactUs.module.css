@@ -44,7 +44,7 @@ button:focus {
     max-width: 100%;
     padding: 10px 15px;
     border-radius: 7px;
-    border: 1px solid darkslategray;
+    border: 1px solid #9e9e9d;
     margin-bottom: 20px;
     text-decoration: none;
     font-size: 16px;
@@ -55,7 +55,7 @@ input{
     width: 210px;
     max-width: 100%;
     border-radius: 7px;
-    border: 1px solid black;
+    border: 1px solid #8d8d8c;
 }
 ::placeholder{
     font-size: 12px;
