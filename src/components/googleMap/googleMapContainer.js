@@ -38,6 +38,22 @@ var  AllPlaces = [
               "lat": "31.4181",
                "lng":"73.0776",
               },
+              {
+                id: 5,
+                "name" : "Clock Tower",
+                "discrip" : "All roads, Opposite FM Station, D-ground, Faisalabad." ,
+                "dimension" : "Dimensions: 60 X 20",
+                "lat": "31.4906",
+                 "lng":"73.1068",
+                },
+                {
+                    id: 6,
+                    "name" : "GCU Faislabad",
+                    "discrip" : "Jhang road,  Faisalabad." ,
+                    "dimension" : "Dimensions: 60 X 20",
+                    "lat": "31.4181",
+                     "lng":"73.0776",
+                    },
   ]
 
 class MapContainer extends Component {
@@ -85,7 +101,7 @@ findPlaces = () => (
       <li
       key = {i}
       className={styles.place}
-      style={{ backgroundColor: this.state.selectedId === item.id?"gray":"white" }} 
+      style={{ backgroundColor: this.state.selectedId === item.id?"lightYellow":"white" }} 
       onClick={() => {this.onLiClick(i, item.id)}}
       >
         <h6 className={styles.name}>{item.name}</h6>
