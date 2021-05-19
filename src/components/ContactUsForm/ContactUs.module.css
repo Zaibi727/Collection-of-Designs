@@ -60,6 +60,7 @@ input{
 ::placeholder{
     font-size: 14px;
     font-style: normal;
+    font-family: sans-serif;
 }
 .btn{
     padding: 6px 35px;
