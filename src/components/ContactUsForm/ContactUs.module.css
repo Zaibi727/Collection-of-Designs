@@ -14,7 +14,7 @@ button:focus {
   height: 100%;
 }
 .form{
-    width: 400px;
+    width: 450px;
     max-width: 100%;
     margin: 0;
     position: absolute;
@@ -39,7 +39,7 @@ button:focus {
     margin-bottom: 15px;
 }
 .textarea{
-    width: 400px;
+    width: 450px;
     height: 80px;
     max-width: 100%;
     padding: 10px 15px;
@@ -52,7 +52,7 @@ button:focus {
 }
 input{
     padding: 10px 15px 10px 15px;
-    width: 190px;
+    width: 210px;
     max-width: 100%;
     border-radius: 7px;
     border: 1px solid #b1b1ab;
