@@ -5,7 +5,7 @@ import styles from './ContactUs.module.css';
 
 
  const AbstractContactInput = (props) => {
-    const { type, id, placeholder} = {...props };
+    const { type, id, placeholder, name, value, onChange} = {...props };
   return (
      <div>
             <div>
@@ -14,6 +14,9 @@ import styles from './ContactUs.module.css';
                  type={type}
                  id={id}
                  placeholder={placeholder}
+                 name={name}
+                 value={value}
+                 onChange={onChange}
                    />
            </div> 
      </div>      
