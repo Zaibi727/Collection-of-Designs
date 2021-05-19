@@ -15,11 +15,9 @@
 .place{
     padding: 0px 40px 0px 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
-.place:hover{
-    background-color: rgb(233, 245, 179);
-    padding: 0px 40px 0px 20px;
-}
+
 .headDiv{
    margin-bottom: 10px;
 }

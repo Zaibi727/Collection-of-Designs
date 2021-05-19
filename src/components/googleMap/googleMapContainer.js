@@ -5,42 +5,47 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper
 import styles from './googleMap.module.css';
 
 var  AllPlaces = [
-{
-"name" : "D-Ground Corner",
-"discrip" : "Chenone road, Opposite FM Station, D-ground, Faisalabad." ,
-"dimension" : "Dimensions: 60 X 20",
-"lat": "31.4064",
-"lng":"73.1069",
-},
-
-{
-    "name" : "Agriculture University",
-    "discrip" : "Jail road,  Faisalabad." ,
-    "dimension" : "Dimensions: 60 X 20",
-    "lat": "31.4297",
-    "lng":"73.0706",
-    },
-    {
-        "name" : "Clock Tower",
-        "discrip" : "All roads, Opposite FM Station, D-ground, Faisalabad." ,
-        "dimension" : "Dimensions: 60 X 20",
-        "lat": "31.4906",
-         "lng":"73.1068",
-        },
-        {
-            "name" : "GCU Faislabad",
-            "discrip" : "Jhang road,  Faisalabad." ,
-            "dimension" : "Dimensions: 60 X 20",
-            "lat": "31.4181",
-             "lng":"73.0776",
-            },
-]
+  {
+   id: 1,
+  "name" : "D-Ground Corner",
+  "discrip" : "Chenone road, Opposite FM Station, D-ground, Faisalabad." ,
+  "dimension" : "Dimensions: 60 X 20",
+  "lat": "31.4064",
+  "lng":"73.1069",
+  },
+  
+  {
+      id: 2,
+      "name" : "Agriculture University",
+      "discrip" : "Jail road,  Faisalabad." ,
+      "dimension" : "Dimensions: 60 X 20",
+      "lat": "31.4297",
+      "lng":"73.0706",
+      },
+      {
+          id: 3,
+          "name" : "Clock Tower",
+          "discrip" : "All roads, Opposite FM Station, D-ground, Faisalabad." ,
+          "dimension" : "Dimensions: 60 X 20",
+          "lat": "31.4906",
+           "lng":"73.1068",
+          },
+          {
+              id: 4,
+              "name" : "GCU Faislabad",
+              "discrip" : "Jhang road,  Faisalabad." ,
+              "dimension" : "Dimensions: 60 X 20",
+              "lat": "31.4181",
+               "lng":"73.0776",
+              },
+  ]
 
 class MapContainer extends Component {
 state = {
 showingInfoWindow: false,
 activeMarker: {},
 selectedPlace: {},
+selectedId:""
 };
 
 markers = []
@@ -54,13 +59,14 @@ this.setState({
  });
 }
 
-onLiClick = (i) =>{
-this.setState({
-    showingInfoWindow: true,
-    activeMarker: this.markers[i],
-    selectedPlace: AllPlaces[i]
-})
-}
+onLiClick = (i, locationId) =>{
+  this.setState({
+      showingInfoWindow: true,
+      activeMarker: this.markers[i],
+      selectedPlace: AllPlaces[i],
+      selectedId: locationId
+  })
+  }
 
 
 onMapClicked = (props) => {
@@ -74,20 +80,21 @@ if (this.state.showingInfoWindow) {
 
 
 findPlaces = () => (
-<ul className={styles.places}>
-  {AllPlaces.map((arrayItem, index)=>
-    <li
-    key = {index}
-    className={styles.place}
-    onClick={() => {this.onLiClick(index)}}
-    >
-      <h6 className={styles.name}>{arrayItem.name}</h6>
-      <p className={styles.discrip}>{arrayItem.discrip}</p>
-      <p className={styles.dimension}>{arrayItem.dimension}</p>
-     </li>
-  )}
-</ul>
-);
+  <ul className={styles.places} >
+    {AllPlaces.map((item, i)=>
+      <li
+      key = {i}
+      className={styles.place}
+      style={{ backgroundColor: this.state.selectedId === item.id?"gray":"white" }} 
+      onClick={() => {this.onLiClick(i, item.id)}}
+      >
+        <h6 className={styles.name}>{item.name}</h6>
+        <p className={styles.discrip}>{item.discrip}</p>
+        <p className={styles.dimension}>{item.dimension}</p>
+       </li>
+    )}
+  </ul>
+  );
 
 render() {
 return (
