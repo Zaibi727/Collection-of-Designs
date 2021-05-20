@@ -1,0 +1,236 @@
+*{
+    font-family: sans-serif;
+}
+.wrapper{
+    padding: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+.navUl{
+    display: flex;
+    list-style: none;
+}
+.navUl li{
+    margin-left: 50px;
+}
+.navUl li a{
+    text-decoration: none;
+    color: rgb(35, 87, 0);
+    font-size: 14px;
+    font-weight: 700;
+}
+.navUl li a:active{
+    color:#777600;
+}
+.main{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+}
+.h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+.p{
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+.btn{
+    border: none;
+    background-color: #777600;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 20px;
+    width: 230px;
+    height: 40px;
+    border-radius: 40px;
+}
+.span{
+    color: white;
+    margin-right: -30px;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px){
+    .wrapper{
+        padding: 10px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .logo{
+        position: absolute;
+        display: none;
+    }
+    .navUl{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        list-style: none;
+    }
+    .navUl li{
+       margin: 0px 20px;
+    }
+    .navUl li a{
+        max-width:100% ;
+        padding-top: 0px;
+       font-size: 13px;
+       font-weight: 500;
+       color: white;
+    }
+ }
+ @media only screen and (max-width: 600px){
+    .wrapper{
+        padding: 10px 5px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .logo{
+        position: absolute;
+        display: none;
+    }
+    .navUl{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        list-style: none;
+    }
+    .navUl li{
+       margin: 0px 10px;
+    }
+    .navUl li a{
+        max-width:100% ;
+        padding-top: 0px;
+       font-size: 11px;
+       font-weight: 500;
+       color: white;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px){
+    .wrapper{
+        padding: 10px  5px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .logo{
+        position: absolute;
+        display: none;
+    }
+    .navUl{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        list-style: none;
+    }
+    .navUl li{
+       margin: 0px 5px;
+    }
+    .navUl li a{
+        max-width:100% ;
+        padding-top: 0px;
+       font-size: 8px;
+       font-weight: 400;
+       color: white;
+    }
+    .btn{
+        border: none;
+        background-color: #777600;
+        color: white;
+        font-weight: 500;
+        font-size: 13px;
+        padding-left: 20px;
+        width: 200px;
+        height: 30px;
+        border-radius: 40px;
+    }
+    .span{
+        color: white;
+        margin-right: -30px;
+        opacity: 0.9;
+        font-size: 14px;
+    }
+    .h2{
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 15px;
+    }
+    .p{
+        color: white;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 12px;
+        text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 260px){
+    
+    .navUl li{
+       margin: 0px 5px;
+    }
+    .navUl li a{
+        max-width:100% ;
+        padding-top: 0px;
+       font-size: 5px;
+       font-weight: 400;
+       color: white;
+    }
+    .btn{
+        border: none;
+        background-color: #777600;
+        color: white;
+        font-weight: 500;
+        font-size: 9px;
+        padding-left: 20px;
+        width: 150px;
+        height: 30px;
+        border-radius: 40px;
+    }
+    .span{
+        color: white;
+        margin-right: -30px;
+        opacity: 0.9;
+        font-size: 14px;
+    }
+    .h2{
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 15px;
+    }
+    .p{
+        color: white;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 12px;
+        text-align: center;
+    }
+  }
+
