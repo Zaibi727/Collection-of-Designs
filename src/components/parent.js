@@ -51,8 +51,8 @@ import './dropDown.css';
 //import ContactUsContainer from './ContactUsForm/ContactUsContainer';
 //import CountersContainer from './CounterApp/countersCointainer';
 //import MainContainer from './CounterApp/mainContainer';
-import TwentyMayContainer from './twentyMay/twentyMayContainer';
-
+//import TwentyMayContainer from './twentyMay/twentyMayContainer';
+import ArrayOfCards  from './BioCards/ArrayOfCards';
 
 class Parent extends Component {
 
@@ -61,7 +61,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                <TwentyMayContainer  />
+                <ArrayOfCards   />
            </div>
          );
     }
