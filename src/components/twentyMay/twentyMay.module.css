@@ -19,7 +19,7 @@
     text-decoration: none;
 }
 .mbLinks li a:active{
-  color: #030303;
+  color: #777600;
 }
 .responsiveNavWrapper{
     display: none;
@@ -36,14 +36,15 @@
 }
 .navUl{
     display: flex;
+    align-items: center;
     list-style: none;
 }
 .navUl li{
-    margin-left: 0px 25px;
+    margin: 0px 25px;
 }
 .navUl li a{
     text-decoration: none;
-    color: rgb(35, 87, 0);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 500;
 }
