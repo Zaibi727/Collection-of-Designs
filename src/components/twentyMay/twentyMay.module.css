@@ -4,6 +4,25 @@
 .wrapper{
     padding: 20px;
 }
+.mbDiv{
+    background-color: #777600;
+}
+.mbLinks{
+    text-align: center;
+}
+.mbLinks li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+.mbLinks li a:active{
+  color: #030303;
+}
+.responsiveNavWrapper{
+    display: none;
+    position: absolute;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -131,10 +150,31 @@
  }
  @media only screen and (max-width: 600px){
     .wrapper{
-        padding: 10px 5px;
+        padding: 0px 0px;
     }
+    .responsiveNavWrapper{
+        display: block;
+        text-align: right;
+        position: unset;
+        background-color:#777600;
+        height: 55px;
+        padding: 0px;
+    }
+    .humBtn{
+        border: 1px solid rgb(247, 225, 225);
+        box-shadow: 1px 1px 3px 1px gray;
+        border-radius: 2px;
+        margin: 8px 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #000;
+    }
+    
     .nav{
-        display: flex;
+        display: none;
+        position: absolute;
         justify-content: center;
         max-width: 100%;
     }
@@ -194,10 +234,31 @@
 
   @media only screen and (max-width: 400px){
     .wrapper{
-        padding: 10px  5px;
+        padding: 0px 0px;
     }
+    .responsiveNavWrapper{
+        display: block;
+        text-align: right;
+        position: unset;
+        background-color: #777600;
+        height: 55px;
+        padding: 0px;
+    }
+    .humBtn{
+        border: 1px solid rgb(247, 225, 225);
+        box-shadow: 1px 1px 3px 1px gray;
+        border-radius: 2px;
+        margin: 8px 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #000;
+    }
+    
     .nav{
-        display: flex;
+        display: none;
+        position: absolute;
         justify-content: center;
         max-width: 100%;
     }
