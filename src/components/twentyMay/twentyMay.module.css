@@ -97,6 +97,37 @@
        font-weight: 500;
        color: white;
     }
+    .h2{
+        font-size: 36px;
+       font-weight: 700;
+       color: white;
+       margin-bottom: 15px;
+        font-family: sans-serif;
+    }
+    .p{
+        color: white;
+       font-weight: normal;
+       font-style: normal;
+        font-size: 16px;
+    }
+    .btn{
+        border: none;
+        background-color: #777600;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        width: 260px;
+        height: 40px;
+        padding-left: 0px;
+        border-radius: 40px;
+        margin-top: 30px;
+    }
+    .span{
+        color: white;
+        margin-right: -30px;
+        opacity: 0.9;
+        font-size: 14px;
+    }
  }
  @media only screen and (max-width: 600px){
     .wrapper{
@@ -126,6 +157,37 @@
        font-size: 11px;
        font-weight: 500;
        color: white;
+    }
+    .h2{
+        font-size: 36px;
+       font-weight: 700;
+       color: white;
+       margin-bottom: 15px;
+        font-family: sans-serif;
+    }
+    .p{
+        color: white;
+       font-weight: normal;
+       font-style: normal;
+        font-size: 16px;
+    }
+    .btn{
+        border: none;
+        background-color: #777600;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        width: 260px;
+        height: 40px;
+        padding-left: 0px;
+        border-radius: 40px;
+        margin-top: 30px;
+    }
+    .span{
+        color: white;
+        margin-right: -30px;
+        opacity: 0.9;
+        font-size: 14px;
     }
   }
 
