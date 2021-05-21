@@ -29,6 +29,7 @@
   font-size: 30px;
   font-weight: 500;
   color: #208b72;
+  margin-bottom: 20px;
 }
 
 .secWrapper{
@@ -50,19 +51,20 @@
     margin-bottom: -10px;
 }
 .name{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: #208b72;
     margin-bottom: -8px;
 }
 .discrip{
     margin-bottom: -8px;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: -8px;
 }
 .btn{
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
