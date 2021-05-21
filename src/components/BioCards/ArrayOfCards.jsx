@@ -16,14 +16,18 @@ class ArrayOfCards extends Component {
 
     render() { 
         return ( 
-                  <div className={styles.arrayWrapper}>
-                  <p className={styles.hhh}>OUR TEAM</p>
-                    {this.state.cards.map(card => (
-                    <SingleCard
-                    key={card.id}
-                    value={card.value} />
-                ))}        
-            </div>          
+            <div className={styles.oneMore}>
+            <div className={styles.double}>
+             <p className={styles.hhh}>OUR TEAM</p>
+            <div className={styles.arrayWrapper}>
+                      {this.state.cards.map(card => (
+                        <SingleCard
+                         key={card.id}
+                         value={card.value} />
+                       ))} 
+               </div> 
+        </div> 
+       </div>        
          );
     }
 }

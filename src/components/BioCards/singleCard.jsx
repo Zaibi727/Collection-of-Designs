@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styles from './bioCards.module.css';
+import { BiPlusMedical } from "react-icons/bi";
+
 
 class SingleCard extends Component {
     state = {  }
@@ -14,7 +16,7 @@ class SingleCard extends Component {
                         description and button. 
                     </p>
                     <button className={styles.btn}>
-                        +
+                    <BiPlusMedical className={styles.add} />
                     </button>
                 </section>
             </div>
