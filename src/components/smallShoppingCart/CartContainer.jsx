@@ -25,7 +25,7 @@ function CartContainer() {
 
     const onRemove = (product) => {
         const exist = cartItems.find((x) => x.id === product.id);
-  if(exist === 1){
+  if(exist.qty === 0){
        setCartItems(cartItems.filter((x) => x.id !== product.id));
   } else {
       setCartItems(
