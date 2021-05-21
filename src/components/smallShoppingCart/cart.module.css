@@ -85,6 +85,8 @@
     display: flex;
     justify-content: space-evenly;
     text-align: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 
