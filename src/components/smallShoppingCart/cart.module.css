@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainBasket{
+    display: grid;
+    grid-template-columns: 75% 25%;
+   
+}
+.app1{
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #c0c0c0;
+}
+.app2{
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #c0c0c0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #c0c0c0;
+}
+.div1 a{
+    text-decoration: none !important;
+}
+
+.div1 a h1{
+    font-size: 1.5rem;
+}
+.div2 a{
+    text-decoration: none !important;
+}
+.navTotal{
+    margin: 0px 20px;
+    border: none;
+    background-color: thistle;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+/*--header--*/
+.basket{
+    margin-left: 20px;
+}
+.basket h2{
+    font-size: 1.2rem;
+}
+.priceTop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.add{
+    border: none;
+    padding: 0px 5px;
+    margin-right: 0px;
+    background-color: tomato;
+}
+.remove{
+    border: none;
+    color: white;
+    padding: 0px 5px;
+    background-color: rgb(88, 66, 62);
+}
+.checkOut{
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.2rem;
+    margin: 0.1rem;
+   border-radius: 0.5rem;
+   border: 0.1rem solid black;
+   background-color: yellow;
+   width: 100%;
+   cursor: pointer;
+}
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+/*--basket--*/
+
+
+/*---main--*/
+.img{
+    max-width: 8rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.h3{
+    font-size: 1rem;
+    margin: 0.4rem 0rem;
+}
+/*--product--*/
+.btnAdd{
+ font-size: 0.8rem;
+ padding: 0.2rem;
+ margin: 0.1rem;
+border-radius: 0.5rem;
+border: 0.1rem solid black;
+background-color: yellow;
+width: 100%;
+cursor: pointer;
+}
+
