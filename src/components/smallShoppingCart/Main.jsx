@@ -6,7 +6,7 @@ export default function Main(props) {
     const {products, onAdd} = props;
     return (
         <main>
-            <h2>
+            <h2 className={styles.hh2}>
                 Products
             </h2>
             <div className={styles.cards}>
