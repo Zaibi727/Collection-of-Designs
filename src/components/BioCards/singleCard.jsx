@@ -12,7 +12,7 @@ class SingleCard extends Component {
                     <img className={styles.img} src="./images/profile.jpg"/>
                     <p className={styles.name}>Sunlimetech</p>
                     <p className={styles.discrip}>
-                        Thi is basic card with image on top, title,<br />
+                        Thi is basic card with image on top title,<br />
                         description and button. 
                     </p>
                     <button className={styles.btn}>
