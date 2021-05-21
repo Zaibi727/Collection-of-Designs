@@ -16,14 +16,14 @@ export default function Basket(props) {
           
             {cartItems.map((item) => (
                 <div key={item.id} className={styles.priceTop}>
-                   <div>
+                   <div className={styles.name}>
                        {item.name}
                    </div>
                    <div>
                        <button className={styles.add} onClick={()=>onAdd(item)}>+</button>
                        <button className={styles.remove} onClick={()=>onRemove(item)}>-</button>
                    </div>
-                   <div>
+                   <div className={styles.amount}>
                        {item.qty} x ${item.price.toFixed(2)}
                    </div>
                 </div>

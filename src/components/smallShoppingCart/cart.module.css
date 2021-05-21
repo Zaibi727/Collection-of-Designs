@@ -128,3 +128,34 @@ width: 100%;
 cursor: pointer;
 }
 
+@media only screen and (max-width: 800px){
+    .mainBasket{
+        display: grid;
+        grid-template-columns: 65% 35%;
+       
+    }
+    .img{
+        max-width: 5rem;
+    }
+    .h3{
+        font-size: 0.7rem;
+        margin: 0.4rem 0rem;
+    }
+    /*--product--*/
+    .btnAdd{
+     font-size: 0.7rem;
+     padding: 0.2rem;
+     margin: 0.1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
+    background-color: yellow;
+    width: 100%;
+    cursor: pointer;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .amount{
+        font-size: 12px;
+    }
+}
