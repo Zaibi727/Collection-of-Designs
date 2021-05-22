@@ -52,9 +52,9 @@ import './dropDown.css';
 //import CountersContainer from './CounterApp/countersCointainer';
 //import MainContainer from './CounterApp/mainContainer';
 //import TwentyMayContainer from './twentyMay/twentyMayContainer';
-import ArrayOfCards  from './BioCards/ArrayOfCards';
+//import ArrayOfCards  from './BioCards/ArrayOfCards';
 //import CartContainer from './smallShoppingCart/CartContainer';
-
+import SelfContainer from './selfCart/selfContainer';
 
 class Parent extends Component {
 
@@ -63,7 +63,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                <ArrayOfCards    />
+                <SelfContainer />
            </div>
          );
     }
