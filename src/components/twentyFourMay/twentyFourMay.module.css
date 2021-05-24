@@ -132,7 +132,7 @@ bold{
 }
 .spanInput{
     margin-left: -30px;
-    margin-bottom: -17px;
+    margin-bottom: -20px;
     color: rgb(145, 143, 143);
 }
 ::placeholder{
@@ -196,7 +196,7 @@ bold{
 }
 .spanFollow{
     margin-left: -25px;
-    margin-bottom: -14px;
+    margin-bottom: -20px;
     color: white;
     font-weight: lighter;
     font-size: 12px;
@@ -216,7 +216,7 @@ bold{
 }
 .spanMessage{
     margin-left: -25px;
-    margin-bottom: -17px;
+    margin-bottom: -20px;
     color: rgb(0, 0, 0); 
     font-weight: lighter;
     font-size: 12px;
