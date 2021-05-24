@@ -11,6 +11,12 @@
     left: 50%;
      transform: translate(-50%, -50%);
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 .sec1{
     background-color: rgb(253, 253, 253);
     padding: 0px;
