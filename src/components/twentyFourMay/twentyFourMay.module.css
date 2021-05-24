@@ -132,6 +132,7 @@ bold{
 }
 .spanInput{
     margin-left: -30px;
+    margin-top: 10px;
     position: absolute;
     color: rgb(145, 143, 143);
 }
@@ -196,6 +197,7 @@ bold{
 }
 .spanFollow{
     margin-left: -25px;
+    margin-top: 10px;
     position: absolute;
     color: white;
     font-weight: lighter;
@@ -216,6 +218,7 @@ bold{
 }
 .spanMessage{
     margin-left: -25px;
+    margin-top: 10px;
     position: absolute;
     color: rgb(0, 0, 0); 
     font-weight: lighter;
