@@ -32,7 +32,7 @@ export default function TwentyFourMayContainer(props) {
                          <div>
                              <div className={styles.firstProfileImg}>
                                 <AbstractImages 
-                                  
+                                  style={{ "height" : "80px", "width" : "80px"}}
                                   src='./images/profile.jpg'
                                 />
                              </div>
@@ -55,7 +55,9 @@ export default function TwentyFourMayContainer(props) {
                         <div className={styles.sec2Div1}>
                           <div className={styles.sec2Div1Sub}>
                              <div>
-                                <AbstractImages   src='./images/profile.jpg' />
+                                <AbstractImages   src='./images/profile.jpg' 
+                                   style={{ "height" : "40px", "width" : "40px"}}
+                                />
                              </div>
                             <h6 className={styles.meagen}>Meagen Fisher</h6>
                           </div>
@@ -65,7 +67,8 @@ export default function TwentyFourMayContainer(props) {
 
                  <div className={styles.sec2Div2}>
                          <div className={styles.sec2Div2Sub}>
-                             <AbstractImages                         
+                             <AbstractImages   
+                              style={{ "height" : "25px", "width" : "25px"}}                      
                                src='./images/profile.jpg'
                               />
                              <div className={styles.three}>
