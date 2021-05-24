@@ -55,7 +55,7 @@ import './dropDown.css';
 //import ArrayOfCards  from './BioCards/ArrayOfCards';
 //import CartContainer from './smallShoppingCart/CartContainer';
 //import SelfContainer from './selfCart/selfContainer';
-import TwentyFourMayContainer from './twentyFourMay/TwentyFourMayContainer';
+import PropsChildren from './PropsChildern/PropsChildren';
 
 
 class Parent extends Component {
@@ -65,7 +65,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                <TwentyFourMayContainer />
+               <PropsChildren />
            </div>
          );
     }

@@ -1,0 +1,340 @@
+.container{
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.sec1{
+    background-color: rgb(253, 253, 253);
+    padding: 0px;
+    color: black;
+    width: 300px;
+    height: 350px;
+}
+.engMang{
+  font-size: 13px;
+  color: rgb(128, 125, 125);
+}
+
+/*--sec1--*/
+.sec2{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.bigImage{
+    width: 300px;
+    height: 190px;
+    margin-bottom: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sec2Div1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 10px;
+background-color: white;
+background-color: rgb(255, 255, 255);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 10px;
+
+}
+.sec2Div1Sub{
+    display: flex;
+    align-items: center;
+}
+.subImg{
+    width: 20px !important;
+}
+
+.sec2Div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+   
+}
+
+    .sec2Div2Sub{
+      display: flex;
+      align-items: center;
+      }
+      .three{
+          text-align: left;
+          margin-left: 10px;
+      }
+      .three h6{
+           margin-top: 8px;
+          font-size: 14px;
+          font-weight: 700;
+      }
+      .three p{
+          font-size: 14px;
+          margin-top: -5px;
+          color: rgb(158, 157, 157);
+      }
+
+/*--sec2--*/
+
+.sec3{
+   
+    padding: 0px;
+    color: black;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.sec3Div1 h3{
+    padding-top: 40px;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.sec3Div1 p{
+    font-size: 12px;
+    font-weight: 500;
+}
+bold{
+    color: #328efe;
+}
+.form{
+    margin-top: 50px;
+}
+.formDiv2{
+    margin-top: 40px;
+}
+.email{
+    margin-bottom: 20px;
+}
+.input{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    height: 35px;
+    padding: 7px 50px 7px 10px;
+    width: 220px;
+}
+.spanInput{
+    margin-left: -30px;
+    margin-top: 10px;
+    position: absolute;
+    color: rgb(145, 143, 143);
+}
+::placeholder{
+    font-weight: 700;
+    font-size: 13px;
+
+}
+.loginBtn{
+    width: 220px;
+    border-radius: 20px;
+    height: 35px;
+    border: none;
+    background-color: #b6d8f5;
+    color: #328efe;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/*--sec3--*/
+.profileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*--container--*/
+.socialIcon{
+    display: flex;
+    justify-content: center;
+}
+.socialIcon div{
+    margin: 0px 5px;
+}
+.sec1Card{
+    width: 300px;
+   margin-top: 30px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   padding: 25px;
+   border-radius: 10px;
+}
+.cardOneSecond{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+.firstProfileImg{
+    margin-bottom: 20px;
+}
+/*--first card--*/
+
+.follow{
+    border: none;
+    background-color: #0284fe;
+    color: white;
+    font-size: 12px;
+  height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    padding: 7px 15px 7px 0px;
+}
+.spanFollow{
+    margin-left: -25px;
+    margin-top: 8px;
+    position: absolute;
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.message{
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 30px;
+    border: 1px solid lightgray;
+    padding: 7px 20px 7px 5px;
+    margin-left: 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.spanMessage{
+    margin-left: -25px;
+    margin-top: 8px;
+    position: absolute;
+    color: rgb(0, 0, 0); 
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+/*--abfolooemessage btn--*/
+
+.soicalIconBtn{
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+   box-shadow: 2px 1px  4px rgb(201, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.likeEdit{
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+.meagen{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+/*--social ions--*/
+
+
+@media only screen and (max-width: 1000px){
+    .container{
+         display: grid;
+         grid-template-columns: 50% 50%;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top:0%;
+        left: 0%;
+        text-align: center;
+         transform: translate(0%, 0%);
+    }
+    .sec1{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .container{
+         display: grid;
+         grid-template-columns: 100%;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top:0%;
+        left: 0%;
+         transform: translate(0%, 0%);
+    }
+    .sec1{
+        margin-bottom: 20px;
+        margin:  20px auto;
+    }
+    .sec2{
+        margin-bottom: 20px;
+        margin:  20px auto;
+    }
+    .sec3{
+        margin:  0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 330px){
+    .container{
+         display: grid;
+         grid-template-columns: 100%;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top:0%;
+        left: 0%;
+         transform: translate(0%, 0%);
+    }
+    .sec1{
+        width: 250px;
+        margin:  20px auto;
+    }
+    .sec2{
+        width: 250px;
+        margin:  20px auto;
+    }
+    .sec3{
+        width: 250px;
+        margin:  0 auto;
+    }
+    .bigImage{
+        width: 250px;
+        height: 190px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .sec1Card{
+        width: 250px;
+       margin-top: 50px;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       padding: 30px;
+       border-radius: 10px;
+    }
+}
