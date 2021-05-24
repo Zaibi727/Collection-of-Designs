@@ -21,12 +21,12 @@ export default function TwentyFourMayContainer(props) {
         <div className={styles.container}>
              <section className={styles.sec1}>
                      <div className={styles.socialIcon}>
-                           <div  className={styles.a}><AbstractRoundButton Icon={AiFillHeart} /></div>
-                           <div className={styles.b}><AbstractRoundButton Icon={AiFillEye} /></div>
-                           <div className={styles.c}><AbstractRoundButton Icon={BiPencil} /></div>
-                           <div className={styles.d}><AbstractRoundButton Icon={BsLink45Deg} /></div>
-                           <div className={styles.e}><AbstractRoundButton Icon={BsFillPlayFill} /></div>
-                           <div className={styles.f}><AbstractRoundButton Icon={FiDownload} /></div>
+                           <div  className={styles.a}><AbstractRoundButton style={{ color: 'red' }} Icon={AiFillHeart} /></div>
+                           <div className={styles.b}><AbstractRoundButton style={{ color: 'blue' }} Icon={AiFillEye} /></div>
+                           <div className={styles.c}><AbstractRoundButton style={{ color: 'yellow' }} Icon={BiPencil} /></div>
+                           <div className={styles.d}><AbstractRoundButton style={{ color: 'green' }} Icon={BsLink45Deg} /></div>
+                           <div className={styles.e}><AbstractRoundButton style={{ color: 'red' }} Icon={BsFillPlayFill} /></div>
+                           <div className={styles.f}><AbstractRoundButton style={{ color: 'blue' }} Icon={FiDownload} /></div>
                      </div>
                      <div className={styles.sec1Card}>
                          <div>

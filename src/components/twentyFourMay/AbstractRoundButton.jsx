@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './twentyFourMay.module.css';
 
  const AbstractRoundButton = (props) => {
-     const {type, Icon} = props;
+     const {type, Icon, style} = props;
 
     if( type === "light"  ) {
         return(
@@ -10,7 +10,7 @@ import styles from './twentyFourMay.module.css';
         )
     } else {
         return (
-            <button className={styles.soicalIconBtn}>{ Icon ? <Icon/>: {Icon} }</button>
+            <button style={style} className={styles.soicalIconBtn}>{ Icon ? <Icon/>: {Icon} }</button>
         );
     }
 }
