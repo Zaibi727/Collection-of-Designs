@@ -20,7 +20,7 @@
 }
 .engMang{
   font-size: 13px;
-  color: lightgray;
+  color: rgb(128, 125, 125);
 }
 
 /*--sec1--*/
@@ -120,12 +120,13 @@ bold{
 .input{
     border: 1px solid lightgray;
     border-radius: 20px;
+    height: 35px;
     padding: 7px 50px 7px 10px;
     width: 220px;
 }
 .spanInput{
     margin-left: -30px;
-    margin-top: 5px;
+    margin-top: 15px;
     color: rgb(145, 143, 143);
 }
 ::placeholder{
@@ -138,7 +139,7 @@ bold{
     border-radius: 20px;
     height: 35px;
     border: none;
-    background-color: #eef7ff;
+    background-color: #b6d8f5;
     color: mediumblue;
     font-weight: 700;
     font-size: 14px;
@@ -182,14 +183,14 @@ bold{
     background-color: #0284fe;
     color: white;
     font-size: 12px;
-
+  height: 35px;
     width: 100px;
     border-radius: 15px;
     padding: 7px 15px 7px 0px;
 }
 .spanFollow{
     margin-left: -25px;
-    margin-top: 5px;
+    margin-top: 15px;
     color: white;
     font-weight: lighter;
 }
@@ -198,6 +199,7 @@ bold{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     width: 100px;
+    height: 35px;
     border: 1px solid lightgray;
     padding: 7px 20px 7px 5px;
     margin-left: 25px;
@@ -207,7 +209,7 @@ bold{
 }
 .spanMessage{
     margin-left: -25px;
-    margin-top: 5px;
+    margin-top: 15px;
     color: rgb(0, 0, 0); 
     font-weight: lighter;
 }

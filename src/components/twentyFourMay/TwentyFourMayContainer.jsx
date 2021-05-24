@@ -37,7 +37,7 @@ export default function TwentyFourMayContainer(props) {
                                 />
                              </div>
 
-                             <h4>Meagan Fisher</h4>
+                             <h3>Meagan Fisher</h3>
                              <p className={styles.engMang}>Engineering Manager</p>
                          </div>
                          <div className={styles.cardOneSecond}>
