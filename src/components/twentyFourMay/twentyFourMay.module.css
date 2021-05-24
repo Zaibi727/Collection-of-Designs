@@ -126,7 +126,7 @@ bold{
 }
 .spanInput{
     margin-left: -30px;
-    margin-top: 15px;
+    margin-bottom: -10px;
     color: rgb(145, 143, 143);
 }
 ::placeholder{
@@ -183,14 +183,14 @@ bold{
     background-color: #0284fe;
     color: white;
     font-size: 12px;
-  height: 35px;
+  height: 30px;
     width: 100px;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 7px 15px 7px 0px;
 }
 .spanFollow{
     margin-left: -25px;
-    margin-top: 15px;
+    margin-bottom: -10px;
     color: white;
     font-weight: lighter;
 }
@@ -199,17 +199,17 @@ bold{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     width: 100px;
-    height: 35px;
+    height: 30px;
     border: 1px solid lightgray;
     padding: 7px 20px 7px 5px;
     margin-left: 25px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-weight: 600;
     font-size: 12px;
 }
 .spanMessage{
     margin-left: -25px;
-    margin-top: 15px;
+    margin-bottom: -10px;
     color: rgb(0, 0, 0); 
     font-weight: lighter;
 }
@@ -219,8 +219,8 @@ bold{
 .soicalIconBtn{
     border: none;
     background-color: white;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
    box-shadow: 2px 1px  4px rgb(201, 200, 200);
     display: flex;
@@ -231,6 +231,7 @@ bold{
     color: red !important;
 }
 .likeEdit{
+    font-size: 16px;
     border: none;
     background-color: white;
 }
