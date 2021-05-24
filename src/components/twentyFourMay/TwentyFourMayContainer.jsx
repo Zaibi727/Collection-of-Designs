@@ -37,8 +37,8 @@ export default function TwentyFourMayContainer(props) {
                                 />
                              </div>
 
-                             <h5>Meagan Fisher</h5>
-                             <p>Engineering</p>
+                             <h4>Meagan Fisher</h4>
+                             <p className={styles.engMang}>Engineering Manager</p>
                          </div>
                          <div className={styles.cardOneSecond}>
                              <AbstractFollowMessage type="dark" title="Follow" Icon={TiPlus} />

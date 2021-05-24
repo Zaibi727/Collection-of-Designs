@@ -18,6 +18,10 @@
     width: 300px;
     height: 350px;
 }
+.engMang{
+  font-size: 13px;
+  color: lightgray;
+}
 
 /*--sec1--*/
 .sec2{
@@ -29,18 +33,19 @@
 .bigImage{
     width: 300px;
     height: 190px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    margin-bottom: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .sec2Div1{
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 10px 5px;
+padding: 10px;
 background-color: white;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-border-bottom-left-radius: 15px;
-border-bottom-right-radius: 15px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 }
 .sec2Div1Sub{
     display: flex;
@@ -54,11 +59,11 @@ border-bottom-right-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px 5px 5px;
+    padding: 10px;
     margin-top: 30px;
     background-color:rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
     .sec2Div2Sub{
@@ -76,8 +81,8 @@ border-bottom-right-radius: 15px;
       }
       .three p{
           font-size: 14px;
-          margin-top: -5px;
-          color: lightgrey;
+          margin-top: 0px;
+          color: rgb(158, 157, 157);
       }
 
 /*--sec2--*/
@@ -85,7 +90,7 @@ border-bottom-right-radius: 15px;
 .sec3{
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0px;
     color: black;
     width: 300px;
@@ -93,7 +98,8 @@ border-bottom-right-radius: 15px;
 }
 .sec3Div1 h3{
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 .sec3Div1 p{
     font-size: 12px;
@@ -114,15 +120,16 @@ bold{
 .input{
     border: 1px solid lightgray;
     border-radius: 20px;
-    padding: 4px 50px 4px 10px;
+    padding: 7px 50px 7px 10px;
     width: 220px;
 }
 .spanInput{
     margin-left: -30px;
+    margin-top: 5px;
     color: rgb(145, 143, 143);
 }
 ::placeholder{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 13px;
 
 }
@@ -131,7 +138,7 @@ bold{
     border-radius: 20px;
     height: 35px;
     border: none;
-    background-color: lightskyblue;
+    background-color: #eef7ff;
     color: mediumblue;
     font-weight: 700;
     font-size: 14px;
@@ -178,10 +185,11 @@ bold{
 
     width: 100px;
     border-radius: 15px;
-    padding: 5px 15px 5px 0px;
+    padding: 7px 15px 7px 0px;
 }
 .spanFollow{
     margin-left: -25px;
+    margin-top: 5px;
     color: white;
     font-weight: lighter;
 }
@@ -191,7 +199,7 @@ bold{
     color: rgb(0, 0, 0);
     width: 100px;
     border: 1px solid lightgray;
-    padding: 5px 20px 5px 5px;
+    padding: 7px 20px 7px 5px;
     margin-left: 25px;
     border-radius: 15px;
     font-weight: 600;
@@ -199,6 +207,7 @@ bold{
 }
 .spanMessage{
     margin-left: -25px;
+    margin-top: 5px;
     color: rgb(0, 0, 0); 
     font-weight: lighter;
 }
