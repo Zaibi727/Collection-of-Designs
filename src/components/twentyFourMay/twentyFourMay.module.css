@@ -126,7 +126,7 @@ bold{
 }
 .spanInput{
     margin-left: -30px;
-    margin-bottom: -10px;
+    margin-bottom: -13px;
     color: rgb(145, 143, 143);
 }
 ::placeholder{
@@ -190,9 +190,10 @@ bold{
 }
 .spanFollow{
     margin-left: -25px;
-    margin-bottom: -10px;
+    margin-bottom: -14px;
     color: white;
     font-weight: lighter;
+    font-size: 12px;
 }
 .message{
     border: none;
@@ -209,9 +210,10 @@ bold{
 }
 .spanMessage{
     margin-left: -25px;
-    margin-bottom: -10px;
+    margin-bottom: -14px;
     color: rgb(0, 0, 0); 
     font-weight: lighter;
+    font-size: 12px;
 }
 
 /*--abfolooemessage btn--*/
