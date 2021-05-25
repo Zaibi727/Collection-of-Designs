@@ -9,6 +9,8 @@ export default function Product(props) {
     const shippingPrice = itemPrice > 2000 ? 0 : 40;
     const totalPrice = itemPrice + taxPrice + shippingPrice;
 
+    const thisCartItem = cartItems.find((x) => x.id === product.id);
+
 
     return (
         <div className={styles.productWrapper}>
@@ -30,17 +32,17 @@ export default function Product(props) {
                          <div className={styles.btnDiv}>
                              <button onClick={()=>onRemove(product)}>-</button>                                                                               
                                <span>
-                               {cartItems.map((item) =>
-                                    <div key={item.id}>
-                                        <p>{item.qty}</p>
+                               {thisCartItem &&
+                                    <div>
+                                        <p>{thisCartItem.qty}</p>
                                     </div>
-                                 )}
+                                 }
                                </span>
                              <button onClick={()=>onAdd(product)}>+</button>
                          </div>
                          
                          <div>
-                             {cartItems.length !== 0 &&
+                             {thisCartItem &&
                                 <>
                                    <div><strong>${totalPrice.toFixed(2)}</strong></div>
                                 </>
@@ -53,3 +55,4 @@ export default function Product(props) {
         </div>
     )
 }
+
