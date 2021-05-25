@@ -4,7 +4,9 @@
 .main{
     padding: 0px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 .productWrapper{
     padding: 20px 0px;
@@ -31,7 +33,7 @@
     margin-left: 10px;
 }
 .name{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 .size{
