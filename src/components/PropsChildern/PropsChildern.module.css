@@ -17,6 +17,9 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+button:hover{
+    cursor: pointer;
+}
 .sec1{
     background-color: rgb(253, 253, 253);
     padding: 0px;
