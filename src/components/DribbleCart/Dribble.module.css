@@ -6,7 +6,6 @@
     background-color: rgb(255, 255, 255);
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
 }
 .productWrapper{
     padding: 20px 0px;
@@ -22,7 +21,8 @@
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1pt solid rgb(197, 187, 187);
+    align-items: center;
+    border-bottom: 1px solid rgb(197, 187, 187);
 }
 .productdis{
     display: flex;
@@ -33,16 +33,16 @@
     margin-left: 10px;
 }
 .name{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 }
 .size{
-    font-size: 12px;
-    color: grey;
+    font-size: 13px;
+    color: rgb(46, 44, 44);
 }
 .color{
-    font-size: 12px;
-    color: grey;
+    font-size: 13px;
+    color: rgb(73, 70, 70);
 }
 .btnDiv{
     display: flex;
@@ -55,8 +55,8 @@
 
 .btnDiv button{
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +64,8 @@
 }
 .btnDiv span{
     margin-top: 0px;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background-color: rgb(255, 255, 255);
 }
 /*---product--*/
@@ -77,7 +77,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    background-color: lightgrey;
+    background-color: rgb(236, 234, 234);
     
 }
 .mainWrapper{
