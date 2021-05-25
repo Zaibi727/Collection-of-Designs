@@ -1,0 +1,86 @@
+.img{
+    width: 5rem;
+}
+.main{
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgrey;
+}
+.productWrapper{
+    padding: 20px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.table{
+    width: 100%;
+}
+
+.trdata{
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1pt solid rgb(197, 187, 187);
+}
+.productdis{
+    display: flex;
+   
+}
+.p{
+    text-align: left;
+    margin-left: 10px;
+}
+.name{
+    font-size: 14px;
+    font-weight: 500;
+}
+.size{
+    margin-top: -15px;
+    font-size: 12px;
+    color: grey;
+}
+.color{
+    margin-top: -15px;
+    font-size: 12px;
+    color: grey;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 25px;
+    background-color: white;
+}
+
+.btnDiv button{
+    border: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 214, 214);
+}
+.btnDiv span{
+    margin-top: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+}
+/*---product--*/
+.headTab{
+    width: 100%;
+    margin-top: 40px;
+}
+.headTr{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: lightgrey;
+    
+}
+.mainWrapper{
+    padding: 30px;
+}
+/*--main--*/
