@@ -1,0 +1,115 @@
+.img{
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: -70px;
+}
+.AbCard{ 
+   display: flex;
+    justify-content: space-between;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+}
+.indvidualCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+ 
+}
+.name{
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(58, 147, 231);
+}
+.profession{
+    font-size: 12px;
+    color: rgb(139, 136, 136);
+}
+.bio{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px){
+    .AbCard{ 
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+         margin: 0;
+         position: absolute;
+         top: 10%;
+         left: 0%;
+          transform: translate(0%, 0%);
+          text-align: center;
+       
+     }
+     .indvidualCard{
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         padding: 20px;
+         
+        text-align: center;
+         border-radius: 10px;
+         width: 300px;
+         max-width: 100%;
+         height: auto;
+         margin: 40px auto;
+      
+     }
+}
+@media only screen and (max-width: 650px){
+    .AbCard{ 
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+         margin: 0;
+         position: absolute;
+         top: 10%;
+         left: 0%;
+          transform: translate(0%, 0%);
+          text-align: center;
+       
+     }
+     .indvidualCard{
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         padding: 20px;        
+        text-align: center;
+         border-radius: 10px;
+         width: 220px;
+         max-width: 100%;
+         height: auto;
+         margin: 40px auto;
+      
+     }
+}
+@media only screen and (max-width: 480px){
+    .AbCard{ 
+        width: 100%;
+        display: grid;
+        grid-template-columns:100%;
+         margin: 0;
+         position: absolute;
+         top: 10%;
+         left: 0%;
+          transform: translate(0%, 0%);
+          text-align: center;
+       
+     }
+     .indvidualCard{
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         padding: 20px;        
+        text-align: center;
+         border-radius: 10px;
+         width: 200px;
+         max-width: 100%;
+         height: auto;
+         margin: 40px auto;
+      
+     }
+}
