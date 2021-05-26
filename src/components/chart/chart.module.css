@@ -1,0 +1,147 @@
+.div{
+    width: 50%;
+    border-right: 1px solid lightgrey;
+    padding-right: 100px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.h{
+    text-align: left;
+}
+.h h3{
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.label{
+    display: flex;
+}
+.blue{
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: rgb(54, 162, 233);
+
+}
+.pink{
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color:  rgb(255, 99, 132);
+}
+.bluee{
+    width: 10px;
+    margin-top: 5px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(38, 12, 109);
+}
+.content{
+  margin-left: 10px;
+}
+.content p {
+    font-size: 13px;
+    color: lightslategray;
+}
+
+@media only screen and (max-width: 768px){
+    .div{
+        width: 50%;
+        border-right: 1px solid lightgrey;
+        padding-right: 50px;
+        padding-top: 50px;
+    }
+    
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media only screen and (max-width: 480px){
+    .div{
+        width: 50%;
+        border: none;
+        padding-right: 10px;
+        padding-top: 50px;
+        margin: 20px auto;
+    }
+    
+    .wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        padding-left: 20px;
+        margin: 0 auto;
+    }
+    .h h3{
+        font-size: 14px;
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .div{
+        width: 50%;
+        border: none;
+        padding-right: 10px;
+        padding-top: 50px;
+        margin: 20px auto;
+    }
+    
+    .wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 280px;
+        margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        padding-left: 20px;
+        margin: 0 auto;
+    }
+    .h h3{
+        font-size: 14px;
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+}
