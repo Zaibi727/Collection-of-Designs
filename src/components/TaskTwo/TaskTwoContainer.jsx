@@ -8,7 +8,7 @@ export default function TaskTwoContainer() {
         <div className={styles.double}>
         <div className={styles.tasktwoContainer}>
               <header className={styles.header}>
-                  <h4>Social Traffic</h4>
+                  <h3>Social Traffic</h3>
                   <button>
                       See all
                   </button>
