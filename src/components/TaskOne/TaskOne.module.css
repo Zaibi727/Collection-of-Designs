@@ -58,6 +58,7 @@
 .bottomDiv{
    display: flex;
    align-items: center;
+   margin-top: 30px;
 }
 .trafficArrow{
   color: rgb(18, 143, 18);
@@ -88,7 +89,6 @@
 .abWrapper{
    background-color: white;
    width: 270px;
-   height: 200px;
    max-width: 100%;
    border-radius:7px;
    padding: 15px;
