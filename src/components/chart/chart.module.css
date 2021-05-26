@@ -26,6 +26,7 @@
 }
 .label{
     display: flex;
+    margin-bottom: 20px;
 }
 .blue{
     width: 10px;
@@ -52,8 +53,12 @@
 .content{
   margin-left: 10px;
 }
+.content h6{
+    font-size: 18px;
+}
 .content p {
-    font-size: 13px;
+    margin-top: 8px;
+    font-size: 14px;
     color: lightslategray;
 }
 
