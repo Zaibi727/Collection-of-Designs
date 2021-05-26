@@ -60,7 +60,9 @@ import './dropDown.css';
 //import DribbleContainer from './DribbleCart/DribbleContainer';
 //import Chart from './chart/chart';
 //import TaskOneContainer from './TaskOne/TaskOneContainer';
-import TaskTwoContainer from './TaskTwo/TaskTwoContainer';
+//import TaskTwoContainer from './TaskTwo/TaskTwoContainer';
+import TaskThreeContainer from './TaskThree/TaskThreeContainer';
+
 
 class Parent extends Component {
 
@@ -69,7 +71,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-               <TaskTwoContainer />
+               <TaskThreeContainer />
            </div>
          );
     }

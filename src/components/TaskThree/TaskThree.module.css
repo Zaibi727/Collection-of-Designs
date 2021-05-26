@@ -1,0 +1,20 @@
+.wrapper{
+    width: 600px;
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.double{
+    width: 100%;
+}
+.p1{
+    color: lightslategray;
+    margin-bottom: 8px;
+}
+.p2{
+    font-weight: 500;
+    font-size: 25px;
+}
