@@ -45,9 +45,8 @@
 }
 .title{
     color: rgb(161, 167, 172);
-    font-weight: 500;
     margin-bottom: 8px;
-    font-size: 13px;
+    font-size: 17px;
 }
 .number{
     margin-top: -8px;
@@ -65,20 +64,20 @@
   font-size: 20px;
 }
 .traffcPercent{
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(18, 143, 18);
     margin-right: 10px;
 }
 .traficHistory{
     color: lightslategray;
-    font-size: 13px;
+    font-size: 14px;
 }
 .userArrow{
     color: rgb(211, 12, 12);
   font-size: 20px;
 }
 .userPercent{
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(185, 28, 28);
     margin-right: 10px;
 }
