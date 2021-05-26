@@ -49,7 +49,7 @@ export default function TaskThreeContainer() {
             <div className={styles.wrapper}>
                <p className={styles.p1}>Perfomance</p>
                <p className={styles.p2}>Total orders</p>
-             <div>
+             <div className={styles.bar}>
              <Bar 
                data={data} 
                options={{ 
