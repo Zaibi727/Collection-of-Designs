@@ -58,7 +58,6 @@
 .bottomDiv{
    display: flex;
    align-items: center;
-   margin-bottom: -20px;
 }
 .trafficArrow{
   color: rgb(18, 143, 18);
