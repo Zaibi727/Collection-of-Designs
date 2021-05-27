@@ -83,17 +83,7 @@ class TwentySevenMayContainer extends React.Component{
 
 
     render(){
-   
-      let mainStyle = {
-        marginLeft: '0%',
-        marginRight: '0%',
-    }
-    if(this.state.open || this.state.opene) {
-        mainStyle={
-            marginLeft: '30%',
-            marginRight: '30%',
-        } 
-    }
+  
 
     return (
         <div className={styles.wrapper}>
@@ -136,7 +126,7 @@ class TwentySevenMayContainer extends React.Component{
                 </div>
             </header>
      
-            <main className={styles.main} style={mainStyle}>
+            <main className={styles.main} style={{marginLeft: this.state.open == true && "30%", marginRight: this.state.opene == true && '30%'}}>
                 <h4>Main Content</h4>
                 <br></br>
                 <p>
