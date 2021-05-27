@@ -43,7 +43,7 @@ class TwentySevenMayContainer extends React.Component{
     }
     componentWillUnmount() {
       document.removeEventListener("mousedown", this.handleClickOutside);
-      document.removeEventListener("mousedown", this.handleRClickOutside);
+     
     }
 
     handleClickOutside = event => {
