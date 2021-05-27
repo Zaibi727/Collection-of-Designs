@@ -1,0 +1,132 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-bottom: 1px solid red;
+    background-color: lightgreen;
+}
+.left{
+    border-right: 1px solid red;
+    padding: 2px 30px 15px 25px;
+    height: 55px;
+
+    
+}
+
+.btnLeft{
+    border: none;
+    background-color: transparent;
+    float: left;
+    font-size: 28px;
+}
+
+
+.leftAside{
+   width: 30% !important;
+   background-color: lightgreen;
+}
+.leftAside h4{
+  position: absolute;
+  margin-left: 37px;
+  margin-top: 0px;
+  padding: 12px 87px 13px 87px;
+  background-color: lightgreen;
+}
+.leftAside aside{
+    border-left: 1px solid red;
+    left: 0px;
+    position: absolute;
+    margin-top: 55px;
+    width: 30%;
+    height: 100%;
+    padding-top: 30px;
+    background-color: lightgreen;
+    z-index: 1;
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+/*---left---*/
+
+.right{
+    padding: 2px 25px 15px 30px;
+    height: 55px;
+    margin-top: 0px;
+    margin-right: 0px;
+    border-left: 1px solid red;
+}
+
+.btnRight{
+    border: none;
+    background-color: transparent;
+    float: right;
+    font-size: 28px;
+}
+.rightAside{
+    width: 30% !important;
+    background-color: lightgreen;
+ }
+ .rightAside h4{
+     position: absolute;
+     right: 0px;
+     margin-right: 60px;
+  margin-top: 0px;
+  padding: 12px 87px 13px 87px;
+  background-color: lightgreen;
+    
+  }
+  .rightAside aside{
+    position: absolute;
+    right: 0px;
+    margin-top: 55px;
+    width: 30%;
+    height: 100vh;
+    padding-top: 30px;
+    background-color: lightgreen;
+    z-index: 1;
+    padding-left:20px;
+    padding-right: 30px;
+    text-align: left;
+}
+.main{
+    padding: 30px;
+    text-align: left;
+    background-color: wheat;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1000px){
+    .rightAside h4{
+        position: absolute;
+        right: 0px;
+        margin-right: 60px;
+     margin-top: 0px;
+     padding: 12px 27px 13px 27px;
+     background-color: lightgreen;
+       
+     }
+     .leftAside h4{
+        position: absolute;
+        margin-left: 37px;
+        margin-top: 0px;
+        padding: 12px 27px 13px 27px;
+        background-color: lightgreen;
+      }
+}
+
+@media only screen and (max-width: 768px){
+    .rightAside h4{
+      display: none;
+       
+     }
+     .leftAside h4{
+        display: none;
+      }
+}
