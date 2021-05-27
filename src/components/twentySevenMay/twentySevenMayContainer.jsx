@@ -52,7 +52,6 @@ class TwentySevenMayContainer extends React.Component{
       //actually set the state to the window dimensions
       getDimensions = () => {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
-        console.log(this.state);
       }
 
       container = React.createRef();
