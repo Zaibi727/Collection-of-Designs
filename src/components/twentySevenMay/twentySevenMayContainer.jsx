@@ -35,6 +35,26 @@ class TwentySevenMayContainer extends React.Component{
         });
       };
 
+
+      componentDidMount() {
+        this.state = { width: 0, height: 0 };
+        this.getDimensions(); 
+      
+        //add dimensions listener for window resizing
+        window.addEventListener('resize', this.getDimensions); 
+      }
+      
+      //remove listener on page exit
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.getDimensions); 
+      }
+      
+      //actually set the state to the window dimensions
+      getDimensions = () => {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+        console.log(this.state);
+      }
+
       container = React.createRef();
 
       componentDidMount() {
@@ -82,7 +102,7 @@ class TwentySevenMayContainer extends React.Component{
     return (
         <div className={styles.wrapper}>
             <header className={styles.header}>
-                <div  ref={this.container} className={styles.left} style={{backgroundColor: this.state.bgColor}}>
+                <div   className={styles.left} style={{backgroundColor: this.state.bgColor}}>
                     <button className={styles.btnLeft} onClick={this.handleButtonClick} ><GiHamburgerMenu /></button>
 
                     {this.state.open && (
@@ -102,7 +122,7 @@ class TwentySevenMayContainer extends React.Component{
 
                 <h4>Main header</h4>
 
-                <div  ref={this.container} className={styles.right} style={{backgroundColor: this.state.bgColor}}>
+                <div  className={styles.right} style={{backgroundColor: this.state.bgColor}}>
                     <button className={styles.btnRight} onClick={this.handleRButtonClick}>  <GiHamburgerMenu />  </button>
                     {this.state.opene && (  
                              <div className={styles.rightAside}>

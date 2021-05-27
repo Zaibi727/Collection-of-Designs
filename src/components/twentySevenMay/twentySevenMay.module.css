@@ -95,7 +95,7 @@
     text-align: left;
 }
 .main{
-    height: 100%;
+    height: 100vh;
     padding: 30px;
     text-align: left;
     background-color: wheat;
