@@ -41,7 +41,7 @@
 .leftAside aside{
     left: 0px;
     position: absolute;
-    margin-top: 55px;
+    margin-top: 52px;
     width: 30%;
     height: 100%;
     padding-top: 30px;
@@ -84,7 +84,7 @@
   .rightAside aside{
     position: absolute;
     right: 0px;
-    margin-top: 55px;
+    margin-top: 52px;
     width: 30%;
     height: 100vh;
     padding-top: 30px;
