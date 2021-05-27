@@ -176,5 +176,11 @@
            .leftAside h4{
               display: none;
             }
+            .main{
+                height: unset;
+                padding: 30px;
+                text-align: left;
+                background-color: wheat;
+            }
     }
 }
