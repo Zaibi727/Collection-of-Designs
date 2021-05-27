@@ -69,9 +69,12 @@ class TwentySevenMayContainer extends React.Component{
         marginLeft: '0%',
         marginRight: '0%',
     }
-    if(this.state.open || this.state.opene ) {
+    if(this.state.open) {
         mainStyle={
             marginLeft: '30%',
+        } 
+    }else if(this.state.opene){
+        mainStyle={
             marginRight: '30%',
         } 
     }
