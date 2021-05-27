@@ -104,9 +104,10 @@ class TwentySevenMayContainer extends React.Component{
                     {this.state.opene && (  
                              <div className={styles.rightAside}>
                              <h4>Rightheader</h4>          
-                            <aside>
-                              <h5>Left Content</h5>
-                               Nam accumsan eleifend metus at imperdiet. Mauris pellentesque ipsum nisi, et fringilla  leo blandit sed. In tempor, leo sit amet  fringilla imperdiet, ipsum enim sagittis sem,  non molestie nisi purus consequat sapien.  Proin at velit id elit tincidunt iaculis ac ac<br/>  libero. Vivamus vitae tincidunt ex. Duis sit  amet lacinia massa. Quisque lobortis  tincidunt metus ut commodo. Sed  euismod quam gravida condimentum commodo.
+                             <aside>
+                               <h5>Right Content</h5>
+                                Nam accumsan eleifend metus at imperdiet. Mauris pellentesque ipsum nisi, et fringilla leo blandit sed. In tempor, leo sit amet fringilla imperdiet, ipsum enim sagittis sem, non molestie nisi purus consequat sapien. Proin at velit id elit tincidunt iaculis ac ac libero. Vivamus vitae tincidunt ex. Duis sit amet lacinia massa. Quisque lobortis tincidunt metus ut commodo. Sed euismod quam gravida condimentum commodo.
+                                Vivamus tincidunt risus ut sapien tincidunt, ac fermentum libero dapibus. Duis accumsan enim ac magna tempor, vestibulum euismod nisl pharetra. Ut dictum lacus eu venenatis vestibulum. Vestibulum euismod at arcu ac blandit. Curabitur eu imperdiet magna. Duis bibendum efficitur diam, eget placerat nunc imperdiet eget. Morbi porta at leo sed porta. Nullam eleifend eleifend quam eget dictum.
                            </aside>
                              </div>
                      )}
