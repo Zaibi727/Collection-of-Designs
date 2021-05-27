@@ -35,13 +35,13 @@
   position: absolute;
   margin-left: 37px;
   margin-top: 0px;
-  padding: 12px 87px 10px 87px;
+  padding: 10px 87px 10px 87px;
   background-color: lightgreen;
 }
 .leftAside aside{
     left: 0px;
     position: absolute;
-    margin-top: 52px;
+    margin-top: 50px;
     width: 30%;
     height: 100%;
     padding-top: 30px;
@@ -77,14 +77,14 @@
      right: 0px;
      margin-right: 60px;
   margin-top: 0px;
-  padding: 12px 87px 10px 87px;
+  padding: 10px 87px 10px 87px;
   background-color: lightgreen;
     
   }
   .rightAside aside{
     position: absolute;
     right: 0px;
-    margin-top: 52px;
+    margin-top: 50px;
     width: 30%;
     height: 100vh;
     padding-top: 30px;
