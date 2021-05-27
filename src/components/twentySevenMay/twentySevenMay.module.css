@@ -38,7 +38,7 @@
   padding: 10px 87px 10px 87px;
   background-color: lightgreen;
 }
-.leftAside aside{
+.leftAside div{
     left: 0px;
     position: absolute;
     margin-top: 47px;
@@ -81,7 +81,7 @@
   background-color: lightgreen;
     
   }
-  .rightAside aside{
+  .rightAside div{
     position: absolute;
     right: 0px;
     margin-top: 47px;
