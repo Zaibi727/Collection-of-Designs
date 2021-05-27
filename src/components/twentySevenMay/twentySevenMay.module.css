@@ -99,7 +99,8 @@
     padding: 30px;
     text-align: left;
     background-color: wheat;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 @media only screen and (max-width: 1000px){
