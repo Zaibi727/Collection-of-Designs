@@ -128,7 +128,6 @@ class TwentySevenMayContainer extends React.Component{
      
             <main className={styles.main} style={{marginLeft: this.state.open == true && "30%", marginRight: this.state.opene == true && '30%'}}>
                 <h4>Main Content</h4>
-                <br></br>
                 <p>
                      Nam accumsan eleifend metus at imperdiet. Mauris pellentesque ipsum nisi, et fringilla leo blandit sed. In tempor, leo sit amet fringilla imperdiet, ipsum enim sagittis sem, non molestie nisi purus consequat sapien. Proin at velit id elit tincidunt iaculis ac ac libero. Vivamus vitae tincidunt ex. Duis sit amet lacinia massa. Quisque lobortis tincidunt metus ut commodo. Sed euismod quam gravida condimentum commodo.
                 </p>
