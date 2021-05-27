@@ -12,7 +12,7 @@
     align-items: center;
     padding: 0px 10px;
     border-bottom: 2px solid red;
-    background-color: lightgreen;
+    background-image: linear-gradient(to right, lightgreen , lightgreen);
 }
 .left{
     padding: 10px 30px 15px 25px;
@@ -141,4 +141,40 @@
      .leftAside h4{
         display: none;
       }
+     
+    @media only screen and (max-width: 600px){
+        .leftAside div{
+            left: 0px;
+            position: absolute;
+            margin-top: 47px;
+            width: 70%;
+            height: 100%;
+            padding-top: 30px;
+            background-color: lightgreen;
+            z-index: 1;
+            padding-left: 30px;
+            padding-right: 20px;
+            text-align: left;
+        }
+          .rightAside div{
+            position: absolute;
+            right: 0px;
+            margin-top: 47px;
+            width: 70%;
+            height: 100%;
+            padding-top: 30px;
+            background-color: lightgreen;
+            z-index: 1;
+            padding-left:20px;
+            padding-right: 30px;
+            text-align: left;
+        }
+        .rightAside h4{
+            display: none;
+             
+           }
+           .leftAside h4{
+              display: none;
+            }
+    }
 }
