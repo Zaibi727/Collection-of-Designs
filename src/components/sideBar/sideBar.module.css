@@ -83,6 +83,7 @@
 .lastSpan{
   margin-right: 10px;
   font-size: 20px;
+  margin-top: 5px;
 }
 .dashboard{
     background-color: white;
@@ -97,6 +98,9 @@
     color: rgb(53, 46, 46);
     font-size: 14px;
     text-decoration: none !important;
+}
+.dash{
+    margin-top: 5px;
 }
 
 

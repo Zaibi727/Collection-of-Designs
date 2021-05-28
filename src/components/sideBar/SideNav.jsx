@@ -43,7 +43,7 @@ export default function SideNav(props) {
                 <ul className={styles.SideNavUl}>
                    <Router>
                     
-                        <li className={styles.dashboard}  onClick={() => {window.location.href="/"}}><span><MdDashboard /></span>
+                        <li className={styles.dashboard}  onClick={() => {window.location.href="/"}}><span className={styles.dash}><MdDashboard /></span>
                            <Link to="/" className={styles.linkk}>Dashboard</Link>
                         </li>
                     
