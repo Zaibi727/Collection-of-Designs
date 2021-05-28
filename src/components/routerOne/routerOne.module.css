@@ -1,0 +1,14 @@
+.header{
+    height: 60px;
+    margin-bottom: 30px;
+}
+.headerUl{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: tomato;
+    padding: 25px 0px;
+    
+}
+.active{
+    color: wheat;
+}
