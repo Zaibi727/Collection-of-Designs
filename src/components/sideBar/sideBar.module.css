@@ -1,3 +1,30 @@
+.home{
+    position: absolute;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    text-align: center;
+}
+.about{
+    position: absolute;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    text-align: center;
+}
+.contact{
+    position: absolute;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    text-align: center;
+}
+.topLink{
+    text-decoration: none !important;
+}
+
+/*---header navs---*/
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -207,11 +234,11 @@
 
 @media only screen and (max-width: 480px){
     .header{
-        padding: 0px 10px;
+        padding: 0px 7px;
     
     }
     .headerUl li {
-        margin: 0px 10px;
+        margin: 0px 7px;
     }
     .SideNavWrapper{
         width: 150px;
@@ -268,6 +295,18 @@
 }
 .support{
     margin-left: 150px;
+    width: calc(100% - 150px);
+}
+.home{
+    left: 150px;
+    width: calc(100% - 150px);
+}
+.about{
+    left: 150px;
+    width: calc(100% - 150px);
+}
+.contact{
+    left: 150px;
     width: calc(100% - 150px);
 }
 }

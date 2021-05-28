@@ -8,6 +8,9 @@ import Icons from './Icons';
 import Maps from './Maps';
 import Notifications from './Notifications';
 import Support from './Support';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 
 import {
     BrowserRouter as Router,
@@ -34,6 +37,9 @@ export default function SideBarContainer() {
                    <Route path="/maps" component={Maps} />
                    <Route path="/notifications" component={Notifications} />
                    <Route path="/support" component={Support} />
+                   <Route path="/contact" component={Contact} />
+                   <Route path="/about" component={About} />
+                   <Route path="/home" component={Home} />
                    <Route />
                </Switch>
            </Router>
