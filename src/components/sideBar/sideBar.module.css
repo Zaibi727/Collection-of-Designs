@@ -79,10 +79,13 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+   
 }
 .upgrade{
     margin-top: 0px;
     font-size: 14px;
+    display: flex;
+    align-items: center;
     color: black !important;
 }
 .lastSpan{
