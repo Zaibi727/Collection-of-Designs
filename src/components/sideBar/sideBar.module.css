@@ -311,4 +311,12 @@
     left: 150px;
     width: calc(100% - 150px);
 }
+.link{
+    font-size: 14px;
+}
+.SideNavUl li{
+    margin-bottom: 15px;
+
+   
+}
 }
