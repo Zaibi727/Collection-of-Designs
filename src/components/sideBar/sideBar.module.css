@@ -71,6 +71,7 @@
     align-items: center;
     border-bottom: 1px solid lightgrey;
     margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 .p1{
     color: rgb(52, 92, 202);
@@ -120,7 +121,7 @@
 }
 .upgrade{
     margin-top: 0px;
-    font-size: 14px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     color: black !important;
@@ -143,7 +144,7 @@
 }
 .linkk{
     color: rgb(53, 46, 46);
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none !important;
 }
 
