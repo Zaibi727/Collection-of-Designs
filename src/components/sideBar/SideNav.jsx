@@ -54,7 +54,7 @@ export default function SideNav(props) {
                    
                     
                         <li onClick={() => {window.location.href="/table"}}><span><HiOutlineClipboardList /></span>
-                            <Link to="/table" className={styles.link}>Tbale List</Link>
+                            <Link to="/table" className={styles.link}>Table List</Link>
                         </li>
                 
                    

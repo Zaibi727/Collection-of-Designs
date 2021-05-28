@@ -46,13 +46,16 @@
     list-style: none;
 }
 .SideNavUl li{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
    
 }
 .SideNavUl li span{
     margin-right: 12px;
-    font-size: 20px;
+    font-size: 20px !important;
 }
 .link{
     text-decoration: none !important;
@@ -74,6 +77,8 @@
     color: rgb(75, 66, 66);
     padding-left: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .upgrade{
     margin-top: 0px;
@@ -83,7 +88,6 @@
 .lastSpan{
   margin-right: 10px;
   font-size: 20px;
-  margin-top: 5px;
 }
 .dashboard{
     background-color: white;
@@ -93,14 +97,13 @@
     border-radius: 3px;
     color: rgb(58, 48, 48);
     padding-left: 5px;
+    display: flex;
+    align-items: center;
 }
 .linkk{
     color: rgb(53, 46, 46);
     font-size: 14px;
     text-decoration: none !important;
-}
-.dash{
-    margin-top: 5px;
 }
 
 
