@@ -32,6 +32,8 @@
     background-image: linear-gradient(to right, rgb(233, 88, 88) , yellow);
     padding: 0px 30px;
     height: 60px;
+    width: 100%;
+    position: fixed;
 }
 .headerUl{
     display: flex;
@@ -50,13 +52,13 @@
 .SideNavWrapper{
     width: 250px;
     height: 100vh;
-    padding: 15px;
+    padding: 65px 15px 15px 15px;
     text-align: left;
     color: white;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-
+    overflow-y: auto;
     
 }
 .sideNavDiv1{
