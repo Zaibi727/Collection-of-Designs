@@ -48,7 +48,7 @@
 .SideNavUl li{
     margin-bottom: 15px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     align-items: center;
    
@@ -70,7 +70,7 @@
 
 .upgradeDiv{
     background-color: white;
-    height: 35px;
+    height: 40px;
     width: 230px;
     margin-left: -5px;
     border-radius: 3px;
@@ -94,7 +94,7 @@
 }
 .dashboard{
     background-color: white;
-    height: 35px;
+    height: 40px;
     width: 230px;
     margin-left: -5px;
     border-radius: 3px;
