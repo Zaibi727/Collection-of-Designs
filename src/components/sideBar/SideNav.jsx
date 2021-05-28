@@ -11,16 +11,25 @@ import { HiSupport } from "react-icons/hi";
 import { FaReact } from "react-icons/fa";
 import { FaArrowCircleUp } from "react-icons/fa";
 
+import Profile from './Profile';
+import Table from './Table';
+import Typography from './Typography';
+import Icons from './Icons';
+import Maps from './Maps';
+import Notifications from './Notifications';
+import Support from './Support';
+
+
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    NavLink
   } from "react-router-dom";
 
 
-export default function SideNav(props) {
+export default function SideNav() {
 
 
    const myStyle = {
@@ -41,48 +50,80 @@ export default function SideNav(props) {
                         <p className={styles.p2}>CREATIVE TIM</p>
                       </div>
                 <ul className={styles.SideNavUl}>
-                   <Router>
-                    
-                        <li className={styles.dashboard}  onClick={() => {window.location.href="/"}}><span className={styles.dash}><MdDashboard /></span>
-                           <Link to="/" className={styles.linkk}>Dashboard</Link>
+                   <Router>                   
+                        <li className={styles.dashboard}>
+                           <NavLink to="/" className={styles.linkk}><span><MdDashboard /></span>Dashboard</NavLink>
                         </li>
                     
                    
-                         <li><span><FaUser /></span>
-                            <Link to="/profile" className={styles.link}  onClick={() => {window.location.href="/profile"}}>User Profile</Link>
+                         <li>
+                            <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }}
+                                to="/profile" className={styles.link}> <span><FaUser /></span>User Profile</NavLink>
                          </li>
                    
                     
-                        <li onClick={() => {window.location.href="/table"}}><span><HiOutlineClipboardList /></span>
-                            <Link to="/table" className={styles.link}>Table List</Link>
+                        <li>
+                            <NavLink to="/table" className={styles.link} activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }}>
+                            <span><HiOutlineClipboardList /></span>Tbale List</NavLink>
                         </li>
                 
                    
-                         <li onClick={() => {window.location.href="/typography"}}><span><HiOutlineNewspaper /></span>
-                             <Link to="/typography" className={styles.link}>Typography</Link>
+                         <li>
+                             <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} to="/typography" className={styles.link}><span><HiOutlineNewspaper /></span>Typography</NavLink>
                          </li>
                    
                     
-                         <li onClick={() => {window.location.href="/icons"}}><span><SiIcon /></span>
-                           <Link to="/icons" className={styles.link}>Icons</Link>
+                         <li>
+                           <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} to="/icons" className={styles.link}><span><SiIcon /></span>Icons</NavLink>
                          </li>
                 
                     
-                         <li onClick={() => {window.location.href="/maps"}}><span><FaMapMarkerAlt /></span>
-                               <Link to="/maps" className={styles.link}>Maps</Link>
+                         <li>
+                               <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} to="/maps" className={styles.link}><span><FaMapMarkerAlt /></span>Maps</NavLink>
                          </li>
                     
                     
-                           <li  onClick={() => {window.location.href="/notifications"}}><span><IoNotifications /></span>
-                              <Link to="/notifications" className={styles.link}>Notifications</Link>
+                           <li >
+                              <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} to="/notifications" className={styles.link}><span><IoNotifications /></span>Notifications</NavLink>
                            </li>
                     
                    
-                        <li onClick={() => {window.location.href="/support"}}><span><HiSupport /></span>
-                            <Link to="/support" className={styles.link}>RTL Support</Link>
+                        <li>
+                            <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} to="/support" className={styles.link}> <span><HiSupport /></span>RTL Support</NavLink>
                         </li>
                     
-
+                        <Switch>
+                   <Route path="/profile">
+                       <Profile />
+                   </Route>
+                   <Route path="/table" component={Table} />
+                   <Route path="/typography" component={Typography} />
+                   <Route path="/icons" component={Icons} />
+                   <Route path="/maps" component={Maps} />
+                   <Route path="/notifications" component={Notifications} />
+                   <Route path="/support" component={Support} />                   
+                </Switch>
                     
                     </Router>
                 </ul>

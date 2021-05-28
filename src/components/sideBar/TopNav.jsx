@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './sideBar.module.css';
 
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    NavLink
   } from "react-router-dom";
 
 
@@ -15,22 +19,41 @@ export default function TopNav() {
         <div>
             <header className={styles.header}>
                 <ul className={styles.headerUl}>
-                  <Router>
-                  <Link className={styles.topLink} to="/home" onClick={() => {window.location.href="/home"}}>
-                      <li>Home</li>
-                   </Link>
-                   <Link className={styles.topLink} to="/about" onClick={() => {window.location.href="/about"}}>
-                      <li>About</li>
-                   </Link>
-                   <Link className={styles.topLink} to="/contact" onClick={()=>{window.location.href="/contact"}}>
-                      <li>Contact</li>
-                   </Link>
-                   <Link className={styles.topLink} to="/" onClick={() => {window.location.href="/"}}>
-                      <li>FAQs</li>
-                   </Link>
+                  <Router  >    
+                      <li className={styles.active}>
+                         <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} className={styles.topLink} to="/home"><div>Home</div></NavLink>
+                      </li>
+                      <li className={styles.active}>
+                         <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} className={styles.topLink} to="/about">About</NavLink>
+                      </li>
+                      <li className={styles.active}>
+                         <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} className={styles.topLink} to="/contact">Contact Us</NavLink>
+                      </li>
+                      <li className={styles.active}>
+                         <NavLink activeStyle={{
+                                        fontWeight: "bold",
+                                       color: "orange"
+                                             }} className={styles.topLink} to="/">FAQ's</NavLink>
+                      </li>
+                         <Switch>
+                         <Route path="/contact" component={Contact} />
+                          <Route path="/about" component={About} />
+                          <Route path="/home" component={Home} />
+                         </Switch>
                   </Router>
+                  
                 </ul>
             </header>
         </div>
     )
 }
+

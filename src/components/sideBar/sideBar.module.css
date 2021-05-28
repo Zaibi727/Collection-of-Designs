@@ -74,8 +74,8 @@
     padding-bottom: 10px;
 }
 .p1{
-    color: rgb(52, 92, 202);
-    font-size: 20px;
+    color: rgb(95, 132, 233);
+    font-size: 24px;
     margin-right: 15px;
 }
 
@@ -154,7 +154,7 @@
 
 .profile{
     position: absolute;
-    margin-left: 20%;
+    left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
@@ -167,7 +167,7 @@
 
 .table{
     position: absolute;
-    margin-left: 20%;
+    left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
@@ -179,7 +179,7 @@
 }
 .typo{
       position: absolute;
-    margin-left: 20%;
+      left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
@@ -192,7 +192,7 @@
 }
 .icon{
      position: absolute;
-    margin-left: 20%;
+     left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
@@ -204,7 +204,7 @@
 }
 .maps{
        position: absolute;
-    margin-left: 20%;
+       left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
@@ -216,7 +216,7 @@
 }
 .notifications{
       position: absolute;
-    margin-left: 20%;
+      left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
@@ -228,7 +228,7 @@
 }
 .support{
    position: absolute;
-    margin-left: 20%;
+   left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
@@ -288,44 +288,44 @@
     }
        
 .profile{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 
 .table{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .typo{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .icon{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .maps{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .notifications{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .support{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .home{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .about{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 .contact{
-    margin-left: 30%;
+    left: 30%;
     width: calc(100% - 30%);
 }
 }
@@ -373,16 +373,16 @@
         grid-template-columns: 40% 60%;
     }
     .profile{
-        margin-left: 40%;
+        left: 40%;
         width: calc(100% - 40%);
     }
     
     .table{
-        margin-left: 40%;
+        left: 40%;
         width: calc(100% - 40%);
     }
     .typo{
-        margin-left: 40%;
+        left: 40%;
         width: calc(100% - 40%);
     }
     .icon{
@@ -390,7 +390,7 @@
         width: calc(100% - 40%);
     }
     .maps{
-        margin-left: 40%;
+        left: 40%;
         width: calc(100% - 40%);
     }
     .notifications{
@@ -398,11 +398,11 @@
         width: calc(100% - 40%);
     }
     .support{
-        margin-left: 40%;
+        left: 40%;
         width: calc(100% - 40%);
     }
     .home{
-        margin-left: 40%;
+        left: 40%;
         width: calc(100% - 40%);
     }
     .about{
@@ -410,7 +410,7 @@
         width: calc(100% - 40%);
     }
     .contact{
-        margin-left: 40%;
+        left: 40%;
         width: calc(100% - 40%);
     }
 }
