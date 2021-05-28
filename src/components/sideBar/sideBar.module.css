@@ -1,22 +1,32 @@
+.structure{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    height: 100%;
+}
 .home{
     position: absolute;
-    left: 250px;
+    left: 20%;
+    background-color: brown;
     top: 60px;
-    width: calc(100% - 250px);
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     text-align: center;
 }
 .about{
     position: absolute;
-    left: 250px;
+    left: 20%;
     top: 60px;
-    width: calc(100% - 250px);
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     text-align: center;
 }
 .contact{
     position: absolute;
-    left: 250px;
+    left: 20%;
     top: 60px;
-    width: calc(100% - 250px);
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     text-align: center;
 }
 .topLink{
@@ -27,14 +37,11 @@
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-image: linear-gradient(to right, rgb(233, 88, 88) , yellow);
     padding: 0px 30px;
     height: 60px;
-    width: 100%;
-    position: fixed;
-    z-index: 2;
 }
 .headerUl{
     display: flex;
@@ -51,15 +58,12 @@
 /*---header--*/
 
 .SideNavWrapper{
-    width: 250px;
-    height: 100vh;
-    padding: 65px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
     text-align: left;
     color: white;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-    overflow-y: auto;
     
 }
 .sideNavDiv1{
@@ -103,7 +107,8 @@
 .upgradeDiv{
     background-color: white;
     height: 40px;
-    width: 230px;
+    width: 100%;
+    max-width: 200px;
     margin-left: -5px;
     border-radius: 3px;
     color: rgb(75, 66, 66);
@@ -127,7 +132,8 @@
 .dashboard{
     background-color: white;
     height: 40px;
-    width: 230px;
+    width: 100%;
+    max-width: 200px;
     margin-left: -5px;
     border-radius: 3px;
     color: rgb(58, 48, 48);
@@ -146,83 +152,92 @@
 
 
 .profile{
-    background-color: tomato;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
-    width: calc(100% - 250px);
-    height: 100%;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     justify-content: center;
+    background-color: blueviolet;
 }
 
 .table{
-    background-color: rgb(118, 120, 236);
     position: absolute;
-    margin-left: 250px;
+    margin-left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
-    width: calc(100% - 250px);
-    height: 100%;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     justify-content: center;
+    background-color: yellow;
 }
 .typo{
-    background-color: rgb(118, 236, 153);
-    position: absolute;
-    margin-left: 250px;
+      position: absolute;
+    margin-left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
-    width: calc(100% - 250px);
-    height: 100%;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     justify-content: center;
+
+    background-color: teal;
 }
 .icon{
-    background-color: rgb(236, 118, 226);
-    position: absolute;
-    margin-left: 250px;
+     position: absolute;
+    margin-left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
-    width: calc(100% - 250px);
-    height: 100%;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     justify-content: center;
+    background-color: rgb(52, 92, 202);
 }
 .maps{
-    background-color: rgb(102, 96, 102);
-    position: absolute;
-    margin-left: 250px;
+       position: absolute;
+    margin-left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
-    width: calc(100% - 250px);
-    height: 100%;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     justify-content: center;
+    background-color: rgb(233, 88, 88);
 }
 .notifications{
-    background-color: rgb(100, 42, 50);
-    position: absolute;
-    margin-left: 250px;
+      position: absolute;
+    margin-left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
-    width: calc(100% - 250px);
-    height: 100%;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
     justify-content: center;
+    background-color: red;
 }
 .support{
-    background-color: rgb(8, 75, 19);
-    position: absolute;
-    margin-left: 250px;
+   position: absolute;
+    margin-left: 20%;
     top: 60px;
     padding: 30px;
     display: flex;
-    width: calc(100% - 250px);
-    height: 100%;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
+    background-color: green;
     justify-content: center;
 }
+
 
 /*--content-pages---*/
 
@@ -235,91 +250,217 @@
     .headerUl li {
         margin: 0px 20px;
     }
+    .upgradeDiv{
+        max-width: 170px;
+    }
+    .upgrade{
+        margin-top: 0px;
+        font-size: 12px;
+    }
+    .lastSpan{
+        margin-right: 5px;
+        font-size: 15px;
+      }
+      .dashboard{
+        background-color: white;
+        height: 35px;
+        width: 100%;
+        max-width: 170px;
+    
+    }
+    .SideNavUl li{
+        margin-bottom: 15px;
+       
+    }
+    .SideNavUl li span{
+        margin-right: 9px;
+        font-size: 14px;
+    }
+    .link{
+        text-decoration: none !important;
+        font-size: 12px;
+        color: white;
+    }
+    .structure{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+       
+.profile{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+
+.table{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.typo{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.icon{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.maps{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.notifications{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.support{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.home{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.about{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
+.contact{
+    margin-left: 30%;
+    width: calc(100% - 30%);
+}
 }
 
 @media only screen and (max-width: 480px){
     .header{
-        padding: 0px 7px;
+        padding: 0px 5px;
     
     }
     .headerUl li {
         margin: 0px 7px;
     }
-    .SideNavWrapper{
-        width: 150px;
-        height: 100vh;
-          
-    }
     .upgradeDiv{
-        background-color: white;
-        height: 35px;
-        width: 130px;
+        max-width: 170px;
     }
     .upgrade{
         margin-top: 0px;
-        font-size: 12px;
-        color: black !important;
+        font-size: 14px;
     }
     .lastSpan{
-      margin-right: 5px;
-      font-size: 20px;
-    }
+        margin-right: 5px;
+        font-size: 15px;
+      }
     .dashboard{
-        width: 130px;
+        background-color: white;
+        height: 35px;
+        width: 100%;
+        max-width: 170px;
       
     }
     .linkk{
         font-size: 12px;
     }
-
+    .SideNavUl li span{
+        margin-right: 9px;
+        font-size: 14px;
+    }
+    .link{
+        text-decoration: none !important;
+        font-size: 12px;
+        color: white;
+    }
+    .structure{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .profile{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
     
-.profile{
-    margin-left: 150px;
-    width: calc(100% - 150px);
+    .table{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .typo{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .icon{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .maps{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .notifications{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .support{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .home{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .about{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
+    .contact{
+        margin-left: 40%;
+        width: calc(100% - 40%);
+    }
 }
 
-.table{
-    margin-left: 150px;
-    width: calc(100% - 150px);
-}
-.typo{
-    margin-left: 150px;
-    width: calc(100% - 150px);
-}
-.icon{
-    margin-left: 150px;
-    width: calc(100% - 150px);
-}
-.maps{
-    margin-left: 150px;
-    width: calc(100% - 150px);
-}
-.notifications{
-    margin-left: 150px;
-    width: calc(100% - 150px);
-}
-.support{
-    margin-left: 150px;
-    width: calc(100% - 150px);
-}
-.home{
-    left: 150px;
-    width: calc(100% - 150px);
-}
-.about{
-    left: 150px;
-    width: calc(100% - 150px);
-}
-.contact{
-    left: 150px;
-    width: calc(100% - 150px);
-}
-.link{
-    font-size: 14px;
-}
-.SideNavUl li{
-    margin-bottom: 15px;
 
-   
-}
+@media only screen and (max-width: 425px){
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(233, 88, 88) , yellow);
+        padding: 0px 5px;
+        height: 60px;
+    }
+    .headerUl{
+        display: flex;
+        justify-content: center;   
+        list-style: none;
+    }
+    .headerUl li {
+        margin: 0px 5px;
+        font-size: 9px !important;
+        padding-top: 5px;
+        color: black;
+        font-weight: 400;
+    }
+    .p2{
+        font-size: 12px;
+    }
+    .upgradeDiv{
+        max-width: 150px;
+    }
+    .upgrade{
+        margin-top: 0px;
+        font-size: 9px;
+    }
+    .lastSpan{
+      margin-right: 5px;
+      font-size: 12px;
+    }
+    .dashboard{
+        background-color: white;
+        height: 35px;
+        width: 100%;
+        max-width: 150px;
+        font-size: 9px;
+    
+    }
+    .linkk{
+        color: rgb(53, 46, 46);
+        font-size: 12px;
+        text-decoration: none !important;
+    }
 }

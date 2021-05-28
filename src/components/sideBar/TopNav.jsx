@@ -14,7 +14,6 @@ export default function TopNav() {
     return (
         <div>
             <header className={styles.header}>
-                <h4>Logo</h4>
                 <ul className={styles.headerUl}>
                   <Router>
                   <Link className={styles.topLink} to="/home" onClick={() => {window.location.href="/home"}}>

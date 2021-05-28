@@ -11,6 +11,7 @@ import Support from './Support';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import styles from './sideBar.module.css';
 
 import {
     BrowserRouter as Router,
@@ -24,9 +25,17 @@ import {
 
 export default function SideBarContainer() {
     return (
-        <div>
-            <TopNav />
-            <SideNav />
+        <div className={styles.container}>
+           <section className={styles.structure}>
+               <div className={styles.a}>
+                     <SideNav />
+               </div>
+               <div className={styles.b}>
+                   <TopNav />
+               </div>
+           </section>
+           
+            
 
            <Router>
                <Switch>
@@ -40,7 +49,7 @@ export default function SideBarContainer() {
                    <Route path="/contact" component={Contact} />
                    <Route path="/about" component={About} />
                    <Route path="/home" component={Home} />
-                   <Route />
+                   
                </Switch>
            </Router>
 
