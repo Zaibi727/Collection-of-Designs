@@ -75,7 +75,7 @@
     list-style: none;
 }
 .SideNavUl li{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     cursor: pointer;
     font-size: 14px;
     display: flex;
