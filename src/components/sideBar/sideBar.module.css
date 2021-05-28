@@ -1,0 +1,263 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(233, 88, 88) , yellow);
+    padding: 0px 30px;
+    height: 60px;
+}
+.headerUl{
+    display: flex;
+    justify-content: space-between;   
+    list-style: none;
+}
+.headerUl li {
+    margin: 0px 50px;
+    padding-top: 5px;
+}
+
+/*---header--*/
+
+.SideNavWrapper{
+    width: 250px;
+    height: 100vh;
+    padding: 15px;
+    text-align: left;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.sideNavDiv1{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+.p1{
+    color: rgb(52, 92, 202);
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.SideNavUl{
+    list-style: none;
+}
+.SideNavUl li{
+    margin-bottom: 10px;
+    cursor: pointer;
+   
+}
+.SideNavUl li span{
+    margin-right: 12px;
+    font-size: 20px;
+}
+.link{
+    text-decoration: none !important;
+    font-size: 14px;
+    color: white;
+}
+ .active{
+    background-color: gold;
+    color:Black ;
+    font-weight:bold;
+}
+
+.upgradeDiv{
+    background-color: white;
+    height: 35px;
+    width: 230px;
+    margin-left: -5px;
+    border-radius: 3px;
+    color: rgb(75, 66, 66);
+    padding-left: 5px;
+    cursor: pointer;
+}
+.upgrade{
+    margin-top: 0px;
+    font-size: 14px;
+    color: black !important;
+}
+.lastSpan{
+  margin-right: 10px;
+  font-size: 20px;
+}
+.dashboard{
+    background-color: white;
+    height: 35px;
+    width: 230px;
+    margin-left: -5px;
+    border-radius: 3px;
+    color: rgb(58, 48, 48);
+    padding-left: 5px;
+}
+.linkk{
+    color: rgb(53, 46, 46);
+    font-size: 14px;
+    text-decoration: none !important;
+}
+
+
+/*---sideNav--*/
+
+
+.profile{
+    background-color: tomato;
+    position: absolute;
+    margin-left: 250px;
+    top: 60px;
+    padding: 30px;
+    display: flex;
+    width: calc(100% - 250px);
+    height: 100%;
+    justify-content: center;
+}
+
+.table{
+    background-color: rgb(118, 120, 236);
+    position: absolute;
+    margin-left: 250px;
+    top: 60px;
+    padding: 30px;
+    display: flex;
+    width: calc(100% - 250px);
+    height: 100%;
+    justify-content: center;
+}
+.typo{
+    background-color: rgb(118, 236, 153);
+    position: absolute;
+    margin-left: 250px;
+    top: 60px;
+    padding: 30px;
+    display: flex;
+    width: calc(100% - 250px);
+    height: 100%;
+    justify-content: center;
+}
+.icon{
+    background-color: rgb(236, 118, 226);
+    position: absolute;
+    margin-left: 250px;
+    top: 60px;
+    padding: 30px;
+    display: flex;
+    width: calc(100% - 250px);
+    height: 100%;
+    justify-content: center;
+}
+.maps{
+    background-color: rgb(102, 96, 102);
+    position: absolute;
+    margin-left: 250px;
+    top: 60px;
+    padding: 30px;
+    display: flex;
+    width: calc(100% - 250px);
+    height: 100%;
+    justify-content: center;
+}
+.notifications{
+    background-color: rgb(100, 42, 50);
+    position: absolute;
+    margin-left: 250px;
+    top: 60px;
+    padding: 30px;
+    display: flex;
+    width: calc(100% - 250px);
+    height: 100%;
+    justify-content: center;
+}
+.support{
+    background-color: rgb(8, 75, 19);
+    position: absolute;
+    margin-left: 250px;
+    top: 60px;
+    padding: 30px;
+    display: flex;
+    width: calc(100% - 250px);
+    height: 100%;
+    justify-content: center;
+}
+
+/*--content-pages---*/
+
+
+@media only screen and (max-width: 768px){
+    .header{
+        padding: 0px 20px;
+
+    }
+    .headerUl li {
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .header{
+        padding: 0px 10px;
+    
+    }
+    .headerUl li {
+        margin: 0px 10px;
+    }
+    .SideNavWrapper{
+        width: 150px;
+        height: 100vh;
+          
+    }
+    .upgradeDiv{
+        background-color: white;
+        height: 35px;
+        width: 130px;
+    }
+    .upgrade{
+        margin-top: 0px;
+        font-size: 12px;
+        color: black !important;
+    }
+    .lastSpan{
+      margin-right: 5px;
+      font-size: 20px;
+    }
+    .dashboard{
+        width: 130px;
+      
+    }
+    .linkk{
+        font-size: 12px;
+    }
+
+    
+.profile{
+    margin-left: 150px;
+    width: calc(100% - 150px);
+}
+
+.table{
+    margin-left: 150px;
+    width: calc(100% - 150px);
+}
+.typo{
+    margin-left: 150px;
+    width: calc(100% - 150px);
+}
+.icon{
+    margin-left: 150px;
+    width: calc(100% - 150px);
+}
+.maps{
+    margin-left: 150px;
+    width: calc(100% - 150px);
+}
+.notifications{
+    margin-left: 150px;
+    width: calc(100% - 150px);
+}
+.support{
+    margin-left: 150px;
+    width: calc(100% - 150px);
+}
+}
