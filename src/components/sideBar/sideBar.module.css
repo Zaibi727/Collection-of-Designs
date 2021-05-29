@@ -156,18 +156,26 @@
 
 
 /*---sideNav--*/
-
+.Dashboard{
+    position: absolute;
+    left: 20%;
+    top: 60px;
+    padding: 10px;
+    height: auto;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
+    background-color: blueviolet;
+    overflow: auto;
+}
 
 .profile{
     position: absolute;
     left: 20%;
     top: 60px;
     padding: 30px;
-    display: flex;
     height: auto;
     width: calc(100% - 20%);
-    height: calc(100% - 60px);
-    justify-content: center;
+    height: calc(100% - 60px); 
     background-color: blueviolet;
 }
 
@@ -176,11 +184,9 @@
     left: 20%;
     top: 60px;
     padding: 30px;
-    display: flex;
     height: auto;
     width: calc(100% - 20%);
     height: calc(100% - 60px);
-    justify-content: center;
     background-color: yellow;
 }
 .typo{
@@ -307,6 +313,10 @@
         display: grid;
         grid-template-columns: 30% 70%;
     }
+    .Dashboard{
+        left: 30%;
+        width: calc(100% - 30%);
+    }
        
 .profile{
     left: 30%;
@@ -392,6 +402,10 @@
     .structure{
         display: grid;
         grid-template-columns: 40% 60%;
+    }
+    .Dashboard{
+        left: 40%;
+        width: calc(100% - 40%);
     }
     .profile{
         left: 40%;
