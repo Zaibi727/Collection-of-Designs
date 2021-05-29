@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-decoration: none !important;
 }
 
 
@@ -51,8 +52,8 @@
    
 }
 .div2 li{
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-weight: 500;
     text-decoration: none !important;
     color: black;
@@ -71,11 +72,13 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 30px;
+    text-decoration: none;
 }
 .antoterDiv{
     display: flex;
     justify-content: space-between;
     padding: 0px 30px;
+    text-decoration: none;
 }
 
 .subUl li{
@@ -87,9 +90,10 @@
 }
 .div3{
     width: 100%;
-    margin-top: -30px;
+   
 }
 .div3 li{
+    margin-top: -50px;
     display: flex;
     padding: 0px 30px;
     color: black;
