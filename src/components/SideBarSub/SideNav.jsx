@@ -98,7 +98,7 @@ class SideNav extends React.Component {
                   </NavLink>
                   
 
-                  <li className={styles.about} onClick={this.handleButtonOneClick} style={{backgroundColor: this.state.open == true && "#f3f4f6", borderLeft: this.state.open == true && '5px solid red'}}>
+                  <li className={styles.about} onClick={this.handleButtonOneClick} style={{backgroundColor: this.state.open == true && "#f3f4f6", borderLeft: this.state.open == true && '5px solid red', PaddingTop: this.state.open == true && '10px', paddingBottom: this.state.open == true && '10px'}}>
                       <div className={styles.aboutDiv}>
                           <p className={styles.p1}><span className={styles.icon}><FaRegUser /></span>About</p>
                           <p className={styles.p2}>{this.state.open ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</p>
@@ -114,7 +114,7 @@ class SideNav extends React.Component {
                      </li>
                   </ul>
               )}
-                  <li className={styles.another} onClick={this.handleButtonTwoClick} style={{backgroundColor: this.state.opene == true && "#f3f4f6", borderLeft: this.state.opene == true && '5px solid red'}}>
+                  <li className={styles.another} onClick={this.handleButtonTwoClick} style={{backgroundColor: this.state.opene == true && "#f3f4f6", borderLeft: this.state.opene == true && '5px solid red',PaddingTop: this.state.open == true && '10px', paddingBottom: this.state.open == true && '10px'}}>
                        <div className={styles.antoterDiv}>
                           <p className={styles.p1}>Another Tab</p>
                           <p className={styles.p2}>{this.state.opene ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</p>
