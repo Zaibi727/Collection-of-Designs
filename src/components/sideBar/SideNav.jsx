@@ -57,7 +57,7 @@ export default function SideNav() {
                     
                    
                          <li>
-                            <NavLink activeClassName={styles.aactive}  to="/profile" className={styles.link}
+                            <NavLink activeClassName={styles.aactive}  className={styles.link}
                                 to="/profile" className={styles.link}> <span><FaUser /></span>User Profile</NavLink>
                          </li>
                    
