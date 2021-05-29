@@ -247,7 +247,15 @@
 
 
 /*--content-pages---*/
-
+@media only screen and (max-width: 768px){
+    .aactive{
+        background-color: white;
+        color: black !important;
+        padding: 8px 60px 8px 4px;
+        margin-left: -4px;
+        border-radius: 3px;
+    }
+}
 
 @media only screen and (max-width: 768px){
     .aactive{
