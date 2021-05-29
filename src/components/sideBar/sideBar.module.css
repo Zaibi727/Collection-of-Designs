@@ -103,6 +103,13 @@
     color:Black ;
     font-weight:bold;
 }
+.aactive{
+    background-color: white;
+    color: black !important;
+    padding: 8px 85px 8px 2px;
+    margin-left: -2px;
+    border-radius: 3px;
+}
 
 .upgradeDiv{
     background-color: white;
