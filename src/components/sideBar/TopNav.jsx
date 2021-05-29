@@ -24,7 +24,7 @@ export default function TopNav() {
                          <NavLink activeStyle={{
                                         fontWeight: "bold",
                                        color: "orange"
-                                             }} className={styles.topLink} to="/home"><div>Home</div></NavLink>
+                                             }} className={styles.topLink} to=""><div>Home</div></NavLink>
                       </li>
                       <li className={styles.active}>
                          <NavLink activeStyle={{
