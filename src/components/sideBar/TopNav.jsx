@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './sideBar.module.css';
 
-import Home from './Home';
+
 import About from './About';
 import Contact from './Contact';
 
@@ -47,7 +47,7 @@ export default function TopNav() {
                          <Switch>
                          <Route path="/contact" component={Contact} />
                           <Route path="/about" component={About} />
-                          <Route path="/home" component={Home} />
+                          
                          </Switch>
                   </Router>
                   

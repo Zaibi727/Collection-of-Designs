@@ -19,6 +19,7 @@ import Maps from './Maps';
 import Notifications from './Notifications';
 import Support from './Support';
 
+import Home from './Home';
 
 
 import {
@@ -93,6 +94,7 @@ export default function SideNav() {
                         </li>
                     
                         <Switch>
+                        <Route path="/home" component={Home} />
                    <Route path="/profile">
                        <Profile />
                    </Route>
