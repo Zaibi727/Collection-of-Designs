@@ -92,11 +92,11 @@ class SideNav extends React.Component {
             </div>
           <Router>
               <ul className={styles.div2}>
-                  <li className={styles.home}>
-                  <NavLink activeClassName={styles.rest} to="/projects" className={styles.lastActive}>
-                  <span className={styles.icon}><GiCoffeeCup /></span>Home
+                  
+                  <NavLink className={styles.deco} activeClassName={styles.active} to="/home">
+                     <li className={styles.home}><span className={styles.icon}><GiCoffeeCup /></span>Home</li>
                   </NavLink>
-                  </li>
+                  
 
                   <li className={styles.about} onClick={this.handleButtonOneClick} style={{backgroundColor: this.state.open == true && "#f3f4f6", borderLeft: this.state.open == true && '5px solid red'}}>
                       <div className={styles.aboutDiv}>
@@ -107,16 +107,16 @@ class SideNav extends React.Component {
                          {this.state.open && (
                   <ul className={styles.subUl}>
                      <li>
-                         <NavLink activeClassName={styles.rest} to="/projects" className={styles.lastActive}>Project</NavLink>
+                         <NavLink className={styles.deco} id={styles.idd}  to="/projects">Project</NavLink>
                      </li>
                      <li>
-                         <NavLink activeClassName={styles.rest} to="/members" className={styles.lastActive}>Members</NavLink>
+                         <NavLink className={styles.deco} id={styles.idd}  to="/members" >Members</NavLink>
                      </li>
                   </ul>
               )}
                   <li className={styles.another} onClick={this.handleButtonTwoClick} style={{backgroundColor: this.state.opene == true && "#f3f4f6", borderLeft: this.state.opene == true && '5px solid red'}}>
                        <div className={styles.antoterDiv}>
-                          <p className={styles.p1}>Anoter Tab</p>
+                          <p className={styles.p1}>Another Tab</p>
                           <p className={styles.p2}>{this.state.opene ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</p>
                       </div>
 
@@ -124,7 +124,7 @@ class SideNav extends React.Component {
                   {this.state.opene && (             
                        <ul className={styles.subUl}>
                              <li>
-                                 <NavLink activeClassName={styles.rest} to="/teams" className={styles.lastActive}>
+                                 <NavLink  to="/teams" className={styles.deco}>
                                      Teams
                                  </NavLink>
                              </li>
@@ -138,9 +138,11 @@ class SideNav extends React.Component {
             
             
             <ul className={styles.div3}>
-                <li>
-                   <NavLink to="/teams" activeClassName={styles.rest} className={styles.lastActive}><span className={styles.setting}><AiFillSetting /></span>Settings</NavLink>
-                </li>
+   
+                   <NavLink to="/settings" activeClassName={styles.active} className={styles.deco}>
+                       <li><span className={styles.setting}><AiFillSetting /></span>Settings</li>
+                   </NavLink>
+                
             </ul>
 
             <Switch>

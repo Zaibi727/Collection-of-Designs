@@ -3,16 +3,7 @@
     padding: 0px;
 }
 
-.rest{
-  border-left: 3px solid red;
-  background-color: #f3f4f6;
-  padding-left: 30px;
-  width: 250px;
-  text-align: left;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-left: -17px;
-}
+
 .hh{
     font-weight: 500;
 }
@@ -27,14 +18,7 @@
     height: calc(100% - 60px);
 }
 
-.lastActive{
-    text-decoration: none !important;
-    color: black;
-}
-.active{
-    text-decoration: none !important;
-    color: black !important;
-}
+
 
 .conatiner{
   display: grid;
@@ -51,8 +35,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   height: 100vh;
-   border-right: 1px solid #d6dae2;
+    height: 100vh;
+    border-right: 1px solid #d6dae2;
+    width: 100%;
 }
 .div1{
     margin-top: 30px ;
@@ -62,84 +47,62 @@
     margin-top: -50px;
     cursor: pointer;
     list-style: none;
+    width: 100%;
    
 }
 .div2 li{
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-decoration: none !important;
+    color: black;
 }
 .icon{
     margin-right: 10px;
     font-size: 15px;
 }
 .p1{
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .p2{
-    padding-top: 10px;
-}
-.home{
-    padding: 0px 10px 0px 30px;
-    font-weight: 500;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-}
-.about{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 500;
-    font-size: 15px;
-}
-.another{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 500;
-    width: 250px;
-    font-size: 15px;
+    padding-top: 5px;
 }
 .aboutDiv{
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 0px 30px;
-    width: 199px;
+    padding: 0px 30px;
 }
 .antoterDiv{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 199px;
-    padding: 0px 10px 0px 35px;
+    padding: 0px 30px;
 }
-.subUl{
-    margin-top: -10px;
-    text-align: left;
-    margin-left: 50px;
-    margin-bottom: 10px;
-    list-style: none;
-}
+
 .subUl li{
-    font-size: 14px;
-    margin: 7px auto;
-    color: black !important;
-    
+   font-size: 14px;    
+}
+.home{
+    display: flex;
+    padding: 0px 30px;
 }
 .div3{
-  text-align: left;
-  cursor: pointer;
-  list-style: none;
-  width: 200px;
-  color: black !important;
+    width: 100%;
 }
-
-
-
-
-
+.div3 li{
+    display: flex;
+    padding: 0px 30px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+.active{
+    border-left: 5px solid red;
+    display: flex;
+    background-color: #f3f4f6;
+}
 .setting{
     margin-right: 15px;
 }
-
-
-@media only screen and (max-width: 600px){}
+.deco{
+    text-decoration: none!;
+}
