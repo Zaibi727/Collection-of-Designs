@@ -194,11 +194,9 @@
       left: 20%;
     top: 60px;
     padding: 30px;
-    display: flex;
     height: auto;
     width: calc(100% - 20%);
     height: calc(100% - 60px);
-    justify-content: center;
 
     background-color: teal;
 }
@@ -207,11 +205,9 @@
      left: 20%;
     top: 60px;
     padding: 30px;
-    display: flex;
     height: auto;
     width: calc(100% - 20%);
     height: calc(100% - 60px);
-    justify-content: center;
     background-color: rgb(52, 92, 202);
 }
 .maps{
@@ -219,11 +215,9 @@
        left: 20%;
     top: 60px;
     padding: 30px;
-    display: flex;
     height: auto;
     width: calc(100% - 20%);
     height: calc(100% - 60px);
-    justify-content: center;
     background-color: rgb(233, 88, 88);
 }
 .notifications{
@@ -231,11 +225,9 @@
       left: 20%;
     top: 60px;
     padding: 30px;
-    display: flex;
     height: auto;
     width: calc(100% - 20%);
     height: calc(100% - 60px);
-    justify-content: center;
     background-color: red;
 }
 .support{
@@ -243,12 +235,10 @@
    left: 20%;
     top: 60px;
     padding: 30px;
-    display: flex;
     height: auto;
     width: calc(100% - 20%);
     height: calc(100% - 60px);
     background-color: green;
-    justify-content: center;
 }
 
 
