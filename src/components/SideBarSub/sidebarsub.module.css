@@ -2,9 +2,43 @@
     margin: 0px;
     padding: 0px;
 }
+
+.rest{
+  border-left: 3px solid red;
+  background-color: #f3f4f6;
+  padding-left: 30px;
+  width: 250px;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: -17px;
+}
+.hh{
+    font-weight: 500;
+}
+
+.project{
+    background-color: lightsalmon;
+    position: absolute;
+    left: 20%;
+    top:60px;
+    padding: 30px;
+    width: calc(100% - 20%);
+    height: calc(100% - 60px);
+}
+
+.lastActive{
+    text-decoration: none !important;
+    color: black;
+}
+.active{
+    text-decoration: none !important;
+    color: black !important;
+}
+
 .conatiner{
   display: grid;
-  grid-template-columns: 16% 84%;
+  grid-template-columns: 20% 80%;
   width: 100%;
   height: 100%;
 }
@@ -17,7 +51,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   max-width: 100%;
    height: 100vh;
    border-right: 1px solid #d6dae2;
 }
@@ -26,16 +59,87 @@
     cursor: pointer;
 }
 .div2{
-    margin-top: -150px;
+    margin-top: -50px;
     cursor: pointer;
+    list-style: none;
+   
+}
+.div2 li{
+    margin-bottom: 20px;
+}
+.icon{
+    margin-right: 10px;
+    font-size: 15px;
+}
+.p1{
+    padding-top: 10px;
+}
+.p2{
+    padding-top: 10px;
+}
+.home{
+    padding: 0px 10px 0px 30px;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 15px;
+}
+.another{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    width: 250px;
+    font-size: 15px;
+}
+.aboutDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 30px;
+    width: 199px;
+}
+.antoterDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 199px;
+    padding: 0px 10px 0px 35px;
+}
+.subUl{
+    margin-top: -10px;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.subUl li{
+    font-size: 14px;
+    margin: 7px auto;
+    color: black !important;
+    
 }
 .div3{
   text-align: left;
   cursor: pointer;
   list-style: none;
-  margin-left: -20px;
-  margin-top: -30px;
+  width: 200px;
+  color: black !important;
 }
+
+
+
+
+
 .setting{
     margin-right: 15px;
 }
+
+
+@media only screen and (max-width: 600px){}
