@@ -18,8 +18,8 @@ import Icons from './Icons';
 import Maps from './Maps';
 import Notifications from './Notifications';
 import Support from './Support';
+import Dashboard from './Dashboard';
 
-import About from './About';
 
 
 import {
@@ -53,7 +53,7 @@ export default function SideNav() {
                 <ul className={styles.SideNavUl}>
                    <Router>                   
                         <li>
-                           <NavLink activeClassName={styles.aactive} to="/about" className={styles.link}><span><MdDashboard /></span>Dashboard</NavLink>
+                           <NavLink to="/dashboard" activeClassName={styles.aactive}  className={styles.link}><span><MdDashboard /></span>Dashboard</NavLink>
                         </li>
                     
                    
@@ -94,10 +94,10 @@ export default function SideNav() {
                         </li>
                     
                         <Switch>
-                        <Route path="/about" component={About} />
                    <Route path="/profile">
                        <Profile />
                    </Route>
+                   <Route path="/dashboard" component={Dashboard} />
                    <Route path="/table" component={Table} />
                    <Route path="/typography" component={Typography} />
                    <Route path="/icons" component={Icons} />
