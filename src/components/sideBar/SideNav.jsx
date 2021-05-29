@@ -19,7 +19,7 @@ import Maps from './Maps';
 import Notifications from './Notifications';
 import Support from './Support';
 
-import Home from './Home';
+import About from './About';
 
 
 import {
@@ -94,7 +94,7 @@ export default function SideNav() {
                         </li>
                     
                         <Switch>
-                        <Route path="/home" component={Home} />
+                        <Route path="/about" component={About} />
                    <Route path="/profile">
                        <Profile />
                    </Route>

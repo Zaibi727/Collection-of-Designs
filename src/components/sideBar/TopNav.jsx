@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './sideBar.module.css';
 
 
-import About from './About';
+import Home from './Home';
 import Contact from './Contact';
 
 import {
@@ -24,7 +24,7 @@ export default function TopNav() {
                          <NavLink activeStyle={{
                                         fontWeight: "bold",
                                        color: "orange"
-                                             }} className={styles.topLink} to=""><div>Home</div></NavLink>
+                                             }} className={styles.topLink} to="home"><div>Home</div></NavLink>
                       </li>
                       <li className={styles.active}>
                          <NavLink activeStyle={{
@@ -46,7 +46,7 @@ export default function TopNav() {
                       </li>
                          <Switch>
                          <Route path="/contact" component={Contact} />
-                          <Route path="/about" component={About} />
+                          <Route path="/home" component={Home} />
                           
                          </Switch>
                   </Router>
