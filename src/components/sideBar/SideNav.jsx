@@ -52,7 +52,7 @@ export default function SideNav() {
                 <ul className={styles.SideNavUl}>
                    <Router>                   
                         <li activeClassName={styles.aactive}>
-                           <NavLink to="/home" className={styles.linkk}><span><MdDashboard /></span>Dashboard</NavLink>
+                           <NavLink to="/home" className={styles.link}><span><MdDashboard /></span>Dashboard</NavLink>
                         </li>
                     
                    
