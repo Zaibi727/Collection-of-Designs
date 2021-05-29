@@ -63,33 +63,33 @@ export default function SideNav() {
                    
                     
                         <li>
-                            <NavLink to="/table" className={styles.link} activeClassName={styles.aactive}  to="/profile" className={styles.link}>
+                            <NavLink to="/table" className={styles.link} activeClassName={styles.aactive}   className={styles.link}>
                             <span><HiOutlineClipboardList /></span>Tbale List</NavLink>
                         </li>
                 
                    
                          <li>
-                             <NavLink activeClassName={styles.aactive}  to="/typography" className={styles.link} to="/typography" className={styles.link}><span><HiOutlineNewspaper /></span>Typography</NavLink>
+                             <NavLink activeClassName={styles.aactive}  to="/typography" className={styles.link}  className={styles.link}><span><HiOutlineNewspaper /></span>Typography</NavLink>
                          </li>
                    
                     
                          <li>
-                           <NavLink activeClassName={styles.aactive}  to="/icons" className={styles.link} to="/icons" className={styles.link}><span><SiIcon /></span>Icons</NavLink>
+                           <NavLink activeClassName={styles.aactive}  to="/icons" className={styles.link}  className={styles.link}><span><SiIcon /></span>Icons</NavLink>
                          </li>
                 
                     
                          <li>
-                               <NavLink activeClassName={styles.aactive}  to="/maps" className={styles.link} to="/maps" className={styles.link}><span><FaMapMarkerAlt /></span>Maps</NavLink>
+                               <NavLink activeClassName={styles.aactive}  to="/maps" className={styles.link}  className={styles.link}><span><FaMapMarkerAlt /></span>Maps</NavLink>
                          </li>
                     
                     
                            <li >
-                              <NavLink activeClassName={styles.aactive}  to="/notifications" className={styles.link} to="/notifications" className={styles.link}><span><IoNotifications /></span>Notifications</NavLink>
+                              <NavLink activeClassName={styles.aactive}  to="/notifications" className={styles.link} className={styles.link}><span><IoNotifications /></span>Notifications</NavLink>
                            </li>
                     
                    
                         <li>
-                            <NavLink activeClassName={styles.aactive}  to="/support" className={styles.link} to="/support" className={styles.link}> <span><HiSupport /></span>RTL Support</NavLink>
+                            <NavLink activeClassName={styles.aactive}  to="/support" className={styles.link} className={styles.link}> <span><HiSupport /></span>RTL Support</NavLink>
                         </li>
                     
                         <Switch>
