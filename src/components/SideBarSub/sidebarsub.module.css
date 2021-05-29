@@ -51,8 +51,8 @@
    
 }
 .div2 li{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-weight: 500;
     text-decoration: none !important;
     color: black;
@@ -106,4 +106,9 @@
 }
 .deco{
     text-decoration: none!;
+}
+
+.sidebarsub_deco__3NZSb {
+    text-decoration: none;
+    color: black;
 }
