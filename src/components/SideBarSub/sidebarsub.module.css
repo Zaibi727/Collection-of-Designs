@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.conatiner{
+  display: grid;
+  grid-template-columns: 16% 84%;
+  width: 100%;
+  height: 100%;
+}
+.header{
+    height: 60px;
+    background-color: blue;
+}
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   max-width: 100%;
+   height: 100vh;
+   border-right: 1px solid #d6dae2;
+}
+.div1{
+    margin-top: 30px ;
+    cursor: pointer;
+}
+.div2{
+    margin-top: -150px;
+    cursor: pointer;
+}
+.div3{
+  text-align: left;
+  cursor: pointer;
+  list-style: none;
+  margin-left: -20px;
+}
+.setting{
+    margin-right: 15px;
+}

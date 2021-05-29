@@ -64,7 +64,9 @@ import './dropDown.css';
 //import TaskThreeContainer from './TaskThree/TaskThreeContainer';
 //import TwentySevenMayContainer from './twentySevenMay/twentySevenMayContainer';
 //import RouterContainer from './routerOne/routerContainer';
-import SideBarContainer from './sideBar/SideBarContainer';
+//import SideBarContainer from './sideBar/SideBarContainer';
+import SiderBarSubContainer from './SideBarSub/SiderBarSubContainer';
+
 
 class Parent extends Component {
 
@@ -73,7 +75,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                  <SideBarContainer />
+                  <SiderBarSubContainer />
            </div>
          );
     }
