@@ -13,7 +13,7 @@
 }
 .main{
     background-color: rgb(255, 255, 255);
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
 }
 .product{
     display: flex;
@@ -44,7 +44,7 @@
 }
 .basket{
     background-color: wheat;
-    height: 100%;
+    height: calc(100% - 40px);
     padding: 20px;
 }
 .bAdd{
