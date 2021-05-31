@@ -161,10 +161,11 @@ fieldset{
     flex-direction: row;
 }
 .countries{
-    width: 350px;
-    margin: 20px auto;
+    width: 100px;
+    margin: 2px auto 7px aut0;
     text-align: left;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 
