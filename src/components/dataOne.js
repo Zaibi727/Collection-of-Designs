@@ -116,48 +116,24 @@ export const colourOptions = [
       options: flavourOptions,
     },
   ];
-
   export const iconOptions = [
     {
         value: "NG",
-        label: "Nigeria",
-        flag: "https://www.countryflags.io/NG/shiny/32.png"
+        label: "DE",
+        flag: "https://www.countryflags.io/NG/shiny/32.png",
+        isFixed: true,
       },
       {
         value: "US",
-        label: "United States",
-        flag: "https://www.countryflags.io/US/shiny/32.png"
+        label: "US",
+        flag: "https://www.countryflags.io/US/shiny/32.png "
       },
       {
         value: "IL",
-        label: "Isreal",
+        label: "PRC",
         flag: "https://www.countryflags.io/IL/shiny/32.png"
       },
-      {
-        value: "RO",
-        label: "Romania",
-        flag: "https://www.countryflags.io/RO/shiny/32.png"
-      },
-      {
-        value: "DE",
-        label: "Germany",
-        flag: "https://www.countryflags.io/DE/shiny/32.png"
-      },
-      {
-        value: "BS",
-        label: "Bahamas",
-        flag: "https://www.countryflags.io/BS/shiny/32.png"
-      },
-      {
-        value: "CN",
-        label: "China",
-        flag: "https://www.countryflags.io/CN/shiny/32.png"
-      },
-      {
-        value: "SO",
-        label: "Somalia",
-        flag: "https://www.countryflags.io/SO/shiny/32.png"
-      }
+     
   ];
 
 
