@@ -39,6 +39,9 @@
     border-radius: 7px;
     box-shadow: 2px 2px 7px 2px rgb(102, 101, 101);
 }
+.ss{
+    padding-bottom: 20px;
+}
 .basket{
     background-color: wheat;
     height: 100%;
@@ -74,7 +77,7 @@
  }
  .topDiv1{
      display: flex;
-     padding-top: 10px;
+     padding-top: 5px;
  }
  .topDiv1 p{
      font-size: 14px;
