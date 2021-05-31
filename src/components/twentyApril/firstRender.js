@@ -17,7 +17,6 @@ class Test extends Component {
 
         return ( 
             <div>
-            <h3>Countries Selection</h3>
                 <Tuesday  
                     options={data}
                 />
