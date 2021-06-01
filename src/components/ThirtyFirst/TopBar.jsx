@@ -165,6 +165,8 @@ class TopBar extends Component {
         })
       };
 
+      const { selectedOption } = this.state;
+
         const openeeee = this.state.openeeee;
         let button;
         if (openeeee) {
