@@ -34,7 +34,7 @@ class TopBar extends Component {
             openee: false,
             openeee: false,
             openeeee: false,
-            selectedOption:  { value: 'chocolate', label: <div><img src="./images/flag1.png" height="20px" width="30px" />En</div>},
+            selectedOption:  { value: 'chocolate', label: <div><img src="./images/flag1.png" height="15px" width="15px" /> En</div>},
          };
 
          this.handleButtonOneClick = this.handleButtonOneClick.bind(this);
@@ -379,7 +379,7 @@ class TopBar extends Component {
 export default TopBar;
 
 const options = [
-  { value: 'chocolate', label: <div><img src="./images/flag1.png" height="20px" width="30px" />En</div>},
-  { value: 'chocolate', label: <div><img src="./images/flag2.png" height="20px" width="30px" />En</div> },
-  { value: 'chocolate', label: <div><img src="./images/flag3.png" height="20px" width="30px" />En</div> },
+  { value: 'chocolate', label: <div><img src="./images/flag1.png" height="15px" width="15px" /> En</div>},
+  { value: 'chocolate', label: <div><img src="./images/flag2.png" height="15px" width="15px" /> US</div> },
+  { value: 'chocolate', label: <div><img src="./images/flag3.png" height="15px" width="15px" /> PRC</div> },
 ];

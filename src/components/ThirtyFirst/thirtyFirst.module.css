@@ -76,8 +76,13 @@ button:focus {
     font-size: 9px;
     position: absolute;
     margin-left: -25px;
-    margin-top: 6px;
+    margin-top: 8px;
+    color: rgb(177, 175, 175);
     
+}
+::placeholder{
+    color: rgb(177, 175, 175);
+    font-weight: 500;
 }
 .topbarDiv3 button{
     border: none;
@@ -280,6 +285,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     justify-content: space-between;
     flex-direction: row;
     margin-top: -10px;
+    font-size: 12px;
 }
 .smallmenu{
     padding-right: 40px;
