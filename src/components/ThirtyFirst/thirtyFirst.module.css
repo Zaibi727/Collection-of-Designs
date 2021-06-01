@@ -184,6 +184,10 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     overflow-y: auto;
     box-shadow: 2px 10px 5px gray;
 }
+#ul1{
+    border-bottom: 1px solid lightgrey;
+
+}
 ::-webkit-scrollbar {
     width: 8px; 
   }
