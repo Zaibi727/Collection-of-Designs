@@ -379,7 +379,7 @@ class LargSidebar extends Component {
 
 
                     <li onClick={this.handleButtonEClick} className={styles.uiElement}>
-                        <p><span><AiOutlineTable /></span> Tables<BsDot className={styles.dot} /></p>
+                        <p><span><AiOutlineTable /></span> Tables</p>
                         <p>{this.state.opene ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
                     </li>
                     {this.state.opene && (
@@ -410,7 +410,7 @@ class LargSidebar extends Component {
 
 
                     <li onClick={this.handleButtonGClick} className={styles.uiElement}>
-                        <p><span><SiGooglemaps /></span> Maps<BsDot className={styles.dot} /></p>
+                        <p><span><SiGooglemaps /></span> Maps</p>
                         <p>{this.state.openg ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
                     </li>
                     {this.state.openg && (
@@ -426,7 +426,7 @@ class LargSidebar extends Component {
               <div className={styles.ul111}>
               <ul className={styles.largUl1} >
                     <li onClick={this.handleButtonHClick} className={styles.uiElement}>
-                        <p><span><BiUser /></span> Account<BsDot className={styles.dot} /></p>
+                        <p><span><BiUser /></span> Account</p>
                         <p>{this.state.openh ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>                 
                     </li>
                     {this.state.openh && (
