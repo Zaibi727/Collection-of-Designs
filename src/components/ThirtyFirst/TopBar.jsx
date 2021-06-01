@@ -348,10 +348,10 @@ class TopBar extends Component {
             
 
                 <div className={styles.topbarDiv6}>
-                <Menu className={styles.flagmenu} menuButton={<MenuButton className={styles.flagbtn}>DE <span><img className={styles.flag} src="./images/flag1.png" /></span></MenuButton>}>
-                      <MenuItem className={styles.flagItem}>PRC <span><img className={styles.flag} src="./images/flag1.png" /></span></MenuItem>
-                      <MenuItem className={styles.flagItem}>US <span><img className={styles.flag} src="./images/flag2.png" /></span></MenuItem>
-                      <MenuItem className={styles.flagItem}>DE <span><img className={styles.flag} src="./images/flag3.png" /></span></MenuItem>
+                <Menu className={styles.flagmenu} menuButton={<MenuButton className={styles.flagbtn}><span><img className={styles.flag} src="./images/flag1.png" />SA</span></MenuButton>}>
+                      <MenuItem className={styles.flagItem}><span><img className={styles.flag} src="./images/flag1.png" />SA</span></MenuItem>
+                      <MenuItem className={styles.flagItem}><span><img className={styles.flag} src="./images/flag2.png" />US</span></MenuItem>
+                      <MenuItem className={styles.flagItem}><span><img className={styles.flag} src="./images/flag3.png" />PRC</span></MenuItem>
                 </Menu>
                 </div>
                </div> 
