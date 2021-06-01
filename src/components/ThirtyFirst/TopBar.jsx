@@ -21,14 +21,7 @@ import LargSidebar from './LargeSidebar';
 import {BsDot} from 'react-icons/bs';
 
 //import Test from '../twentyApril/firstRender';
-
-import {
-    Menu,
-    MenuItem,
-    MenuButton,
-    SubMenu
-} from '@szhsin/react-menu';
-import '@szhsin/react-menu/dist/index.css';
+import Select from 'react-select';
 
 class TopBar extends Component {
    
@@ -41,6 +34,7 @@ class TopBar extends Component {
             openee: false,
             openeee: false,
             openeeee: false,
+            selectedOption: {  value: 'chocolate', label: <div><img src="./images/flag1.png" height="20px" width="30px" />En</div>},
          };
 
          this.handleButtonOneClick = this.handleButtonOneClick.bind(this);
@@ -152,6 +146,17 @@ class TopBar extends Component {
 
 
     render() { 
+
+      const style = {
+        control: base => ({
+          ...base,
+          border: 0,
+          // This line disable the blue border
+          boxShadow: "none",
+          width: '100%',
+          
+        })
+      };
 
         const openeeee = this.state.openeeee;
         let button;
@@ -348,11 +353,14 @@ class TopBar extends Component {
             
 
                 <div className={styles.topbarDiv6}>
-                <Menu className={styles.flagmenu} menuButton={<MenuButton className={styles.flagbtn}><span><img className={styles.flag} src="./images/flag1.png" />SA</span></MenuButton>}>
-                      <MenuItem className={styles.flagItem}><span><img className={styles.flag} src="./images/flag1.png" />SA</span></MenuItem>
-                      <MenuItem className={styles.flagItem}><span><img className={styles.flag} src="./images/flag2.png" />US</span></MenuItem>
-                      <MenuItem className={styles.flagItem}><span><img className={styles.flag} src="./images/flag3.png" />PRC</span></MenuItem>
-                </Menu>
+                <Select
+                className={styles.flagSelect}
+                   value={selectedOption}
+                   onChange={this.handleChange}
+                   options={options}
+                   styles={style}
+                   defaultValue={options[0]}
+      />
                 </div>
                </div> 
             </div>
@@ -361,3 +369,9 @@ class TopBar extends Component {
 }
  
 export default TopBar;
+
+const options = [
+  { value: 'chocolate', label: <div><img src="./images/flag1.png" height="20px" width="30px" />En</div>},
+  { value: 'chocolate', label: <div><img src="./images/flag2.png" height="20px" width="30px" />En</div> },
+  { value: 'chocolate', label: <div><img src="./images/flag3.png" height="20px" width="30px" />En</div> },
+];
