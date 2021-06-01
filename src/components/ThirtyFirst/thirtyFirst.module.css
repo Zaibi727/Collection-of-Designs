@@ -48,6 +48,7 @@
     border: 1px solid lightgray;
     border-radius: 15px; 
     padding: 7px 40px 7px 15px;   
+    background-color: #f2f4f7;
 }
 .multi{
     font-weight: lighter;
@@ -253,7 +254,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     font-weight: 500;
 }
 .flagItem{
-    font-size: 14px;
+    font-size: 12px;
 }
 .smallmenu{
     padding-right: 40px;
