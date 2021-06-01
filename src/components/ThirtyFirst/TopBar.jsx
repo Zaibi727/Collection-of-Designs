@@ -34,7 +34,7 @@ class TopBar extends Component {
             openee: false,
             openeee: false,
             openeeee: false,
-            selectedOption: {  label: <div><img src="./images/flag1.png" height="20px" width="30px" />En</div>},
+            selectedOption: '',
          };
 
          this.handleButtonOneClick = this.handleButtonOneClick.bind(this);
