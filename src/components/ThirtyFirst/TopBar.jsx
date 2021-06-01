@@ -34,7 +34,7 @@ class TopBar extends Component {
             openee: false,
             openeee: false,
             openeeee: false,
-            selectedOption: '',
+            selectedOption:  { value: 'chocolate', label: <div><img src="./images/flag1.png" height="20px" width="30px" />En</div>},
          };
 
          this.handleButtonOneClick = this.handleButtonOneClick.bind(this);
@@ -46,6 +46,13 @@ class TopBar extends Component {
          this.handleButtonFiveClick = this.handleButtonFiveClick.bind(this);
 
     }
+
+
+    handleChange = selectedOption => {
+      this.setState({ selectedOption });
+      console.log(`Option selected:`, selectedOption);
+    };
+
 
     handleButtonOneClick = () => {
         this.setState(state => {
