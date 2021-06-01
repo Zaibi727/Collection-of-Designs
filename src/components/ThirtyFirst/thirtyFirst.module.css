@@ -270,21 +270,12 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 
 /*--s,mll bar--*/
 
-.flag{
-    width: 20px;
-}
-.flagmenu{
-    width: 10px !important;
-}
-.flagbtn{
-    border: none;
-    padding: 5px 0px;
-    font-size: 14px;
-    font-weight: 500;
-    background-color: white;
-}
-.flagItem{
-    font-size: 11px;
+.flagSelect{
+    width: 110px !important;
+    height: 20px !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 .smallmenu{
     padding-right: 40px;
