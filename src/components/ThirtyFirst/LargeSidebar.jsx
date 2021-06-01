@@ -283,7 +283,7 @@ class LargSidebar extends Component {
     render() { 
         return ( 
             <div className={styles.largSidebarWrapper}>
-               <div id={styles.ul1}>
+               <div className={styles.ul111}>
                <ul className={styles.largUl1} >
                     <li><span><AiOutlineHome /></span> Online Marketing Dashboard</li>
                     <li><span><FaStore /></span> E-commerce Dashboard</li>
@@ -307,7 +307,7 @@ class LargSidebar extends Component {
                 </ul>
                </div>
 
-              <div id={styles.ul1}>
+              <div className={styles.ul111}>
               <ul className={styles.largUl1} >
                     <li onClick={this.handleButtonAClick} className={styles.uiElement}>
                         <p><span><GrDiamond /></span> UI Elements</p>
@@ -423,7 +423,7 @@ class LargSidebar extends Component {
                 </ul>
               </div>
 
-              <div id={styles.ul1}>
+              <div className={styles.ul111}>
               <ul className={styles.largUl1} >
                     <li onClick={this.handleButtonHClick} className={styles.uiElement}>
                         <p><span><BiUser /></span> Account<BsDot className={styles.dot} /></p>
@@ -490,7 +490,7 @@ class LargSidebar extends Component {
               </div>
 
 
-                <div id={styles.ul1}>
+                <div className={styles.ul111}>
                 <ul className={styles.largUl1} >
                     <li><span><BiLogIn /></span>Log Out</li>
                 </ul>
