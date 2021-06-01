@@ -3,6 +3,12 @@
     margin: 0px;
     box-sizing: border-box;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 .topBarWrapper{
     position: fixed;
     width: 100%;
