@@ -359,7 +359,6 @@ class TopBar extends Component {
                    onChange={this.handleChange}
                    options={options}
                    styles={style}
-                   defaultValue={options[0]}
       />
                 </div>
                </div> 
