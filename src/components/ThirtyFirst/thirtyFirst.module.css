@@ -280,13 +280,13 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 /*--s,mll bar--*/
 
 .flagSelect{
-    width: 110px !important;
+    width: 97px !important;
     height: 20px !important;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin-top: -10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 .smallmenu{
     padding-right: 40px;
