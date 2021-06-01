@@ -19,7 +19,15 @@ import {ImCross} from 'react-icons/im';
 import SmallSidebar from './SmallSidebar';
 import LargSidebar from './LargeSidebar';
 
-import Test from '../twentyApril/firstRender';
+//import Test from '../twentyApril/firstRender';
+
+import {
+    Menu,
+    MenuItem,
+    MenuButton,
+    SubMenu
+} from '@szhsin/react-menu';
+import '@szhsin/react-menu/dist/index.css';
 
 class TopBar extends Component {
    
@@ -154,15 +162,24 @@ class TopBar extends Component {
 
         return ( 
             <div className={styles.topBarWrapper}>
+               <div className={styles.One}>
                 <div className={styles.topbarDiv1}>
                     <button onClick={this.handleButtonFiveClick}>
                         <FiMenu />
                     </button>
-                    <div>
+                    <div className={styles.sidebars}>
                     {button}
                     </div>
                 </div>
 
+                <div className={styles.logo}>
+                    <p>Logo</p>
+                </div>
+               </div>
+
+               {/*--first two humbutton and logoo--*/}
+
+               <div className={styles.Two}>
                 <div className={styles.topbarDiv2}>
                     <input 
                         placeholder="Search"
@@ -330,8 +347,13 @@ class TopBar extends Component {
             
 
                 <div className={styles.topbarDiv6}>
-                   <Test />
+                <Menu className={styles.flagmenu} menuButton={<MenuButton className={styles.flagbtn}>DE <span><img className={styles.flag} src="./images/flag1.png" /></span></MenuButton>}>
+                      <MenuItem className={styles.flagItem}>PRC <span><img className={styles.flag} src="./images/flag1.png" /></span></MenuItem>
+                      <MenuItem className={styles.flagItem}>US <span><img className={styles.flag} src="./images/flag2.png" /></span></MenuItem>
+                      <MenuItem className={styles.flagItem}>DE <span><img className={styles.flag} src="./images/flag3.png" /></span></MenuItem>
+                </Menu>
                 </div>
+               </div> 
             </div>
          );
     }
