@@ -154,8 +154,9 @@ button:focus {
     font-size: 14px;
 }
 .teal{
-    color: teal;
+    color: rgb(7, 199, 199);
     font-size: 15px;
+    font-weight: 500;
 }
 .noificationFooter{
     border-top: 1px solid lightgray;
