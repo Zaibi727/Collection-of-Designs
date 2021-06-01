@@ -37,7 +37,7 @@
 .topbarDiv6{
     margin-left: 50px !important;
 }
-.topbarDiv1 button{
+.hum{
     border: none;
     background-color: transparent;
     font-size: 30px;
@@ -45,7 +45,7 @@
 }
 .topbarDiv2 input{
     height: 30px;
-    border: 1px solid lightseagreen;
+    border: 1px solid lightgray;
     border-radius: 15px; 
     padding: 7px 40px 7px 15px;   
 }
@@ -214,9 +214,9 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 .redNew{
     color: white !important;
     background-color: red;
-    padding: 0px 4px;
+    padding: 0px 3px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /*--large side bar--*/
@@ -226,10 +226,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     top: 60px;
     left: 0;
     width: 70px;
-    background-color: rgb(255, 255, 255);
     text-align: center;
-    height: 100%;
-    overflow: auto;
     box-shadow: 2px 10px 5px gray;
 }
 ::-webkit-scrollbar {
@@ -257,4 +254,19 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 }
 .flagItem{
     font-size: 14px;
+}
+.smallmenu{
+    padding-right: 40px;
+    margin-right: 0px !important;
+}
+.smallmenubtn{
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+.dot{
+    color: red;
+    font-size: 40px;
+    margin-top: -5px;
+    margin-left: -10px;
 }
