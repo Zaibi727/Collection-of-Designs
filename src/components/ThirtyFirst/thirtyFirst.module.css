@@ -6,6 +6,10 @@
     height: 60px;
     box-shadow: 2px 2px 2px 2px lightgrey;
 }
+.container{
+    width: 100%;
+    height: 100%;
+}
 .One{
     display: flex;
     align-items: center;
@@ -270,4 +274,112 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     font-size: 40px;
     margin-top: -3px;
     margin-left: -10px;
+}
+
+@media only screen and (max-width: 768px){
+    .topBarWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        width: 100%;
+        position: fixed;
+        height: 60px;
+       box-shadow: 2px 2px 2px 2px lightgrey;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .topbarDiv2{
+        margin-left: 20px !important;
+    }
+    .topbarDiv3{
+        margin-left: 10px !important;
+    }
+    .topbarDiv4{
+        margin-left: 10px !important;
+    }
+    .topbarDiv5{
+        margin-left: 10px !important;
+    }
+    .topbarDiv6{
+        margin-left: 20px !important;
+    }
+
+    .hum{
+        font-size: 25px;
+        margin-right: 25px;
+    }
+    .topbarDiv2 input{
+        max-width: 150px;
+        width: 100%;
+        padding: 7px 25px 7px 10px;   
+    }
+    .multi{
+        font-size: 10px;
+    }
+    .topbarDiv3 button{
+        font-size: 20px;
+    }
+    .topbarDiv4 button{
+        font-size: 20px;
+    }
+    .topbarDiv5{
+        display: flex;
+       align-items: center;
+    }
+    .topbarDiv5 img{
+        width: 20px;
+        height: 20px;
+    }
+    .topbarDiv5 p{
+        font-size: 10px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    
+.NotiMessage{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 10px 5px;
+}
+.NotiMessageDiv1{
+    display: flex;
+    text-align: left;
+}
+.NotiMessageDiv1 img{
+    width: 20px;
+    height: 20px;
+    border-radius: 90%;
+    margin-right: 10px;
+}
+.NotiMessageDiv1 p{
+    font-size: 10px;
+}
+.time{
+    font-size: 12px;
+}
+.teal{
+    color: teal;
+    font-size: 12px;
+}
+.noificationFooter{
+    border-top: 1px solid lightgray;
+    padding: 5px 10px;
+}
+.noificationFooter p{
+    font-size: 12px;
+    font-weight: 500;
+    color: teal;
+}
+.noificationHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px  10px;
+    font-size: 12px;
+    font-weight: 500;
+}
 }
