@@ -222,9 +222,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     margin-right: 10px;
     color: grey;
 }
-.ul111{
-    border-bottom: 1px solid lightgray;
-}
+
 .uiElement{
     display: flex;
     justify-content: space-between;
