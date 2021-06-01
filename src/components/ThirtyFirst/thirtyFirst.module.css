@@ -68,6 +68,7 @@
     background-color: transparent;
     font-size: 22px;
     color: rgb(177, 175, 175);
+    margin-top: 5px;
 }
 .topbarDiv4 button{
     border: none;
@@ -90,6 +91,9 @@
     margin-top: -5px;
     margin-right: 7px;
     margin-left: 7px;
+}
+.gray{
+    color: gray;
 }
 /*--topbar divs--*/
 .notificationDiv{
@@ -183,10 +187,6 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     height: 100%;
     overflow-y: auto;
     box-shadow: 2px 10px 5px gray;
-}
-#ul1{
-    border-bottom: 1px solid lightgrey;
-
 }
 ::-webkit-scrollbar {
     width: 8px; 
