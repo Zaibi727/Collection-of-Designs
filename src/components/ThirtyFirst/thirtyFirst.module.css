@@ -68,7 +68,7 @@ button:focus {
     color: gray;
 }
 .topbarDiv2 input{
-    height: 25px;
+    height: 30px;
     border: none;
     border-radius: 15px; 
     padding: 7px 40px 7px 15px;   
@@ -79,7 +79,7 @@ button:focus {
     font-size: 9px;
     position: absolute;
     margin-left: -25px;
-    margin-top: 8px;
+    margin-top: 10px;
     color: rgb(177, 175, 175);
     
 }
