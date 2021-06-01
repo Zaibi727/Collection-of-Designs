@@ -27,6 +27,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BiLogIn } from "react-icons/bi";
 import { TiDocumentText } from "react-icons/ti";
 
+import {
+    Menu,
+    MenuItem,
+    MenuButton,
+    SubMenu
+} from '@szhsin/react-menu';
+import '@szhsin/react-menu/dist/index.css';
 
 class SmallSidebar extends Component {
     state = {  }
@@ -40,7 +47,11 @@ class SmallSidebar extends Component {
                     <li><BiBookOpen /></li>
                     <li><GoRocket /></li>
                     <li>
-                    <AiOutlineLayout />
+                       <Menu className={styles.smallmenu} menuButton={<MenuButton ><AiOutlineLayout /></MenuButton>}>
+                         <MenuItem >forms</MenuItem>
+                         <MenuItem >fge</MenuItem>
+                        <MenuItem >ergergerg</MenuItem>
+                       </Menu>
                     </li>
                     <li><FiLogOut /></li>
                     <li><GrDiamond /></li>
