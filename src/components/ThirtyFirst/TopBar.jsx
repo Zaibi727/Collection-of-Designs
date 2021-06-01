@@ -293,7 +293,7 @@ class TopBar extends Component {
                 <div className={styles.topbarDiv5} onClick={this.handleButtonFourClick}>
                     <img src="./images/profile.jpg"/>
                     <p>Roman Johanson</p>
-                    <span><MdKeyboardArrowDown /></span>
+                    <span className={styles.gray}><MdKeyboardArrowDown /></span>
                 </div>
                 {this.state.openeee === true && (
                     <div className={styles.AccountDiv}>

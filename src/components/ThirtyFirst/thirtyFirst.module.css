@@ -331,6 +331,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     }
     .topbarDiv3 button{
         font-size: 20px;
+        margin-top: 5px;
     }
     .topbarDiv4 button{
         font-size: 20px;
@@ -347,6 +348,10 @@ box-shadow: 2px 2px 6px 5px lightgrey;
         font-size: 10px;
         margin-right: 4px;
         margin-left: 4px;
+        color: gray;
+    }
+    .gray{
+        color: gray;
     }
 
     
