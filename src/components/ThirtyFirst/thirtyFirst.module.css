@@ -605,7 +605,13 @@ box-shadow: 2px 2px 6px 5px lightgrey;
         font-size: 9px;
     }
     .multi{
-        font-size: 9px;
+
+        font-size: 6px;
+        position: absolute;
+        margin-left: -15px;
+        margin-top: 9px;
+        color: rgb(177, 175, 175);
+        
     }
     .topbarDiv3 button{
         font-size: 12px;
@@ -640,7 +646,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 
     .notificationDiv{
         width: 150px;
-        margin-left: -100px;
+        margin-left: -80px;
     }
 .NotiMessage{
     display: flex;
@@ -688,6 +694,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     position: absolute;
     top: 65px;
     left: -15px;
+    padding-left: 15px;
     width: 280px;
     height: calc(100vh - 65px);
     background-color: rgb(255, 255, 255);
@@ -699,9 +706,17 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     position: absolute;
     top: 65px;
     left: -15px;
+    padding-left: 15px;
     width: 70px;
     height: calc(100vh - 65px);
     text-align: center;
     box-shadow: 2px 10px 5px gray;
+}
+.dot{
+    color: red;
+    font-size: 30px;
+    margin-top: -18px;
+    margin-left: -15px;
+    position: absolute;
 }
 }
