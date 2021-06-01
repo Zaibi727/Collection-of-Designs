@@ -124,7 +124,7 @@ button:focus {
 .notificationDiv{
     position: absolute;
     background-color: rgb(255, 255, 255);
-    width: 300px;
+    width: 320px;
     margin-top: 10px;
     margin-left: -140px;
     box-shadow: 2px 2px 6px 5px lightgrey;
@@ -148,18 +148,18 @@ button:focus {
 .NotiMessageDiv1 img{
     width: 30px;
     height: 30px;
-    border-radius: 90%;
+    border-radius: 60%;
     margin-right: 10px;
 }
 .NotiMessageDiv1 p{
     font-size: 13px;
 }
 .time{
-    font-size: 14px;
+    font-size: 12px;
 }
 .teal{
     color: rgb(7, 199, 199);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
 }
 .noificationFooter{
@@ -169,7 +169,7 @@ button:focus {
 .noificationFooter p{
     font-size: 12px;
     font-weight: 500;
-    color: teal;
+    color: rgb(7, 199, 199);
 }
 .noificationHeader{
     display: flex;
