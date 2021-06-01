@@ -241,7 +241,7 @@ class TopBar extends Component {
 
                 <div className={styles.topbarDiv4}>
                     <button onClick={this.handleButtonThreeClick}>
-                        <SiGooglemessages />
+                        <SiGooglemessages /><BsDot className={styles.doot} />
                     </button>
                     {this.state.openee === true && (
                         <div className={styles.notificationDiv}>
