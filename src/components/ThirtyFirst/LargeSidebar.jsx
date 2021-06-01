@@ -496,7 +496,7 @@ class LargSidebar extends Component {
                 </ul>
                 </div>
 
-              <div id={styles.ul1}>
+              <div className={styles.ul111}>
               <ul className={styles.largUl1}>
                     <li><span><TiDocumentText /></span>Documentation</li>
                 </ul>

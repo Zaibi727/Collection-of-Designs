@@ -213,14 +213,16 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 }
 .largUl1 li{
     font-size: 14px;
-    margin-bottom: 45px;
-    margin-top: 45px;
+    margin-bottom: 25px !important;
     color: #646777;
     font-family: sans-serif;
 }
 .largUl1 li span{
     margin-right: 10px;
     color: grey;
+}
+.ul111{
+    border-bottom: 1px solid lightgrey;
 }
 
 .uiElement{
