@@ -82,7 +82,7 @@
 }
 .topbarDiv5 p{
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: -5px;
     margin-right: 7px;
     margin-left: 7px;
 }
@@ -252,6 +252,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     padding: 5px 10px;
     font-size: 14px;
     font-weight: 500;
+    background-color: white;
 }
 .flagItem{
     font-size: 12px;
@@ -262,12 +263,11 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 }
 .smallmenubtn{
     border: none;
-    background-color: transparent;
     color: gray;
 }
 .dot{
     color: red;
     font-size: 40px;
-    margin-top: -5px;
+    margin-top: -3px;
     margin-left: -10px;
 }

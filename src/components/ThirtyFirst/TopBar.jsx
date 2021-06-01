@@ -18,6 +18,7 @@ import {ImCross} from 'react-icons/im';
 
 import SmallSidebar from './SmallSidebar';
 import LargSidebar from './LargeSidebar';
+import {BsDot} from 'react-icons/bs';
 
 //import Test from '../twentyApril/firstRender';
 
@@ -164,7 +165,7 @@ class TopBar extends Component {
             <div className={styles.topBarWrapper}>
                <div className={styles.One}>
                 <div className={styles.topbarDiv1}>
-                    <button onClick={this.handleButtonFiveClick}>
+                    <button className={styles.hum} onClick={this.handleButtonFiveClick}>
                         <FiMenu />
                     </button>
                     <div className={styles.sidebars}>
@@ -254,7 +255,7 @@ class TopBar extends Component {
                                    name="Chridtopher Changer"
                                    text="has started a new Project"
                                    time="09:02"
-                               />
+                               /><BsDot className={styles.dot} />
                             </div>
                             <div className={styles.same}>
                                <NotiMessage 
