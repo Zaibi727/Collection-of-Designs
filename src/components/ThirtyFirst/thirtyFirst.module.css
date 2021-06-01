@@ -299,8 +299,9 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 .dot{
     color: red;
     font-size: 40px;
-    margin-top: -0px;
+    margin-top: -12px;
     margin-left: -11px;
+    position: absolute;
 }
 .doot{
     color: red;
