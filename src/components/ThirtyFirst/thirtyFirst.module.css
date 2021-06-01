@@ -285,7 +285,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 /*--s,mll bar--*/
 
 .flagSelect{
-    width: 97px !important;
+    width: 85px !important;
     height: 20px !important;
     display: flex;
     justify-content: space-between;
