@@ -299,7 +299,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 }
 .largUl1 li span{
     margin-right: 10px;
-    color: grey;
+    color: rgb(170, 167, 167);
     font-size: 14px;
 }
 .ul111{
@@ -359,7 +359,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 }
 .smallUl li{
     margin-bottom: 20px;
-    color: gray;
+    color: rgb(170, 167, 167);
 }
 .smallUl li:hover{
     border-left: 2px solid lightseagreen;
