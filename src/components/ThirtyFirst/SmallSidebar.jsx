@@ -129,7 +129,7 @@ class SmallSidebar extends Component {
                        </Menu>
                        
                     </li>
-                    <li>
+                    <li className={styles.smallBarborder}>
                     <Menu className={styles.smallmenu}  menuButton={<MenuButton className={styles.smallmenubtn}><BiUser /></MenuButton>}>
                           <MenuItem>Email confimation</MenuItem>
                           <MenuItem>Lock Screen</MenuItem>
@@ -170,8 +170,8 @@ class SmallSidebar extends Component {
                           <MenuItem>Second Level Item</MenuItem>
                        </Menu>
                     </li>
-                    <li><BiLogIn /></li>
-                    <li><TiDocumentText /></li>
+                    <li className={styles.smallBarborder}><BiLogIn /></li>
+                    <li className={styles.smallBarborder}><TiDocumentText /></li>
                 </ul>
             </div>
          );
