@@ -294,7 +294,7 @@ class LargSidebar extends Component {
 
                     <li onClick={this.handleButtonLClick} className={styles.uiElement}>
                         <p><span><AiOutlineLayout /></span> Layout</p>
-                        <p>{this.state.openl ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                        <p>{this.state.openl ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                     </li>
                     {this.state.openl && (
                              <ul className={styles.UIUL}>
@@ -311,7 +311,7 @@ class LargSidebar extends Component {
               <ul className={styles.largUl1} >
                     <li onClick={this.handleButtonAClick} className={styles.uiElement}>
                         <p><span><GrDiamond /></span> UI Elements</p>
-                        <p>{this.state.opena ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                        <p>{this.state.opena ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                     </li>
                           {this.state.opena && (
                              <ul className={styles.UIUL}>
@@ -338,13 +338,13 @@ class LargSidebar extends Component {
                     <li><span><SiTodoist /></span> Todo Application</li>
                     <li onClick={this.handleButtonBClick} className={styles.uiElement}>
                         <p><span><FaWpforms /></span> Forms</p>
-                        <p>{this.state.openb ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                        <p>{this.state.openb ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                     </li>
                     {this.state.openb && (
                              <ul className={styles.UIUL}>
                                 <li onClick={this.handleButtonCClick} className={styles.uiElement}>
                                   <p>Redux Forms</p>
-                                  <p>{this.state.openc ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                                  <p>{this.state.openc ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                                 </li>
                                 {this.state.openc && (
                              <ul className={styles.UIUL}>
@@ -364,7 +364,7 @@ class LargSidebar extends Component {
 
                                 <li  onClick={this.handleButtonDClick} className={styles.uiElement}>
                                     <p>React hook form</p>
-                                    <p>{this.state.opend ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                                    <p>{this.state.opend ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                                 </li>
 
                                 {this.state.opend && (
@@ -380,7 +380,7 @@ class LargSidebar extends Component {
 
                     <li onClick={this.handleButtonEClick} className={styles.uiElement}>
                         <p><span><AiOutlineTable /></span>Tables <BsDot className={styles.dot} /></p>
-                        <p>{this.state.opene ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                        <p>{this.state.opene ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                     </li>
                     {this.state.opene && (
                              <ul className={styles.UIUL}>
@@ -398,7 +398,7 @@ class LargSidebar extends Component {
 
                     <li onClick={this.handleButtonFClick} className={styles.uiElement}>
                         <p><span><IoBarChartSharp /></span> Charts</p>
-                        <p>{this.state.openf ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                        <p>{this.state.openf ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                     </li>
                     {this.state.openf && (
                              <ul className={styles.UIUL}>
@@ -411,7 +411,7 @@ class LargSidebar extends Component {
 
                     <li onClick={this.handleButtonGClick} className={styles.uiElement}>
                         <p><span><SiGooglemaps /></span>Maps <BsDot className={styles.dot} /></p>
-                        <p>{this.state.openg ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>
+                        <p>{this.state.openg ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
                     </li>
                     {this.state.openg && (
                              <ul className={styles.UIUL}>
@@ -427,7 +427,7 @@ class LargSidebar extends Component {
               <ul className={styles.largUl1} >
                     <li onClick={this.handleButtonHClick} className={styles.uiElement}>
                         <p><span><BiUser /></span> Account <BsDot className={styles.dot} /></p>
-                        <p>{this.state.openh ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>                 
+                        <p>{this.state.openh ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>                 
                     </li>
                     {this.state.openh && (
                              <ul className={styles.UIUL}>
@@ -444,7 +444,7 @@ class LargSidebar extends Component {
 
                     <li onClick={this.handleButtonIClick} className={styles.uiElement}> 
                          <p><span><AiOutlineShoppingCart /></span> E-Commerce</p>
-                         <p>{this.state.openi ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p>                 
+                         <p>{this.state.openi ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>                 
                     </li>
                     {this.state.openi && (
                              <ul className={styles.UIUL}>
@@ -460,7 +460,7 @@ class LargSidebar extends Component {
 
                     <li onClick={this.handleButtonJClick} className={styles.uiElement}>
                          <p><span><RiPagesLine /></span>Default Pages</p>
-                         <p>{this.state.openj ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p> 
+                         <p>{this.state.openj ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p> 
                     </li>
                     {this.state.openj && (
                              <ul className={styles.UIUL}>
@@ -478,7 +478,7 @@ class LargSidebar extends Component {
 
                     <li onClick={this.handleButtonKClick} className={styles.uiElement}>
                          <p><span><GiHamburgerMenu /></span> Multilevel Menu</p>
-                         <p>{this.state.openk ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}</p> 
+                         <p>{this.state.openk ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p> 
                     </li>
                     {this.state.openk && (
                              <ul className={styles.UIUL}>

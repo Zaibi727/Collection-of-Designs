@@ -260,13 +260,17 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 .largSidebarWrapper{
     position: absolute;
     top: 50px;
-    margin-left: -15px;
-    width: 280px;
+    margin-left: -13px;
+    width: 250px;
     height: calc(100vh - 50px);
     background-color: rgb(255, 255, 255);
     text-align: left;
     overflow-y: auto;
     box-shadow: 2px 10px 5px gray;
+}
+.arrow{
+    font-size: 20px;
+    color: gray;
 }
 ::-webkit-scrollbar {
     width: 0px; 
@@ -277,11 +281,11 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 }
 .largUl1 li{
     font-size: 14px;
-    margin-bottom: 25px !important;
-    margin-top: 20px;
+    margin-bottom: 15px !important;
+    margin-top: 15px;
     color: #646777;
     font-family: sans-serif;
-    padding: 10px 25px;
+    padding: 5px 10px;
 }
 .largUl1 li:hover{
     background-color: rgb(244, 251, 253);
@@ -289,6 +293,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 .largUl1 li span{
     margin-right: 10px;
     color: grey;
+    font-size: 14px;
 }
 .ul111{
     border-bottom: 1px solid lightgrey;
@@ -298,6 +303,10 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     display: flex;
     justify-content: space-between;
     margin-bottom: -20px !important;
+}
+.uiElement p{
+    margin-bottom: -8px;
+    padding-bottom: 8px;
 }
 .UIUL{
     list-style: none;
@@ -385,7 +394,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     position: absolute;
     font-size: 25px;
     margin-left: -10px;
-    margin-top: -10px;
+    margin-top: -9px;
 }
 
 @media only screen and (max-width: 850px){
