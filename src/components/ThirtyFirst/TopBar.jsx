@@ -5,6 +5,7 @@ import { FaBell } from "react-icons/fa";
 import { SiGooglemessages } from "react-icons/si";
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import NotiMessage from './NotiMessage';
+import NotiMessageTwo from './NotiMessageTwo';
 import AccountDropDown from './AccountDropDown';
 
 import { FaRegUser } from 'react-icons/fa';
@@ -41,7 +42,7 @@ class TopBar extends Component {
          this.handleClickOutside = this.handleClickOutside.bind(this);
 
          this.handleButtonTwoClick = this.handleButtonTwoClick.bind(this);
-         this.handleButtonThreeClick = this.handleButtonTwoClick.bind(this);
+         this.handleButtonThreeClick = this.handleButtonThreeClick.bind(this);
          this.handleButtonFourClick = this.handleButtonFourClick.bind(this);
          this.handleButtonFiveClick = this.handleButtonFiveClick.bind(this);
 
@@ -264,7 +265,7 @@ class TopBar extends Component {
                                 <p>Mark all as read</p>
                             </div>
                             <div className={styles.same}>
-                               <NotiMessage 
+                               <NotiMessageTwo
                                    src="./images/profile.jpg"
                                    name="Chridtopher Changer"
                                    text="has started a new Project"
@@ -272,7 +273,7 @@ class TopBar extends Component {
                                /><BsDot className={styles.dot} />
                             </div>
                             <div className={styles.same}>
-                               <NotiMessage 
+                               <NotiMessageTwo 
                                    src="./images/profile.jpg"
                                    name="Chridtopher Changer"
                                    text="has started a new Project"
@@ -280,7 +281,7 @@ class TopBar extends Component {
                                />
                             </div>
                             <div className={styles.same}>
-                               <NotiMessage 
+                               <NotiMessageTwo 
                                    src="./images/profile.jpg"
                                    name="Chridtopher Changer"
                                    text="has started a new Project"
@@ -288,7 +289,7 @@ class TopBar extends Component {
                                />
                             </div>
                             <div className={styles.same}>
-                               <NotiMessage 
+                               <NotiMessageTwo 
                                    src="./images/profile.jpg"
                                    name="Chridtopher Changer"
                                    text="has started a new Project"
@@ -296,8 +297,8 @@ class TopBar extends Component {
                                />
                             </div>
                             <div className={styles.noificationFooter}>
-                                <p>
-                                    SEE ALL NOTIFICATONS
+                                 <p>
+                                    SEE ALL Messages
                                 </p>
                             </div>
                         </div>
