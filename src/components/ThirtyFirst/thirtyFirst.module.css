@@ -186,7 +186,10 @@ button:focus {
 .accountDp{
  display: flex;
  padding: 10px;
- border-bottom: 1px solid lightgrey;
+}
+.accountDp:hover{
+    background-color: rgb(233, 231, 231);
+    border-left: 2px solid lightseagreen;
 }
 .accountDp span{
     margin-right: 10px;
