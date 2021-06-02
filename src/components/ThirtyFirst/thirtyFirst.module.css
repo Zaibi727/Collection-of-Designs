@@ -104,6 +104,9 @@ button:focus {
     background-color: #f2f4f7;
     cursor: text !important;
 }
+.topbarDiv2 input:focus{
+    border: 1px solid lightseagreen;
+}
 .multi{
     font-weight: lighter;
     font-size: 9px;
