@@ -303,7 +303,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     font-size: 14px;
 }
 .ul111{
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgb(235, 234, 234);
 }
 
 .uiElement{
@@ -365,7 +365,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     border-left: 2px solid lightseagreen;
 }
 .smallBarborder{
-    border-top: 1px solid lightgray;
+    border-top: 1px solid rgb(235, 234, 234);
     padding-top: 20px;
 }
 
