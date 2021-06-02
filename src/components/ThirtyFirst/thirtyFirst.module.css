@@ -255,12 +255,16 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 }
 .UIUL{
     list-style: none;
-    padding: 20px 20px;
+    padding: 5px 0px;
 }
 .UIUL li{
+    padding: 10px 0px 10px 30px;
     font-size: 14px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.UIUL li:hover{
+    background-color: white;
 }
 .redNew{
     color: white !important;
