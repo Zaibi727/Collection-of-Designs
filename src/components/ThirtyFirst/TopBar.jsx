@@ -311,7 +311,7 @@ class TopBar extends Component {
                 </div>
                 {this.state.openeee === true && (
                     <div className={styles.AccountDiv}>
-                        <div>
+                        <div className={styles.beforeAcoount}>
                            <div>
                               <AccountDropDown 
                                   title="My Profile"
