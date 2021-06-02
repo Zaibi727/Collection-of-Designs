@@ -289,9 +289,11 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     color: #646777;
     font-family: sans-serif;
     padding: 5px 10px;
+    border-left: 2px solid rgb(255, 255, 255) ;
 }
 .largUl1 li:hover{
     background-color: rgb(244, 251, 253);
+    border-left: 2px solid lightseagreen ;
 }
 .largUl1 li span{
     margin-right: 10px;
