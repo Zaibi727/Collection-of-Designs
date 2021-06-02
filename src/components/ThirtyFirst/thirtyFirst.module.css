@@ -329,9 +329,9 @@ box-shadow: 2px 2px 6px 5px lightgrey;
 .redNew{
     color: white !important;
     background-color: red;
-    padding: 3px 3px;
+    padding: 2px 3px;
     border-radius: 7px;
-    font-size: 10px;
+    font-size: 9px !important;
 }
 
 /*--large side bar--*/

@@ -335,7 +335,7 @@ class LargSidebar extends Component {
 
                     <li><span><FiMail /></span> Mail Application</li>
                     <li><span><BsFillChatFill /></span>Chat Application</li>
-                    <li><span><SiTodoist /></span> Todo Application</li>
+                    <li><span><SiTodoist /></span> Todo Application <span className={styles.redNew}>New</span></li>
                     <li onClick={this.handleButtonBClick} className={styles.uiElement}>
                         <p><span><FaWpforms /></span> Forms</p>
                         <p>{this.state.openb ? <MdKeyboardArrowDown className={styles.arrow} /> : <MdKeyboardArrowRight className={styles.arrow} />}</p>
