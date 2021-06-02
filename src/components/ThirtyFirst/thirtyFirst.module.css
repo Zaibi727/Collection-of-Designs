@@ -368,6 +368,17 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     border-top: 1px solid rgb(235, 234, 234);
     padding-top: 20px;
 }
+.smallmenu{
+    position: absolute;
+    margin-left: 40px !important;
+    top: -30px !important;
+    box-shadow: 2px 10px 5px gray !important;
+}
+.smallmenubtn{
+    border: none;
+    color: gray;
+    background-color: white;
+}
 
 /*--s,mll bar--*/
 
@@ -380,15 +391,7 @@ box-shadow: 2px 2px 6px 5px lightgrey;
     margin-top: 10px;
     font-size: 13px;
 }
-.smallmenu{
-    padding-right: 40px;
-    margin-right: 0px !important;
-}
-.smallmenubtn{
-    border: none;
-    color: gray;
-    background-color: white;
-}
+
 .dot{
     color: red;
     font-size: 40px;
