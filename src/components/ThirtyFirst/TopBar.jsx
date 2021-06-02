@@ -369,6 +369,9 @@ class TopBar extends Component {
                    onChange={this.handleChange}
                    options={options}
                    styles={style}
+                   components={{
+                      IndicatorSeparator: () => null
+                     }}
       />
                 </div>
                </div> 
