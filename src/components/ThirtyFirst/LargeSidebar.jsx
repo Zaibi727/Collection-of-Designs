@@ -53,7 +53,7 @@ class LargSidebar extends Component {
         
          };
 
-    this.handleButtonAClick = this.handleButtonAClick.bind(this);
+    this.handleButtonAClick = this.handleButtonAClick.bind(this);   this.handleButtonAClick = this.handleButtonAClick.bind(this);
     this.handleButtonBClick = this.handleButtonBClick.bind(this);
     this.handleButtonCClick = this.handleButtonCClick.bind(this);
     this.handleButtonDClick = this.handleButtonDClick.bind(this);
