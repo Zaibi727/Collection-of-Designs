@@ -36,7 +36,6 @@ const sideItems = [
     {  itemid: 'app-dashboard', name: 'app dashboard', label: 'app dashboard', Icon: <AiOutlineMobile /> },
     {  itemid: 'booking-dashboard', name: 'booking dashboard', label: 'Booking Dashboard', Icon: <BiBookOpen /> },
     {  itemid: 'finance-dashboard', name: 'finance dashboard', label: 'Finance Dashboard',Icon: <GoRocket /> },
-    {  itemid: 'fitness-dashboard',  name: 'fitness dashboard', label: 'Fitness Dashboard', Icon: <FiLogOut /> },
     {
         label: 'Layout',
         Icon: <AiOutlineLayout />,
