@@ -57,12 +57,12 @@ return(
                <div >
                {sideItems.map((item) => 
                     <ul className={styles.largUl1}>
-                    <li className={styles.flex}>
+                    <li >
                          <NavLink to={`/${item.itemid}`}  activeClassName={styles.active} className={styles.deco}>
-                            
+                               <div className={styles.flex}>
                                 <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
                                 <p className={styles.bbb}><span className={styles.arrowwss}>{item.Icon2}</span></p>
-                            
+                                </div>
                          </NavLink>
                          </li> 
                          
