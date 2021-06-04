@@ -11,7 +11,7 @@ class Product extends React.Component {
 
       return (
         <div className={styles.product}>
-        {sideItems.map((item, Icon, content) => (
+        {sideItems.map((item, Icon,) => (
              <ul className={styles.ul} key={item.itemid}>
              <Link className={styles.link} to={`/product/${item.itemid}`}>
                <li><span>{item.Icon}</span>{item.label}</li>  
