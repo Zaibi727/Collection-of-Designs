@@ -70,7 +70,7 @@ return(
                               
                               <ul className={styles.ulSub}>  
                               <li>                
-                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`}  className={styles.deco}>
+                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`}  className={styles.deco} activeClassName={styles.aactive}>
                                    
                                       {c.label}
                                       <span className={styles.arrowwss}>{c.Icon2}</span>
