@@ -34,7 +34,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
+  NavLink,
   Redirect,
   useParams,
   useRouteMatch
@@ -86,22 +86,28 @@ return(
                <div >
                {sideItems.map((item) => 
                     <ul className={styles.largUl1}>
-                         <Link to={`/${item.itemid}`}  className={styles.link}>
+                         <NavLink to={`/${item.itemid}`}  className={styles.link} activeStyle={{
+    fontWeight: "bold",
+    color: "red"
+  }}>
                             <li className={styles.flex} onClick={this.handleButtonAClick}>
                                <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
                                 <p className={styles.bbb}><span className={styles.arrowwss}>{item.Icon2}</span></p>
                             </li> 
-                         </Link>
+                         </NavLink>
                    
                             {item.content ? item.content.map((c) => 
                               
                               <ul className={styles.ulSub}>                    
-                                <Link to={`/${(item.itemid) + ('/') +(c.itemid)}`}>
+                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`} activeStyle={{
+    fontWeight: "bold",
+    color: "red"
+  }}>
                                    <li>
                                       {c.label}
                                       <span className={styles.arrowwss}>{c.Icon2}</span>
                                    </li>
-                                </Link>
+                                </NavLink>
                               </ul>                       
                             ) : null }                                                    
                           
