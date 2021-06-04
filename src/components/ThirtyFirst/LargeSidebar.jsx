@@ -90,7 +90,7 @@ return(
     fontWeight: "bold",
     color: "red"
   }}>
-                            <li className={styles.flex} onClick={this.handleButtonAClick}>
+                            <li className={styles.flex}  activeClassName={styles.active}>
                                <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
                                 <p className={styles.bbb}><span className={styles.arrowwss}>{item.Icon2}</span></p>
                             </li> 
@@ -99,10 +99,7 @@ return(
                             {item.content ? item.content.map((c) => 
                               
                               <ul className={styles.ulSub}>                    
-                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`} activeStyle={{
-    fontWeight: "bold",
-    color: "red"
-  }}>
+                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`} activeClassName={styles.active}>
                                    <li>
                                       {c.label}
                                       <span className={styles.arrowwss}>{c.Icon2}</span>
