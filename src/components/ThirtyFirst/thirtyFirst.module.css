@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     cursor: pointer;
+    text-decoration: none !important;
 }
 input:focus,
 select:focus,
