@@ -41,76 +41,51 @@ import {
 } from "react-router-dom";
 
 
-import { render } from '@testing-library/react';
 
 class LargSidebar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-      opena: false,
-    }
-    this.handleButtonAClick = this.handleButtonAClick.bind(this);
-  }
 
-  handleButtonAClick = () => {
-    this.setState(state => {
-      return {
-        opena: !state.opena,
-      };
-    });
-  };
-
-  container = React.createRef();
-
-  componentDidMount() {
-    document.addEventListener("mousedown", this.handleClickOutsideA);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener("mousedown", this.handleClickOutsideA);
-  }
-
-  handleClickOutsideA = event => {
-    if (this.container.current && !this.container.current.contains(event.target)) {
-      this.setState({
-        opena: false,
-      });
-    }
-  };
 
 
 render(){
+
+
+  
+
 return( 
             <div className={styles.largSidebarWrapper}>
             <Router>
                <div >
                {sideItems.map((item) => 
                     <ul className={styles.largUl1}>
-                         <NavLink to={`/${item.itemid}`}  className={styles.link} activeStyle={{
-    fontWeight: "bold",
-    color: "red"
-  }}>
-                            <li className={styles.flex}  activeClassName={styles.active}>
-                               <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
+                    <li className={styles.flex}>
+                         <NavLink to={`/${item.itemid}`}  activeClassName={styles.active} className={styles.deco}>
+                            
+                                <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
                                 <p className={styles.bbb}><span className={styles.arrowwss}>{item.Icon2}</span></p>
-                            </li> 
+                            
                          </NavLink>
-                   
+                         </li> 
+                         
                             {item.content ? item.content.map((c) => 
                               
-                              <ul className={styles.ulSub}>                    
-                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`} activeClassName={styles.active}>
-                                   <li>
+                              <ul className={styles.ulSub}>  
+                              <li>                
+                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`} activeClassName={styles.active} className={styles.deco}>
+                                   
                                       {c.label}
                                       <span className={styles.arrowwss}>{c.Icon2}</span>
-                                   </li>
+                                   
                                 </NavLink>
+                                </li>
                               </ul>                       
                             ) : null }                                                    
                           
                     </ul>
                       )}
                 </div>
+
+               
+
                </Router>
             </div>
          );
