@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TopBar from './TopBar';
-import styles from './thirtyFirst.module.css';
 
 import {
     BrowserRouter as Router,
@@ -13,9 +12,9 @@ class ThirtyFirstContainer extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className={styles.container}>
+            <div>
               <Router>
-              <div className={styles.up}>
+              <div>
                 <TopBar />
               </div>
 
