@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TopBar from './TopBar';
+import styles from './thirtyFirst.module.css';
 
 import {
     BrowserRouter as Router,
