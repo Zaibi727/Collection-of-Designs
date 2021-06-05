@@ -177,7 +177,7 @@ class TopBar extends Component {
         }
 
         return ( 
-            <div className={styles.topBarWrapper}>
+            <div className={styles.topBarWrapper} ref={this.container}>
                <div className={styles.One}>
                 <div className={styles.topbarDiv1}>
                     <button className={styles.hum} onClick={this.handleButtonFiveClick}>
