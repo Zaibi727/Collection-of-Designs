@@ -44,7 +44,42 @@ import {
 
 class LargSidebar extends Component {
 
+  constructor(props) {
+    super(props);
+   
+    this.state = { 
+        open: false,
+     };
 
+     this.handleButtonOneClick = this.handleButtonOneClick.bind(this);
+     this.handleClickOutside = this.handleClickOutside.bind(this);
+}
+
+
+handleButtonOneClick = () => {
+    this.setState(state => {
+      return {
+        open: !state.open,
+      };
+    });
+  };
+  
+  container = React.createRef();
+
+  componentDidMount() {
+    document.addEventListener("mousedown", this.handleClickOutside);
+}
+componentWillUnmount() {
+  document.removeEventListener("mousedown", this.handleClickOutside);
+}
+
+handleClickOutside = event => {
+    if (this.container.current && !this.container.current.contains(event.target)) {
+      this.setState({
+        open: false,
+      });
+    }
+  };
 
 render(){
 
@@ -57,7 +92,7 @@ return(
                <div >
                {sideItems.map((item) => 
                     <ul className={styles.largUl1}>
-                    <li >
+                    <li onClick={() => this.handleButtonOneClick(item.index)}>
                          <NavLink to={`/${item.itemid}`}  activeClassName={styles.active} className={styles.deco}>
                                <div className={styles.flex}>
                                 <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
@@ -69,14 +104,14 @@ return(
                             {item.content ? item.content.map((c) => 
                               
                               <ul className={styles.ulSub}>  
-                              <li>                
-                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`}  className={styles.deco} activeClassName={styles.aactive}>
-                                   
+                              {this.state.open && (
+                                <li>                
+                                <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`} className={styles.deco} activeClassName={styles.aactive}>
                                       {c.label}
-                                      <span className={styles.arrowwss}>{c.Icon2}</span>
-                                   
+                                      <span className={styles.arrowwss}>{c.Icon2}</span>                              
                                 </NavLink>
                                 </li>
+                              )}
                               </ul>                       
                             ) : null }                                                    
                           
