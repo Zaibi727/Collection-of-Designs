@@ -43,12 +43,12 @@ import {
 
 
 class LargSidebar extends Component {
-
   constructor(props) {
     super(props);
    
     this.state = { 
         open: false,
+        selected:'',
      };
 
      this.handleButtonOneClick = this.handleButtonOneClick.bind(this);
@@ -56,10 +56,11 @@ class LargSidebar extends Component {
 }
 
 
-handleButtonOneClick = () => {
+handleButtonOneClick = (key) => {
     this.setState(state => {
       return {
         open: !state.open,
+        selected: key
       };
     });
   };
@@ -77,9 +78,11 @@ handleClickOutside = event => {
     if (this.container.current && !this.container.current.contains(event.target)) {
       this.setState({
         open: false,
+       selected: ''
       });
     }
   };
+
 
 render(){
 
@@ -90,21 +93,20 @@ return(
             <div className={styles.largSidebarWrapper}>
             <Router>
                <div >
-               {sideItems.map((item) => 
-                    <ul className={styles.largUl1}>
-                    <li onClick={() => this.handleButtonOneClick(item.index)}>
+               {sideItems.map((item, i) => 
+                    <ul key={i} className={styles.largUl1}>
+                    <li onClick={() => this.handleButtonOneClick(i)}>
                          <NavLink to={`/${item.itemid}`}  activeClassName={styles.active} className={styles.deco}>
                                <div className={styles.flex}>
-                                <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
-                                <p className={styles.bbb}><span className={styles.arrowwss}>{item.Icon2}</span></p>
+                                  <p className={styles.aaa}><span>{item.Icon}</span>{item.label}</p>
+                                  <p className={styles.bbb}><span className={styles.arrowwss}>{item.Icon2}</span></p>
                                 </div>
                          </NavLink>
                          </li> 
                          
                             {item.content ? item.content.map((c) => 
-                              
                               <ul className={styles.ulSub}>  
-                              {this.state.open && (
+                              {this.state.open && this.state.selected === i && (
                                 <li>                
                                 <NavLink to={`/${(item.itemid) + ('/') +(c.itemid)}`} className={styles.deco} activeClassName={styles.aactive}>
                                       {c.label}
@@ -113,7 +115,7 @@ return(
                                 </li>
                               )}
                               </ul>                       
-                            ) : null }                                                    
+                            ) : null }                                                                  
                           
                     </ul>
                       )}
