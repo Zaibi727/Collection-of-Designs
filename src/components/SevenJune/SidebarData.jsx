@@ -16,7 +16,7 @@ import * as RiIcons from 'react-icons/ri';
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Users',
+                title: 'users',
                 path: '/overview/users',
                 icon: <IoIcons.IoIosPaper />,
             },

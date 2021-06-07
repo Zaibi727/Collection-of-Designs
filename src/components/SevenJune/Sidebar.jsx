@@ -18,6 +18,7 @@ function Sidebar() {
 
     return (
         <>
+      
           <div className={styles.topNav}>
               <div className={styles.menuIcon}>
                   <FaIcons.FaBars onClick={showSidebar} />
@@ -31,14 +32,12 @@ function Sidebar() {
                              <AiIcons.AiOutlineClose   onClick={showSidebar} />
                           </div>
                           {SidebarData.map((item, i) => {
-                              return <SubMenu
-                                 item={item}
-                                 key={i}
-                              />
+                              return <SubMenu item={item} key={i}  />
                           })}
                    </section>
               </div>
-              
+           
+        
         </>
     )
 }

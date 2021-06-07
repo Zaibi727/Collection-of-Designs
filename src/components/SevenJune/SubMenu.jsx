@@ -1,50 +1,53 @@
 import React,{useState} from 'react';
 import styles from './sevenJune.module.css';
 
-import Sidebar from './Sidebar';
 
 
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    NavLink,
+    Route, 
+    Link,
   } from "react-router-dom";
 
 
 
 const SubMenu = ({item}) => {
-    const [subnav, setSubnav] = useState(false);
 
+ const [subnav, setSubnav] = useState(false);
  const showSubnav = () => setSubnav(!subnav);
 
+
+
     return(
-        <>
-        <Router>
-          <NavLink className={styles.link} to={item.path} onClick={item.subNav && showSubnav}>
-                <div className={styles.sidebarLink}>          
+        <div>
+          <Link className={styles.link} to={item.path}  onClick={item.subNav && showSubnav} >
+                <div className={styles.sidebarLink} >          
                     <div>
                         {item.icon}
                         <label>{item.title}</label>
                     </div>
                    <div>
-                       { item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
+                       { item.subNav && subnav 
+                       ? item.iconOpened 
+                       : item.subNav 
+                       ? item.iconClosed 
+                       : null}
                    </div>
                 </div>         
-          </NavLink>
+          </Link>
 
             {subnav && item.subNav.map((item, index) => {
               return (
-                  <NavLink className={styles.subMenuL} to={item.path} key={index}>
-                         {item.icon}
-                      <label>{item.title}</label>
-                  </NavLink>
+                  <Link className={styles.link}  to={item.path}>
+                       <div key={index} className={styles.subMenuL}>
+                                 {item.icon}
+                          <label>{item.title}</label>
+                       </div>
+                  </Link>
               )
              })}
-
-
-          </Router>
-        </>
+        </div>
     )
 }
 

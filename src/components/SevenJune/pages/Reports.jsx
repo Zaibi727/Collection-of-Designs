@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import styles from '../sevenJune.module.css';
 
 export default function Reports() {
     return (
-        <div>
+        <div className={styles.content}>
             Report
         </div>
     )
