@@ -1,0 +1,80 @@
+.content{
+    position: absolute;
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.topNav{
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+.menuIcon{
+    margin-left: 2rem;
+    font-size: 2rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+.menuuIcon{
+    margin-left: 2rem;
+    font-size: 2rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   color: white;
+   margin-top: 10px;
+}
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    transition: 350ms;
+    z-index: 10;
+}
+.sidebarWrap{
+    width: 100%;
+}
+.sidebarLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 20px;
+}
+.sidebarLink:hover{
+    background-color: rgb(112, 111, 106);
+    border-left: 4px solid purple;
+}
+.subMenuL{
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+}
+.subMenuL:hover{
+    background-color: purple;
+    color: white;
+    border-left: 4px solid purple;
+}
+label{
+    margin-left: 10px;
+}
+.link{
+    text-decoration: none !important;
+    color: white; 
+}
+
+.mainLink{
+    display: flex;
+    align-items: center;
+    text-decoration: none !important; 
+    padding: 0px 20px;
+}
+
+.main2{
+    margin-left: 16px;
+}
