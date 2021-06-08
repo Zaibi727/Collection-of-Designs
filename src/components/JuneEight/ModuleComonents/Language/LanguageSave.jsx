@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import ButtonAb from '../../ButtonAb';
 import styles from './language.module.css';
 import Select from 'react-select';
 
 
 function LanguageSave(props) {
+ const {handleChange, value} = props;
 
     const style = {
         control: base => ({
@@ -18,11 +19,15 @@ function LanguageSave(props) {
       };
 
 
+
+
+
     return (
         <div className={styles.langague}>
             <div>
             <Select
-                className={styles.langSelect}
+                  className={styles.lag}
+                   onChange={(e)=>handleChange(e)}
                    options={languageOptions}
                    styles={style}
                    components={{
