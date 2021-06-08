@@ -8,7 +8,7 @@ function TimeEdit(props) {
         <div className={styles.langague}>
             <div>
                 <p className={styles.p1}>Time</p>
-                <p className={styles.p2}>Distance units</p>
+                <p className={styles.p2}>Time settings</p>
             </div>
             <div onClick={props.onClick}>
                 <ButtonAb 

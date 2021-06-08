@@ -9,7 +9,7 @@ function CurrencyEdit(props) {
         <div className={styles.langague}>
             <div>
                 <p className={styles.p1}><span><BiEuro /></span> Euro</p>
-                <p className={styles.p2}>Distance units</p>
+                <p className={styles.p2}>Currency</p>
             </div>
             <div onClick={props.onClick}>
                 <ButtonAb 
