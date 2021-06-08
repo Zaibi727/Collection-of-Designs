@@ -68,7 +68,8 @@ import './dropDown.css';
 //import SiderBarSubContainer from './SideBarSub/SiderBarSubContainer';
 //import ThirtyFirstContainer from './ThirtyFirst/ThirtyFirstContainer';
 //import JuneThreeContainer from './JuneThree/JuneThreeContainer';
-import SevenJuneContainer from './SevenJune/SevenJuneContainer';
+//import SevenJuneContainer from './SevenJune/SevenJuneContainer';
+import JuneEightContainer from './JuneEight/JuneEightContainer';
 
 
 class Parent extends Component {
@@ -78,7 +79,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                   <SevenJuneContainer />
+                   <JuneEightContainer />
            </div>
          );
     }

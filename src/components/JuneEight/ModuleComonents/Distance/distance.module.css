@@ -1,0 +1,18 @@
+.langague{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p1{
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+.p2{
+    font-size: 12px;
+    color: lightslategray;
+    margin-top: 8px;
+}
+.langSelect{
+    width: 100px;
+    font-size: 14px;
+}
