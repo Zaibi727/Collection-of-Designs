@@ -5,7 +5,7 @@ import Select from 'react-select';
 
 
 function LanguageSave(props) {
- const {handleChange, value} = props;
+ const {handleChange} = props;
 
     const style = {
         control: base => ({

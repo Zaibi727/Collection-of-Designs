@@ -1,21 +1,54 @@
-import React from 'react';
-import ButtonAb from '../../ButtonAb';
-import styles from './language.module.css';
+import React, { Component } from 'react';
+import LanguageEdit from './LanguageEdit';
+import LanguageSave from './LanguageSave';
 
-function LanguageEdit(props) {
-    return (
-        <div className={styles.langague}>
+
+class LanguageRender extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            clicked: false,
+            value: '',
+        };
+
+        this.handleEditClick = this.handleEditClick.bind(this);
+        this.handleSaveClick = this.handleSaveClick.bind(this);
+      }
+    
+      handleEditClick() {
+        this.setState({ clicked: true});
+      }
+    
+      handleSaveClick() {
+        this.setState({ clicked: false});
+      }
+
+      handleChange = ( value ) => {
+        this.setState({ value: value });
+   }
+
+      
+    render() {
+        const clicked = this.state.clicked;
+
+        let button;
+        
+        if (clicked) {
+          button = <LanguageSave onChange = {this.handleChange}  onClick={this.handleSaveClick} />;
+        } else {
+          button = <LanguageEdit  value = {this.state.value} onClick={this.handleEditClick} />;
+        }
+
+        return (
             <div>
-                <p className={styles.p1}>{props.value}</p>
-                <p className={styles.p2}>Language</p>
+              <div>
+                {button}
+             </div>
             </div>
-            <div onClick={props.onClick}>
-                <ButtonAb 
-                    label="Edit"
-                />
-            </div>
-        </div>
-    )
+        );
+    }
 }
 
-export default LanguageEdit;
+export default LanguageRender;
+
