@@ -1,0 +1,86 @@
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.containerDiv1{
+    height: 100vh;
+    overflow: auto;
+}
+.containerDiv2{
+    background-color: rgb(185, 174, 174);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+/*--container--*/
+
+.abcard{
+    width: 450px;
+    height: 180px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+/*--abCard--*/
+.abbtn{
+    margin-left: -10px;
+    padding: 20px;
+}
+.abbtn:hover{
+    background-color:#2fc772;
+    color: white;
+}
+.btnicon{
+    font-size: 30px;
+}
+.btnlabel{
+    font-weight: 500;
+   
+}
+
+/*--AbButton--*/
+
+.btnBar{
+   text-align: center;
+
+}
+
+/*---ButtonBar--*/
+.mainCardcontent{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.mainCardcontent div{
+    margin: 0px 5px;
+}
+.cardheading{
+    background-color:#2fc772;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+}
+
+/*--Abcard--*/
+
+.AbCardContent{
+    display: flex;  
+    justify-content: center; 
+}
+.ps{
+  text-align: left;
+  margin-left: 10px;
+}
+.p1{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.p2{
+    font-size: 14px;
+}
+/*--card content--*/
