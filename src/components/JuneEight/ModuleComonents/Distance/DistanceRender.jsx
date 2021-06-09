@@ -25,7 +25,7 @@ class DistanceRender extends Component {
       }
 
       handleChange = selectedOption => {
-        this.setState({ selectedOption });
+        this.setState({ selectedOption: selectedOption });
         console.log(`Option selected:`, selectedOption);
       };
       
@@ -36,7 +36,7 @@ class DistanceRender extends Component {
               ...base,
               border: 0,
               // This line disable the blue border
-              boxShadow: "none",
+              boxShadow: "2px 2px 5px gray",
               width: '100%',
               
             })
@@ -51,10 +51,11 @@ class DistanceRender extends Component {
         if (clicked) {
           button = <section className={styles.langague}>
               <div>
+              <label>select a distance unit :</label>
                   <Select 
                      className={styles.simpSelect} 
+                     placeholder={selectedOption}
                      options={options} 
-                     placeholder="Select A distance"
                      styles={style}
                      value={selectedOption}
                      onChange={(e) => this.handleChange(e.value)}

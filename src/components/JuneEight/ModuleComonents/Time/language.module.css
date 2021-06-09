@@ -23,6 +23,9 @@
     width: 150px;
     font-size: 12px;
 }
+label{
+    font-size: 12px;
+}
 input:focus,
 select:focus,
 textarea:focus,

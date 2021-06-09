@@ -27,7 +27,7 @@ class CurrencyRender extends Component {
       }
 
       handleChange = selectedOption => {
-        this.setState({ selectedOption });
+        this.setState({ selectedOption:selectedOption });
         console.log(`Option selected:`, selectedOption);
       };
       
@@ -38,7 +38,7 @@ class CurrencyRender extends Component {
               ...base,
               border: 0,
               // This line disable the blue border
-              boxShadow: "none",
+              boxShadow: "2px 2px 5px gray",
               width: '100%',
               
             })
@@ -53,9 +53,10 @@ class CurrencyRender extends Component {
         if (clicked) {
           button = <section className={styles.langague}>
               <div>
+              <label>select Currency :</label>
                    <Select 
                        className={styles.simpSelect} 
-                       placeholder="Select A currency"
+                       placeholder={selectedOption}
                        options={options} 
                        styles={style}
                        value={selectedOption}
