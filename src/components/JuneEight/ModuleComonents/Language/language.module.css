@@ -18,3 +18,12 @@
     width: 100px;
     font-size: 14px;
 }
+.simpSelect{
+    border: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

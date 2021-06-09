@@ -3,8 +3,8 @@ import styles from './juneEight.module.css';
 import CardAb from './CardAb';
 import CardTitleAb from './CardTitleAb';
 import LanguageRender from './ModuleComonents/Language/LanguageRender';
-import DistanceRender from './ModuleComonents/Distance/DistanceRender';
 import TimeRender from './ModuleComonents/Time/TimeRender';
+import DistanceRender from './ModuleComonents/Distance/DistanceRender';
 import CurrencyRender from './ModuleComonents/Currency/CurrencyRender';
 
 function JuneEightContainer() {
@@ -27,7 +27,8 @@ function JuneEightContainer() {
                         <TimeRender />
                     </div>
                     <div className={styles.containerLangage}>
-                        <CurrencyRender />
+                       <CurrencyRender />
+
                     </div>
                 </section>
             </CardAb>

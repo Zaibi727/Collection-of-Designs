@@ -4,13 +4,13 @@ import ButtonAb from '../../ButtonAb';
 import styles from './language.module.css';
 
 
+
 class LanguageRender extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             clicked: false,
-            selectedOption: '',
+            selectedOption: null,
         };
 
         this.handleEditClick = this.handleEditClick.bind(this);
@@ -25,24 +25,13 @@ class LanguageRender extends Component {
         this.setState({ clicked: false});
       }
 
-      handleChange =  (selectedOption) =>  {
-        this.setState({ selectedOption });
-        console.log(`Option selected:`, selectedOption);
-      };
-
+      handleChange = (event) => {
+        console.log("Event.target.value is", event.target.value);
+      
+      this.setState({selectedOption:event.target.value});
+    }
       
     render() {
-
-        const languageOptions = [
-            { value: 'en', label: 'English' },
-            { value: 'ur', label: 'Urdu' },
-            { value: 'pa', label: 'Pashtu' },
-            { value: 'ar', label: 'Arabic' },
-            { value: 'si', label: 'Sindhi' },
-            { value: 'ba', label: 'Balochi' },
-            { value: 'pu', label: 'Punjabi' },
-         
-          ];
 
         const style = {
             control: base => ({
@@ -56,22 +45,20 @@ class LanguageRender extends Component {
           };
 
         const clicked = this.state.clicked;
-        const  selectedOption  = this.state.selectedOption;
 
         let button;
         
         if (clicked) {
           button = <section className={styles.langague}>
               <div>
-                       <Select
-                           className={styles.lag}
-                             onChange={this.handleChange}
-                             options={languageOptions}
-                            styles={style}
-                             components={{
-                             IndicatorSeparator: () => null
-                                 }}
-                        />
+                       <select className={styles.simpSelect} value={this.state.selectedOption} onChange={this.handleChange}>
+                      <option value={"English"}>English</option>
+                       <option value={"Urdu"}>Urdu</option>
+                       <option value={"Punjabi"}>Punjabi</option>
+                      <option value={"Pashtu"}>Pashtu</option>
+                       <option value={"Arabic"}>Arabic</option>
+                        <option value={"Sindhi"}>Sindhi</option>
+                    </select>
             </div>
             <div onClick={this.handleSaveClick}>
                 <ButtonAb 
@@ -83,7 +70,7 @@ class LanguageRender extends Component {
         } else {
           button = <section className={styles.langague}  >
                         <div>
-                          <p className={styles.p1}>{selectedOption}</p>
+                          <p className={styles.p1}>{this.state.selectedOption}</p>
                           <p className={styles.p2}>Language</p>
                         </div>
                         <div onClick={this.handleEditClick}>
