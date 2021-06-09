@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Select from 'react-select';
 import ButtonAb from '../../ButtonAb';
 import styles from './language.module.css';
+import Select from 'react-select';
+
 
 
 
@@ -25,11 +26,10 @@ class CurrencyRender extends Component {
         this.setState({ clicked: false});
       }
 
-      handleChange = (event) => {
-        console.log("Event.target.value is", event.target.value);
-      
-      this.setState({selectedOption:event.target.value});
-    }
+      handleChange = selectedOption => {
+        this.setState({ selectedOption });
+        console.log(`Option selected:`, selectedOption);
+      };
       
     render() {
 
@@ -45,20 +45,25 @@ class CurrencyRender extends Component {
           };
 
         const clicked = this.state.clicked;
+        const { selectedOption } = this.state;
+
 
         let button;
         
         if (clicked) {
           button = <section className={styles.langague}>
               <div>
-                       <select className={styles.simpSelect} value={this.state.selectedOption} onChange={this.handleChange}>               
-                       <option  value={"$ USD"}>$ USD</option>
-                       <option value={"Euro"}>Euro</option>
-                       <option value={"DHR"}>DHR</option>
-                      <option value={"AFG"}>AFG</option>
-                       <option value={"POUND"}>Pound</option>
-                        <option value={"Lira"}>Lira</option>
-                    </select>
+                   <Select 
+                       className={styles.simpSelect} 
+                       placeholder="Select A currency"
+                       options={options} 
+                       styles={style}
+                       value={selectedOption}
+                       onChange={(e) => this.handleChange(e.value)}
+                       components={{
+                       IndicatorSeparator: () => null
+                     }}
+                    />
             </div>
             <div onClick={this.handleSaveClick}>
                 <ButtonAb 
@@ -93,4 +98,9 @@ class CurrencyRender extends Component {
 
 export default CurrencyRender;
 
- 
+const options = [
+  { value: 'Euro', label: 'Euro' },
+  { value: 'USD', label: 'USD' },
+  { value: 'Lira', label: 'Lira' },
+  { value: 'Pound', label: 'Pound' },
+]

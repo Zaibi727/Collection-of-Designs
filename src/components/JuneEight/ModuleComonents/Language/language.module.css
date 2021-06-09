@@ -7,7 +7,6 @@
 .p1{
     font-size: 14px;
     margin-bottom: -5px;
-    font-weight: 500;
 }
 .p2{
     font-size: 12px;
@@ -21,6 +20,8 @@
 }
 .simpSelect{
     border: none;
+    width: 150px;
+    font-size: 12px;
 }
 input:focus,
 select:focus,

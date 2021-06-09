@@ -4,7 +4,6 @@ import ButtonAb from '../../ButtonAb';
 import styles from './language.module.css';
 
 
-
 class LanguageRender extends Component {
     constructor(props) {
         super(props);
@@ -25,11 +24,10 @@ class LanguageRender extends Component {
         this.setState({ clicked: false});
       }
 
-      handleChange = (event) => {
-        console.log("Event.target.value is", event.target.value);
-      
-      this.setState({selectedOption:event.target.value});
-    }
+    handleChange = selectedOption => {
+        this.setState({ selectedOption });
+        console.log(`Option selected:`, selectedOption);
+      };
       
     render() {
 
@@ -45,20 +43,24 @@ class LanguageRender extends Component {
           };
 
         const clicked = this.state.clicked;
+        const { selectedOption } = this.state;
 
         let button;
         
         if (clicked) {
           button = <section className={styles.langague}>
               <div>
-                       <select className={styles.simpSelect} value={this.state.selectedOption} onChange={this.handleChange}>
-                      <option value={"English"}>English</option>
-                       <option value={"Urdu"}>Urdu</option>
-                       <option value={"Punjabi"}>Punjabi</option>
-                      <option value={"Pashtu"}>Pashtu</option>
-                       <option value={"Arabic"}>Arabic</option>
-                        <option value={"Sindhi"}>Sindhi</option>
-                    </select>
+                    <Select 
+                    className={styles.simpSelect} 
+                    placeholder="Select a language"
+                    options={options} 
+                    styles={style}
+                    value={selectedOption}
+                    onChange={(e) => this.handleChange(e.value)}
+                    components={{
+                      IndicatorSeparator: () => null
+                     }}
+                    />
             </div>
             <div onClick={this.handleSaveClick}>
                 <ButtonAb 
@@ -94,3 +96,11 @@ class LanguageRender extends Component {
 export default LanguageRender;
 
  
+const options = [
+    { value: 'English', label: 'Englsih' },
+    { value: 'Urdu', label: 'Urdu' },
+    { value: 'French', label: 'French' },
+    { value: 'Punjab', label: 'Punjabi' },
+    { value: 'Pashtu', label: 'Pashtu' },
+    { value: 'Arabic', label: 'Arabi' },
+  ]

@@ -25,11 +25,10 @@ class LanguageRender extends Component {
         this.setState({ clicked: false});
       }
 
-      handleChange = (event) => {
-        console.log("Event.target.value is", event.target.value);
-      
-      this.setState({selectedOption:event.target.value});
-    }
+      handleChange = selectedOption => {
+        this.setState({ selectedOption});
+        console.log(`Option selected:`, selectedOption);
+      };
       
     render() {
 
@@ -45,20 +44,24 @@ class LanguageRender extends Component {
           };
 
         const clicked = this.state.clicked;
+        const { selectedOption } = this.state;
 
         let button;
         
         if (clicked) {
           button = <section className={styles.langague}>
               <div>
-                       <select className={styles.simpSelect} value={this.state.selectedOption} onChange={this.handleChange}>
-                      <option value={"2:00 pm"}>2:00 pm</option>
-                      <option value={"4:00 pm"}>2:00 pm</option>
-                      <option value={"6:00 pm"}>2:00 pm</option>
-                      <option value={"8:00 pm"}>2:00 pm</option>
-                      <option value={"10:00 pm"}>2:00 pm</option>
-                      <option value={"12:00 pm"}>2:00 am</option>
-                    </select>
+              <Select 
+                    className={styles.simpSelect} 
+                    placeholder="Select time"
+                    options={options} 
+                    styles={style}
+                    value={selectedOption}
+                    onChange={(e) => this.handleChange(e.value)}
+                    components={{
+                      IndicatorSeparator: () => null
+                     }}
+                    />
             </div>
             <div onClick={this.handleSaveClick}>
                 <ButtonAb 
@@ -70,7 +73,7 @@ class LanguageRender extends Component {
         } else {
           button = <section className={styles.langague}  >
                         <div>
-                          <p className={styles.p1}>{this.state.selectedOption}</p>
+                          <p className={styles.p1}>{selectedOption}</p>
                           <p className={styles.p2}>Time settings</p>
                         </div>
                         <div onClick={this.handleEditClick}>
@@ -93,4 +96,9 @@ class LanguageRender extends Component {
 
 export default LanguageRender;
 
- 
+const options = [
+  { value: '2:00 am', label: '2:00 am' },
+  { value: '4:00 pm', label: '4:00 pm' },
+  { value: '12:00 am', label: '12:00 am' },
+  { value: '1:30 am', label: '1:30 am' },
+]

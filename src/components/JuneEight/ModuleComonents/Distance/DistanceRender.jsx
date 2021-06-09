@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ButtonAb from '../../ButtonAb';
 import styles from './language.module.css';
-
+import Select from 'react-select';
 
 
 class DistanceRender extends Component {
@@ -24,11 +24,10 @@ class DistanceRender extends Component {
         this.setState({ clicked: false});
       }
 
-      handleChange = (event) => {
-        console.log("Event.target.value is", event.target.value);
-      
-      this.setState({selectedOption:event.target.value});
-    }
+      handleChange = selectedOption => {
+        this.setState({ selectedOption });
+        console.log(`Option selected:`, selectedOption);
+      };
       
     render() {
 
@@ -44,18 +43,25 @@ class DistanceRender extends Component {
           };
 
         const clicked = this.state.clicked;
+        const { selectedOption } = this.state;
+
 
         let button;
         
         if (clicked) {
           button = <section className={styles.langague}>
               <div>
-                       <select className={styles.simpSelect} value={this.state.selectedOption} onChange={this.handleChange}>
-                      <option value={"Meters"}>Meters</option>
-                       <option value={"Feet"}>Feet</option>
-                       <option value={"Kilometer"}>Kilometer</option>
-                      <option value={"Inch"}>Inch</option>
-                    </select>
+                  <Select 
+                     className={styles.simpSelect} 
+                     options={options} 
+                     placeholder="Select A distance"
+                     styles={style}
+                     value={selectedOption}
+                     onChange={(e) => this.handleChange(e.value)}
+                     components={{
+                      IndicatorSeparator: () => null
+                     }}
+                    />
             </div>
             <div onClick={this.handleSaveClick}>
                 <ButtonAb 
@@ -90,4 +96,9 @@ class DistanceRender extends Component {
 
 export default DistanceRender;
 
- 
+const options = [
+  { value: 'Meter', label: 'Meter', },
+  { value: 'Inch', label: 'Inch' },
+  { value: 'Feet', label: 'Feet' },
+  { value: 'kiloMeter', label: 'Kilometer' },
+]

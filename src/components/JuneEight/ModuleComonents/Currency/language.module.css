@@ -21,6 +21,8 @@
 }
 .simpSelect{
     border: none;
+    width: 150px;
+    font-size: 12px;
 }
 input:focus,
 select:focus,
