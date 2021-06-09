@@ -1,52 +1,5 @@
-import React, { useCallback } from 'react';
-import ButtonAb from '../../ButtonAb';
-import styles from './language.module.css';
-import Select from 'react-select';
 
-
-function LanguageSave(props) {
- const {handleChange} = props;
-
-    const style = {
-        control: base => ({
-          ...base,
-          border: 0,
-          // This line disable the blue border
-          boxShadow: "none",
-          width: '100%',
-          
-        })
-      };
-
-
-
-
-
-    return (
-        <div className={styles.langague}>
-            <div>
-            <Select
-                  className={styles.lag}
-                   onChange={(e)=>handleChange(e)}
-                   options={languageOptions}
-                   styles={style}
-                   components={{
-                      IndicatorSeparator: () => null
-                     }}
-      />
-            </div>
-            <div onClick={props.onClick}>
-                <ButtonAb 
-                    label="Save"
-                />
-            </div>
-        </div>
-    )
-}
-
-export default LanguageSave;
-
-export const languageOptions = [
+ const languageOptions = [
     { value: 'en', label: 'English' },
     { value: 'ur', label: 'Urdu' },
     { value: 'pa', label: 'Pashtu' },
@@ -56,3 +9,5 @@ export const languageOptions = [
     { value: 'pu', label: 'Punjabi' },
  
   ];
+
+  export default languageOptions;

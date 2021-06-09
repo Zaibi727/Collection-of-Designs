@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import LanguageEdit from './LanguageEdit';
-import LanguageSave from './LanguageSave';
+import Select from 'react-select';
+import ButtonAb from '../../ButtonAb';
+import styles from './language.module.css';
 
 
 class LanguageRender extends Component {
@@ -9,7 +10,7 @@ class LanguageRender extends Component {
 
         this.state = {
             clicked: false,
-            value: '',
+            selectedOption: '',
         };
 
         this.handleEditClick = this.handleEditClick.bind(this);
@@ -24,20 +25,73 @@ class LanguageRender extends Component {
         this.setState({ clicked: false});
       }
 
-      handleChange = ( value ) => {
-        this.setState({ value: value });
-   }
+      handleChange =  (selectedOption) =>  {
+        this.setState({ selectedOption });
+        console.log(`Option selected:`, selectedOption);
+      };
 
       
     render() {
+
+        const languageOptions = [
+            { value: 'en', label: 'English' },
+            { value: 'ur', label: 'Urdu' },
+            { value: 'pa', label: 'Pashtu' },
+            { value: 'ar', label: 'Arabic' },
+            { value: 'si', label: 'Sindhi' },
+            { value: 'ba', label: 'Balochi' },
+            { value: 'pu', label: 'Punjabi' },
+         
+          ];
+
+        const style = {
+            control: base => ({
+              ...base,
+              border: 0,
+              // This line disable the blue border
+              boxShadow: "none",
+              width: '100%',
+              
+            })
+          };
+
         const clicked = this.state.clicked;
+        const  selectedOption  = this.state.selectedOption;
 
         let button;
         
         if (clicked) {
-          button = <LanguageSave onChange = {this.handleChange}  onClick={this.handleSaveClick} />;
+          button = <section className={styles.langague}>
+              <div>
+                       <Select
+                           className={styles.lag}
+                             onChange={this.handleChange}
+                             options={languageOptions}
+                            styles={style}
+                             components={{
+                             IndicatorSeparator: () => null
+                                 }}
+                        />
+            </div>
+            <div onClick={this.handleSaveClick}>
+                <ButtonAb 
+                    label="Save"
+                />
+            </div>
+
+                  </section>;
         } else {
-          button = <LanguageEdit  value = {this.state.value} onClick={this.handleEditClick} />;
+          button = <section className={styles.langague}  >
+                        <div>
+                          <p className={styles.p1}>{selectedOption}</p>
+                          <p className={styles.p2}>Language</p>
+                        </div>
+                        <div onClick={this.handleEditClick}>
+                            <ButtonAb 
+                            label="Edit"
+                               />
+                         </div>
+                  </section>;
         }
 
         return (
@@ -52,3 +106,4 @@ class LanguageRender extends Component {
 
 export default LanguageRender;
 
+ 
