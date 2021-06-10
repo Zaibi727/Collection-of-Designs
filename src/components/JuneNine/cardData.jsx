@@ -79,6 +79,91 @@ import { RiTimeFill } from "react-icons/ri";
         ]
         
     },
+    {
+        label: "Investment Plan 4",
+        Icon: <FaSuitcase />,
+        cardContent: [
+            {
+                Icon1: <IoDesktop /> ,
+                label1: 'Canal Road',
+                Icon2: <GrCurrency />,
+                label2: 'Amount',
+                label3: 'Monthly Rent',
+                Icon3: <RiTimeFill />,
+                label4: 'Duration',
+                time: '5 months'
+            }
+        ]
+        
+    },
+    {
+        label: "Investment Plan 4",
+        Icon: <FaSuitcase />,
+        cardContent: [
+            {
+                Icon1: <IoDesktop /> ,
+                label1: 'Canal Road',
+                Icon2: <GrCurrency />,
+                label2: 'Amount',
+                label3: 'Monthly Rent',
+                Icon3: <RiTimeFill />,
+                label4: 'Duration',
+                time: '5 months'
+            }
+        ]
+        
+    },
+    {
+        label: "Investment Plan 4",
+        Icon: <FaSuitcase />,
+        cardContent: [
+            {
+                Icon1: <IoDesktop /> ,
+                label1: 'Canal Road',
+                Icon2: <GrCurrency />,
+                label2: 'Amount',
+                label3: 'Monthly Rent',
+                Icon3: <RiTimeFill />,
+                label4: 'Duration',
+                time: '5 months'
+            }
+        ]
+        
+    },
+    {
+        label: "Investment Plan 4",
+        Icon: <FaSuitcase />,
+        cardContent: [
+            {
+                Icon1: <IoDesktop /> ,
+                label1: 'Canal Road',
+                Icon2: <GrCurrency />,
+                label2: 'Amount',
+                label3: 'Monthly Rent',
+                Icon3: <RiTimeFill />,
+                label4: 'Duration',
+                time: '5 months'
+            }
+        ]
+        
+    },
+    {
+        label: "Investment Plan 4",
+        Icon: <FaSuitcase />,
+        cardContent: [
+            {
+                Icon1: <IoDesktop /> ,
+                label1: 'Canal Road',
+                Icon2: <GrCurrency />,
+                label2: 'Amount',
+                label3: 'Monthly Rent',
+                Icon3: <RiTimeFill />,
+                label4: 'Duration',
+                time: '5 months'
+            }
+        ]
+        
+    },
 ]
 
 
