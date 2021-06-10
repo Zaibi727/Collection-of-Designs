@@ -10,12 +10,12 @@ import { RiTimeFill } from "react-icons/ri";
 
 
 function ContentBar(props) {
-    const {Clicked, selected} = props;
+    const {open, opeen, opeeen, opeeeen} = props;
     return (
         <div className={styles.conternBarWrapper}>
              <div>
               
-            {Clicked  && 
+            {open &&
                 <AbCard>
                     <div className={styles.cardheading}>
                          <p><span><IoDesktop /></span>   D-Ground Corner</p>
@@ -51,7 +51,7 @@ function ContentBar(props) {
 
             <div>
               
-              {Clicked && 
+              {opeen && 
                   <AbCard>
                       <div className={styles.cardheading}>
                            <p><span><IoDesktop /></span>   Dhobi Ghaat Ground</p>
@@ -80,10 +80,79 @@ function ContentBar(props) {
                            </div>
                        </div>
                    </AbCard>
-                  }
+              }
               </div>
                    {/*--card-two--*/}
 
+                   <div>
+              
+              {opeeen && 
+                  <AbCard>
+                      <div className={styles.cardheading}>
+                           <p><span><IoDesktop /></span>   Clock Tower Center</p>
+                      </div>
+                       <div className={styles.mainCardcontent}>
+                           <div>
+                              <AbCardContent 
+                                  Icon={GrCurrency}
+                                  label="Amount"
+                                  price="130,000 Pkr/-"
+                                />
+                           </div>
+                           <div>
+                              <AbCardContent 
+                                  Icon={GrCurrency}
+                                  label="Monthly Rent"
+                                  price="30,000 Pkr/-"
+                                />
+                           </div>
+                           <div>
+                              <AbCardContent 
+                                  Icon={RiTimeFill}
+                                  label="Duration"
+                                  price="5 months"
+                                />
+                           </div>
+                       </div>
+                   </AbCard>
+              }
+              </div>
+
+              {/*--card-three--*/}
+
+              <div>
+              
+              {opeeeen && 
+                  <AbCard>
+                      <div className={styles.cardheading}>
+                           <p><span><IoDesktop /></span>  Sargodha Road Sitara Textile Mill</p>
+                      </div>
+                       <div className={styles.mainCardcontent}>
+                           <div>
+                              <AbCardContent 
+                                  Icon={GrCurrency}
+                                  label="Amount"
+                                  price="130,000 Pkr/-"
+                                />
+                           </div>
+                           <div>
+                              <AbCardContent 
+                                  Icon={GrCurrency}
+                                  label="Monthly Rent"
+                                  price="30,000 Pkr/-"
+                                />
+                           </div>
+                           <div>
+                              <AbCardContent 
+                                  Icon={RiTimeFill}
+                                  label="Duration"
+                                  price="5 months"
+                                />
+                           </div>
+                       </div>
+                   </AbCard>
+              }
+              </div>
                    
         </div>
     )

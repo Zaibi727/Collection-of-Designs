@@ -28,11 +28,9 @@
 .abbtn{
     margin-left: -10px;
     padding: 20px;
+    border-bottom: 1px solid rgb(224, 228, 231);
 }
-.abbtn:hover{
-    background-color:#2fc772;
-    color: white;
-}
+
 .btnicon{
     font-size: 30px;
 }
@@ -45,7 +43,6 @@
 
 .btnBar{
    text-align: center;
-
 }
 
 /*---ButtonBar--*/
@@ -63,8 +60,11 @@
     width: 100%;
     color: white;
     font-weight: 500;
+    margin-bottom: 10px;
 }
-
+.cardheading p{
+    padding: 5px;
+}
 /*--Abcard--*/
 
 .AbCardContent{

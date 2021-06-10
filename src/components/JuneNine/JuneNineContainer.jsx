@@ -10,55 +10,133 @@ class JuneNineContainer extends Component {
      
       this.state = { 
           open: false,
-          selected:'',
+          opeen: false,
+          opeeen: false,
+          opeeeen: false,
           
        };
-  
-       this.handleButtonOneClick = this.handleButtonOneClick.bind(this);
-       this.handleClickOutside = this.handleClickOutside.bind(this);
+       this.wrapperRef = React.createRef();
+       this.OneClick = this.OneClick.bind(this);
+       this.TwoClick = this.TwoClick.bind(this);
+       this.ThreeClick = this.ThreeClick.bind(this);
+       this.FourClick = this.FourClick.bind(this);
+       
+       this.OutsideOne = this.OutsideOne.bind(this);
+       this.OutsideTwo = this.OutsideTwo.bind(this);
+       this.OutsideThree = this.OutsideThree.bind(this);
+       this.OutsideFour = this.OutsideFour.bind(this);
+     
   }
   
   
-  handleButtonOneClick = (key) => {
+  OneClick = () => {
       this.setState(state => {
         return {
-          open: !state.open,
-          selected: key,     
+          open: !state.open, 
+          opeen: false,  
+          opeeen: false, 
+          opeeen: false ,
+
+        };
+      });
+    };
+    TwoClick = () => {
+      this.setState(state => {
+        return {
+          opeen: !state.opeen, 
+          open: false,  
+          opeeen: false, 
+          opeeen: false ,  
+        };
+      });
+    };
+    ThreeClick = () => {
+      this.setState(state => {
+        return {
+          opeeen: !state.opeeen, 
+          open: false,  
+          opeen: false, 
+          opeeeen: false ,  
+        };
+      });
+    };
+    FourClick = () => {
+      this.setState(state => {
+        return {
+          opeeeen: !state.opeeeen,   
+          opeen: false,  
+          opeeen: false, 
+          opeeen: false ,
         };
       });
     };
     
-    container = React.createRef();
+
   
     componentDidMount() {
-      document.addEventListener("mousedown", this.handleClickOutside);
+      document.removeEventListener("mousedown", this.OutsideOne);
+    document.removeEventListener("mousedown", this.OutsideTwo);
+    document.removeEventListener("mousedown", this.OutsideThree);
+    document.removeEventListener("mousedown", this.OutsideFour);
   }
   componentWillUnmount() {
-    document.removeEventListener("mousedown", this.handleClickOutside);
+    document.removeEventListener("mousedown", this.OutsideOne);
+    document.removeEventListener("mousedown", this.OutsideTwo);
+    document.removeEventListener("mousedown", this.OutsideThree);
+    document.removeEventListener("mousedown", this.OutsideFour);
   }
   
-  handleClickOutside = event => {
-      if (this.container.current && !this.container.current.contains(event.target)) {
+  OutsideOne = event => {
+      if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
         this.setState({
           open: false,
-         selected: '',
+        });
+      }
+    };
+  OutsideTwo = event => {
+      if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
+        this.setState({
+          opeen: false,
+        });
+      }
+    };
+    OutsideThree = event => {
+      if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
+        this.setState({
+          opeeen: false,
+        });
+      }
+    };
+    OutsideFour = event => {
+      if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
+        this.setState({
+          opeeeen: false,
         });
       }
     };
 
 render(){
     return (
-        <div className={styles.container} ref={this.container}>
+        <div className={styles.container} ref={this.wrapperRef}>
             <div className={styles.containerDiv1}>
                 <ButtonBr 
-                    onAdd={this.handleButtonOneClick}
+                    onAddOne={this.OneClick}
+                    onAddTwo={this.TwoClick}
+                    onAddThree={this.ThreeClick}
+                    onAddFour={this.FourClick}
                     open={this.state.open}
-                    selected={this.state.selected}
+                    opeen={this.state.opeen}
+                    opeeen={this.state.opeeen}
+                    opeeeen={this.state.opeeeen}
+        
                 />
             </div>
             <div className={styles.containerDiv2}>
                 <ContentBar 
-                    Clicked={this.state.open}
+                    open={this.state.open}
+                    opeen={this.state.opeen}
+                    opeeen={this.state.opeeen}
+                    opeeeen={this.state.opeeeen}
               
                 />
             </div>

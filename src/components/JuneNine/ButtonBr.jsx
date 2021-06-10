@@ -4,17 +4,35 @@ import { FaSuitcase } from "react-icons/fa";
 import styles from './junenine.module.css';
 
 function ButtonBr(props) {
-    const {onAdd} = props;
+    const {onAddOne,onAddTwo,onAddThree,onAddFour,open, opeen, opeeen, opeeeen} = props;
     return (
         <div className={styles.btnBar}>
-            {sideItems.map((item, i) => (
-                   <div key={i}>
-                   <AbButton 
-                        item={item}
-                        onAdd={(i) => onAdd(i)}
+            
+            <div onClick={onAddOne} style={ open ? {color: 'white', backgroundColor: '#2fc772'} : {color: 'black'}}>
+                 <AbButton 
+                      label= "Investment Plan 1"
+                       Icon= {FaSuitcase}
                      />
-                   </div>
-                ))}
+            </div>
+            <div onClick={onAddTwo} style={ opeen ? {color: 'white', backgroundColor: '#2fc772'} : {color: 'black'}}>
+                 <AbButton 
+                      label= "Investment Plan 2"
+                       Icon= {FaSuitcase}
+                     />
+            </div>
+            <div onClick={onAddThree} style={ opeeen ? {color: 'white', backgroundColor: '#2fc772'} : {color: 'black'}}>
+                 <AbButton 
+                      label= "Investment Plan 3"
+                       Icon= {FaSuitcase}
+                     />
+            </div>
+            <div onClick={onAddFour} style={ opeeeen ? {color: 'white', backgroundColor: '#2fc772'} : {color: 'black'}}>
+                 <AbButton 
+                      label= "Investment Plan 4"
+                       Icon= {FaSuitcase}
+                     />
+            </div>
+                            
         </div>
     )
 }
@@ -22,21 +40,3 @@ function ButtonBr(props) {
 export default ButtonBr;
 
 
-const sideItems = [
-    {   
-        label: "Investment Plan 1",
-        Icon: <FaSuitcase />,
-    },
-    {  
-        label: "Investment Plan 2",
-        Icon: <FaSuitcase />,
-    },
-    {   
-        label: "Investment Plan 3",
-        Icon: <FaSuitcase />,
-    },
-    {   
-        label: "Investment Plan 4",
-        Icon: <FaSuitcase />,
-    },
-]

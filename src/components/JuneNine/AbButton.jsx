@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './junenine.module.css';
 
 function AbButton(props) {
-    const {item, onAdd} = props;
+    const {label, Icon} = props;
     return (
-        <div className={styles.abbtn} onClick={onAdd}>
+        <div className={styles.abbtn}>
             <div>
-            <span className={styles.btnicon}>{item.Icon}</span>
-            <p className={styles.btnlabel}>{item.label}</p>
+            <span className={styles.btnicon}>{Icon ? <Icon/> : {Icon}}</span>
+            <p className={styles.btnlabel}>{label}</p>
            </div>
             
         </div>
