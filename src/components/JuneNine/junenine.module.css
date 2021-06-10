@@ -20,7 +20,6 @@
 }
 .buttonportion{
     background-color: rgb(236, 230, 230);
-    border-bottom: 1px solid white;
     padding: 30px 0px;
 }
 .buttonportion:hover{
@@ -32,7 +31,7 @@
     color: white;
   }
 .cardPortion{
-    background-color: rgb(236, 230, 230);
+    background-color: rgb(255, 255, 255) !important;
     position: fixed;
     left: 40%;
     top: 30%;
