@@ -1,72 +1,74 @@
-.container{
-    width: 100%;
-    height: 100%;
-}
+
 .wrapper{
     display: grid;
     grid-template-columns: 20% 80%;
-    width: 100%;
+     width: 100%;
+     height: 100vh;
+     background-color: #ddd3d3;
+ }
+ .buttonportion{
+     padding: 30px 0px;
+     border-bottom: 1px solid lightgrey;
+    font-weight: 500;
+    font-size: 14px;
     height: 100%;
-    background-color: #d4c9c9;
-}
-.buttonportion{
-    background-color: rgb(255, 255, 255);
-    padding: 30px 0px;
-    overflow: auto;
-    border-bottom: 1px solid lightgrey;
-   font-weight: 500;
-   font-size: 14px;
-}
-
-.cardPortion{
-
-    position: fixed;
-    left: 40%;
-    top: 30%;
-    right: 50%;
-}
-
-/*--container---*/
-
-.abcard{
-    width: 350px;
-    height: 160px;
-    background-color: rgb(255, 255, 255);
-}
-
-
-/*--Abcard--*/
-
-.headerdiv{
-    background-color: #2fc772;
-}
-.headerdiv p{
-    padding: 5px;
-    color: white;
-    font-weight: 500;
-}
-.subcontentwrapper{
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    margin-left: 15%;
-}
-.AbCardContent{
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    margin-right: 20px;
-}
-.ps{
-    margin-left: 10px;
-    font-size: 13px;
-   
-}
-.p1{
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-.p2{
-    margin-top: -5px;
-    font-size: 13px;
-}
+    background-color: ghostwhite;
+ }
+ 
+ 
+ .cardPortion{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+     width: calc(100% - 20%);
+     left: 20%;
+     top: 0%;
+     height: 100%;
+     
+ }
+ 
+ /*--container---*/
+ 
+ .abcard{
+     width: 350px;
+     height: 160px;
+     background-color: rgb(255, 255, 255);
+ }
+ 
+ 
+ /*--Abcard--*/
+ 
+ .headerdiv{
+     background-color: #2fc772;
+ }
+ .headerdiv p{
+     padding: 5px;
+     color: white;
+     font-weight: 500;
+ }
+ .subcontentwrapper{
+     display: flex;
+     flex-wrap: wrap;
+     width: 300px;
+     margin-left: 15%;
+ }
+ .AbCardContent{
+     display: flex;
+     align-items: flex-start;
+     text-align: left;
+     margin-right: 20px;
+ }
+ .ps{
+     margin-left: 10px;
+     font-size: 13px;
+    
+ }
+ .p1{
+     margin-bottom: 5px;
+     font-weight: 500;
+ }
+ .p2{
+     margin-top: -5px;
+     font-size: 13px;
+ }
