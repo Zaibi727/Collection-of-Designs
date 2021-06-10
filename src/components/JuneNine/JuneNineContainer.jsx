@@ -35,7 +35,7 @@ class JuneNineContainer extends Component {
           open: !state.open, 
           opeen: false,  
           opeeen: false, 
-          opeeen: false ,
+          opeeeen: false ,
 
         };
       });
@@ -46,7 +46,7 @@ class JuneNineContainer extends Component {
           opeen: !state.opeen, 
           open: false,  
           opeeen: false, 
-          opeeen: false ,  
+          opeeeen: false ,  
         };
       });
     };
