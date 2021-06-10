@@ -84,3 +84,41 @@
     font-size: 14px;
 }
 /*--card content--*/
+
+
+@media only screen and (max-width: 768px){
+    .abcard{
+        width: 350px;
+       height: 180px;
+       background-color: white;
+       margin-bottom: 10px;
+   }
+   .container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+}
+@media only screen and (max-width: 550px){
+    .abcard{
+        max-width: 300px;
+       height: 180px;
+       background-color: white;
+       margin-bottom: 0px;
+   }
+   .container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+}
+@media only screen and (max-width: 480px){
+    .abcard{
+        width: 250px;
+       height: 180px;
+       background-color: white;
+       margin-bottom: 0px;
+   }
+   .container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+}

@@ -64,8 +64,8 @@ class JuneNineContainer extends Component {
       this.setState(state => {
         return {
           opeeeen: !state.opeeeen,   
-          opeen: false,  
-          opeeen: false, 
+          open: false,  
+          opeen: false, 
           opeeen: false ,
         };
       });

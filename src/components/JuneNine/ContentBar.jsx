@@ -61,7 +61,7 @@ function ContentBar(props) {
                               <AbCardContent 
                                   Icon={GrCurrency}
                                   label="Amount"
-                                  price="130,000 Pkr/-"
+                                  price="10,000 Pkr/-"
                                 />
                            </div>
                            <div>
