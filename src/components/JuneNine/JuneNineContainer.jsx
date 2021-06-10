@@ -55,14 +55,15 @@ class JuneNineContainer extends Component {
 
 
 render(){
+
     return (
         <div className={styles.container} ref={this.wrapperRef}>
              {datas.map((data, i) => {
                return(
                 <div className={styles.wrapper} key={i}>
                    <div className={styles.buttonportion} onClick={() => this.OneClick(i)}>
-                      <p>{data.Icon}</p>
-                      <p>{data.label}</p>
+                      <p className={styles.aaa}>{data.Icon}</p>
+                      <p className={styles.bbb}>{data.label}</p>
                    </div>
 
                  {data.cardContent ? data.cardContent.map((c) => 

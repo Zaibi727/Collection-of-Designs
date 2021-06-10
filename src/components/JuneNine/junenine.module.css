@@ -1,74 +1,94 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(236, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
 .wrapper{
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
-     width: 100%;
-     height: 100vh;
-     background-color: #ddd3d3;
- }
- .buttonportion{
-     padding: 30px 0px;
-     border-bottom: 1px solid lightgrey;
+    background-color: rgb(236, 230, 230);
+}
+.buttonportion{
+    background-color: rgb(236, 230, 230);
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+}
+.buttonportion:hover{
+  background-color: #2fc772;
+  color: white;
+}
+.buttonportion:active{
+    background-color: #2fc772;
+    color: white;
+  }
+.cardPortion{
+    background-color: rgb(236, 230, 230);
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    bottom: 100%;
+}
+.aaa{
+    font-size: 25px;
+}
+.bbb{
+    font-size: 16px;
     font-weight: 500;
-    font-size: 14px;
-    height: 100%;
-    background-color: ghostwhite;
- }
- 
- 
- .cardPortion{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: fixed;
-     width: calc(100% - 20%);
-     left: 20%;
-     top: 0%;
-     height: 100%;
-     
- }
- 
- /*--container---*/
- 
- .abcard{
-     width: 350px;
-     height: 160px;
-     background-color: rgb(255, 255, 255);
- }
- 
- 
- /*--Abcard--*/
- 
- .headerdiv{
-     background-color: #2fc772;
- }
- .headerdiv p{
-     padding: 5px;
-     color: white;
-     font-weight: 500;
- }
- .subcontentwrapper{
-     display: flex;
-     flex-wrap: wrap;
-     width: 300px;
-     margin-left: 15%;
- }
- .AbCardContent{
-     display: flex;
-     align-items: flex-start;
-     text-align: left;
-     margin-right: 20px;
- }
- .ps{
-     margin-left: 10px;
-     font-size: 13px;
-    
- }
- .p1{
-     margin-bottom: 5px;
-     font-weight: 500;
- }
- .p2{
-     margin-top: -5px;
-     font-size: 13px;
- }
+}
+
+/*--container---*/
+
+.abcard{
+    width: 350px;
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*--Abcard--*/
+
+.headerdiv{
+    margin-bottom: 20px;
+    background-color: #2fc772;
+}
+.headerdiv p{
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+}
+.subcontentwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 15%;
+}
+.AbCardContent{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 20px;
+}
+.ps{
+    margin-left: 10px;
+    font-size: 13px;
+   
+}
+.p1{
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.p2{
+    margin-top: -5px;
+    font-size: 13px;
+}
