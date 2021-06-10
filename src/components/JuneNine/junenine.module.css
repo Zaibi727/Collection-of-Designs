@@ -25,6 +25,7 @@ height: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin-bottom: 25px;
 }
 .buttonportion:active{
     background-color: #2fc772;
