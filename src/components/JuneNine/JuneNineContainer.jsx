@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
-import ButtonBr from './ButtonBr';
-import ContentBar from './ContentBar';
 import styles from './junenine.module.css';
+import datas from './cardData';
+//import AbButton from '../twentyMay/abButton';
+import AbCard from './AbCard'
+import AbCardContent from './AbCardContent';
 
 
 class JuneNineContainer extends Component {
@@ -10,6 +12,7 @@ class JuneNineContainer extends Component {
      
       this.state = { 
           open: false,
+          selected: '',
           
        };
 
@@ -24,6 +27,7 @@ class JuneNineContainer extends Component {
       this.setState(state => {
         return {
           open: !state.open, 
+          selected: key,
         };
       });
     };
@@ -44,6 +48,7 @@ class JuneNineContainer extends Component {
       if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
         this.setState({
           open: false,
+          selected: '',
         });
       }
     };
@@ -52,20 +57,29 @@ class JuneNineContainer extends Component {
 render(){
     return (
         <div className={styles.container} ref={this.wrapperRef}>
-            <div className={styles.containerDiv1}>
-                <ButtonBr 
-                    onAddOne={this.OneClick}
-                    open={this.state.open}
-        
-                />
-            </div>
-            <div className={styles.containerDiv2}>
-                <ContentBar 
-                    open={this.state.open}
-                    selected={this.state.selected}
+             {datas.map((data, i) => {
+               return(
+                <div className={styles.wrapper} key={i}>
+                   <div className={styles.buttonportion} onClick={() => this.OneClick(i)}>
+                      <p>{data.Icon}</p>
+                      <p>{data.label}</p>
+                   </div>
+
+                 {data.cardContent ? data.cardContent.map((c) => 
+                              <div className={styles.cardPortion}>  
+                              {this.state.open && this.state.selected === i && (
+                                <AbCard>                
+                                   <AbCardContent 
+                                     c={c}
+                                   />
+                                </AbCard>
+                              )}
+                              </div>                       
+                            ) : null } 
+
+               </div>
+               )})}
               
-                />
-            </div>
         </div>
     )
 }

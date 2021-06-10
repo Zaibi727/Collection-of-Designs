@@ -10,7 +10,7 @@ import { RiTimeFill } from "react-icons/ri";
 
 
 function ContentBar(props) {
-    const {open} = props;
+    const {open, selected} = props;
     return (
         <div className={styles.conternBarWrapper}>
              <div>
