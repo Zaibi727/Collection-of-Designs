@@ -19,7 +19,8 @@
     background-color: rgb(236, 230, 230);
 }
 .buttonportion{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 230, 230);
+    border-bottom: 1px solid white;
     padding: 30px 0px;
 }
 .buttonportion:hover{
