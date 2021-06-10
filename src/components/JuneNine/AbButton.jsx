@@ -2,14 +2,13 @@ import React from 'react';
 import styles from './junenine.module.css';
 
 function AbButton(props) {
-    const {label, Icon} = props;
+    const {button} = props;
     return (
         <div className={styles.abbtn}>
-            <div>
-            <span className={styles.btnicon}>{Icon ? <Icon/> : {Icon}}</span>
-            <p className={styles.btnlabel}>{label}</p>
-           </div>
-            
+
+            <span className={styles.btnicon}>{button.Icon}</span>
+            <p className={styles.btnlabel}>{button.label}</p>     
+
         </div>
     )
 }
