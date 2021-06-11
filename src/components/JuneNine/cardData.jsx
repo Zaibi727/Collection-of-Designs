@@ -179,6 +179,7 @@ import { RiTimeFill } from "react-icons/ri";
         Icon: <FaSuitcase />,
         cardContent: [
             {
+                id: '9',
                 Icon1: <IoDesktop /> ,
                 label1: 'People Colony',
                 Icon2: <GrCurrency />,
