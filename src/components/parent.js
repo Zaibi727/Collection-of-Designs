@@ -47,7 +47,7 @@ import './dropDown.css';
 //import BillBoard from './seventeenMay/billboard/billboardContainer';
 //import UiContainter from './seventeenMay/ui1/uiContainer';
 //import EighteenMayContainer from './EighteenMay/EighteenMayContainer';
-//import MapContainer from './googleMap/googleMapContainer';
+import MapContainer from './googleMap/googleMapContainer';
 //import ContactUsContainer from './ContactUsForm/ContactUsContainer';
 //import CountersContainer from './CounterApp/countersCointainer';
 //import MainContainer from './CounterApp/mainContainer';
@@ -70,7 +70,7 @@ import './dropDown.css';
 //import JuneThreeContainer from './JuneThree/JuneThreeContainer';
 //import SevenJuneContainer from './SevenJune/SevenJuneContainer';
 //import JuneEightContainer from './JuneEight/JuneEightContainer';
-import JuneNineContainer from './JuneNine/JuneNineContainer';
+//import JuneNineContainer from './JuneNine/JuneNineContainer';
 
 class Parent extends Component {
 
@@ -79,7 +79,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                   <JuneNineContainer />
+                   <MapContainer />
            </div>
          );
     }
