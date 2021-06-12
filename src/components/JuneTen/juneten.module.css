@@ -1,0 +1,76 @@
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    height: 100vh;
+}
+
+.buttonPanel{
+ height: 100%;
+ overflow: auto;
+}
+.btnicon{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.btnlabel{
+    font-size: 16px;
+    font-weight: 600;
+}
+.btnrow{
+    border-bottom: 1px solid lightgray;
+}
+.cardPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #d1c8c8;
+}
+
+/*--container---*/
+
+.abcard{
+    width: 350px;
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*--Abcard--*/
+
+.headerdiv{
+    margin-bottom: 20px;
+    background-color: #2fc772;
+}
+.headerdiv p{
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+}
+.subcontentwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 15%;
+}
+.AbCardContent{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 20px;
+}
+.ps{
+    margin-left: 10px;
+    font-size: 13px;
+   
+}
+.p1{
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.p2{
+    margin-top: -5px;
+    font-size: 13px;
+}
