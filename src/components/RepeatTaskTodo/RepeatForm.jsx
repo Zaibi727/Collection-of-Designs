@@ -21,6 +21,7 @@ export default function RepeatForm(props) {
             text: input,
             count: 0,
         })
+        setInput('');
     }
 
     return (
@@ -33,7 +34,6 @@ export default function RepeatForm(props) {
                 value={input}
                  onChange={handleChange}
                   name='text'
-                  type="text"
                    className={styles.input}
                    ref={inputRef}
               />
@@ -48,7 +48,6 @@ export default function RepeatForm(props) {
                 value={input}
                  onChange={handleChange}
                   name='text'
-                  type="text"
                    className={styles.input}
                    ref={inputRef}
               />
