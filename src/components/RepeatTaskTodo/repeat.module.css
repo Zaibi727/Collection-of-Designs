@@ -27,7 +27,6 @@
     border-radius: 5px;
     color: black;
     font-size: 17px;
-    margin-bottom: 30px;
 }
 .input:focus{
     outline: none;
@@ -52,7 +51,6 @@
     border: none;
     border-radius: 5px;
     font-size: 15px;
-    margin-bottom: 20px;
 }
 
 
@@ -65,7 +63,6 @@
     background-color: gray;
     border: none;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 .decrement{
     padding: 7px 10px;
@@ -74,7 +71,6 @@
     background-color: gray;
     border: none;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 .personCounter p{
     font-size: 14px;
@@ -92,7 +88,6 @@
     background-color: rgb(38, 151, 151);
     border: none;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 .savebtn{
     margin: 0px 10px;
@@ -111,7 +106,6 @@
     background-color: red;
     border: none;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 .datetime p{
@@ -131,5 +125,99 @@
     .div1{
         display: flex;
         flex-wrap: wrap;
+    }
+    .input{
+        margin-right: 30px;
+        padding: 10px 20px;
+        background-color: white;
+        border:  1px solid rgb(190, 186, 186) !important;
+        border-radius: 5px;
+        color: black;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .input:focus{
+        outline: none;
+    }
+    .input:active{
+        border: 1px solid #007bff !important;
+    }
+    .addbtn{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        font-size: 18px;   
+    }
+    .resetbtn{
+        margin-left: 15px;
+        padding: 7px 10px;
+        margin-right: 7px;
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    
+    /*--below about data css--*/
+    
+    .increment{
+        padding: 7px 10px;
+        margin-right: 7px;
+        color: white;
+        background-color: gray;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .decrement{
+        padding: 7px 10px;
+        margin-right: 7px;
+        color: white;
+        background-color: gray;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .personCounter p{
+        font-size: 14px;
+        font-weight: 700;
+        padding: 5px 14px;
+        margin-top: -2px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .edit{
+        margin: 0px 10px;
+        padding: 10px 15px;
+        margin-right: 7px;
+        color: white;
+        background-color: rgb(38, 151, 151);
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .savebtn{
+        margin: 0px 10px;
+        padding: 10px 15px;
+        margin-right: 7px;
+        color: white;
+        background-color: rgb(63, 175, 175);
+        border: none;
+        border-radius: 5px;
+    }
+    .delete{
+        margin: 0px 10px;
+        padding: 10px 15px;
+        margin-right: 7px;
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
     }
 }
