@@ -11,16 +11,16 @@ button:focus {
     height: 100vh;
 }
 .modal{
-    width: 400px;
+    width: 350px;
     height: auto;
     margin: 0 auto;
     background-color: white;
-    margin-top: 40px;
+    margin-top: 15px;
     position: relative;
     border-radius: 15px;
 }
 .openbtn{
-    margin: 5px;
+    margin: 3px;
     border: none;
     background-color: orangered;
     color: white;
@@ -43,16 +43,19 @@ button:focus {
 }
 .sec1{
     text-align: center;
-    padding: 50px 30px 20px 30px;
+    padding: 30px 30px 10px 30px;
     border-bottom: 1px solid lightgray;
 }
 .sec1 h5{
     font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+
 }
 .sec1 p{
     font-size: 16px;
     color: gray;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 /*--sec1--*/
@@ -63,10 +66,12 @@ button:focus {
 .sec2header{
     font-size: 16px;
     color: gray;
+    margin-bottom: 10px;
 }
 .labelcover{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .labelcover p{
     font-weight: 500;
@@ -74,26 +79,26 @@ button:focus {
 .sendbtn{
     
     width: 100%;
-    height: 50px;
+    height: 40px;
     border:  none;
     background-color: black;
     color: white;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .circle{
     border: 2px solid black !important;
-    width: 29px;
-    height: 29px;
+    width: 25px;
+    height: 25px;
     background-color: black !important;
 }
 
 .circle:checked:after {
-    width: 29px;
-    height: 29px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    top: 0px;
-    left: 0px;
+    top: -3px;
+    left: -2px;
     position: relative;
     background-color: #ffffff;
     content: '';
