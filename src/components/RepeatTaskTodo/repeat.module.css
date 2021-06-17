@@ -63,7 +63,6 @@
     background-color: gray;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 .decrement{
     padding: 7px 10px;
@@ -72,7 +71,6 @@
     background-color: gray;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 .personCounter p{
     font-size: 14px;
@@ -90,7 +88,6 @@
     background-color: rgb(38, 151, 151);
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 .savebtn{
     margin: 0px 10px;
@@ -100,7 +97,6 @@
     background-color: rgb(63, 175, 175);
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 .delete{
     margin: 0px 10px;
@@ -110,7 +106,6 @@
     background-color: red;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .datetime p{
@@ -224,6 +219,5 @@
         border: none;
         border-radius: 5px;
         margin-bottom: 20px;
-
     }
 }

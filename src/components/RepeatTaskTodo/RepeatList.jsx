@@ -4,6 +4,7 @@ import RepeatDateTime from './RepeatDateTime';
 import RepeatData from './RepeatData';
 import styles from './repeat.module.css';
 import { IoPersonAdd } from 'react-icons/io5';
+import TodoList from '../Todo App/TodoList';
 
 export default function RepeatList() {
    const [persons, setPersons] = useState([]);
@@ -78,6 +79,8 @@ const handleReset = () => {
            <h4>Enter Task</h4>
             <RepeatForm 
                 onSubmit={AddPerson}
+                handleIncrement={handleIncrement}
+                handleDecrement={handleDecrement}
             />
             <button className={styles.resetbtn} onClick={handleReset}>
                 Reset Number of Persons
@@ -87,14 +90,18 @@ const handleReset = () => {
             </div>
            </div>
 
+         
             <div className={styles.data}>
-                <RepeatData 
-                    persons={persons}
+                {persons.map((person, index) => (
+                    <RepeatData 
+                    index={index}
+                    person={person}
                     handleDecrement={handleDecrement}
                     handleIncrement={handleIncrement}
                     updatePerson={updatePerson}
-                    removePerson={removePerson}
-                />
+                    removePerson={removePerson} 
+                    />
+                ))}
             </div>
         </div>
     )

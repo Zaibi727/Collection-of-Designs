@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react';
 import styles from './repeat.module.css';
 
-export default function RepeatForm(props) {
-    const [input, setInput] = useState(props.edit ? props.edit.value: '');
+export default function RepeatForm({onSubmit, edit, persons, handleIncrement, handleDecrement}) {
+    const [input, setInput] = useState(edit ? edit.value: '');
     const inputRef = useRef(null);
 
     useEffect(() => {
@@ -10,14 +10,14 @@ export default function RepeatForm(props) {
       });
 
     const handleChange = e => {
-        setInput(e.target.value)
+        setInput(e.target.value);
     }
 
     const handleSubmit = e =>{
         e.preventDefault();
 
-        props.onSubmit({
-            id: Math.floor(Math.random() * 1000),
+        onSubmit({
+            id: Math.floor(Math.random() * 10000),
             text: input,
             count: 0,
         })
@@ -26,9 +26,13 @@ export default function RepeatForm(props) {
 
     return (
         
+        
+        
         <form className={styles.form} onSubmit={handleSubmit}>
-        {props.edit ? (
-            <>
+        {edit ? (
+           <div>
+              
+           <div>
             <input
                 placeholder='Update your Task'
                 value={input}
@@ -40,9 +44,10 @@ export default function RepeatForm(props) {
                <button className={styles.savebtn} onClick={handleSubmit}>
                  save
                </button>
-            </>
+            </div>
+           </div>
         ): (
-            <>
+            <div>
             <input
                 placeholder='Task Name'
                 value={input}
@@ -54,7 +59,7 @@ export default function RepeatForm(props) {
                <button className={styles.addbtn} onClick={handleSubmit}>
                  Add Task
                </button>
-            </>
+            </div>
         )}  
             </form>
     )
