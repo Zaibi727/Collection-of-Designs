@@ -3,8 +3,7 @@ import RepeatForm from './RepeatForm';
 import RepeatDateTime from './RepeatDateTime';
 import RepeatData from './RepeatData';
 import styles from './repeat.module.css';
-import { IoPersonAdd } from 'react-icons/io5';
-import TodoList from '../Todo App/TodoList';
+
 
 export default function RepeatList() {
    const [persons, setPersons] = useState([]);
