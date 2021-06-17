@@ -75,7 +75,8 @@ import './dropDown.css';
 //import JunetenContainer from  './JuneTen/JunetenContainer';
 //import RepeatTaskContainer from './RepeatTaskTodo/RepeatTaskContainer';
 //import ModalContainer  from './Modal/ModalContainer';
-import ModalBootstrap from './ModalBootstrap/ModalBootstrap'
+//import ModalBootstrap from './ModalBootstrap/ModalBootstrap';
+import ProfileContainer from './ProflieCards/ProfileContainer';
 
 class Parent extends Component {
 
@@ -84,7 +85,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                     <ModalBootstrap  />
+                     <ProfileContainer  />
 
            </div>
          );
