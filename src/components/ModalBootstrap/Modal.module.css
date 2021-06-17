@@ -26,6 +26,10 @@ button:focus {
 .modii{
     margin: 20px auto 0px auto;
 }
+.cross{
+    margin-right: 30px !important;
+    position: absolute;
+}
 .openbtn{
     margin: 3px;
     border: none;
