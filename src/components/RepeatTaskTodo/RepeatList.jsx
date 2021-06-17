@@ -92,14 +92,28 @@ const handleReset = () => {
          
             <div className={styles.data}>
                 {persons.map((person, index) => (
-                    <RepeatData 
-                    index={index}
-                    person={person}
-                    handleDecrement={handleDecrement}
-                    handleIncrement={handleIncrement}
-                    updatePerson={updatePerson}
-                    removePerson={removePerson} 
-                    />
+                    <div className={styles.datawrapper}>
+                        <div>
+                            <button className={styles.increment} onClick={() => handleIncrement(person.id)}>+</button>
+                            <button className={styles.decrement} onClick={() => handleDecrement(person.id)}>-</button>
+                        </div>
+                         <div  className={styles.personCounter}>
+                               <p style={{backgroundColor: person.count ? '#007bff' : 'yellow', color: person.count ? 'white' : 'black'}}>Person <span>{person.count === 0 ? 'Zero' : person.count}</span></p>
+                         </div>
+                         <div key={person.id}>
+                               <h4>{person.text}</h4>
+                         </div>
+                         <div>
+                               <RepeatData 
+                                     index={index}
+                                     person={person}
+                                     updatePerson={updatePerson}
+                                />
+                         </div>
+                          <div>
+                          <button className={styles.delete} onClick={()=> removePerson(person.id)}>Delete</button>
+                          </div>
+                    </div>
                 ))}
             </div>
         </div>
