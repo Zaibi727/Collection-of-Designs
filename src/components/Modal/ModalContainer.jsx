@@ -5,7 +5,7 @@ import { ImCross } from "react-icons/im";
 import { HiOutlineNewspaper } from "react-icons/hi";
 import { BsTag } from "react-icons/bs";
 import AbstarctInput from './AbstarctCard';
-
+import SendButtonAbstract from './SendButtonAbstract';
 
 export default function ModalContainer() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function ModalContainer() {
 
     const customStyles = {
         overlay: {
-          backgroundColor: "rgba(0, 0, 0, 0)"
+          backgroundColor: "gray"
         } 
       };
 
@@ -58,10 +58,10 @@ export default function ModalContainer() {
                                 />
                             </div>
                        </div>
-                       <button className={styles.sendbtn}>Send to review</button>
+                       <SendButtonAbstract 
+                         title="Send to review"
+                     />
                    </section>
-
-
                    <button className={styles.closebtn} onClick={()=> setModalIsOpen(false)}>
                       <ImCross />
                   </button>
