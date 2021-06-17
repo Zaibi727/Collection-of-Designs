@@ -29,7 +29,7 @@ export default function ModalBootstrap() {
       <button className={styles.openbtn} onClick={showModal}>Display Modal</button>
       <Modal className={styles.modii} show={isOpen} onHide={hideModal}>
           <div>
-                 <button type="button" class="close  m-3" data-dismiss="modal" aria-label="Close" onClick={hideModal}>
+                 <button type="button" className={styles.issue} data-dismiss="modal" aria-label="Close" onClick={hideModal}>
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <section className={styles.sec1}>
