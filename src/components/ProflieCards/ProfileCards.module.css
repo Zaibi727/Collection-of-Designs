@@ -16,9 +16,10 @@
     padding: 20px;
 }
 .btnPanelWrapper{
-    width: 900px;
+    width: 850px;
     margin-bottom: 30px !important;
     overflow-x: scroll;
+    padding: 20px;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -27,7 +28,7 @@
 ::-webkit-scrollbar-thumb {
     background: lightgrey;
     border-radius: 50px;
-    width: 10px !important;
+    width: 0px !important;
     
   }
   ::-webkit-scrollbar-track {
@@ -50,7 +51,7 @@
     align-items: center;
     padding: 5px 5px;
     text-align: center;   
-    width: 40px;
+    width: 150px;
 }
 .img{
     width: 40px;
@@ -66,7 +67,7 @@
     margin-bottom: -20px;
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 900px){
     .wholeWrapper{
         width: 100%;
         background-color: lightseagreen;
@@ -77,51 +78,21 @@
     }
     .wrapper{
         text-align: left;
-        width: 100%;
-        max-width: 500px;
+        max-width: 600px;
         color: gray !important;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
         height: auto;
+        padding: 20px;
     }
     .btnPanelWrapper{
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: 550px;
+        margin-bottom: 30px !important;
+        overflow-x: scroll;
+        padding: 0px;
     }
     .buttonPanel{   
-        width: 100px; 
-    }
-    .name{
-        font-size: 11px;
-        margin-top: 10px;
-    }
-}
-@media only screen and (max-width: 500px){
-    .wholeWrapper{
-        width: 100%;
-        background-color: lightseagreen;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .wrapper{
-        text-align: left;
-        width: 100%;
-        max-width: 320px;
-        color: gray !important;
-        background-color: rgb(255, 255, 255);
-        border-radius: 10px;
-        height: auto;
-    }
-    .btnPanelWrapper{
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-    }
-    .buttonPanel{   
-        width: 100px; 
+        width: 120px;
     }
     .name{
         font-size: 11px;
