@@ -13,12 +13,26 @@
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     height: auto;
-    overflow-x: auto;
+    padding: 20px;
 }
 .btnPanelWrapper{
     width: 900px;
-    margin: 0 auto;
+    margin-bottom: 30px !important;
+    overflow-x: scroll;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: lightgrey;
+    border-radius: 50px;
+    width: 10px !important;
+    
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+  }
 .p1{
     padding-left: 30px;
     padding-top: 30px;
@@ -34,9 +48,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 5px 5px;
     text-align: center;   
-    width: 140px; 
+    width: 40px;
 }
 .img{
     width: 40px;
@@ -74,7 +88,6 @@
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
-        overflow-x: scroll;
     }
     .buttonPanel{   
         width: 100px; 
@@ -106,7 +119,6 @@
         width: 100%;
         max-width: 320px;
         margin: 0 auto;
-        overflow-x: scroll;
     }
     .buttonPanel{   
         width: 100px; 
