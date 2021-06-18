@@ -12,7 +12,7 @@
     color: gray !important;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    height: auto;
+    height: 210px;
   
 }
 .btnPanelWrapper{
@@ -37,7 +37,7 @@
   }
 .p1{
     padding-left: 30px;
-    padding-top: 15px;
+    padding-top: 7px;
     padding-bottom: 0px;
     font-weight: 700;
     color: black;
@@ -84,7 +84,7 @@
         color: gray !important;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
-        height: auto;
+        height: 210px;
     }
     .btnPanelWrapper{
         max-width: 600px;
