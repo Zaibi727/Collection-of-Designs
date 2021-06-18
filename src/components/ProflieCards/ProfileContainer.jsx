@@ -42,23 +42,26 @@ class ProfileContainer extends Component {
 
 	render() {
 			return (
+                <div className={styles.wholeWrapper}>
                 <div className={styles.wrapper}>
                   <p className={styles.p1}>12:00 - 15:00 <BsDot /> <span><FiUsers /> 8</span></p>
-                <div className={styles.buttonPanel}>
-                
+                  <div className={styles.btnPanelWrapper}>
+                <div className={styles.buttonPanel}>        
                     {ProfileData.map((data, index) => (
                         <div  key={index} className={styles.btnrow}>
                             <div className={styles.buttonPanel} onClick={() => this.OneClick(data.id)} >
                                 <div onClick={() => this.OneClick(data.id)} style={{ fontWeight: data.id === this.state.selected ? '700' : '400', borderBottom: data.id === this.state.selected ? '4px solid lightgray' : 'white' }}>
                                    <img className={styles.img} src={data.image}  style={{border: data.id === this.state.selected ? '1px solid black' : 'none', padding: data.id === this.state.selected ? '2px' : '0px'}}/>                               
                                    <div>
-                                      <p className={styles.name}>{data.name}</p>
+                                      <p className={styles.name} style={{ color: data.id === this.state.selected ? 'black' : 'gray' }}>{data.name}</p>
                                       <span className={styles.reddot}>{data.Iconone}</span>
                                    </div>        
                                 </div>
                             </div>
                         </div>
                     ))}
+                </div>
+                </div>
                 </div>
                 </div>
             );

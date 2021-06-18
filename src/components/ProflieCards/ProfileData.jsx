@@ -9,9 +9,9 @@ const ProfileData = [
         },
         {
             id:"2",
-            name: 'Serenity',
-            image: './images/eight-1.jpg',
-            Iconone: <GoPrimitiveDot  style={{color: 'white'}}/>
+            name: 'Cameron Black',
+            image: './images/eight3.jpg',
+            Iconone: <GoPrimitiveDot style={{color: 'transparent'}}/>
         },
         {
             id:"3",
@@ -29,13 +29,49 @@ const ProfileData = [
             id:"5",
             name: 'Debra Simmmons',
             image: './images/eight5.jpg',
-            Iconone: <GoPrimitiveDot  style={{color: 'white'}}/>
+            Iconone: <GoPrimitiveDot  style={{color: 'transparent'}}/>
         },
         {
             id:"6",
             name: 'Brandon Wat',
             image: './images/eight7.jpg',
-            Iconone: <GoPrimitiveDot  style={{color: 'white'}}/>
+            Iconone: <GoPrimitiveDot  style={{color: 'transparent'}}/>
+        },
+        {
+            id:"7",
+            name: 'Cameron Black',
+            image: './images/eight3.jpg',
+            Iconone: <GoPrimitiveDot />
+        },
+        {
+            id:"8",
+            name: 'Debra Simmmons',
+            image: './images/eight5.jpg',
+            Iconone: <GoPrimitiveDot  style={{color: 'transparent'}}/>
+        },
+        {
+            id:"9",
+            name: 'Brandon Wat',
+            image: './images/eight7.jpg',
+            Iconone: <GoPrimitiveDot  style={{color: 'transparent'}}/>
+        },
+        {
+            id:"10",
+            name: 'Cameron Black',
+            image: './images/eight3.jpg',
+            Iconone: <GoPrimitiveDot  style={{color: 'transparent'}}/>
+        },
+        {
+            id:"11",
+            name: 'Debra Simmmons',
+            image: './images/eight5.jpg',
+            Iconone: <GoPrimitiveDot  style={{color: 'transparent'}}/>
+        },
+        {
+            id:"12",
+            name: 'Brandon Wat',
+            image: './images/eight7.jpg',
+            Iconone: <GoPrimitiveDot  style={{color: 'transparent'}}/>
         },
     ]
 
