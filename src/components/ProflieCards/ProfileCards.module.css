@@ -1,7 +1,19 @@
-.maindesign{
+.wrapper{
+    text-align: left;
+    padding: 20px;
+}
+.p1{
+    margin-left: 100px;
+}
+.p1 span{
+    color: lightgray;
+}
+.buttonPanel{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 .img{
     width: 50px;
@@ -11,4 +23,21 @@
 .name{
     font-size: 16px;
     margin-top: 15px;
+}
+.reddot{
+    color: red;
+    margin-bottom: -20px;
+}
+
+@media only screen and (max-width: 900px){
+    .buttonPanel{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .name{
+        font-size: 16px;
+        margin-top: 15px;
+    }
 }

@@ -1,30 +1,68 @@
-import React,{useState} from 'react';
-import ProfileData from './ProfileData';
-import ProfileAbstract from './ProfileAbstract';
+import React, { Component } from 'react';
 import styles from './ProfileCards.module.css';
+import ProfileData from './ProfileData';
+import { BsDot } from "react-icons/bs";
+import { FiUsers } from "react-icons/fi";
+
+class ProfileContainer extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			selected: null,	
+
+		};
+
+		this.OneClick = this.OneClick.bind(this);
+		this.OutsideOne = this.OutsideOne.bind(this);
+	}
 
 
+	OneClick = (id) => {
+		this.setState({ selected: id });
+	};
+
+	container = React.createRef();
+
+	componentDidMount() {
+		document.addEventListener('mousedown', this.OutsideOne);
+	}
+
+	componentWillUnmount() {
+		document.removeEventListener('mousedown', this.OutsideOne);
+	}
+
+	OutsideOne = event => {
+		if (this.container.current && !this.container.current.contains(event.target)) {
+			this.setState({
+				selected: null,
+			});
+		}
+	};
 
 
-export default function ProfileContainer() {
-    const [selected, setSelected] = useState('');
-    const {datas} = ProfileData;
-
-
-    return (
-        <div>
-          <p>12:00 - 15:00  . <span>Icon 8</span></p>
-            <div className={styles.maindesign}>
-            {datas.map((data, index) => (
+	render() {
+			return (
+                <div className={styles.wrapper}>
+                  <p className={styles.p1}>12:00 - 15:00 <BsDot /> <span><FiUsers /> 8</span></p>
+                <div className={styles.buttonPanel}>
+                
+                    {ProfileData.map((data, index) => (
                         <div  key={index} className={styles.btnrow}>
-                            <div className={styles.buttonPanel}>
-                            <img className={styles.img} src={data.image}/>
-                            <p  className={styles.name}>{data.name}</p><br></br>
-                             <span></span>
+                            <div className={styles.buttonPanel} onClick={() => this.OneClick(data.id)} >
+                                <div onClick={() => this.OneClick(data.id)} style={{ fontWeight: data.id === this.state.selected ? '700' : '400', borderBottom: data.id === this.state.selected ? '4px solid lightgray' : 'white' }}>
+                                   <img className={styles.img} src={data.image}  style={{border: data.id === this.state.selected ? '1px solid black' : 'none', padding: data.id === this.state.selected ? '2px' : '0px'}}/>                               
+                                   <div>
+                                      <p className={styles.name}>{data.name}</p>
+                                      <span className={styles.reddot}>{data.Iconone}</span>
+                                   </div>        
+                                </div>
                             </div>
                         </div>
                     ))}
-            </div>
-        </div>
-    )
+                </div>
+                </div>
+            );
+	}
 }
+
+export default ProfileContainer;
