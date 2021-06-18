@@ -13,15 +13,12 @@
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     height: auto;
+    overflow-x: auto;
 }
 .btnPanelWrapper{
     width: 900px;
     margin: 0 auto;
-    overflow-x: scroll;
 }
-::-webkit-scrollbar {
-    width: 0px; 
-  }
 .p1{
     padding-left: 30px;
     padding-top: 30px;
