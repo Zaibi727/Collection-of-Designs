@@ -77,8 +77,8 @@ import './dropDown.css';
 //import ModalContainer  from './Modal/ModalContainer';
 //import ModalBootstrap from './ModalBootstrap/ModalBootstrap';
 //import ProfileContainer from './ProflieCards/ProfileContainer';
-import  RatingModalContainer from './RatingModal/RatingModalContainer';
-
+//import  RatingModalContainer from './RatingModal/RatingModalContainer';
+import CalendarModalContainer from './CalendarModal/CalendarModalContainer';
 
 class Parent extends Component {
 
@@ -87,7 +87,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                     <RatingModalContainer />
+                  <CalendarModalContainer/>
            </div>
          );
     }
