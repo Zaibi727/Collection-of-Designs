@@ -78,7 +78,7 @@ button:focus {
  .RatingStars{
      display: flex;
      justify-content: center;
-     margin-bottom: 20px;
+     margin-bottom: 30px;
  }
  .donebtn{
     width: 100%;
