@@ -76,7 +76,9 @@ import './dropDown.css';
 //import RepeatTaskContainer from './RepeatTaskTodo/RepeatTaskContainer';
 //import ModalContainer  from './Modal/ModalContainer';
 //import ModalBootstrap from './ModalBootstrap/ModalBootstrap';
-import ProfileContainer from './ProflieCards/ProfileContainer';
+//import ProfileContainer from './ProflieCards/ProfileContainer';
+import  RatingModalContainer from './RatingModal/RatingModalContainer';
+
 
 class Parent extends Component {
 
@@ -85,8 +87,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                     <ProfileContainer  />
-
+                     <RatingModalContainer />
            </div>
          );
     }
