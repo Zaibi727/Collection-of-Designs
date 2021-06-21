@@ -13,15 +13,17 @@ export default function CalendarAb() {
     return (
         <div>
              <Calendar
-             className='react-calendar'
+               className='react-calendar'
              tileClassName={styles.ccc}
-             nextLabel={<GrNext />}
-             prevLabel={<GrPrevious />}
-             next2Label=""
-             prev2Label=""
+             nextLabel={<GrNext style={{marginRight: '-110px'}} />}
+             prevLabel={<GrPrevious style={{marginLeft: '-110px'}} />}
+             next2Label=''
+             prev2Label=''
              className={styles.calendar}
              onChange={onChange}
              value={value}
+             selectRange={true}
+             tileDisabled={({ date }) => date.getDay('Sunday') === 0}
       />
         </div>
     )

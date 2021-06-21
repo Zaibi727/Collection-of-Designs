@@ -2,19 +2,10 @@
 .react-calendar__tile--active {
     background-color: #000000 !important;
     color: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    line-height: 30px;
   }
   .react-calendar__month-view__days__day--weekend {
     color: gray;
   }
- 
   .react-calendar__month-view__weekdays__weekday {
     font-size: 13px;
     font-weight: 550 !important;
@@ -27,4 +18,19 @@
 .modal-content{
   border-radius: 15px !important;
   border: none !important;
+}
+.react-calendar__tile--now {
+  background: #ffff76;
+  border-radius: 50%;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    border-radius: 50%;
+    width: 35px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 50px;
 }
