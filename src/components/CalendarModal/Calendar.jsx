@@ -12,13 +12,13 @@ export default function CalendarAb() {
 
     return (
         <div>
-             <Calendar
-               className='react-calendar'
+           <Calendar
+             className='react-calendar'
              tileClassName={styles.ccc}
-             nextLabel={<GrNext style={{marginRight: '-110px'}} />}
-             prevLabel={<GrPrevious style={{marginLeft: '-110px'}} />}
-             next2Label=''
-             prev2Label=''
+             nextLabel={<GrNext style={{marginRight: '-140px'}} />}
+             prevLabel={<GrPrevious style={{marginLeft: '-140px'}} />}
+             next2Label= {false}
+             prev2Label={false}
              className={styles.calendar}
              onChange={onChange}
              value={value}
