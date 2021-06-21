@@ -19,8 +19,8 @@
     font-size: 13px;
     font-weight: 550 !important;
     color: rgb(190, 189, 189);
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    border-top: 1px solid lightgray;
+    padding-top: 15px;
+    margin-top: 15px;
 }
 
