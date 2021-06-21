@@ -1,0 +1,27 @@
+
+.react-calendar__tile--active {
+    background-color: #000000 !important;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    flex-basis: 16%;
+    line-height: 30px;
+  }
+  .react-calendar__month-view__days__day--weekend {
+    color: gray;
+  }
+ 
+  .react-calendar__month-view__weekdays__weekday {
+    font-size: 13px;
+    font-weight: 550 !important;
+    color: rgb(190, 189, 189);
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
