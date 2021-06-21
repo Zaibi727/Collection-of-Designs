@@ -24,3 +24,7 @@
     margin-top: 7px;
 }
 
+.modal-content{
+  border-radius: 15px !important;
+  border: none !important;
+}

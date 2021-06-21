@@ -7,6 +7,7 @@ import Okbutton from './Okbutton';
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ImCross } from "react-icons/im";
+import './reactCalendar.css';
 
 export default function CalendarModalContainer() {
     const [isOpen, setIsOpen] = React.useState(false);
