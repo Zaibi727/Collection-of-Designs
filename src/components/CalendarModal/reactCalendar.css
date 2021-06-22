@@ -78,7 +78,7 @@
   padding-bottom: 50px;
 }
 .rmdp-day{
-  margin: 7px;
+  margin:3px;
   font-weight:500 ;
 }
 .rmdp-day.rmdp-selected span:not(.highlight){
@@ -94,14 +94,20 @@ background-color: lightgrey !important;
 .rmdp-day span{
   font-size: 16px;
 }
+.rmdp-arrow-container{
+  padding-top: 2px !important;
+}
 .rmdp-arrow-container:hover{
   background-color: black !important;
   box-shadow: none !important;
   color: black !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rmdp-arrow{
-  border: solid #000000;
+  border: solid #000000 !important;
   border-top-color: rgb(0, 0, 0);
   border-top-style: solid;
   border-top-width: 0px;
