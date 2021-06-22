@@ -3,6 +3,18 @@
     margin: 0px;
     text-decoration: none!important;
 }
+.calendaerab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+.mdp{
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 30px !important;
+}
 .calendar{
     border: none !important;
    margin: 20px auto;

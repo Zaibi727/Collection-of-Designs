@@ -63,3 +63,70 @@
 .react-calendar__navigation button:enabled:focus {
   background-color: transparent;
 }
+
+.rmdp-header-values span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rmdp-week-day{
+  color: gray !important;
+  
+}
+.rmdp-header{
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 50px;
+}
+.rmdp-day{
+  margin: 7px;
+  font-weight:500 ;
+}
+.rmdp-day.rmdp-selected span:not(.highlight){
+  background-color: black !important;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ font-size: 14px;
+}
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover{
+background-color: lightgrey !important;
+}
+.rmdp-day span{
+  font-size: 16px;
+}
+.rmdp-arrow-container:hover{
+  background-color: black !important;
+  box-shadow: none !important;
+  color: black !important;
+}
+
+.rmdp-arrow{
+  border: solid #000000;
+  border-top-color: rgb(0, 0, 0);
+  border-top-style: solid;
+  border-top-width: 0px;
+  border-right-color: rgb(0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  height: 10px;
+  width: 10px;
+  margin-top: 5px;
+}
+
+.disabled-date {
+  pointer-events: none;
+}

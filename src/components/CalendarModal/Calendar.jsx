@@ -1,30 +1,26 @@
 import React,{useState} from 'react';
-import Calendar from 'react-calendar';
+import { Calendar } from "react-multi-date-picker"
 import styles from './calendarmodal.module.css';
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
 import 'react-calendar/dist/Calendar.css';
 import './reactCalendar.css';
+import { mockComponent } from 'react-dom/cjs/react-dom-test-utils.production.min';
 
 export default function CalendarAb() {
-    const [value, onChange] = useState(new Date());
+    const [value, setValue] = useState(new Date())
 
 
     return (
-        <div>
-           <Calendar
-             className='react-calendar'
-             tileClassName={styles.ccc}
-             nextLabel={<GrNext style={{marginRight: '-140px'}} />}
-             prevLabel={<GrPrevious style={{marginLeft: '-140px'}} />}
-             next2Label= {false}
-             prev2Label={false}
-             className={styles.calendar}
-             onChange={onChange}
-             value={value}
-             selectRange={true}
-             tileDisabled={({ date }) => date.getDay('Sunday') === 0}
-      />
+        <div className={styles.calendaerab}>
+        <Calendar 
+        className={styles.mdp}
+          value={value}
+          onChange={setValue}
+          multiple
+          showOtherDays={true}
+          dayClassName={date => date.getTime() === new Date('22/6/2021').getTime() ? 'disabled-date' : undefined}
+          />
         </div>
     )
 }
