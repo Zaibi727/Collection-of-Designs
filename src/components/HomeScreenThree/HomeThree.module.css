@@ -23,7 +23,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-top: -70px;
+    margin-top: -80px;
 }
 .middle a{
     margin-left: 80px;
@@ -33,7 +33,7 @@
 .midimg{
     width: 120px;
     height: 120px;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 
@@ -57,7 +57,7 @@
     font-weight: 600;
 }
 .time{
-    margin-top: 0px;
+    margin-top: 10px;
     color: #8b8b92;
     font-weight: 500;
 }
