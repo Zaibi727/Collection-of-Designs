@@ -69,5 +69,8 @@
     font-size: 25px;
 }
 
-
+.new{
+    display: flex;
+    align-items: center;
+}
 

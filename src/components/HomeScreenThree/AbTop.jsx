@@ -6,7 +6,10 @@ function AbTop({src, username, time, Icon}) {
         <div className={styles.top}>
             <img className={styles.userpic} src={src} />
             <div className={styles.sub}>
-                <p className={styles.name}>{username} <span className={styles.icon}>{Icon ? <Icon /> : {Icon}}</span></p>
+            <div className={styles.new}>
+                  <p className={styles.name}>{username}</p>
+                  <i className={styles.icon}>{Icon ? <Icon /> : {Icon}}</i>
+                </div>
                 <p className={styles.time}>{time}</p>
             </div>
         </div>
