@@ -24,7 +24,7 @@
     justify-content: space-between;
     margin-top: -80px;
     border-bottom: 1px solid rgb(225, 235, 235);
-    margin-left: 100px;
+    margin-left: 85px;
     padding-bottom: 60px;
 }
 .middle a{
@@ -55,18 +55,18 @@
     margin-top: -10px;
 }
 .name{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 .time{
-    margin-top: -15px;
+    margin-top: 5px;
     color: #8b8b92;
     font-weight: 500;
     font-size: 20px;
 }
 .icon{
     color: #8b8b92;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
