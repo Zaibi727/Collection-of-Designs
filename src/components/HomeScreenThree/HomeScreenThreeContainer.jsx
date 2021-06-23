@@ -1,7 +1,7 @@
 import React from 'react';
 import AbMiddle from './AbMiddle';
 import AbTop from './AbTop';
-import { FaYelp } from "react-icons/fa";
+import { ImYelp } from "react-icons/im";
 import styles from './HomeThree.module.css';
 
 
@@ -13,7 +13,7 @@ function HomeScreenThreeContainer() {
                 src="./images/eight4.jpg"
                 username="Audrey Williamson  ."
                 time="11 February, 07:15"
-                Icon={FaYelp}
+                Icon={ImYelp}
             />
             <AbMiddle 
                 link="https://button-cards.herokuapp.com/"
