@@ -8,7 +8,7 @@ function AbTop({src, username, time, Icon}) {
             <div className={styles.sub}>
             <div className={styles.new}>
                   <p className={styles.name}>{username}</p>
-                  <i className={styles.icon}>{Icon ? <Icon /> : {Icon}}</i>
+                  <i className={styles.icon}>. &nbsp;{Icon ? <Icon /> : {Icon}}</i>
                 </div>
                 <p className={styles.time}>{time}</p>
             </div>

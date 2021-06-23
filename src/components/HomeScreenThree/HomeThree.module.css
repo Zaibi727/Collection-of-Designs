@@ -23,9 +23,10 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-top: -80px;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid lightgray;
     margin-left: 85px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 .middle a{
     font-size: 20px;
@@ -67,6 +68,7 @@
 .icon{
     color: #8b8b92;
     font-size: 25px;
+    margin-bottom: -5px;
 }
 
 .new{

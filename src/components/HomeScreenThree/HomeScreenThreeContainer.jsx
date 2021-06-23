@@ -11,7 +11,7 @@ function HomeScreenThreeContainer() {
             <div className={styles.wrapper}>
             <AbTop 
                 src="./images/eight4.jpg"
-                username="Audrey Williamson  ."
+                username="Audrey Williamson"
                 time="11 February, 07:15"
                 Icon={ImYelp}
             />
