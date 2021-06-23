@@ -1,0 +1,88 @@
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+width: 100%;
+height: 100vh;
+background-color: orangered;
+}
+.wrapper{
+    width: 500px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*--abTop--*/
+
+.abtop{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.topDivone{
+    display: flex;
+}
+.topDivone img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.subtop{
+    margin-left: 12px;
+    text-align: left;
+}
+.username{
+    font-weight: 600;
+    font-size: 22px;
+}
+.time{
+  color: #9c9c9e;
+  margin-top: -10px;
+  font-size: 20px;
+}
+.instabtn{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #9c9c9e;
+}
+
+/*--middle---*/
+
+.midimg{
+    max-width: 100%;
+    width: 500px;
+    height: 370px;
+}
+
+/*--bottom--*/
+
+.abBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin: 30px auto 0px auto;
+}
+.bottomSub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottomSub button{
+    border: none;
+    background-color: transparent;
+    margin-top: -17px;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #9c9c9e;
+}
+.bottomSub p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #9c9c9e;
+}

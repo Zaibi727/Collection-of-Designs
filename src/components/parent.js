@@ -79,8 +79,8 @@ import './dropDown.css';
 //import ProfileContainer from './ProflieCards/ProfileContainer';
 //import  RatingModalContainer from './RatingModal/RatingModalContainer';
 //import CalendarModalContainer from './CalendarModal/CalendarModalContainer';
-import HomeScreenOneContaine from './HomeScreenOne/HomeScreenOneContainer';
-
+//import HomeScreenOneContaine from './HomeScreenOne/HomeScreenOneContainer';
+import HomeScreenTwoContainer from './HomeScreenTwo/HomeScreenTwoContainer';
 
 class Parent extends Component {
 
@@ -89,7 +89,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                  <HomeScreenOneContaine />
+                   <HomeScreenTwoContainer />
            </div>
          );
     }
