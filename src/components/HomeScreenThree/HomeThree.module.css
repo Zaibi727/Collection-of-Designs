@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-color: orangered;
+   }
+   .wrapper{
+       width: 100%;
+       max-width: 800px;
+       background-color: rgb(255, 255, 255);
+       padding: 35px 15px;
+   }
+
+.middle{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: -70px;
+}
+.middle a{
+    margin-left: 80px;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+.midimg{
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+}
+
+
+/*--top ---*/
+
+.userpic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.top{
+    display: flex;
+}
+.sub{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.name{
+    font-size: 25px;
+    font-weight: 600;
+}
+.time{
+    margin-top: -18px;
+    color: #8b8b92;
+    font-weight: 500;
+}
+.icon{
+    color: #8b8b92;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       width: 100%;
+       height: 100vh;
+       background-color: orangered;
+       }
+       .wrapper{
+           width: 100%;
+           max-width: 600px;
+           background-color: rgb(255, 255, 255);
+           padding: 35px 15px;
+       }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       width: 100%;
+       height: 100vh;
+       background-color: orangered;
+       }
+       .wrapper{
+           width: 100%;
+           max-width: 400px;
+           background-color: rgb(255, 255, 255);
+           padding: 25px 15px;
+       }
+       .middle{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: -70px;
+    }
+    .middle a{
+        margin-left: 60px;
+        font-weight: 400;
+        font-size: 13px;
+        text-decoration: none !important;
+    }
+    .midimg{
+        width: 70px;
+        height: 80px;
+        margin-top: 0px;
+    }
+    
+    
+    /*--top ---*/
+    
+    .userpic{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .top{
+        display: flex;
+    }
+    .sub{
+        text-align: left;
+        margin-left: 10px;
+        margin-top: -25px;
+    }
+    .name{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .time{
+        margin-top: -18px;
+        color: #8b8b92;
+        font-weight: 500;
+    }
+    .icon{
+        color: #8b8b92;
+        font-size: 25px;
+    }
+}
