@@ -3,6 +3,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+h4{
+    margin-top: -7px;
+}
 .whole{
     background-color: teal;
     width: 100%;
@@ -33,7 +36,6 @@
 .formInputs label{
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 15px;
 }
 .formInputs input{
     width: 100%;
@@ -44,6 +46,8 @@
     border-radius: 5px;
     font-size: 14px;
     color: black;
+    margin-top: 5px;
+    margin-bottom: 7px;
 }
 input:focus,
 select:focus,
