@@ -8,9 +8,9 @@ const FormSignup = ({submitForm}) => {
     return (
         <div className={styles.signupcontainer}>
         <form onSubmit={handleSubmit}>
-            <h6>
+            <h4>
                 Learning Phase with Passion
-            </h6>
+            </h4>
             <div className={styles.formInputs}>
                 <label  for="username">Username</label><br />
                 <input 
