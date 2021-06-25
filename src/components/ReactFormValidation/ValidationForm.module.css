@@ -1,29 +1,39 @@
 .whole{
-    margin: 0 auto;
+    background-color: teal;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .formInputs p {
-    color: red;
+    color: rgb(214, 214, 214);
 }
 .signupcontainer{
     margin: 0 auto;
     width: 300px;
+    background-color: brown;
+    padding: 10px 30px;
+    border-radius: 20px;
    
 }
 .formInputs{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: left;
   
 }
 .formInputs label{
     font-weight: 500;
     font-size: 18px;
+    margin-bottom: 5px;
 }
 .formInputs input{
     width: 100%;
     max-width: 400px;
     height: 40px;
     padding: 0px 15px;
-    border: 2px solid teal;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
     font-size: 18px;
     color: black;
@@ -43,7 +53,7 @@ button{
     max-width: 200px;
     height: 40px;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: teal;
     border-radius: 30px !important;
 }
