@@ -9,8 +9,8 @@ export default function  ValidationInfo (values){
 
   if(!values.email){
       errors.email = "Email required"
-  } else if (!/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/i.test(values.email)){
-      errors.email = "Email addres is invalid"
+  } else if (/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/i.test(values.email)){
+      errors.email = "Email address is invalid"
   }
 
   //password
