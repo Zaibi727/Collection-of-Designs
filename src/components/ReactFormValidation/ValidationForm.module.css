@@ -14,12 +14,13 @@
 }
 .formInputs p {
     color: rgb(214, 214, 214);
+    font-size: 13px;
 }
 .signupcontainer{
     margin: 0 auto;
     width: 400px;
     background-color: brown;
-    padding: 10px 30px;
+    padding: 30px 30px;
     border-radius: 20px;
     overflow: auto;
    
@@ -32,7 +33,7 @@
 .formInputs label{
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 .formInputs input{
     width: 100%;
@@ -41,7 +42,7 @@
     padding: 0px 15px;
     border: 0px solid rgb(255, 255, 255);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
 }
 input:focus,
@@ -51,7 +52,7 @@ button:focus {
     outline: none;
 }
 ::placeholder{
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(189, 179, 179);
 }
 button{
@@ -62,4 +63,5 @@ button{
     color: rgb(255, 255, 255);
     background-color: teal;
     border-radius: 30px !important;
+    margin-top: 20px;
 }
