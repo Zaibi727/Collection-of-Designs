@@ -1,0 +1,49 @@
+.whole{
+    margin: 0 auto;
+}
+.formInputs p {
+    color: red;
+}
+.signupcontainer{
+    margin: 0 auto;
+    width: 300px;
+   
+}
+.formInputs{
+    margin-bottom: 20px;
+    text-align: left;
+  
+}
+.formInputs label{
+    font-weight: 500;
+    font-size: 18px;
+}
+.formInputs input{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    padding: 0px 15px;
+    border: 2px solid teal;
+    border-radius: 5px;
+    font-size: 18px;
+    color: black;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+::placeholder{
+    font-size: 18px;
+    color: rgb(189, 179, 179);
+}
+button{
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: teal;
+    border-radius: 30px !important;
+}
