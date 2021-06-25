@@ -69,3 +69,122 @@ button{
     border-radius: 30px !important;
     margin-top: 20px;
 }
+@media only screen and (max-width: 500px){
+    h4{
+        margin-top: -8px;
+    }
+    .formInputs p {
+        color: rgb(214, 214, 214);
+        font-size: 12px;
+    }
+    .signupcontainer{
+        margin: 0 auto;
+        width: 300px;
+        background-color: brown;
+        padding: 30px 30px;
+        border-radius: 20px;
+        overflow: auto;
+       
+    }
+    .formInputs{
+        margin-bottom: 5px;
+        text-align: left;
+      
+    }
+    .formInputs label{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .formInputs input{
+        width: 100%;
+        max-width: 270px;
+        height: 30px;
+        padding: 0px 15px;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        font-size: 14px;
+        color: black;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+    ::placeholder{
+        font-size: 14px;
+        color: rgb(189, 179, 179);
+    }
+    button{
+        width: 100%;
+        max-width: 200px;
+        height: 30px;
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color: teal;
+        border-radius: 30px !important;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    h4{
+        margin-top: -8px;
+    }
+    .formInputs p {
+        color: rgb(214, 214, 214);
+        font-size: 12px;
+    }
+    .signupcontainer{
+        margin: 0 auto;
+        width: 270px;
+        background-color: brown;
+        padding: 30px 30px;
+        border-radius: 20px;
+        overflow: auto;
+       
+    }
+    .formInputs{
+        margin-bottom: 5px;
+        text-align: left;
+      
+    }
+    .formInputs label{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .formInputs input{
+        width: 100%;
+        max-width: 240px;
+        height: 30px;
+        padding: 0px 10px;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        font-size: 14px;
+        color: black;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+    ::placeholder{
+        font-size: 14px;
+        color: rgb(189, 179, 179);
+    }
+    button{
+        width: 100%;
+        max-width: 200px;
+        height: 30px;
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color: teal;
+        border-radius: 30px !important;
+        margin-top: 20px;
+    }
+}
