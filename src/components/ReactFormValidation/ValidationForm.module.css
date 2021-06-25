@@ -30,7 +30,7 @@
 }
 .formInputs input{
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: 40px;
     padding: 0px 15px;
     border: 2px solid rgb(255, 255, 255);
