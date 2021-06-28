@@ -3,8 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from './ModalSlider.module.css';
 import './modalss.css';
-import { GrFormNext } from "react-icons/gr";
-import { GrFormPrevious } from "react-icons/gr";
+
 
 
 
@@ -16,20 +15,13 @@ class ModalDesign extends React.Component {
           index: 1,
           disabledNext: false,
           disabledPrev: false,
-          isOpen: false
 
         }
       }
 
-     showModal = () => {
-        this.setState({isOpen: true});
-      };
-    
-       hideModal = () => {
-        this.setState({isOpen: false});
-      };
+   
 
-      togglePrev(e) {
+      onPrevious(e) {
         let index = this.state.index - 1
         let disabledPrev = false
         if (index <= 0) {
@@ -41,7 +33,7 @@ class ModalDesign extends React.Component {
         this.setState({ index: index, disabledPrev: disabledPrev, disabledNext: false })
       }
     
-      toggleNext(e) {
+      onNext(e) {
         let index = this.state.index + 1
         let disabledNext = false
         if (index === this.props.content.length - 1) {
@@ -53,16 +45,18 @@ class ModalDesign extends React.Component {
         this.setState({ index: index, disabledNext: disabledNext, disabledPrev: false })
       }
 
+     
+
    render(){
-    const { index, disabledNext, disabledPrev } = this.state;
     return (
-        <div>
-        <button className={styles.openbtn} onClick={this.showModal}>open Modal</button>
-        <Modal className={styles.modaal} show={this.state.isOpen} onHide={this.hideModal}> 
+        <div style={this.props.customStyles}>
+        <Modal  className={styles.modaal} show={this.props.isOpen} onHide={this.props.hideModal}> 
         <div className={styles.double}>
-        <div onClick={this.togglePrev.bind(this)} disabled={disabledPrev}><GrFormPrevious className={styles.arrow} /></div>
+        <div>
+            <button onClick={this.onPrevious.bind(this)}  className={styles.arrow}>{this.props.content.previousArrow}</button>
+        </div>
           <div className={styles.designwrapper}> 
-                              <button type="button" className={styles.issue} data-dismiss="modal" aria-label="Close" onClick={this.hideModal}>
+                              <button type="button" className={styles.issue} data-dismiss="modal" aria-label="Close" onClick={this.props.hideModal}>
                                    <span aria-hidden="true">&times;</span>
                                  </button>
                 {/*--close--btn---*/}
@@ -138,7 +132,12 @@ class ModalDesign extends React.Component {
                     </section>
            
          </div>
-         <div onClick={this.toggleNext.bind(this)} disabled={disabledNext}><GrFormNext className={styles.arrow} /></div>
+           
+         <div onClick={this.onNext.bind(this)}>
+             <button className={styles.arrow}>
+                 {this.props.content.nextArrow}
+             </button>
+         </div>
          </div>
      </Modal>
   </div>

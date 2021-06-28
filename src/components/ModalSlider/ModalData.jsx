@@ -1,6 +1,7 @@
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
-
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
 
 const ModalData = {
     Content: [
@@ -29,7 +30,9 @@ const ModalData = {
             hashtagsTitle: 'Hashtags',
             hashtagsContent: '#compayname',
             locationTitle:'Location',
-            locationContent: '2464 Valley View Ln undefined Coppell. Virginia 88719 United States'  
+            locationContent: '2464 Valley View Ln undefined Coppell. Virginia 88719 United States',
+            nextArrow: <GrNext />, 
+            previousArrow: <GrPrevious />,
 
         },
         {
@@ -57,7 +60,9 @@ const ModalData = {
             hashtagsTitle: 'Hashtags',
             hashtagsContent: '#compayname',
             locationTitle:'Location',
-            locationContent: '2464 Valley View Ln undefined Coppell. Virginia 88719 United States'  
+            locationContent: '2464 Valley View Ln undefined Coppell. Virginia 88719 United States'  ,
+            nextArrow: <GrNext />, 
+            previousArrow: <GrPrevious />,
 
         },
         {
@@ -85,7 +90,9 @@ const ModalData = {
             hashtagsTitle: 'Hashtags',
             hashtagsContent: '#compayname',
             locationTitle:'Location',
-            locationContent: '2464 Valley View Ln undefined Coppell. Virginia 88719 United States'  
+            locationContent: '2464 Valley View Ln undefined Coppell. Virginia 88719 United States'  ,
+            nextArrow: <GrNext />, 
+            previousArrow: <GrPrevious />,
 
         },
     ]
