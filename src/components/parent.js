@@ -82,8 +82,8 @@ import './dropDown.css';
 //import HomeScreenOneContaine from './HomeScreenOne/HomeScreenOneContainer';
 //import HomeScreenTwoContainer from './HomeScreenTwo/HomeScreenTwoContainer';
 //import HomeScreenThreeContainer from './HomeScreenThree/HomeScreenThreeContainer';
-import FormContainer from './ReactFormValidation/FormContainer';
-
+//import FormContainer from './ReactFormValidation/FormContainer';
+import ModalSilderContainer from './ModalSlider/ModalSliderContainer';
 
 class Parent extends Component {
 
@@ -92,7 +92,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                  <FormContainer />
+               <ModalSilderContainer />
            </div>
          );
     }
