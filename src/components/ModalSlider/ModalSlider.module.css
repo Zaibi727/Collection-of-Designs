@@ -20,7 +20,7 @@
 .double{
     width: 1440px;
     background-color: transparent;
-    margin-left: -350px;
+    margin-left: -480px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -28,7 +28,7 @@
 .designwrapper{
 display: flex;
 background-color: white;
-width: 1000px;
+width: 900px;
 height: 800px;
 border-radius: 15px;
 }
@@ -51,7 +51,7 @@ button:focus {
 .mainPic{
     height: 760px;
     margin: 20px;
-    width: 500px;
+    width: 450px;
 }
 
 /*----*/
