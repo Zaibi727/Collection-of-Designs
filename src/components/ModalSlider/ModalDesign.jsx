@@ -3,8 +3,8 @@ import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from './ModalSlider.module.css';
 import './modalss.css';
-import { GrNext } from "react-icons/gr";
-import { GrPrevious } from "react-icons/gr";
+import { GrFormNext } from "react-icons/gr";
+import { GrFormPrevious } from "react-icons/gr";
 
 
 
@@ -60,7 +60,7 @@ class ModalDesign extends React.Component {
         <button className={styles.openbtn} onClick={this.showModal}>open Modal</button>
         <Modal className={styles.modaal} show={this.state.isOpen} onHide={this.hideModal}> 
         <div className={styles.double}>
-        <div onClick={this.togglePrev.bind(this)} disabled={disabledPrev}><GrPrevious  className={styles.arrow} /></div>
+        <div onClick={this.togglePrev.bind(this)} disabled={disabledPrev}><GrFormPrevious className={styles.arrow} /></div>
           <div className={styles.designwrapper}> 
                               <button type="button" className={styles.issue} data-dismiss="modal" aria-label="Close" onClick={this.hideModal}>
                                    <span aria-hidden="true">&times;</span>
@@ -138,7 +138,7 @@ class ModalDesign extends React.Component {
                     </section>
            
          </div>
-         <div onClick={this.toggleNext.bind(this)} disabled={disabledNext}><GrNext className={styles.arrow} /></div>
+         <div onClick={this.toggleNext.bind(this)} disabled={disabledNext}><GrFormNext className={styles.arrow} /></div>
          </div>
      </Modal>
   </div>
