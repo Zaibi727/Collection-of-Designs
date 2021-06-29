@@ -4,9 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from './ModalSlider.module.css';
 import './modalss.css';
 
-import { GrNext } from "react-icons/gr";
-import { GrPrevious } from "react-icons/gr";
-
+import { RiArrowLeftSLine } from "react-icons/ri";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 function ModalDesign ({Content}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +44,7 @@ function ModalDesign ({Content}) {
                
         <div className={styles.double}>
         <div>
-            <button onClick={prevSlide} className={styles.arrow}><GrPrevious  /></button>
+            <button onClick={prevSlide} className={styles.arrow}><RiArrowLeftSLine size={35} /></button>
         </div>
           <div> 
                                
@@ -142,7 +141,7 @@ function ModalDesign ({Content}) {
            
          <div>
              <button onClick={nextSlide} className={styles.arrow}>
-             <GrNext />
+             <RiArrowRightSLine size={35} />
              </button>
          </div>
          </div>
