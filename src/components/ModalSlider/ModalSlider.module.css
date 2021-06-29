@@ -72,13 +72,15 @@ button:focus {
 }
 .profilename{
     font-weight: 600;
+    position: relative;
+    top: -5px;
 }
 .instaIcon{
     font-size: 20px;
     color: rgb(88, 87, 87);
 }
 .accountId{
-    margin-top: -15px;
+    margin-top: 2px;
     font-size: 14px;
     color: rgb(88, 87, 87);
 }
@@ -222,7 +224,7 @@ button:focus {
             border-bottom: 1px solid lightgray;
         }
         .reactions div{
-            margin: 0px 0px;
+            margin: 10px 0px;
             text-align: center;
         }
         .p1{
@@ -249,11 +251,11 @@ button:focus {
         }
         .descriptionContent{
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 400;
             color: rgb(29, 28, 28);
         }
         .last div{
-            margin: 3px 0px;
+            margin: 5px 0px;
         }
         .sec2Div1 img{
             width: 40px;
@@ -262,7 +264,6 @@ button:focus {
             margin-right: 7px;
         }
         .profilename{
-            font-weight: 600;
             font-size: 12px;
         }
         .instaIcon{
@@ -270,7 +271,7 @@ button:focus {
             color: rgb(88, 87, 87);
         }
         .accountId{
-            margin-top: -17px;
+            margin-top:2px;
             font-size: 13px;
             color: rgb(88, 87, 87);
         }
