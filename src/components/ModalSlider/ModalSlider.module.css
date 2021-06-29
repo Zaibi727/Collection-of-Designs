@@ -30,7 +30,7 @@ display: flex;
 background-color: white;
 border-radius: 15px;
 width: 900px;
-height: 580px;
+height: 540px;
 }
 .issue{
     background-color: transparent!important;
@@ -50,7 +50,7 @@ button:focus {
 .mainPic{
     margin: 20px;
     width: 450px;
-    height: 540px;
+    height: 500px;
 }
 
 /*----*/
@@ -78,7 +78,7 @@ button:focus {
     color: rgb(88, 87, 87);
 }
 .accountId{
-    margin-top: -17px;
+    margin-top: -15px;
     font-size: 14px;
     color: rgb(88, 87, 87);
 }
@@ -93,7 +93,7 @@ button:focus {
     border-bottom: 1px solid lightgray;
 }
 .reactions div{
-    margin: 0px 0px;
+    margin: 10px 0px;
     text-align: center;
 }
 .p1{
@@ -121,9 +121,10 @@ button:focus {
     font-size: 13px;
     font-weight: 500;
     color: rgb(29, 28, 28);
+    margin-bottom: 10px;
 }
 .last div{
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 
@@ -142,7 +143,7 @@ button:focus {
         background-color: white;
         border-radius: 15px;
         width: 700px;
-        height: 580px;
+        height: 540px;
         }
         .issue{
             background-color: transparent!important;
@@ -162,7 +163,7 @@ button:focus {
         .mainPic{
             margin: 20px;
             width: 350px;
-            height: 540px;
+            height: 500px;
         }
         
         /*----*/
@@ -186,7 +187,7 @@ button:focus {
         background-color: white;
         border-radius: 15px;
         width: 600px;
-        height: 580px;
+        height: 540px;
         }
         .issue{
             background-color: transparent!important;
@@ -206,7 +207,7 @@ button:focus {
         .mainPic{
             margin: 20px;
             width: 300px;
-            height: 540px;
+            height: 500px;
         }
         
         /*----*/
