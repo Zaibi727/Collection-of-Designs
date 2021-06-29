@@ -3,7 +3,6 @@
     padding: 30px;
     text-align: left;
 }
-
 .arrow{
     font-size: 20px;
     color: rgb(255, 255, 255) !important;
@@ -23,14 +22,16 @@ justify-content: space-between;
 align-items: center;
 padding: 0px 20px;
 width: 100%;
-overflow: auto !important;
+overflow: auto;
 }
 .designwrapper{
 display: flex;
 background-color: white;
 border-radius: 15px;
-width: 900px;
-height: 540px;
+width: 90%;
+height: 550px;
+margin: 0 auto;
+
 }
 .issue{
     background-color: transparent!important;
@@ -40,21 +41,32 @@ height: 540px;
     margin-right: 10px;
 }
 .modaal{
-    margin:20px auto;
+    margin:0px auto;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }input:focus,
 select:focus,
 textarea:focus,
 button:focus {
     outline: none;
 }
+.sec1{
+    width: 100%;
+    padding: 20px;
+}
 .mainPic{
-    margin: 20px;
-    width: 450px;
-    height: 500px;
+    width: 100%;
+    height: 510px;
 }
 
 /*----*/
 .sec2{
+    width: 100%;
     padding: 20px 20px 20px 0px;
 }
 .sec2div1Top{
@@ -72,15 +84,13 @@ button:focus {
 }
 .profilename{
     font-weight: 600;
-    position: relative;
-    top: -5px;
 }
 .instaIcon{
     font-size: 20px;
     color: rgb(88, 87, 87);
 }
 .accountId{
-    margin-top: 2px;
+    margin-top: -17px;
     font-size: 14px;
     color: rgb(88, 87, 87);
 }
@@ -95,7 +105,7 @@ button:focus {
     border-bottom: 1px solid lightgray;
 }
 .reactions div{
-    margin: 10px 0px;
+    margin: 0px 0px;
     text-align: center;
 }
 .p1{
@@ -120,13 +130,12 @@ button:focus {
     margin-bottom: 8px;
 }
 .descriptionContent{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 500;
     color: rgb(29, 28, 28);
-    margin-bottom: 10px;
 }
 .last div{
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 
@@ -138,14 +147,11 @@ button:focus {
         align-items: center;
         padding: 0px 20px;
         width: 100%;
-        overflow: auto !important;
         }
         .designwrapper{
         display: flex;
         background-color: white;
         border-radius: 15px;
-        width: 700px;
-        height: 540px;
         }
         .issue{
             background-color: transparent!important;
@@ -162,12 +168,10 @@ button:focus {
         button:focus {
             outline: none;
         }
-        .mainPic{
-            margin: 20px;
-            width: 350px;
-            height: 500px;
-        }
         
+      .sec1{
+          padding: 20px;
+      }
         /*----*/
         .sec2{
             padding: 20px 20px 20px 0px;
@@ -182,14 +186,11 @@ button:focus {
         align-items: center;
         padding: 0px 20px;
         width: 100%;
-        overflow: auto !important;
         }
         .designwrapper{
         display: flex;
         background-color: white;
         border-radius: 15px;
-        width: 600px;
-        height: 540px;
         }
         .issue{
             background-color: transparent!important;
@@ -199,18 +200,16 @@ button:focus {
             margin-right: 10px;
         }
         .modaal{
-            margin:20px auto;
+            margin:0px auto;
         }input:focus,
         select:focus,
         textarea:focus,
         button:focus {
             outline: none;
         }
-        .mainPic{
-            margin: 20px;
-            width: 300px;
-            height: 500px;
-        }
+       .sec1{
+           padding: 20px;
+       }
         
         /*----*/
         .sec2{
@@ -224,7 +223,7 @@ button:focus {
             border-bottom: 1px solid lightgray;
         }
         .reactions div{
-            margin: 10px 0px;
+            margin: 0px 0px;
             text-align: center;
         }
         .p1{
@@ -251,11 +250,11 @@ button:focus {
         }
         .descriptionContent{
             font-size: 12px;
-            font-weight: 400;
+            font-weight: 500;
             color: rgb(29, 28, 28);
         }
         .last div{
-            margin: 5px 0px;
+            margin: 3px 0px;
         }
         .sec2Div1 img{
             width: 40px;
@@ -264,6 +263,7 @@ button:focus {
             margin-right: 7px;
         }
         .profilename{
+            font-weight: 600;
             font-size: 12px;
         }
         .instaIcon{
@@ -271,9 +271,80 @@ button:focus {
             color: rgb(88, 87, 87);
         }
         .accountId{
-            margin-top:2px;
+            margin-top: -17px;
             font-size: 13px;
             color: rgb(88, 87, 87);
+        }
+}
+  
+@media only screen and (max-width: 660px){
+    .double{
+        padding: 0px 10px;
+        }
+        .issue{
+            margin-right: 0px;
+        }
+       .sec1{
+           padding: 10px;
+       }
+        
+        /*----*/
+        .sec2{
+            padding: 10px 10px 10px 0px;
+        }
+       
+        .p1{
+            font-size: 10px;
+            font-weight: 400;
+            margin-top: -5px;
+            color: rgb(88, 87, 87);
+        }
+        .p2{
+            font-weight: 700;
+            font-size: 10px;
+            margin-bottom: 8px;
+        }
+        
+        /*---*/
+        .description{
+            margin: 5px 0px 5px 0px;
+            border-bottom: 1px solid lightgray;
+        }
+        .descriptionTitle{
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        .descriptionContent{
+            font-size: 10px;
+            font-weight: 400;
+            color: rgb(29, 28, 28);
+        }
+        .last div{
+            margin: 3px 0px;
+        }
+        .sec2Div1 img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 7px;
+        }
+        .profilename{
+            font-weight: 600;
+            font-size: 12px;
+        }
+        .instaIcon{
+            font-size: 14px;
+            color: rgb(88, 87, 87);
+        }
+        .accountId{
+            margin-top: -17px;
+            font-size: 13px;
+            color: rgb(88, 87, 87);
+        }
+        .mainPic{
+            width: 100%;
+            height: 530px;
         }
 }
   

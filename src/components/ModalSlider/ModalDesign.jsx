@@ -43,7 +43,7 @@ function ModalDesign ({Content}) {
 
 
     return (
-        <div>
+        <div className={styles.modalCover}>
         <button onClick={showModal}>Open Modal</button>
         <Modal  isOpen={isOpen}   className={styles.modaal} style={customStyles}> 
                
