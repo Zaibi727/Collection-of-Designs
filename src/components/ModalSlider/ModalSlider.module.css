@@ -132,8 +132,8 @@ button:focus {
 
 @media only screen and (max-width: 1250px){
     .double{
-        width: 80vw !important;
-        margin-left: -45%;
+        width: 90vw !important;
+        margin-left: -50%;
     }
     .designwrapper{
     display: flex;
