@@ -2,10 +2,10 @@
 .container{
     padding: 20px;
     text-align: left;
+    width: 100%;
+    height: 100vh;
 }
-.main{
-    display: flex;
-}
+
 .arrow{
     font-size: 20px;
     color: white !important;
@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 .double{
-    width: 90vw !important;
+    width: 90vw;
     margin-left: -75%;
     background-color: transparent;
     display: flex;
@@ -35,12 +35,11 @@ height: 800px;
 border-radius: 15px;
 }
 .issue{
-    position: absolute;
     background-color: transparent!important;
     border: none;
     font-size: 30px;
-    right: -170px;
-    top: 7px;
+    margin-top: -10px;
+    margin-right: 10px;
 }
 .modaal{
     margin:0 auto;
@@ -61,8 +60,12 @@ button:focus {
 .sec2{
     padding: 20px 10px 20px 0px;
 }
+.sec2div1Top{
+    display: flex;
+}
 .sec2Div1{
     display: flex;
+    justify-content: space-between;
 }
 .sec2Div1 img{
     width: 50px;
@@ -205,9 +208,6 @@ button:focus {
         margin: 0px;
         text-align: center;
     }
-    .issue{
-        right: 0px;
-    }
 }
 @media only screen and (max-width: 768px){
     .double{
@@ -245,8 +245,5 @@ button:focus {
     .reactions div{
         margin: 0px;
         text-align: center;
-    }
-    .issue{
-        right: -30px;
     }
 }

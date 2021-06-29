@@ -42,12 +42,10 @@ function ModalDesign ({Content}) {
         <div>
         <button onClick={showModal}>Open Modal</button>
         <Modal  show={isOpen}   className={styles.modaal}> 
-                <button onClick={()=> setIsOpen(false)} type="button" className={styles.issue} data-dismiss="modal" aria-label="Close">
-                                   <span aria-hidden="true">&times;</span>
-                 </button>
+               
         <div className={styles.double}>
         <div>
-            <button onClick={prevSlide} className={styles.arrow}><GrPrevious /></button>
+            <button onClick={prevSlide} className={styles.arrow}><GrPrevious  /></button>
         </div>
           <div> 
                                
@@ -65,12 +63,19 @@ function ModalDesign ({Content}) {
 
                     <section className={styles.sec2}>
                         <div className={styles.sec2Div1}>
+                            <div className={styles.sec2div1Top}>
                             <img src={content.profilePic} />
          
-                                <div>
+                             <div>
                                    <p><span className={styles.profilename}>{content.profileName}</span><span>{content.dotIcon}</span><span className={styles.instaIcon}>{content.instaIcon}</span></p>
                                    <p className={styles.accountId}>{content.accountId}</p>          
-                                </div>     
+                            </div> 
+                            </div>   
+                            <div>
+                            <button onClick={()=> setIsOpen(false)} type="button" className={styles.issue} data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                           </button>
+                            </div>
                         </div>
                         
 
