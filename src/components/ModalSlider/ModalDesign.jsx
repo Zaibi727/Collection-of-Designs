@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import Modal from "react-bootstrap/Modal";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Modal from 'react-modal';
 import styles from './ModalSlider.module.css';
 import './modalss.css';
 
@@ -36,15 +35,21 @@ function ModalDesign ({Content}) {
         return null;
     }
 
+    const customStyles = {
+        overlay: {
+          backgroundColor: "rgb(0, 0, 0 , 0.5 )",
+        }, 
+      };
+
 
     return (
         <div>
         <button onClick={showModal}>Open Modal</button>
-        <Modal  show={isOpen}   className={styles.modaal}> 
+        <Modal  isOpen={isOpen}   className={styles.modaal} style={customStyles}> 
                
         <div className={styles.double}>
         <div>
-            <button onClick={prevSlide} className={styles.arrow}><RiArrowLeftSLine size={35} /></button>
+            <button onClick={prevSlide} className={styles.arrow}><RiArrowLeftSLine size={40} /></button>
         </div>
           <div> 
                                
@@ -141,7 +146,7 @@ function ModalDesign ({Content}) {
            
          <div>
              <button onClick={nextSlide} className={styles.arrow}>
-             <RiArrowRightSLine size={35} />
+             <RiArrowRightSLine size={40} />
              </button>
          </div>
          </div>

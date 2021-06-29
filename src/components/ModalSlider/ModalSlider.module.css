@@ -1,14 +1,12 @@
 
 .container{
-    padding: 20px;
+    padding: 30px;
     text-align: left;
-    width: 100%;
-    height: 100vh;
 }
 
 .arrow{
     font-size: 20px;
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     border: none;
     background-color: transparent;
 }
@@ -20,19 +18,19 @@
     box-sizing: border-box;
 }
 .double{
-    width: 90vw;
-    margin-left: -75%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+width: 100%;
+overflow: auto !important;
 }
 .designwrapper{
 display: flex;
 background-color: white;
-width: 900px;
-height: 800px;
 border-radius: 15px;
+width: 900px;
+height: 580px;
 }
 .issue{
     background-color: transparent!important;
@@ -42,8 +40,7 @@ border-radius: 15px;
     margin-right: 10px;
 }
 .modaal{
-    margin:0 auto;
-    position: relative=;
+    margin:20px auto;
 }input:focus,
 select:focus,
 textarea:focus,
@@ -51,14 +48,14 @@ button:focus {
     outline: none;
 }
 .mainPic{
-    height: 760px;
     margin: 20px;
     width: 450px;
+    height: 540px;
 }
 
 /*----*/
 .sec2{
-    padding: 20px 10px 20px 0px;
+    padding: 20px 20px 20px 0px;
 }
 .sec2div1Top{
     display: flex;
@@ -81,7 +78,7 @@ button:focus {
     color: rgb(88, 87, 87);
 }
 .accountId{
-    margin-top: -15px;
+    margin-top: -17px;
     font-size: 14px;
     color: rgb(88, 87, 87);
 }
@@ -92,29 +89,28 @@ button:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0px;
+    margin: 10px 0px;
     border-bottom: 1px solid lightgray;
-    margin-right: 20px;
 }
 .reactions div{
-    margin: 9px;
+    margin: 0px 0px;
     text-align: center;
 }
 .p1{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    margin-top: 8px;
+    margin-top: -5px;
     color: rgb(88, 87, 87);
 }
 .p2{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 8px;
 }
 
 /*---*/
 .description{
-    margin: 20px 20px 20px 0px;
+    margin: 10px 0px 10px 0px;
     border-bottom: 1px solid lightgray;
 }
 .descriptionTitle{
@@ -122,128 +118,160 @@ button:focus {
     margin-bottom: 8px;
 }
 .descriptionContent{
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 500;
     color: rgb(29, 28, 28);
 }
 .last div{
-    margin: 15px 0px;
+    margin: 5px 0px;
 }
 
 
-@media only screen and (max-width: 1250px){
+
+@media only screen and (max-width: 1050px){
     .double{
-        width: 90vw !important;
-        margin-left: -70%;
-    }
-    .designwrapper{
-    display: flex;
-    background-color: white;
-    width: 900px;
-    height: 800px;
-    border-radius: 15px;
-    }
-  
-    .mainPic{
-        height: 760px;
-        width: 450px;
-    }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        width: 100%;
+        overflow: auto !important;
+        }
+        .designwrapper{
+        display: flex;
+        background-color: white;
+        border-radius: 15px;
+        width: 700px;
+        height: 580px;
+        }
+        .issue{
+            background-color: transparent!important;
+            border: none;
+            font-size: 30px;
+            margin-top: -10px;
+            margin-right: 10px;
+        }
+        .modaal{
+            margin:20px auto;
+        }input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+        .mainPic{
+            margin: 20px;
+            width: 350px;
+            height: 540px;
+        }
+        
+        /*----*/
+        .sec2{
+            padding: 20px 20px 20px 0px;
+        }
 }
-@media only screen and (max-width: 950px){
-    .double{
-        width: 90vw !important;
-        margin-left: -35%;
-    }
-    .designwrapper{
-    display: flex;
-    background-color: white;
-    width: 840px;
-    height: 800px;
-    border-radius: 15px;
-    }
-  
-    .mainPic{
-        height: 760px;
-        width: 390px;
-        margin: 10px;
-    }
-    .sec2{
-        padding: 20px 0px 10px 0px;
-    }
-}
+
 
 @media only screen and (max-width: 800px){
     .double{
-        width: 90vw !important;
-        margin-left: -20%;
-    }
-    .designwrapper{
-    display: flex;
-    background-color: white;
-    width: 600px;
-    height: 800px;
-    border-radius: 15px;
-    }
-  
-    .mainPic{
-        height: 760px;
-        width: 290px;
-        margin: 10px;
-    }
-    .sec2{
-        padding: 20px 20px 0px 0px;
-    }
-    .description{
-        margin: 20px 0px 20px 0px;
-        border-bottom: 1px solid lightgray;
-    }
-    .reactions{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 20px 0px;
-        border-bottom: 1px solid lightgray;
-        margin-right: 0px;
-    }
-    .reactions div{
-        margin: 0px;
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 768px){
-    .double{
-        width: 90vw !important;
-        margin-left: -15%;
-    }
-    .designwrapper{
-    display: flex;
-    background-color: white;
-    width: 600px;
-    height: 800px;
-    border-radius: 15px;
-    }
-  
-    .mainPic{
-        height: 760px;
-        width: 290px;
-        margin: 10px;
-    }
-    .sec2{
-        padding: 20px 20px 0px 0px;
-    }
-    .description{
-        margin: 20px 0px 20px 0px;
-        border-bottom: 1px solid lightgray;
-    }
-    .reactions{
+        padding: 0px 20px;
+        width: 100%;
+        overflow: auto !important;
+        }
+        .designwrapper{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px 0px;
-        border-bottom: 1px solid lightgray;
-        margin-right: 0px;
-    }
-    .reactions div{
-        margin: 0px;
-        text-align: center;
-    }
+        background-color: white;
+        border-radius: 15px;
+        width: 600px;
+        height: 580px;
+        }
+        .issue{
+            background-color: transparent!important;
+            border: none;
+            font-size: 30px;
+            margin-top: -10px;
+            margin-right: 10px;
+        }
+        .modaal{
+            margin:20px auto;
+        }input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+        .mainPic{
+            margin: 20px;
+            width: 300px;
+            height: 540px;
+        }
+        
+        /*----*/
+        .sec2{
+            padding: 20px 20px 20px 0px;
+        }
+        .reactions{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0px;
+            border-bottom: 1px solid lightgray;
+        }
+        .reactions div{
+            margin: 0px 0px;
+            text-align: center;
+        }
+        .p1{
+            font-size: 10px;
+            font-weight: 400;
+            margin-top: -5px;
+            color: rgb(88, 87, 87);
+        }
+        .p2{
+            font-weight: 700;
+            font-size: 10px;
+            margin-bottom: 8px;
+        }
+        
+        /*---*/
+        .description{
+            margin: 5px 0px 5px 0px;
+            border-bottom: 1px solid lightgray;
+        }
+        .descriptionTitle{
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        .descriptionContent{
+            font-size: 12px;
+            font-weight: 500;
+            color: rgb(29, 28, 28);
+        }
+        .last div{
+            margin: 3px 0px;
+        }
+        .sec2Div1 img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 7px;
+        }
+        .profilename{
+            font-weight: 600;
+            font-size: 12px;
+        }
+        .instaIcon{
+            font-size: 14px;
+            color: rgb(88, 87, 87);
+        }
+        .accountId{
+            margin-top: -17px;
+            font-size: 13px;
+            color: rgb(88, 87, 87);
+        }
 }
+  
