@@ -1,15 +1,15 @@
 import React from 'react';
-import Main from './Main';
+//import Main from './Main';
 import ModalData from './ModalData';
 import styles from './ModalSlider.module.css';
-
+import ModalDesign from './ModalDesign';
 
 function ModalSliderContainer() {
   const {  Content } = ModalData;
 
     return (
         <div className={styles.container}> 
-              <Main  Content={Content}/>                  
+              <ModalDesign  Content={Content}/>                  
       </div>
     )
 }

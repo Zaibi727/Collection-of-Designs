@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ModalDesign from './ModalDesign';
+import styles from './ModalSlider.module.css';
 
 export default function Main({Content}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,26 +12,23 @@ export default function Main({Content}) {
        const hideModal = () => {
         setIsOpen(false);
       };
-      const customStyles = {
-        overlay: {
-          backgroundColor: "rgb(0, 0, 0 , 0.1)"
-        } 
-      };
+     
 
 
     return (
-        <div>
+        <div> 
         <button onClick={showModal}>Open modal to click this button</button>
-            {Content.map((content) => 
+          <div className={styles.main}>
+          {Content.map((content) => 
                 <ModalDesign 
                     key={content.id}
                     content={content}
                     showModal={showModal}
                     hideModal={hideModal}
                     isOpen={isOpen}
-                    customStyles={customStyles}
                 />
                 )}
+          </div>
         </div>
     )
 }

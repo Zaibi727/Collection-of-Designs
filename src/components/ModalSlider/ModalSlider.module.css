@@ -3,7 +3,9 @@
     padding: 20px;
     text-align: left;
 }
-
+.main{
+    display: flex;
+}
 .arrow{
     font-size: 20px;
     color: white !important;
@@ -18,12 +20,12 @@
     box-sizing: border-box;
 }
 .double{
-    width: 1440px;
+    width: 90vw !important;
+    margin-left: -75%;
     background-color: transparent;
-    margin-left: -480px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .designwrapper{
 display: flex;
@@ -42,6 +44,7 @@ border-radius: 15px;
 }
 .modaal{
     margin:0 auto;
+    position: relative=;
 }input:focus,
 select:focus,
 textarea:focus,
@@ -121,4 +124,129 @@ button:focus {
 }
 .last div{
     margin: 15px 0px;
+}
+
+
+@media only screen and (max-width: 1250px){
+    .double{
+        width: 80vw !important;
+        margin-left: -45%;
+    }
+    .designwrapper{
+    display: flex;
+    background-color: white;
+    width: 900px;
+    height: 800px;
+    border-radius: 15px;
+    }
+  
+    .mainPic{
+        height: 760px;
+        width: 450px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .double{
+        width: 90vw !important;
+        margin-left: -35%;
+    }
+    .designwrapper{
+    display: flex;
+    background-color: white;
+    width: 840px;
+    height: 800px;
+    border-radius: 15px;
+    }
+  
+    .mainPic{
+        height: 760px;
+        width: 390px;
+        margin: 10px;
+    }
+    .sec2{
+        padding: 20px 0px 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .double{
+        width: 90vw !important;
+        margin-left: -20%;
+    }
+    .designwrapper{
+    display: flex;
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;
+    }
+  
+    .mainPic{
+        height: 760px;
+        width: 290px;
+        margin: 10px;
+    }
+    .sec2{
+        padding: 20px 20px 0px 0px;
+    }
+    .description{
+        margin: 20px 0px 20px 0px;
+        border-bottom: 1px solid lightgray;
+    }
+    .reactions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px;
+        border-bottom: 1px solid lightgray;
+        margin-right: 0px;
+    }
+    .reactions div{
+        margin: 0px;
+        text-align: center;
+    }
+    .issue{
+        right: 0px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .double{
+        width: 90vw !important;
+        margin-left: -15%;
+    }
+    .designwrapper{
+    display: flex;
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;
+    }
+  
+    .mainPic{
+        height: 760px;
+        width: 290px;
+        margin: 10px;
+    }
+    .sec2{
+        padding: 20px 20px 0px 0px;
+    }
+    .description{
+        margin: 20px 0px 20px 0px;
+        border-bottom: 1px solid lightgray;
+    }
+    .reactions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px;
+        border-bottom: 1px solid lightgray;
+        margin-right: 0px;
+    }
+    .reactions div{
+        margin: 0px;
+        text-align: center;
+    }
+    .issue{
+        right: -30px;
+    }
 }
