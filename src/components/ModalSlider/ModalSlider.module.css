@@ -47,7 +47,7 @@ margin: 30px auto 30px auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 130px;
 }input:focus,
 select:focus,
 textarea:focus,
@@ -131,13 +131,13 @@ button:focus {
     margin-bottom: 8px;
 }
 .descriptionContent{
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
     color: rgb(29, 28, 28);
     margin-bottom: 10px;
 }
 .last div{
-    margin: 10px 0px;
+    margin: 15px 0px;
 }
 
 
@@ -180,7 +180,7 @@ button:focus {
       }
         /*----*/
         .sec2{
-            padding: 10px 10px 10px 0px;
+            padding: 20px 20px 20px 0px;
         }
        
         .p1{
@@ -202,16 +202,16 @@ button:focus {
         }
         .descriptionTitle{
             font-weight: 600;
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 4px;
         }
         .descriptionContent{
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 400;
             color: rgb(29, 28, 28);
         }
         .last div{
-            margin: 3px 0px;
+            margin: 10px 0px;
         }
         .sec2Div1 img{
             width: 40px;
@@ -283,7 +283,7 @@ button:focus {
             border-bottom: 1px solid lightgray;
         }
         .reactions div{
-            margin: 0px 0px;
+            margin: 10px 0px;
             text-align: center;
         }
         .p1{
@@ -305,19 +305,19 @@ button:focus {
         }
         .descriptionTitle{
             font-weight: 600;
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 4px;
         }
         .descriptionContent{
-            font-size: 12px;
-            font-weight: 500;
+            font-size: 14px;
+            font-weight: 400;
             color: rgb(29, 28, 28);
         }
         .last div{
-            margin: 3px 0px;
+            margin: 10px 0px;
         }
         .sec2{
-            padding: 10px 10px 10px 0px;
+            padding: 20px 20px 10px 0px;
         }
        
         .p1{
@@ -348,7 +348,7 @@ button:focus {
             color: rgb(29, 28, 28);
         }
         .last div{
-            margin: 3px 0px;
+            margin: 10px 0px;
         }
         .sec2Div1 img{
             width: 40px;
@@ -393,7 +393,7 @@ button:focus {
         
         /*----*/
         .sec2{
-            padding: 10px 10px 10px 0px;
+            padding: 20px 20px 20px 0px;
         }
        
         .p1{
@@ -415,16 +415,16 @@ button:focus {
         }
         .descriptionTitle{
             font-weight: 600;
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 4px;
         }
         .descriptionContent{
-            font-size: 10px;
+            font-size: 14px;
             font-weight: 400;
             color: rgb(29, 28, 28);
         }
         .last div{
-            margin: 3px 0px;
+            margin: 10px 0px;
         }
         .sec2Div1 img{
             width: 40px;
@@ -444,6 +444,10 @@ button:focus {
             margin-top: -1px;
             font-size: 13px;
             color: rgb(88, 87, 87);
+        }
+        .reactions div{
+            margin: 10px 0px;
+            text-align: center;
         }
        
 }
