@@ -10,7 +10,7 @@ import ReactPlayer from 'react-player'
 
 
 function NewModalDesign({Content}) {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [current, setCurrent] = useState(0);
 
     const length = Content.length;
