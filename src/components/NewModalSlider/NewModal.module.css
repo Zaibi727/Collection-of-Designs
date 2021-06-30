@@ -18,7 +18,7 @@ button:focus {
 .issue{
     background-color: transparent!important;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 .modal{
@@ -40,7 +40,7 @@ margin: 0 auto;
 }
 .centerContent{
     border-radius: 15px;
-    width: 350px;
+    width: 270px;
     height: 650px;
     margin-top: 70px;
     margin-bottom: 30px;
@@ -66,17 +66,17 @@ margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 15px auto;
+    margin: 10px auto;
     background-color: gray;
     border-radius: 10px;
-    padding-top: 7px;
+    padding-top: 4px;
     text-align: center;
 }
 .sectionMid div{
-    margin-bottom: 7px;
+    margin-bottom: 4px;
 }
 .p1{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     margin-top: -5px;
     color: rgb(175, 171, 171);
@@ -94,21 +94,20 @@ margin: 0 auto;
 }
 .reactPlayer{
     width: 100% !important;
-    max-width: 400px;
+    max-width: 300px;
     height: 470px !important;
     border-radius: 10px !important;
-    border-radius: 10px;
     overflow: hidden;
 }
 .profilename{
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     color: white;
     top: -5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .instaIcon{
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(175, 171, 171);
 }
 .accountId{
@@ -122,7 +121,7 @@ margin: 0 auto;
 @media only screen and (max-width: 1250px){
     .centerContent{
         border-radius: 15px;
-        width: 350px;
+        width: 270px;
         height: 650px;
         margin-top: 170px;
         margin-bottom: 30px;
@@ -132,7 +131,7 @@ margin: 0 auto;
         }
         .reactPlayer{
             width: 100% !important;
-            max-width: 400px;
+            max-width: 300px;
             height: 380px !important;
             border-radius: 10px !important;
             border-radius: 10px;
@@ -142,7 +141,7 @@ margin: 0 auto;
 @media only screen and (max-width: 1050px){
     .centerContent{
         border-radius: 15px;
-        width: 350px;
+        width: 270px;
         height: 650px;
         margin-top: 170px;
         margin-bottom: 30px;
@@ -152,7 +151,7 @@ margin: 0 auto;
         }
         .reactPlayer{
             width: 100% !important;
-            max-width: 400px;
+            max-width: 300px;
             height: 380px !important;
             border-radius: 10px !important;
             border-radius: 10px;
@@ -162,7 +161,7 @@ margin: 0 auto;
 @media only screen and (max-width: 800px){
     .centerContent{
         border-radius: 15px;
-        width: 350px;
+        width: 270px;
         height: 650px;
         margin-top: 170px;
         margin-bottom: 30px;
@@ -172,7 +171,7 @@ margin: 0 auto;
         }
         .reactPlayer{
             width: 100% !important;
-            max-width: 400px;
+            max-width: 300px;
             height: 380px !important;
             border-radius: 10px !important;
             border-radius: 10px;
