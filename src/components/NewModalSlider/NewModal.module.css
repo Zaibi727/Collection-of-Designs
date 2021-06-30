@@ -69,14 +69,14 @@ margin-right: 50px !important;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: -5px 0px 10px 0px;
+    margin: 15px auto;
     background-color: gray;
     border-radius: 10px;
-    padding-top: 10px;
+    padding-top: 7px;
     text-align: center;
 }
 .sectionMid div{
-    margin-bottom: -7px;
+    margin-bottom: 7px;
 }
 .p1{
     font-size: 12px;
@@ -112,7 +112,7 @@ margin-right: 50px !important;
     color: rgb(175, 171, 171);
 }
 .accountId{
-    margin-top: -15px;
+    margin-top: -1px;
     font-size: 12px;
     color: rgb(175, 171, 171);
 }
