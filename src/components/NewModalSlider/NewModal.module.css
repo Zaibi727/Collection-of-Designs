@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.arrow{
+    font-size: 20px;
+    color: rgb(255, 255, 255) !important;
+    border: none;
+    background-color: transparent;
+}
+.issue{
+    background-color: transparent!important;
+    border: none;
+    font-size: 30px;
+    margin-top: -10px;
+    margin-right: 10px;
+    color: white;
+}
+.modal{
+    margin:  0px auto 50px auto;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.modalContentWrapper{
+    display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0px;
+width: 100%;
+margin: 0 auto;
+}
+.centerContent{
+border-radius: 15px;
+width: 350px;
+height: 650px;
+margin: 0 auto;
+margin-left: 50px !important;
+margin-right: 50px !important;
+
+}
+.sectionTop{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionTopDivOne{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionTopDivOne img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.sectionMid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: -5px 0px 10px 0px;
+    background-color: gray;
+    border-radius: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.sectionMid div{
+    margin-bottom: -7px;
+}
+.p1{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -5px;
+    color: rgb(175, 171, 171);
+}
+.p2{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: white;
+}
+.sectionBottom{
+    width: 100%;
+    border-radius: 30px !important;
+}
+.reactPlayer{
+    width: 100% !important;
+    max-width: 400px;
+    height: 500px !important;
+    border-radius: 10px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.profilename{
+    font-weight: 600;
+    position: relative;
+    color: white;
+}
+.instaIcon{
+    font-size: 20px;
+    color: rgb(175, 171, 171);
+}
+.accountId{
+    margin-top: -15px;
+    font-size: 12px;
+    color: rgb(175, 171, 171);
+}
+.dot{
+    color: rgb(175, 171, 171);
+}
