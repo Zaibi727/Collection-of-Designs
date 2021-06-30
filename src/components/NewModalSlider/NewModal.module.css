@@ -120,3 +120,28 @@ margin-right: 50px !important;
 .dot{
     color: rgb(175, 171, 171);
 }
+
+@media only screen and (max-width: 1050px){
+    .centerContent{
+        border-radius: 15px;
+        width: 350px;
+        height: 650px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+        
+        }
+}
+@media only screen and (max-width: 800px){
+    .centerContent{
+        border-radius: 15px;
+        width: 350px;
+        height: 650px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+        
+        }
+}
