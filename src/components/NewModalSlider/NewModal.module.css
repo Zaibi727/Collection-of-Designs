@@ -91,7 +91,8 @@ margin: 0 auto;
 }
 .sectionBottom{
     width: 100%;
-    border-radius: 30px !important;
+    border-radius: 10px !important;
+    background-color: gray;
 }
 .reactPlayer{
     width: 100% !important;

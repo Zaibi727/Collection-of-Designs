@@ -102,6 +102,8 @@ function NewModalDesign({Content}) {
                                                     light ={content.mainVideo}
                                                     playing={true}
                                                     controls={true}
+                                                    config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+                                                    onContextMenu={e => e.preventDefault()}
                                                    />
                                                 </section>
                                             </div>
