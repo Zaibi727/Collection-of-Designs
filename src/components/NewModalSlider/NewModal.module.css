@@ -42,8 +42,6 @@ margin: 0 auto;
     border-radius: 15px;
     width: 270px;
     height: 650px;
-    margin-top: 70px;
-    margin-bottom: 30px;
     margin-left: 50px !important;
     margin-right: 50px !important;
     
@@ -95,7 +93,7 @@ margin: 0 auto;
 .reactPlayer{
     width: 100% !important;
     max-width: 300px;
-    height: 470px !important;
+    height: 500px !important;
     border-radius: 10px !important;
     overflow: hidden;
 }
@@ -131,8 +129,8 @@ margin: 0 auto;
         }
         .reactPlayer{
             width: 100% !important;
-            max-width: 300px;
-            height: 380px !important;
+            max-width: 270px;
+            height: 450px !important;
             border-radius: 10px !important;
             border-radius: 10px;
             overflow: hidden;
@@ -152,7 +150,7 @@ margin: 0 auto;
         .reactPlayer{
             width: 100% !important;
             max-width: 300px;
-            height: 380px !important;
+            height: 270px !important;
             border-radius: 10px !important;
             border-radius: 10px;
             overflow: hidden;
@@ -171,7 +169,7 @@ margin: 0 auto;
         }
         .reactPlayer{
             width: 100% !important;
-            max-width: 300px;
+            max-width: 270px;
             height: 380px !important;
             border-radius: 10px !important;
             border-radius: 10px;
