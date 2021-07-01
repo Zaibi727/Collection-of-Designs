@@ -80,8 +80,8 @@ function ModalWithTabContainer() {
 
                      <section className={styles.sec2}>
                          <div className={styles.tabdiv}>
-                             <p   style={ show ? {marginBottom: '0px', paddingBottom: '10px', borderBottom: 'none',} : {marginBottom: '0px', paddingBottom: '10px', borderBottom: '2px solid black',}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
-                             <p style={ show ? {marginBottom: '0px', paddingBottom: '10px', borderBottom: '2px solid black',} : {marginBottom: '0px', paddingBottom: '10px', borderBottom: 'none',}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
+                         <p   style={ show ? {marginBottom: '0px', paddingBottom: '10px', borderBottom: 'none', color: 'rgb(153, 149, 149)'} : {marginBottom: '0px', paddingBottom: '10px', borderBottom: '2px solid black', color: 'black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
+                             <p style={ show ? {marginBottom: '0px', paddingBottom: '10px', borderBottom: '2px solid black', color: 'black'} : {marginBottom: '0px', paddingBottom: '10px', borderBottom: 'none', color: 'rgb(153, 149, 149)'}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
                          </div>
                      </section>
                      <section className={styles.sec3}>
