@@ -89,7 +89,7 @@ function ModalWithTabContainer() {
                            <div className={styles.brandDiv}>
                                <img className={styles.brandimage} src={data.brandimage} />
                                <div>
-                                   <p eclassName={styles.brandname}>{data.brandname}</p>
+                                   <p className={styles.brandname}>{data.brandname}</p>
                                    <p className={styles.discount}>Discount: <span className={styles.dicountcount}>{data.discount}</span></p>
                                </div>
                            </div>

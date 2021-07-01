@@ -31,19 +31,21 @@
     padding: 10px 20px;
 }
 .name{
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: -7px;
 }
 .location{
     color: gray;
-    margin-top: -10px;
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 13px;
     font-weight: 500;
 }
 .socialdiv{
     display: flex;
     justify-content: space-between;
     margin: 0px 15px;
-    margin-top: -10px;
+    margin-top: 5px;
     padding-bottom: 10px;
     border-bottom: 1px solid lightgray;
 }
@@ -72,7 +74,7 @@
 }
 .brandDiv{
     display: flex;
-    padding: 0px 15px;
+    padding: 10px 15px;
 }
 .brandimage{
     width: 40px;
@@ -81,17 +83,17 @@
     margin-right: 7px;
 }
 .brandname{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700 !important;
 }
 .discount{
-    margin-top: -20px;
-    font-size: 13px;
+    margin-top: 0px;
+    font-size: 14px;
     color: rgb(153, 149, 149);
 }
 .dicountcount{
     color: black;
-    font-weight: 600;
+    font-weight: 700;
 }
 .text{
     font-size: 13px;
@@ -115,15 +117,15 @@
     right: 10px;
     top: 10px;
     border: none;
-    background-color: rgb(150, 152, 155);
+    background-color: rgb(0,0,0,0.4);
     color: white;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 .reject {
     background-color: transparent;
@@ -146,7 +148,8 @@
 .bottombtns{
     display: flex;
     justify-content: center;
-    margin-top: -5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .ActivationCodehead{
@@ -154,7 +157,7 @@
     padding: 0px 15px;
 }
 .codebottom{
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(153, 149, 149);
     padding: 0px 15px;
     font-weight: 500;
