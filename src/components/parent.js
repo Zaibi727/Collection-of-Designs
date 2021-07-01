@@ -94,7 +94,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                <ModalWithTabContainer />
+                 <ModalWithTabContainer />
            </div>
          );
     }
