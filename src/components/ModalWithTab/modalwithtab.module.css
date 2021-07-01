@@ -62,11 +62,11 @@
     padding: 0px 0px;
 }
 .left{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 .right{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 .heading{
@@ -157,6 +157,7 @@
 .ActivationCodehead{
     font-weight: 600;
     padding: 0px 15px;
+    font-size: 14px;
 }
 .codebottom{
     font-size: 12px;

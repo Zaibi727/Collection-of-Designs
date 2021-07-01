@@ -16,8 +16,8 @@ function ActivationCode() {
               className={styles.reactCodeInput} 
               type='text' 
               fields={5} 
-                  fieldWidth={23}
-                  fieldHeight={23}
+                  fieldWidth={201}
+                  fieldHeight={21}
                   style={{margin: '10px'}}
               />
             </div>  
