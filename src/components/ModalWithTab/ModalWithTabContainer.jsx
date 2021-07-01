@@ -14,7 +14,7 @@ import SocialIconsButton from './socialIconsButton';
 import ActivationCode from './ActivationCode';
 
 function ModalWithTabContainer() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [data, setData] = useState({
         mainimage: './images/eight5.jpg',
         name: "Arlene Steward",
