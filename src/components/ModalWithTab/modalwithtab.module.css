@@ -1,0 +1,165 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.mmm{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.contentCover{
+ width: 250px !important;
+ background-color: rgb(255, 255, 255);
+ position: relative;
+ margin: 0 auto;
+ border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
+
+}
+.mainPic{
+    width: 100%;
+    height: 150px !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.nameloc{
+    padding: 10px 20px;
+}
+.name{
+    font-weight: 700;
+}
+.location{
+    color: gray;
+    margin-top: -10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.socialdiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.sec2{
+    padding: 10px 15px;
+    
+}
+.tabdiv{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 0px 0px;
+}
+.left{
+    font-size: 14px;
+    font-weight: 500;
+}
+.right{
+    font-size: 14px;
+    font-weight: 500;
+}
+.heading{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+.brandDiv{
+    display: flex;
+    padding: 0px 15px;
+}
+.brandimage{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+.brandname{
+    font-size: 13px;
+    font-weight: 700 !important;
+}
+.discount{
+    margin-top: -20px;
+    font-size: 13px;
+    color: rgb(153, 149, 149);
+}
+.dicountcount{
+    color: black;
+    font-weight: 600;
+}
+.text{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(153, 149, 149);
+    padding: 0px 15px 7px 15px;
+}
+.socialiconbtn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: white !important;
+}
+.closeModal{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background-color: rgb(150, 152, 155);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.reject {
+    background-color: transparent;
+    padding: 5px 25px;
+    color: rgb(0, 0, 0);
+    margin: 3px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+.approve {
+    background-color: #000;
+    color: white;
+    padding: 5px 25px;
+    margin: 3px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.bottombtns{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.ActivationCodehead{
+    font-weight: 600;
+    padding: 0px 15px;
+}
+.codebottom{
+    font-size: 14px;
+    color: rgb(153, 149, 149);
+    padding: 0px 15px;
+    font-weight: 500;
+}
+.reactCodeInput{
+    margin: 0px 15px;
+    width: 235px !important;
+}

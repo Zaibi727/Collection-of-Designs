@@ -1,0 +1,12 @@
+.styles_react-code-input__CRulA > input{
+    border: solid 1px #a8adb7 !important; 
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+    color: #525461;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-appearance: initial;
+}
