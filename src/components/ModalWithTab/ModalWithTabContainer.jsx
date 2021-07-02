@@ -28,7 +28,7 @@ function ModalWithTabContainer() {
         text: "This offer allows you to receive from our local bussines partner a discount on the final bill as a member of the SQUARE community",
     });
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
 
     const tabOpen = () => {
         setShow(true);
@@ -37,27 +37,17 @@ function ModalWithTabContainer() {
         setShow(false);
     }
 
-    const showModal = () => {
-        setIsOpen(true);
-     };
-
      const hideModal = () => {
         setIsOpen(false);
      };
 
-     const customStyles = {
-        overlay: {
-          backgroundColor: "rgb(0, 0, 0 , 0.2 )",
-        }, 
-      };
 
     return (
-        <div>
-             <Modal className={styles.mmm} isOpen={isOpen}  style={customStyles}>
-                 
-                 <div className={styles.contentCover}>
+        <div className={styles.cover}>
+             <div className={styles.mmm} style={ isOpen ? { display: 'block'} : { display: 'none'}}>
+             <div  className={styles.scrollcover}>
                   <div className={styles.scroll}>
-                 <button onClick={hideModal} className={styles.closeModal}>
+                  <button onClick={hideModal} className={styles.closeModal}>
                     <span aria-hidden="true">&times;</span>
                  </button>
                      <section>
@@ -101,10 +91,10 @@ function ModalWithTabContainer() {
                                 <RejectApprove type="light" title="Reject" />
                                 <RejectApprove type="dark" title="Approve" />
                     </div>
-                 </div>
-             </Modal>
-
+                    </div>
+                </div>
         </div>
+             
     )
 }
 
