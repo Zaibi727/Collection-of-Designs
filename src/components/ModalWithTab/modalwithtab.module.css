@@ -34,6 +34,12 @@
     background-color: transparent;
     border-radius: 10%;
   }
+  ::-webkit-scrollbar-button {
+    height: 10px !important; 
+  }
+  ::-webkit-scrollbar-track {
+    margin-bottom: 20px;
+}
  
 ::-webkit-scrollbar-thumb {
     background-color: rgb(112, 107, 107);

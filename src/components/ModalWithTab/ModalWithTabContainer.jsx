@@ -28,7 +28,7 @@ function ModalWithTabContainer() {
         text: "This offer allows you to receive from our local bussines partner a discount on the final bill as a member of the SQUARE community",
     });
 
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
 
     const tabOpen = () => {
         setShow(true);
@@ -47,14 +47,12 @@ function ModalWithTabContainer() {
 
      const customStyles = {
         overlay: {
-          backgroundColor: "rgb(0, 0, 0 , 0.7 )",
+          backgroundColor: "rgb(0, 0, 0 , 0 )",
         }, 
       };
 
     return (
         <div>
-            <h4>new task with some complexiety</h4>
-               <button onClick={showModal}>open modal</button>
              <Modal className={styles.mmm} isOpen={isOpen}  style={customStyles}>
                  
                  <div className={styles.contentCover}>
