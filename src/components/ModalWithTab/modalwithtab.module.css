@@ -53,17 +53,17 @@
     border-top-right-radius: 15px;
 }
 .nameloc{
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 .name{
     font-weight: 600;
-    font-size: 15px;
-    margin-top: -7px;
+    font-size: 14px;
+    margin-top: -5px;
 }
 .location{
     color: #ada7a7;
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
 }
 .socialdiv{
@@ -85,16 +85,18 @@
     padding: 0px 0px;
 }
 .left{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
 }
 .right{
-    font-size: 14px;
+    cursor: pointer;
+    font-size: 13px;
     font-weight: 500;
 }
 .heading{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     padding: 0px 15px;
 }
 .brandDiv{
@@ -108,12 +110,12 @@
     margin-right: 7px;
 }
 .brandname{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700 !important;
 }
 .discount{
     margin-top: 0px;
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(153, 149, 149);
 }
 .dicountcount{
@@ -121,7 +123,7 @@
     font-weight: 700;
 }
 .text{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: rgb(153, 149, 149);
     padding: 0px 15px 7px 15px;
@@ -154,7 +156,7 @@
 }
 .reject {
     background-color: transparent;
-    padding: 3px 20px;
+    padding: 5px 20px;
     color: rgb(0, 0, 0);
     margin: 3px;
     border: 2px solid black;
