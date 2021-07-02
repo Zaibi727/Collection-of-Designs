@@ -47,7 +47,7 @@ function ModalWithTabContainer() {
 
      const customStyles = {
         overlay: {
-          backgroundColor: "rgb(0, 0, 0 , 0 )",
+          backgroundColor: "rgb(0, 0, 0 , 0.2 )",
         }, 
       };
 
