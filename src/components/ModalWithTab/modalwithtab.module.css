@@ -13,19 +13,36 @@
     overflow-y: scroll;
 }
 .contentCover{
- width: 250px !important;
+ width: 260px !important;
  background-color: rgb(255, 255, 255);
- position: relative;
- margin: 0 auto;
+ position: absolute;
+ right: 30px;
+ top: 30px;
  border-top-left-radius: 15px;
  border-top-right-radius: 15px;
  border-bottom-left-radius: 15px;
  border-bottom-right-radius: 15px;
 
 }
+.scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 450px;
+}
+::-webkit-scrollbar {
+    width: 3px; 
+    background-color: transparent;
+    border-radius: 10%;
+  }
+ 
+::-webkit-scrollbar-thumb {
+    background-color: rgb(112, 107, 107);
+    border-right: none;
+    border-left: none;
+}
 .mainPic{
     width: 100%;
-    height: 150px !important;
+    height: 140px !important;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }

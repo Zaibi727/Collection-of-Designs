@@ -14,7 +14,7 @@ import SocialIconsButton from './socialIconsButton';
 import ActivationCode from './ActivationCode';
 
 function ModalWithTabContainer() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const [data, setData] = useState({
         mainimage: './images/eight5.jpg',
         name: "Arlene Steward",
@@ -53,11 +53,12 @@ function ModalWithTabContainer() {
 
     return (
         <div>
-            <h4>new task</h4>
+            <h4>new task with some complexiety</h4>
                <button onClick={showModal}>open modal</button>
              <Modal className={styles.mmm} isOpen={isOpen}  style={customStyles}>
                  
                  <div className={styles.contentCover}>
+                  <div className={styles.scroll}>
                  <button onClick={hideModal} className={styles.closeModal}>
                     <span aria-hidden="true">&times;</span>
                  </button>
@@ -80,7 +81,7 @@ function ModalWithTabContainer() {
 
                      <section className={styles.sec2}>
                          <div className={styles.tabdiv}>
-                         <p   style={ show ? {marginBottom: '0px', paddingBottom: '10px', borderBottom: 'none', color: 'rgb(153, 149, 149)'} : {marginBottom: '0px', paddingBottom: '10px', borderBottom: '2px solid black', color: 'black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
+                             <p   style={ show ? {marginBottom: '0px', paddingBottom: '10px', borderBottom: 'none', color: 'rgb(153, 149, 149)'} : {marginBottom: '0px', paddingBottom: '10px', borderBottom: '2px solid black', color: 'black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
                              <p style={ show ? {marginBottom: '0px', paddingBottom: '10px', borderBottom: '2px solid black', color: 'black'} : {marginBottom: '0px', paddingBottom: '10px', borderBottom: 'none', color: 'rgb(153, 149, 149)'}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
                          </div>
                      </section>
@@ -94,14 +95,14 @@ function ModalWithTabContainer() {
                                </div>
                            </div>
                            <p style={ show ? { borderBottom: 'none'} : { borderBottom: '1px solid lightgray'}} className={styles.text}>{data.text}</p>
-                                                   
-                           {show ? <ActivationCode /> : null}
-
-                          <div className={styles.bottombtns}>
+                              <p className={styles.text}>{data.text}</p>                     
+                           {show ? <ActivationCode /> : null}   
+                     </section>
+                     </div>
+                     <div className={styles.bottombtns}>
                                 <RejectApprove type="light" title="Reject" />
                                 <RejectApprove type="dark" title="Approve" />
-                          </div>
-                     </section>
+                    </div>
                  </div>
              </Modal>
 
