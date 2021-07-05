@@ -7,7 +7,7 @@
     color: #525461;
     text-align: center;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 5px !important;
     -webkit-appearance: initial;
 }
 
