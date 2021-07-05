@@ -39,7 +39,7 @@ section{
 }
 ::-webkit-scrollbar {
     width: 2px; 
-    background-color: transparent;
+    background-color: white;
   }
   ::-webkit-scrollbar-button {
     height: 5px !important; 
