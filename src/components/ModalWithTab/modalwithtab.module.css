@@ -36,9 +36,8 @@
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 3px; 
+    width: 1px; 
     background-color: transparent;
-    border-radius: 10%;
   }
   ::-webkit-scrollbar-button {
     height: 50px !important; 
@@ -48,7 +47,7 @@
 }
  
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(199, 194, 194);
+    background-color: lightgray;
     border-right: none;
     border-left: none;
 }
