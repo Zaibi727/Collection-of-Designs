@@ -25,9 +25,11 @@
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: white;
     overflow: hidden;
   
+}
+section{
+    background-color: white;
 }
 .scrollableportion{
     height: calc(100% - 50px);
