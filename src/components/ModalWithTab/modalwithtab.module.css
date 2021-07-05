@@ -47,7 +47,7 @@
 }
  
 ::-webkit-scrollbar-thumb {
-    background-color: lightgray;
+    background-color: gray;
     border-right: none;
     border-left: none;
 }
