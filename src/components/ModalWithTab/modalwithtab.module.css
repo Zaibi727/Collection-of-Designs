@@ -42,7 +42,7 @@ section{
     background-color: transparent;
   }
   ::-webkit-scrollbar-button {
-    height: 30px !important; 
+    height: 5px !important; 
   }
   ::-webkit-scrollbar-track {
     margin-bottom: 0px;
