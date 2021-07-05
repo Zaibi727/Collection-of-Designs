@@ -184,7 +184,10 @@ section{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 10px 0px;
+    padding: 15px 0px 10px 0px;
+    margin-top: -10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: rgb(255, 255, 255);
 }
 
