@@ -38,7 +38,7 @@ function ModalWithTabContainer() {
     }
 
      const hideModal = () => {
-        setIsOpen(false);
+        setIsOpen(true);
      };
 
 
@@ -70,7 +70,7 @@ function ModalWithTabContainer() {
                      <section className={styles.sec3}>
                            <p className={styles.heading}>{data.offerhead}</p>  
                            <div className={styles.brandDiv}>
-                               <img className={styles.brandimage} src={data.brandimage} />
+                               <img className={styles.brandimage} src={data.brandimage}  />
                                <div>
                                    <p className={styles.brandname}>{data.brandname}</p>
                                    <p className={styles.discount}>Discount: <span className={styles.dicountcount}>{data.discount}</span></p>
@@ -82,10 +82,12 @@ function ModalWithTabContainer() {
                               </div> 
                      </section>
                      </div>
-               <div className={styles.bottombtns}>
-                                <RejectApprove type="light" title="Reject" />
-                                <RejectApprove type="dark" title="Approve" />
-                 </div>
+                     <div className={styles.bottombtns}>
+                                <div className={styles.btns}>
+                                   <RejectApprove type="light" title="Reject" />
+                                   <RejectApprove type="dark" title="Approve" />
+                                </div>
+                     </div>
              </div>
         </div>
              
