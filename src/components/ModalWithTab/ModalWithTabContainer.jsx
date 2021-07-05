@@ -16,7 +16,7 @@ import ActivationCode from './ActivationCode';
 function ModalWithTabContainer() {
     const [isOpen, setIsOpen] = useState(true);
     const [data, setData] = useState({
-        mainimage: './images/eight5.jpg',
+        mainimage: './images/eight3.jpg',
         name: "Arlene Steward",
         location: 'United States',
         tableft: 'Talent profile',
@@ -44,12 +44,8 @@ function ModalWithTabContainer() {
 
     return (
         <div className={styles.cover}>
-             <div className={styles.mmm} style={ isOpen ? { display: 'block'} : { display: 'none'}}>
-             <div  className={styles.scrollcover}>
-                  <div className={styles.scroll}>
-                  <button onClick={hideModal} className={styles.closeModal}>
-                    <span aria-hidden="true">&times;</span>
-                 </button>
+             <div className={styles.card}>
+                     <div className={styles.scrollableportion}>
                      <section>
                          <img src={data.mainimage} className={styles.mainPic} />
                          <div className={styles.nameloc}>
@@ -65,8 +61,6 @@ function ModalWithTabContainer() {
                              <SocialIconsButton Icon={MdKeyboardArrowDown} />
                          </div>
                      </section>
-                     {/*--top-section--*/}
-
                      <section className={styles.sec2}>
                          <div className={styles.tabdiv}>
                              <p   style={ show ? {marginBottom: '0px', paddingBottom: '11px', borderBottom: 'none', color: 'rgb(153, 149, 149)'} : {marginBottom: '0px', paddingBottom: '11px', borderBottom: '2px solid black', color: 'black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
@@ -82,17 +76,17 @@ function ModalWithTabContainer() {
                                    <p className={styles.discount}>Discount: <span className={styles.dicountcount}>{data.discount}</span></p>
                                </div>
                            </div>
-                           <p style={ show ? { borderBottom: 'none'} : { borderBottom: '1px solid lightgray'}} className={styles.text}>{data.text}</p>
-                              <p className={styles.text}>{data.text}</p>                     
-                           {show ? <ActivationCode /> : null}   
+                           <div style={ show ? { borderBottom: 'none'} : { borderBottom: '1px solid lightgray'}}>                   
+                                 <p className={styles.text}>{data.text}</p>
+                                 <p style={ show ? { display: 'block'} : { display: 'none'}}><ActivationCode /></p>
+                              </div> 
                      </section>
                      </div>
-                     <div className={styles.bottombtns}>
+               <div className={styles.bottombtns}>
                                 <RejectApprove type="light" title="Reject" />
                                 <RejectApprove type="dark" title="Approve" />
-                    </div>
-                    </div>
-                </div>
+                 </div>
+             </div>
         </div>
              
     )
