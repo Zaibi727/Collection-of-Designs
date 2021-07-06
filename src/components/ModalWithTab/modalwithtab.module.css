@@ -13,10 +13,10 @@
     flex-direction: column;
 }
 .card{
-    width: 240px;
-    height: 80vh;
+    width: 220px;
+    height: calc(100% - 20vh);
     text-align: left;
-    position: fixed !important;
+    position: fixed;
     right: 10px;
     bottom: 10px;
     border-top-left-radius: 15px;
@@ -27,14 +27,16 @@
   
 }
 .scrollableportion{
-    height: 70vh;
+    height: 73vh;
     overflow-y: scroll; 
     overflow-x: hidden;
     background-color: rgb(255, 255, 255);
+    margin-bottom: -2px;
 }
 .bottombtns{
-    height: 10vh;
-    margin-top: -2px;
+    border-top: 1px solid rgb(219, 216, 216);
+    height: calc(80vh - 73vh);
+    max-height: 84px;
     background-color: rgb(255, 255, 255);
 }
 .btns{
@@ -50,9 +52,7 @@
     color: rgb(0, 0, 0);
     border: 2px solid black;
     width: 47%;
-    height: 6vh;
-    max-height: 8vh;
-    border-radius: 0.5em;
+    border-radius: 0.4em;
     font-weight: 500;
     font-size: 1em;
 }
@@ -60,10 +60,8 @@
     background-color: #000;
     color: white;
     width: 47%;
-    height: 6vh;
-    max-height: 8vh;
     border: 2px solid black;
-    border-radius: 0.5em;
+    border-radius: 0.4em;
     font-size: 1em;
 }
 ::-webkit-scrollbar {
@@ -84,7 +82,7 @@
 }
 .mainPic{
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     background-color: transparent !important;
 }
 .nameloc{
