@@ -1,3 +1,75 @@
+
+.talentSec1{
+    padding: 10px 15px;
+    border-bottom: 3px solid lightgray;
+}
+.boldhead{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.headContent{
+    font-size: 13px;
+    margin-top: -8px;
+    color: #c7c8d3;
+}
+.topdivbottomborder{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+.agegender{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.verfiedambassdor{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--talent-profile---*/
+.socialMedialDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.medianame{
+    color: #c7c8d3;
+    font-size: 14px;
+}
+.medialdetial{
+    font-size: 12px;
+    font-weight: 500;
+}
+.instagram{
+    border-bottom: 1px solid rgb(235, 233, 233);
+    padding: 10px 0px;
+}
+.facebook{
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(236, 233, 233);
+}
+.tiktok{
+    padding: 10px 0px;
+}
+/*--social-media--*/
+.lastportion{
+    padding: 20px 15px;
+}
+.tabdivsecond{
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+/*--last-portion-portfoilio--instgram--*/
 *{
     padding: 0px;
     margin: 0px;

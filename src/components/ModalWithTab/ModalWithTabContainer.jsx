@@ -14,10 +14,28 @@ import SocialIconsButton from './socialIconsButton';
 import ActivationCode from './ActivationCode';
 
 import { AiOutlineStar } from "react-icons/ai";
+import { GoVerified } from "react-icons/go";
+import TalentProfile from './TalentProfile';
 
 function ModalWithTabContainer() {
     const [isOpen, setIsOpen] = useState(true);
     const [data, setData] = useState({
+        blogger: 'Blogger',
+        bloggerDetial: 'Profession',
+        experience: 'Content Creator, Model, Singer',
+        experienceDetial: 'Further expertise',
+        fashion: 'Fashion',
+        fashionDetial: 'Main Speciality',
+        interest: 'Art & Design, Gaming, Health & Well..',
+        interestDetial: 'Additional Interests',
+        ageLabel: '23 y.o.',
+        age: 'age',
+        genderLabel: 'Female',
+        gender: 'Gender',
+        verified: 'Verified',
+        verifiedIcon: <GoVerified />,
+        badge: 'Badges',
+        ambassador: 'Ambassador',
         mainimage: './images/eight4.jpg',
         name: "Arlene Steward",
         location: 'United States',
@@ -77,19 +95,10 @@ function ModalWithTabContainer() {
                              <p style={ show ? {marginBottom: '0px', paddingBottom: '6px', color: 'black', borderBottom: '2px solid black'} : {marginBottom: '0px', paddingBottom: '6px', color: 'rgb(153, 149, 149)', borderBottom: 'none'}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
                          </div>
                      </section>
-                     <section className={styles.sec3}>
-                           <p className={styles.heading}>{data.offerhead}</p>  
-                           <div className={styles.brandDiv}>
-                               <img className={styles.brandimage} src={data.brandimage}  />
-                               <div>
-                                   <p className={styles.brandname}>{data.brandname}</p>
-                                   <p className={styles.discount}>Discount: <span className={styles.dicountcount}>{data.discount}</span></p>
-                               </div>
-                           </div>
-                           <div style={ show ? { borderBottom: 'none'} : { borderBottom: '1px solid lightgray'}}>                   
-                                 <p className={styles.text}>{data.text}</p>
-                                 <p style={ show ? { display: 'block'} : { display: 'none'}}><ActivationCode /></p>
-                              </div> 
+                     <section className={styles.sec3}>                          
+                                {/*--talent-profiletab--*/}
+                                  <p style={ show ? { display: 'none'} : { display: 'block'}}><TalentProfile /></p>
+                                  <p style={ show ? { display: 'block'} : { display: 'none'}}><ActivationCode /></p> 
                      </section>
                      </div>
                      <div className={styles.bottombtns}>
