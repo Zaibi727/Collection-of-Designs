@@ -78,19 +78,16 @@ function ModalWithTabContainer() {
                          </div>
                      </section>
                      <section className={styles.sec3}>
-                           <div>
-                               <p className={styles.p1}>{data.profession}</p>
-                               <p className={styles.p2}>{data.professionDetial}</p>
-                           </div>
-                           <div>
-                               <p className={styles.p1}>{data.experience}</p>
-                               <p className={styles.p2}>{data.experienceDetial}</p>
-                           </div>
-                           <div>
-                               <p className={styles.p1}>{data.fashion}</p>
-                               <p className={styles.p2}>{data.fashionDetial}</p>
+                           <p className={styles.heading}>{data.offerhead}</p>  
+                           <div className={styles.brandDiv}>
+                               <img className={styles.brandimage} src={data.brandimage}  />
+                               <div>
+                                   <p className={styles.brandname}>{data.brandname}</p>
+                                   <p className={styles.discount}>Discount: <span className={styles.dicountcount}>{data.discount}</span></p>
+                               </div>
                            </div>
                            <div style={ show ? { borderBottom: 'none'} : { borderBottom: '1px solid lightgray'}}>                   
+                                 <p className={styles.text}>{data.text}</p>
                                  <p style={ show ? { display: 'block'} : { display: 'none'}}><ActivationCode /></p>
                               </div> 
                      </section>
