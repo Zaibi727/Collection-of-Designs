@@ -52,6 +52,7 @@
     border-radius: 0.4em;
     font-weight: 500;
     font-size: 1em;
+    padding: 0.3rem;
 }
 .approve {
     background-color: #000;
@@ -60,6 +61,7 @@
     border: 2px solid black;
     border-radius: 0.4em;
     font-size: 1em;
+    padding: 0.3rem;
 }
 ::-webkit-scrollbar {
     width: 2px; 
@@ -176,14 +178,18 @@
     position: absolute;
     color: white;
     background-color: rgb(0,0,0,0.1);
-    padding: 3px 10px;
+    padding: 5px 15px;
     border-bottom-right-radius: 15px;
 }
 .span1{
     margin-right: 5px;
+    padding: 0.3rem;
+    font-size: 14px;
 }
 .span2{
     font-size: 14px;
+    position: relative;
+    top: -2px !important;
 }
 .closeModal{
     position: absolute;
