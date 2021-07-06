@@ -13,10 +13,12 @@ import RejectApprove from './RejectApprove';
 import SocialIconsButton from './socialIconsButton';
 import ActivationCode from './ActivationCode';
 
+import { AiOutlineStar } from "react-icons/ai";
+
 function ModalWithTabContainer() {
     const [isOpen, setIsOpen] = useState(true);
     const [data, setData] = useState({
-        mainimage: './images/eight3.jpg',
+        mainimage: './images/eight4.jpg',
         name: "Arlene Steward",
         location: 'United States',
         tableft: 'Talent profile',
@@ -25,6 +27,8 @@ function ModalWithTabContainer() {
         brandimage: './images/eight4.jpg',
         brandname: 'Hair style & blow',
         discount: '15%',
+        starIcon: <AiOutlineStar />,
+        rating: '4.3',
         text: "This offer allows you to receive from our local bussines partner a discount on the final bill as a member of the SQUARE community",
     });
 
@@ -46,6 +50,12 @@ function ModalWithTabContainer() {
         <div className={styles.cover}>
              <div className={styles.card}>
                      <div className={styles.scrollableportion}>
+                     <div className={styles.ratingdiv}>
+                        <span className={styles.span1}>{data.starIcon}</span><span className={styles.span2}>{data.rating}</span>
+                     </div>
+                     <button onClick={hideModal} type="button" className={styles.closeModal} data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                    </button>
                      <section>
                          <img src={data.mainimage} className={styles.mainPic} />
                          <div className={styles.nameloc}>
@@ -63,8 +73,8 @@ function ModalWithTabContainer() {
                      </section>
                      <section className={styles.sec2}>
                          <div className={styles.tabdiv}>
-                             <p   style={ show ? {marginBottom: '0px', paddingBottom: '6px', borderBottom: 'none', color: 'rgb(153, 149, 149)'} : {marginBottom: '0px', paddingBottom: '6px', borderBottom: '2px solid black', color: 'black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
-                             <p style={ show ? {marginBottom: '0px', paddingBottom: '6px', borderBottom: '2px solid black', color: 'black'} : {marginBottom: '0px', paddingBottom: '6px', borderBottom: 'none', color: 'rgb(153, 149, 149)'}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
+                             <p   style={ show ? {marginBottom: '0px', paddingBottom: '6px', color: 'rgb(153, 149, 149)'} : {marginBottom: '0px', paddingBottom: '6px', color: 'black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
+                             <p style={ show ? {marginBottom: '0px', paddingBottom: '6px', color: 'black'} : {marginBottom: '0px', paddingBottom: '6px', color: 'rgb(153, 149, 149)'}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
                          </div>
                      </section>
                      <section className={styles.sec3}>
