@@ -16,6 +16,7 @@
 .topdivbottomborder{
     border-bottom: 1px solid lightgray;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .blue{
     color: blue;
