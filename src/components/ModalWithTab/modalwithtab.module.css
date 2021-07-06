@@ -38,6 +38,10 @@
 .socialMedialDiv{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bottommargin{
+    margin-bottom: 15px;
 }
 .medianame{
     color: #c7c8d3;

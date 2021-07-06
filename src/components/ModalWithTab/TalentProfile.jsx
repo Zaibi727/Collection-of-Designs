@@ -52,40 +52,40 @@ function TalentProfile() {
     return (
         <div className={styles.talentprofilewrapper}>
            <section className={styles.talentSec1}>
-              <div>
+              <div className={styles.bottommargin}>
                  <p className={styles.boldhead}>{data.blogger}</p>
                  <p className={styles.headContent}>{data.bloggerDetial}</p>
               </div>
-              <div>
+              <div className={styles.bottommargin}>
                  <p className={styles.boldhead}>{data.experience}</p>
                  <p className={styles.headContent}>{data.experienceDetial}</p>
               </div>
-              <div>
+              <div className={styles.bottommargin}>
                  <p className={styles.boldhead}>{data.fashion}</p>
                  <p className={styles.headContent}>{data.fashionDetial}</p>
               </div>
-              <div className={styles.topdivbottomborder}>
+              <div className={styles.bottommargin} className={styles.topdivbottomborder}>
                  <p className={styles.boldhead}>{data.interest}</p>
                  <p className={styles.headContent}>{data.interestDetial}</p>
               </div>
                         
                 {/*--profession-experience-fashion--*/}
                <div className={styles.agegender}>
-                  <div>
+                  <div className={styles.bottommargin}>
                       <p className={styles.boldhead}>{data.ageLabel}</p>
                       <p className={styles.headContent}>{data.age}</p>
                   </div>
-                   <div>
+                   <div className={styles.bottommargin}>
                       <p className={styles.boldhead}>{data.genderLabel}</p>
                       <p className={styles.headContent}>{data.gender}</p>
                    </div>
               </div>
               <div className={styles.verfiedambassdor}>
-                  <div>
+                  <div className={styles.bottommargin}>
                       <p className={styles.boldhead}><span className={styles.blue}>{data.verifiedIcon}</span>{data.verified}</p>
                       <p className={styles.headContent}>{data.badge}</p>
                   </div>
-                   <div>
+                   <div className={styles.bottommargin}>
                       <p className={styles.boldhead}><sapn className={styles.green}>{data.verifiedIcon}</sapn>{data.ambassador}</p>
                    </div>
               </div>
