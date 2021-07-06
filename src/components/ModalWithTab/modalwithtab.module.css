@@ -113,6 +113,19 @@
     padding: 10px 15px;
     
 }
+.sec3{
+    padding: 0px 15px;
+}
+.p1{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.p2{
+    font-size: 12px;
+    margin-top: -8px;
+    color: #bdbec4;
+}
 .tabdiv{
     display: flex;
     justify-content: space-between;
