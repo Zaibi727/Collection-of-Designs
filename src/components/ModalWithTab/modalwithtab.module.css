@@ -315,6 +315,6 @@
     font-weight: 500;
 }
 .reactCodeInput{
-    margin: 0px 15px;
-    width: 235px !important;
+    margin: 0 auto;
+    width: 270px !important;
 }
