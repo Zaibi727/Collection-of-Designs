@@ -4,14 +4,14 @@
     border-bottom: 3px solid lightgray;
 }
 .boldhead{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     margin-bottom: 8px;
 }
 .headContent{
     font-size: 13px;
-    margin-top: -8px;
-    color: #c7c8d3;
+    margin-top: -5px;
+    color: #999999;
 }
 .topdivbottomborder{
     border-bottom: 1px solid lightgray;
@@ -20,9 +20,15 @@
 }
 .blue{
     color: blue;
+    position: relative;
+    top: 2px;
+    right: 3px;
 }
 .green{
     color: green;
+    position: relative;
+    top: 2px;
+    right: 3px;
 }
 .agegender{
     width: 70%;
@@ -45,7 +51,7 @@
     margin-bottom: 15px;
 }
 .medianame{
-    color: #c7c8d3;
+    color: #999999;
     font-size: 14px;
 }
 .medialdetial{
