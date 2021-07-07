@@ -85,7 +85,7 @@ import './dropDown.css';
 //import FormContainer from './ReactFormValidation/FormContainer';
 //import ModalSilderContainer from './ModalSlider/ModalSliderContainer';
 //import NewModalContainer from './NewModalSlider/NewModalContainer';
-import ModalWithTabContainer from './ModalWithTab/ModalWithTabContainer';
+import CalenderWithEditContainer from './CalendarWithEdit/CalenderWithEditContainer';
 
 class Parent extends Component {
 
@@ -94,7 +94,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                 <ModalWithTabContainer />
+                 <CalenderWithEditContainer />
            </div>
          );
     }
