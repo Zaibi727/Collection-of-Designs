@@ -145,8 +145,8 @@ function TalentProfile() {
 
            <section className={styles.lastportion}>
                          <div className={styles.tabdivsecond}>
-                             <p   style={ show ? {marginBottom: '0px', paddingBottom: '6px', color: 'rgb(153, 149, 149)', borderBottom: 'none'} : {marginBottom: '0px', paddingBottom: '6px', color: 'black', borderBottom: '2px solid black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
-                             <p   style={ show ? {marginBottom: '0px', paddingBottom: '6px', color: 'black', borderBottom: '2px solid black'} : {marginBottom: '0px', paddingBottom: '6px', color: 'rgb(153, 149, 149)', borderBottom: 'none'}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
+                             <p classNam={styles.ttt}   style={ show ? {marginBottom: '0px', paddingBottom: '6px', color: 'rgb(153, 149, 149)', borderBottom: 'none'} : {marginBottom: '0px', paddingBottom: '6px', color: 'black', borderBottom: '2px solid black'}} className={styles.left} onClick={tabClose}>{data.tableft}</p>
+                             <p classNam={styles.ttt}    style={ show ? {marginBottom: '0px', paddingBottom: '6px', color: 'black', borderBottom: '2px solid black'} : {marginBottom: '0px', paddingBottom: '6px', color: 'rgb(153, 149, 149)', borderBottom: 'none'}} className={styles.right} onClick={tabOpen}>{data.tabright}</p>
                          </div>
                          <div style={{marginTop: '15px'}}>
                               <p style={ show ? { display: 'none'} : { display: 'block'}}><PortfolioImages /></p>
