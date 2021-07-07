@@ -24,7 +24,7 @@ export default function CalenderWithEditContainer() {
 
     return (
         <div>
-              <button className={styles.openbtn} onClick={showModal}>Calendar Modal</button>
+              <button className={styles.openbtn} onClick={showModal}>July, 2021, Extreme Summer Season</button>
            <Modal className={styles.modii} show={isOpen} onHide={hideModal}>
              <div className={styles.sec1}>
                 <button type="button" className={styles.issue} data-dismiss="modal" aria-label="Close" onClick={hideModal}>
