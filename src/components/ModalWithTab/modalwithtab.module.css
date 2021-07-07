@@ -313,6 +313,7 @@
     color: rgb(153, 149, 149);
     padding: 0px 15px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 .reactCodeInput{
     margin: 0 auto;
