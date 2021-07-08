@@ -7,7 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    margin: 0px 20px;
+    border-bottom: 1px solid rgb(231, 226, 226);
 }
 .mdp{
     border: none !important;
@@ -16,7 +17,7 @@
 }
 .calendar{
     border: none !important;
-   margin: 20px auto;
+   margin: 5px auto;
    font-size: 14px;
    font-family: sans-serif;
 }
@@ -29,13 +30,13 @@ button:focus {
 }
 
 .modii{
-    margin: 20px auto 0px auto;
+    margin: 0px auto 0px auto;
 }
 .issue{
     position: absolute;
     background-color: transparent!important;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     right: 20px;
     top: 10px;
 }
@@ -60,10 +61,9 @@ button:focus {
 }
 .sec1{
     text-align: center;
-    padding: 30px 0px 10px 0px;
-    border-bottom: 1px solid rgb(238, 238, 238);
+    padding:10px 0px 0px 0px;
     margin: 0px 60px;
-    margin-bottom: 10px !important;
+    margin-bottom: 0px !important;
 }
 .sec2{
     padding: 25px 25px;

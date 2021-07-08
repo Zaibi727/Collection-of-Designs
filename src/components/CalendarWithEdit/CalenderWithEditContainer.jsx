@@ -9,9 +9,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { ImCross } from "react-icons/im";
 
 import CalenderEdit from './CalenderEdit';
+import AllDay from './AllDay';
+
 
 export default function CalenderWithEditContainer() {
     const [isOpen, setIsOpen] = React.useState(true);
+    const [ selectedOption, setSelectedOption] = useState(null);
+
+    const handleChange = (selectedOption, e) => {
+        setSelectedOption({ selectedOption: selectedOption });
+        console.log(`Option selected:`, selectedOption);
+      };
 
     const showModal = () => {
       setIsOpen(true);
@@ -23,21 +31,28 @@ export default function CalenderWithEditContainer() {
 
 
     return (
-        <div>
-              <button className={styles.openbtn} onClick={showModal}>July, 2021, Extreme Summer Season</button>
+        <div className={styles.container}>
+              <button className={styles.openbtn} onClick={showModal}>Calendar Modal</button>
            <Modal className={styles.modii} show={isOpen} onHide={hideModal}>
+             <div className={styles.ggg}>
              <div className={styles.sec1}>
                 <button type="button" className={styles.issue} data-dismiss="modal" aria-label="Close" onClick={hideModal}>
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <p>Manage calendar</p>
-                <div>
-                <CalenderEdit />
-               </div>
             </div>
-             <div className={styles.sec2}>
-               <Okbutton />
-            </div>
+           <div>
+               <div className={styles.calederDiv}>
+                    <CalenderEdit />
+                  </div>
+                  <div>
+                      <AllDay />
+                  </div>
+                  <div className={styles.okwraper}>
+                      <Okbutton />
+                  </div>
+              </div>
+              </div>
            </Modal>
         </div>
     )
