@@ -16,7 +16,7 @@ export default function DatePicker({endDate, selectDate, getSelectedDay, color, 
     const startDate = new Date();
     const lastDate = addDays(startDate, endDate || 90);
     const primaryColor = color || 'black';
-    const selectedStyle = {fontWeight:"bold",width:"60px",height:"30px",borderRadius:"20px",border:`1px solid ${primaryColor}`,color:primaryColor};
+    const selectedStyle = {fontWeight:"bold",width:"40px",height:"10px",borderRadius:"20px",border:`1px solid ${primaryColor}`,color:primaryColor};
     const buttonColor = {background: primaryColor};
     const labelColor= {color: primaryColor};
 
@@ -66,7 +66,7 @@ export default function DatePicker({endDate, selectDate, getSelectedDay, color, 
                 <div className={styles.monthContainer} key={month}>
                     <span className={styles.monthYearLabel} style={labelColor}>
                         {format(month, labelFormat || "MMMM yyyy")}
-                    </span>
+                    </span><span>,</span>
                     <div className={styles.daysContainer} style={i===0?firstSection:null}>
                         {days}
                     </div>

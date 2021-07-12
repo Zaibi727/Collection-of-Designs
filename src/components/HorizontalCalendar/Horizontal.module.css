@@ -44,9 +44,9 @@
     align-items: center;
     cursor: pointer;
     margin: 0 0 0 7px;
-    width: 60px;
+    width: 40px;
     padding: 15px;
-    height: 30px;
+    height: 10px;
     border: 1px solid lightgrey;
     border-radius: 20px;
     color: gray;
@@ -58,9 +58,9 @@
 }
 
 .dayLabel {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .dateLabel {
-    font-size: 12px;
+    font-size: 14px;
 }
