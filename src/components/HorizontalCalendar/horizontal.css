@@ -13,9 +13,9 @@
     position: relative;
     width: 100%;
     outline: none;
-    max-width: 70px;
+    max-width: 100px;
     font-size: 12px;
-    margin-top: 22px !important;
+    margin-top: 23px !important;
 }
     .select-months {
         display: flex;
@@ -25,14 +25,14 @@
         cursor: pointer;
         margin: 0 0 0 0;
         padding: 0px 5px;
-        border: none;
-        border-right: 2px solid lightcyan;
+        border: none !important;
+        border-right: 2px solid rgb(189, 190, 190) !important;
         padding-right: 10px;
         border-radius: 20px;
         width: 100px;
         height: 45px;
         color: rgb(0, 0, 0);
-        font-size: 10px !important;
+        font-size: 12px !important;
         font-weight: 500;
         box-sizing: border-box;
         overflow: hidden;
@@ -43,7 +43,7 @@
       }
 
     .select-picker {
-        font-size: 14px;
+        font-size: 12px;
         border-bottom: solid 0.5px rgba(0, 0, 0, 0.2);
         border-left: solid 0.5px rgba(0, 0, 0, 0.2);
         border-right: solid 0.5px rgba(0, 0, 0, 0.2);
