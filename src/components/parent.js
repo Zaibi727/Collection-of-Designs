@@ -85,7 +85,8 @@ import './dropDown.css';
 //import FormContainer from './ReactFormValidation/FormContainer';
 //import ModalSilderContainer from './ModalSlider/ModalSliderContainer';
 //import NewModalContainer from './NewModalSlider/NewModalContainer';
-import CalenderWithEditContainer from './CalendarWithEdit/CalenderWithEditContainer';
+//import CalenderWithEditContainer from './CalendarWithEdit/CalenderWithEditContainer';
+import HorizontalDisplay from './HorizontalCalendar/HorizontalDisplay';
 
 class Parent extends Component {
 
@@ -94,7 +95,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                 <CalenderWithEditContainer />
+                 <HorizontalDisplay />
            </div>
          );
     }
