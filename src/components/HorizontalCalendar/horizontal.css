@@ -25,14 +25,15 @@
         cursor: pointer;
         margin: 0 0 0 0;
         padding: 0px 5px;
-        border: 1px solid lightgrey;
+        border: none;
+        border-right: 2px solid lightcyan;
+        padding-right: 10px;
         border-radius: 20px;
-        width: 75px;
+        width: 100px;
         height: 45px;
-        max-height: 50px;
         color: rgb(0, 0, 0);
         font-size: 10px !important;
-        font-weight: 400;
+        font-weight: 500;
         box-sizing: border-box;
         overflow: hidden;
 
@@ -42,7 +43,7 @@
       }
 
     .select-picker {
-        font-size: 12px;
+        font-size: 14px;
         border-bottom: solid 0.5px rgba(0, 0, 0, 0.2);
         border-left: solid 0.5px rgba(0, 0, 0, 0.2);
         border-right: solid 0.5px rgba(0, 0, 0, 0.2);
