@@ -86,7 +86,8 @@ import './dropDown.css';
 //import ModalSilderContainer from './ModalSlider/ModalSliderContainer';
 //import NewModalContainer from './NewModalSlider/NewModalContainer';
 //import CalenderWithEditContainer from './CalendarWithEdit/CalenderWithEditContainer';
-import HorizontalDisplay from './HorizontalCalendar/HorizontalDisplay';
+//import HorizontalDisplay from './HorizontalCalendar/HorizontalDisplay';
+import Htask from './Htask/Htask';
 
 class Parent extends Component {
 
@@ -95,7 +96,7 @@ class Parent extends Component {
 
         return ( 
             <div>
-                 <HorizontalDisplay />
+                 <Htask />
            </div>
          );
     }

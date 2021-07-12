@@ -1,0 +1,7 @@
+.id{
+    display: flex;
+}
+.month{
+    display: flex;
+    justify-content: space-evenly;
+}
