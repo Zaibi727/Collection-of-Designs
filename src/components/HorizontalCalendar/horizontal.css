@@ -17,6 +17,7 @@
     font-size: 12px;
 }
     .select-months {
+      margin-top: 22px;
         display: flex;
         justify-content: center;
         flex-direction: row;
