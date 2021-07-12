@@ -34,7 +34,7 @@
 }
 
 .monthYearLabel {
-   display: none;
+    display: flex;
 }
 
 .dateDayItem{

@@ -14,7 +14,7 @@ export default function DatePicker({endDate, selectDate, getSelectedDay, color, 
     const [selectedDate, setSelectedDate] = useState(new Date());
     const firstSection = {marginLeft: '40px'};
     const startDate = new Date();
-    const lastDate = addDays(startDate, endDate || 90);
+    const lastDate = addDays(startDate, endDate || 900);
     const primaryColor = color || 'black';
     const selectedStyle = {fontWeight:"bold",width:"40px",height:"10px",borderRadius:"20px",border:`1px solid ${primaryColor}`,color:primaryColor};
     const buttonColor = {background: primaryColor};
