@@ -18,7 +18,7 @@ function Htask({endDate, selectDate, getSelectedDay, color, labelFormat}) {
     const primaryColor = color || 'black';
     const labelColor= {color: primaryColor};
      const date = selectedDate.getFullYear() + '-' + (selectedDate.getMonth() + 1) + '-' + (selectedDate.getDate());
-     const selectedStyle = {fontWeight:"bold",width:"50px",height:"30px",borderRadius:"20px",border:`2px solid ${primaryColor}`,color:primaryColor};
+     const selectedStyle = {fontWeight:"bold",width:"35px",height:"5",borderRadius:"20px",border:`2px solid ${primaryColor}`,color:primaryColor};
 
 
      const getStyles = (day) => {
