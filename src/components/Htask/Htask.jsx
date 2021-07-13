@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import styles from './htask.module.css';
 import {
     addDays,
@@ -11,15 +11,14 @@ import {
     startOfMonth
 } from "date-fns";
 
-function Htask({endDate,  labelFormat, color}) {
+function Htask({endDate, selectDate, getSelectedDay, color, labelFormat}) {
     const [selectedDate, setSelectedDate] = useState(new Date());
-    const [selected, setSelected] = useState(null);
     const startDate = new Date();
     const lastDate = addDays(startDate, endDate || 900);
     const primaryColor = color || 'black';
     const labelColor= {color: primaryColor};
      const date = selectedDate.getFullYear() + '-' + (selectedDate.getMonth() + 1) + '-' + (selectedDate.getDate());
-     const selectedStyle = {fontWeight:"bold",width:"40px",height:"10px",borderRadius:"20px",border:`1px solid ${primaryColor}`,color:primaryColor};
+     const selectedStyle = {fontWeight:"bold",width:"50px",height:"30px",borderRadius:"20px",border:`2px solid ${primaryColor}`,color:primaryColor};
 
 
      const getStyles = (day) => {
@@ -37,15 +36,10 @@ function Htask({endDate,  labelFormat, color}) {
         }
     };
 
-    const getMonth = (month) => {
-       setSelected({selected: month});
-    }
-
-  
 
 
      function daysA()  {
-        const firstSection = {marginLeft: '40px'};
+        const firstSection = {marginLeft: '100px'};
         const dayFormat = "E";
         const dateFormat = "d";
         let months = [];
@@ -61,41 +55,73 @@ function Htask({endDate,  labelFormat, color}) {
                     <div 
                          id={`${getId(addDays(startDate, j))}`}
                          key={addDays(month, j)}
+                         style={getStyles(addDays(month, j))}
+                         className={styles.dateDayItem}
+                         onClick={() => onDateClick(addDays(month, j))}
                          
                     >
-                        <div>
+                        <div className={styles.dayLabel}>
                             {format(addDays(month, j), dayFormat)}
                         </div>
-                        <div>
+                        <div className={styles.dateLabel}>
                             {format(addDays(month, j), dateFormat)}
                         </div>
                     </div>
                 );
             } 
             months.push(
-                <div  key={month} className={styles.month}>
-                   <div>
-                      <h1>
+                <div  key={month}  className={styles.month} className={styles.monthContainer}>
+                   <div className={styles.monthYearLabel} style={labelColor} style={firstSection}>                
                         {format(month, labelFormat || "MMMM yyyy")}
-                      </h1>
-                   </div>
-                    <div style={i===0 ? firstSection:null}>
+                   </div>           
+                    <div className={styles.daysContainer} style={i===0?firstSection:null}>
                         {days}
-                    </div>     
+                    </div>         
                 </div>
             );
             days = [];
         }   
         return (
-           <div id={"container"} className={styles.id}>
+           <div  id={"container"} className={styles.dateListScrollable}>
               <p>{months}</p>
            </div>);
      }
+
+     const onDateClick = day => {
+        setSelectedDate(day);
+        if (getSelectedDay) {
+            getSelectedDay(day);
+        }
+    };
+
+    useEffect(() => {
+        if (getSelectedDay) {
+            if (selectDate) {
+                getSelectedDay(selectDate);
+            } else {
+                getSelectedDay(startDate);
+            }
+        }
+    }, []);
+
+    useEffect(() => {
+        if (selectDate) {
+            if (!isSameDay(selectedDate, selectDate)) {
+                setSelectedDate(selectDate);
+                setTimeout(() => {
+                    let view = document.getElementById('selected');
+                    if (view) {
+                        view.scrollIntoView({behavior: "smooth", inline: "center", block: "nearest"});
+                    }
+                }, 20);
+            }
+        }
+    }, [selectDate]);
     
      
     return (
-        <div className={styles.ww}>
-            <h4>{daysA()}</h4>
+        <div className={styles.container}>
+            {daysA()}
         </div>
     )
 }

@@ -1,7 +1,69 @@
-.id{
-    display: flex;
-}
+
 .month{
     display: flex;
     justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background: inherit;
+}
+.buttonWrapper {
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+    background: inherit;
+}
+
+.button {
+    display: none;
+}
+
+.dateListScrollable {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin: 2px 0 2px -40px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dateListScrollable::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.monthContainer {
+    display: flex;
+    flex-direction: row;
+}
+.daysContainer {
+    display: flex;
+    z-index: 1;
+}
+.monthYearLabel {
+   display: flex;
+}
+
+.dateDayItem{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 0 7px;
+    width: 50px;
+    padding: 15px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    color: gray;
+}
+
+.dayLabel {
+    font-size: 12px;
+}
+
+.dateLabel {
+    font-size: 12px;
 }
