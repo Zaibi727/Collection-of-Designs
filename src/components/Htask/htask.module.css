@@ -1,8 +1,4 @@
 
-.month{
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .container {
     display: flex;
@@ -35,14 +31,23 @@
 
 .monthContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .daysContainer {
     display: flex;
     z-index: 1;
+    margin-left: 50px;
 }
 .monthYearLabel {
-   display: flex;
+    align-self: flex-start;
+    z-index: 3;
+    font-size: 15px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    left: 50px;
+    width: max-content;
+    margin: 0 14px 10px 0;
 }
 
 .dateDayItem{

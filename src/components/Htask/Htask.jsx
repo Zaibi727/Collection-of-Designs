@@ -71,9 +71,9 @@ function Htask({endDate, selectDate, getSelectedDay, color, labelFormat}) {
             } 
             months.push(
                 <div  key={month}  className={styles.month} className={styles.monthContainer}>
-                   <div className={styles.monthYearLabel} style={labelColor} style={firstSection}>                
+                   <span className={styles.monthYearLabel} style={labelColor} style={firstSection}>                
                         {format(month, labelFormat || "MMMM yyyy")}
-                   </div>           
+                   </span>           
                     <div className={styles.daysContainer} style={i===0?firstSection:null}>
                         {days}
                     </div>         
@@ -81,10 +81,7 @@ function Htask({endDate, selectDate, getSelectedDay, color, labelFormat}) {
             );
             days = [];
         }   
-        return (
-           <div  id={"container"} className={styles.dateListScrollable}>
-              <p>{months}</p>
-           </div>);
+        return <div  id={"container"} className={styles.dateListScrollable}>{months}</div>
      }
 
      const onDateClick = day => {
